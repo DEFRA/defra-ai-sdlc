@@ -17,7 +17,12 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - [libary or framework name]
 
 ## Style
+### Code Style
+- Use Standard JS for linting and formatting.
+- Maintain consistent indentation and code structure.
+- Avoid nested callbacks; prefer async/await.
 
+### Styling
 - Use SCSS for styling
 - Follow GOV.UK Frontend naming conventions for components
 - Organize styles into:
@@ -30,9 +35,40 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 
 ## Rules
 
+### General Guidelines
+- Use vanilla JavaScript; avoid TypeScript.
+- Do not use front-end frameworks like React, Angular, or Vue.
+- Ensure all code follows progressive enhancement principles.
+- Use clear and descriptive variable and function names.
+- Document complex code with comments.
+- Separate concerns by organizing code logically.
+
+### Functions
+- Use named functions instead of arrow functions for top-level declarations
+- Use arrow functions for callbacks and anonymous functions
+- Function names should be camelCase and descriptive of their purpose
+
+### Imports/Exports
+- Use named exports instead of default exports
+- Group imports by type (core Node.js modules first, then external packages, then internal imports)
+- Use absolute imports with the '~' alias for internal project files
+- Include JSDoc import statements for types when needed
+
+### Types
+- Use JSDoc comments for type annotations rather than TypeScript syntax in .js files
+- TypeScript is used for type checking only (no .ts files)
+- Include comprehensive type definitions for function parameters and returns
+
+### File Structure
+- Group related functionality into directories (e.g., helpers, components)
+- Use index.js files to aggregate and re-export from directories
+- Keep files focused on a single responsibility
+- Use .gitkeep for empty directories that need to be tracked
+
 ### Configuration
 - Use convict for configuration management
 - Environment variables should have sensible defaults
+- Do not embedd secrets in the codebase.
 - Validate configuration on startup
 - Separate configuration by concern (e.g., redis, session, logging)
 
@@ -41,23 +77,10 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Log errors appropriately using the logging system
 - Include stack traces in development but not production
 
-### Logging
-- Use pino as the logging framework
-- Different log formats for development (pretty) and production (ECS)
-- Include request ID in logs for tracing
-- Redact sensitive information in production logs
-
-### Security
-- Enable secure contexts in production
-- Use TLS for Redis in production
-- Implement proper session handling
-- Set secure cookie flags in production
-
-### Development Workflow
-- Use npm scripts for common tasks
-- Run linting and tests before commits (via husky)
-- Format code using prettier
-- Follow the established project structure for new features
+### Node.js Standards
+- Do not store session state on the app server.
+- Use distributed caches for session management.
+- Follow the same standards for linting and formatting as front-end code.
 
 ## Testing
 - Test files should be co-located with source files and end in .test.js
@@ -68,6 +91,12 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - For apis, test the API calls with expected input and output
 - For UI's, test the interface with expected behaviours 
 - Mock external dependencies like databases, file systems, API's
+
+## Logging
+- Use pino as the logging framework
+- Different log formats for development (pretty) and production (ECS)
+- Include request ID in logs for tracing
+- Redact sensitive information in production logs
 
 ## Git Usage
 Commit Message Prefixes:
@@ -88,44 +117,19 @@ Git Rules:
 
 ## Documentation
 - Maintain clear README
-- Include README.md files in major directories explaining purpose
 - Use JSDoc for function and type documentation
 - Document configuration options
 - Include examples where appropriate
 
-## Defra Development Standards:
-Ensure all code follows the Defra standards for JavaScript including the following:
-
-## General Guidelines
-- Use vanilla JavaScript; avoid TypeScript.
-- Do not use front-end frameworks like React, Angular, or Vue.
-- Ensure all code follows progressive enhancement principles.
-
-## Code Style
-- Use Standard JS for linting and formatting.
-- Maintain consistent indentation and code structure.
-- Avoid nested callbacks; prefer async/await.
-
-## Version Control
-- Use protected branches with required status checks.
-- Make all changes on feature branches, not directly on the master branch.
-
-## Testing
-- Ensure unit test coverage is at least 90%.
-- Do not merge code without passing all tests.
-- Write meaningful tests for all new features and bug fixes.
-
 ## Security
-- Avoid embedding secrets in the codebase.
-- Use environment variables for sensitive data.
+- Enable secure contexts in production
+- Use TLS for Redis in production
+- Implement proper session handling
+- Set secure cookie flags in production
 - Validate all inputs to prevent injection attacks.
 
-## Node.js Standards (if applicable)
-- Do not store session state on the app server.
-- Use distributed caches for session management.
-- Follow the same standards for linting and formatting as front-end code.
-
-## Best Practices
-- Use clear and descriptive variable and function names.
-- Document complex code with comments.
-- Separate concerns by organizing code logically.
+## Development Workflow
+- Use npm scripts for common tasks
+- Run linting and tests before commits (via husky)
+- Format code using prettier
+- Follow the established project structure for new features
