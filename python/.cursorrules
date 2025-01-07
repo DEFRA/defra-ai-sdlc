@@ -1,0 +1,131 @@
+# [Project Name]
+
+Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
+
+## Project Context
+[Brief description ]
+- [more description]
+- [more description]
+- [more description]
+
+## Language
+- Python
+
+## Tech Stack
+- [libary or framework name]
+- [libary or framework name]
+- [libary or framework name]
+
+## Style
+### Base Style
+- PEP 8
+
+### Type Checking
+- Tool: Pyright
+
+### Linting
+- Tool: Pylint
+
+## Rules
+### Indentation
+- Spaces: 4
+- Tabs: Not allowed
+
+### Line Length
+- Maximum: 79 characters
+
+### Docstrings
+- Required: Yes
+- Style: Google
+
+### Naming Conventions
+- Variables: snake_case
+- Functions: snake_case
+- Classes: PascalCase
+- Constants: UPPER_SNAKE_CASE
+
+### Typing
+- Type Hints: Required
+- Strictness: High
+
+### Imports
+- Order: PEP 8 compliant
+- Unused Imports: 
+  - Remove all unused imports
+  - Run regular checks to identify and remove unused imports
+  - Use tools like `pylint` to detect unused imports
+  - Keep imports minimal and only include what is actually used in the code
+- Import Style:
+  - Use absolute imports over relative imports
+  - Group imports according to PEP 8:
+    1. Standard library imports
+    2. Third-party imports
+    3. Local application imports
+  - Separate import groups with a blank line
+
+### Code Readability
+- Comments: Required
+- Nested Blocks:
+  - Limit: 3 levels
+  - Suggestion: Refactor when exceeding the limit
+- Function Size:
+  - Maximum Lines: 50
+  - Suggestion: Split into smaller functions when exceeding the limit
+- Class Size:
+  - Maximum Lines: 300
+  - Suggestion: Split into smaller classes when exceeding the limit
+
+### Linting Strictness
+- Level: High
+
+### Error Severity
+- Critical Errors: Enabled
+- Warnings: Enabled
+- Info Messages: Disabled
+
+## Testing
+- Tool: pytest
+- Test the functionality; not the implementation
+- Write tests that cover end-to-end functionality covering multipule units
+- For apis, test the API calls with expected input and output
+- For UI's, test the interface with expected behaviours 
+- Mock external dependencies like databases, file systems, API's
+
+## Logging
+### Configuration
+- Core logging configuration in `src/logging_config.py`
+- Use environment variables for log levels:
+  - `FILE_LOG_LEVEL`: Controls file logging level
+  - `CONSOLE_LOG_LEVEL`: Controls console logging level
+- Default to ERROR level if not configured
+- Use structured logging format
+
+### Logger Usage
+- Each module should use setup_logger with appropriate namespace:
+  ```python
+  from src.logging_config import setup_logger
+  logger = setup_logger("module.submodule")
+  ```
+- Include context in log messages
+- Use appropriate log levels:
+  - ERROR: Errors that need immediate attention
+  - WARNING: Issues that might need attention
+  - INFO: Important events
+  - DEBUG: Detailed debugging information
+
+## Git Usage
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+Rules:
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable

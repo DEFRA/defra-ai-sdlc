@@ -1,0 +1,131 @@
+# [Project Name]
+
+Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
+
+## Project Context
+[Brief description ]
+- [more description]
+- [more description]
+- [more description]
+
+## Language
+- JavaScript
+
+## Tech Stack
+- [libary or framework name]
+- [libary or framework name]
+- [libary or framework name]
+
+## Style
+
+- Use SCSS for styling
+- Follow GOV.UK Frontend naming conventions for components
+- Organize styles into:
+  - components/ - For reusable components
+  - core/ - For core layout elements
+  - helpers/ - For mixins and functions
+  - partials/ - For page-specific styles
+  - variables/ - For shared variables
+- Use BEM-style naming with 'app-' prefix for custom components
+
+## Rules
+
+### Configuration
+- Use convict for configuration management
+- Environment variables should have sensible defaults
+- Validate configuration on startup
+- Separate configuration by concern (e.g., redis, session, logging)
+
+### Error Handling
+- Use explicit error types
+- Log errors appropriately using the logging system
+- Include stack traces in development but not production
+
+### Logging
+- Use pino as the logging framework
+- Different log formats for development (pretty) and production (ECS)
+- Include request ID in logs for tracing
+- Redact sensitive information in production logs
+
+### Security
+- Enable secure contexts in production
+- Use TLS for Redis in production
+- Implement proper session handling
+- Set secure cookie flags in production
+
+### Development Workflow
+- Use npm scripts for common tasks
+- Run linting and tests before commits (via husky)
+- Format code using prettier
+- Follow the established project structure for new features
+
+## Testing
+- Test files should be co-located with source files and end in .test.js
+- Use Jest as the testing framework
+- Include comprehensive test cases covering success and error scenarios
+- Test the functionality; not the implementation
+- Write tests that cover end-to-end functionality covering multipule units
+- For apis, test the API calls with expected input and output
+- For UI's, test the interface with expected behaviours 
+- Mock external dependencies like databases, file systems, API's
+
+## Git Usage
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+Git Rules:
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable
+
+## Documentation
+- Maintain clear README
+- Include README.md files in major directories explaining purpose
+- Use JSDoc for function and type documentation
+- Document configuration options
+- Include examples where appropriate
+
+## Defra Development Standards:
+Ensure all code follows the Defra standards for JavaScript including the following:
+
+## General Guidelines
+- Use vanilla JavaScript; avoid TypeScript.
+- Do not use front-end frameworks like React, Angular, or Vue.
+- Ensure all code follows progressive enhancement principles.
+
+## Code Style
+- Use Standard JS for linting and formatting.
+- Maintain consistent indentation and code structure.
+- Avoid nested callbacks; prefer async/await.
+
+## Version Control
+- Use protected branches with required status checks.
+- Make all changes on feature branches, not directly on the master branch.
+
+## Testing
+- Ensure unit test coverage is at least 90%.
+- Do not merge code without passing all tests.
+- Write meaningful tests for all new features and bug fixes.
+
+## Security
+- Avoid embedding secrets in the codebase.
+- Use environment variables for sensitive data.
+- Validate all inputs to prevent injection attacks.
+
+## Node.js Standards (if applicable)
+- Do not store session state on the app server.
+- Use distributed caches for session management.
+- Follow the same standards for linting and formatting as front-end code.
+
+## Best Practices
+- Use clear and descriptive variable and function names.
+- Document complex code with comments.
+- Separate concerns by organizing code logically.
