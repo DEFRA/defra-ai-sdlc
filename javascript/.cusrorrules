@@ -1,0 +1,135 @@
+# [Project Name]
+
+Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
+
+## Project Context
+[Brief description ]
+- [more description]
+- [more description]
+- [more description]
+
+## Language
+- JavaScript
+
+## Tech Stack
+- [libary or framework name]
+- [libary or framework name]
+- [libary or framework name]
+
+## Style
+### Code Style
+- Use Standard JS for linting and formatting.
+- Maintain consistent indentation and code structure.
+- Avoid nested callbacks; prefer async/await.
+
+### Styling
+- Use SCSS for styling
+- Follow GOV.UK Frontend naming conventions for components
+- Organize styles into:
+  - components/ - For reusable components
+  - core/ - For core layout elements
+  - helpers/ - For mixins and functions
+  - partials/ - For page-specific styles
+  - variables/ - For shared variables
+- Use BEM-style naming with 'app-' prefix for custom components
+
+## Rules
+
+### General Guidelines
+- Use vanilla JavaScript; avoid TypeScript.
+- Do not use front-end frameworks like React, Angular, or Vue.
+- Ensure all code follows progressive enhancement principles.
+- Use clear and descriptive variable and function names.
+- Document complex code with comments.
+- Separate concerns by organizing code logically.
+
+### Functions
+- Use named functions instead of arrow functions for top-level declarations
+- Use arrow functions for callbacks and anonymous functions
+- Function names should be camelCase and descriptive of their purpose
+
+### Imports/Exports
+- Use named exports instead of default exports
+- Group imports by type (core Node.js modules first, then external packages, then internal imports)
+- Use absolute imports with the '~' alias for internal project files
+- Include JSDoc import statements for types when needed
+
+### Types
+- Use JSDoc comments for type annotations rather than TypeScript syntax in .js files
+- TypeScript is used for type checking only (no .ts files)
+- Include comprehensive type definitions for function parameters and returns
+
+### File Structure
+- Group related functionality into directories (e.g., helpers, components)
+- Use index.js files to aggregate and re-export from directories
+- Keep files focused on a single responsibility
+- Use .gitkeep for empty directories that need to be tracked
+
+### Configuration
+- Use convict for configuration management
+- Environment variables should have sensible defaults
+- Do not embedd secrets in the codebase.
+- Validate configuration on startup
+- Separate configuration by concern (e.g., redis, session, logging)
+
+### Error Handling
+- Use explicit error types
+- Log errors appropriately using the logging system
+- Include stack traces in development but not production
+
+### Node.js Standards
+- Do not store session state on the app server.
+- Use distributed caches for session management.
+- Follow the same standards for linting and formatting as front-end code.
+
+## Testing
+- Test files should be co-located with source files and end in .test.js
+- Use Jest as the testing framework
+- Include comprehensive test cases covering success and error scenarios
+- Test the functionality; not the implementation
+- Write tests that cover end-to-end functionality covering multipule units
+- For apis, test the API calls with expected input and output
+- For UI's, test the interface with expected behaviours 
+- Mock external dependencies like databases, file systems, API's
+
+## Logging
+- Use pino as the logging framework
+- Different log formats for development (pretty) and production (ECS)
+- Include request ID in logs for tracing
+- Redact sensitive information in production logs
+
+## Git Usage
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+Git Rules:
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable
+
+## Documentation
+- Maintain clear README
+- Use JSDoc for function and type documentation
+- Document configuration options
+- Include examples where appropriate
+
+## Security
+- Enable secure contexts in production
+- Use TLS for Redis in production
+- Implement proper session handling
+- Set secure cookie flags in production
+- Validate all inputs to prevent injection attacks.
+
+## Development Workflow
+- Use npm scripts for common tasks
+- Run linting and tests before commits (via husky)
+- Format code using prettier
+- Follow the established project structure for new features
