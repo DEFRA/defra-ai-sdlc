@@ -109,6 +109,7 @@ project_name/
   - **API Testing:** Validate input/output
   - **UI Testing:** Test expected behaviors
   - Mock external dependencies (e.g., databases, APIs)
+- Coverage Tool: pytest-cov
 
 ## Logging
 
