@@ -1,32 +1,30 @@
 # [Project Name]
 
-Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the rule description to a single word or phrase.
-
 ## Project Context
-[Brief description ]
-- [more description]
-- [more description]
-- [more description]
+- [Brief description]
+- [Additional details about the project]
 
 ## Language
 - Python
 
 ## Tech Stack
-- [libary or framework name]
-- [libary or framework name]
-- [libary or framework name]
+- [Library/Framework Name]
+- [Library/Framework Name]
+- [Library/Framework Name]
 
 ## Style
+
 ### Base Style
 - PEP 8
 
-### Type Checking
+### Type Checking 
 - Tool: Pyright
 
 ### Linting
 - Tool: Pylint
 
 ## Rules
+
 ### Indentation
 - Spaces: 4
 - Tabs: Not allowed
@@ -49,83 +47,84 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Strictness: High
 
 ### Imports
-- Order: PEP 8 compliant
-- Unused Imports: 
-  - Remove all unused imports
-  - Run regular checks to identify and remove unused imports
-  - Use tools like `pylint` to detect unused imports
-  - Keep imports minimal and only include what is actually used in the code
-- Import Style:
+- **Order:** PEP 8 compliant
+- **Unused Imports:** Remove all unused imports using tools like `pylint`
+- **Import Style:**
   - Use absolute imports over relative imports
-  - Group imports according to PEP 8:
+  - Group imports:
     1. Standard library imports
     2. Third-party imports
     3. Local application imports
-  - Separate import groups with a blank line
+  - Separate groups with a blank line
 
 ### Code Readability
-- Comments: Required
-- Nested Blocks:
+- **Comments:** Required for non-obvious logic
+- **Nested Blocks:**
   - Limit: 3 levels
   - Suggestion: Refactor when exceeding the limit
-- Function Size:
+- **Function Size:**
   - Maximum Lines: 50
-  - Suggestion: Split into smaller functions when exceeding the limit
-- Class Size:
+  - Suggestion: Split into smaller functions if exceeded
+- **Class Size:**
   - Maximum Lines: 300
-  - Suggestion: Split into smaller classes when exceeding the limit
+  - Suggestion: Refactor into smaller classes if exceeded
 
 ### Linting Strictness
 - Level: High
 
-### Error Severity
-- Critical Errors: Enabled
-- Warnings: Enabled
-- Info Messages: Disabled
-
 ## Testing
 - Tool: pytest
-- Test the functionality; not the implementation
-- Write tests that cover end-to-end functionality covering multipule units
-- For apis, test the API calls with expected input and output
-- For UI's, test the interface with expected behaviours 
-- Mock external dependencies like databases, file systems, API's
+- Write tests covering functionality (not implementation):
+  - **API Testing:** Validate input/output
+  - **UI Testing:** Test expected behaviors
+  - Mock external dependencies (e.g., databases, APIs)
 
 ## Logging
+
 ### Configuration
-- Core logging configuration in `src/logging_config.py`
-- Use environment variables for log levels:
-  - `FILE_LOG_LEVEL`: Controls file logging level
-  - `CONSOLE_LOG_LEVEL`: Controls console logging level
-- Default to ERROR level if not configured
+- Core configuration in `src/logging_config.py`
+- Log levels controlled via environment variables:
+  - `FILE_LOG_LEVEL` and `CONSOLE_LOG_LEVEL`
+  - Default: ERROR
 - Use structured logging format
 
 ### Logger Usage
-- Each module should use setup_logger with appropriate namespace:
-  ```python
-  from src.logging_config import setup_logger
-  logger = setup_logger("module.submodule")
-  ```
-- Include context in log messages
+- Setup logger in each module:
+```python
+from src.logging_config import setup_logger
+logger = setup_logger("module.submodule")
+```
 - Use appropriate log levels:
-  - ERROR: Errors that need immediate attention
-  - WARNING: Issues that might need attention
+  - ERROR: Immediate attention needed
+  - WARNING: Potential issues
   - INFO: Important events
-  - DEBUG: Detailed debugging information
+  - DEBUG: Detailed debug info
 
 ## Git Usage
-Commit Message Prefixes:
-- "fix:" for bug fixes
-- "feat:" for new features
-- "perf:" for performance improvements
-- "docs:" for documentation changes
-- "style:" for formatting changes
-- "refactor:" for code refactoring
-- "test:" for adding missing tests
-- "chore:" for maintenance tasks
 
-Rules:
-- Use lowercase for commit messages
+### Commit Message Prefixes
+- `fix:` for bug fixes
+- `feat:` for new features
+- `perf:` for performance improvements
+- `docs:` for documentation updates
+- `style:` for formatting changes
+- `refactor:` for code refactoring
+- `test:` for adding missing tests
+- `chore:` for maintenance tasks
+
+### Commit Guidelines
+- Use lowercase for messages
 - Keep the summary line concise
-- Include description for non-obvious changes
 - Reference issue numbers when applicable
+
+## General Guidelines
+
+### Code Organization
+- **Self-Documenting Code:** Use descriptive names for variables, functions, and classes. Avoid overly generic names
+- **Module-Level Context Headers:** Each file/module must start with a brief description of its purpose and dependencies
+- **Logical Chunk Boundaries:** Organize code into coherent segments (e.g., one function or class per chunk)
+- **Metadata for Chunking:** Include metadata (e.g., @chunk, @context) in comments to help with code retrieval and grouping
+- **Cross-Referencing:** Add "See also" or "Related to" comments for interdependent logic
+- **Error Handling Rationale:** Provide comments explaining why exceptions are raised or caught
+- **Examples and Test References:** Provide short examples or link test cases in docstrings
+- **Architectural Markers:** Use markers for patterns, layers, and data flow notes to map code snippets to architecture
