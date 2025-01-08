@@ -12,7 +12,38 @@
 - [Library/Framework Name]
 - [Library/Framework Name]
 
-## Style
+## Project Structure
+```
+project_name/
+├── src/                   # Main source code directory
+│   ├── __init__.py
+│   ├── module1.py
+│   └── module2.py
+├── tests/                 # Test files
+│   ├── __init__.py
+│   ├── test_module1.py
+│   └── test_module2.py
+├── docs/                  # Documentation files
+│   ├── README.md
+│   └── CONTRIBUTING.md
+├── scripts/               # Utility scripts
+│   └── script_name.py
+├── .env                   # Environment variables
+├── .gitignore
+└── README.md
+```
+
+## Code Organization
+- **Self-Documenting Code:** Use descriptive names for variables, functions, and classes. Avoid overly generic names
+- **Module-Level Context Headers:** Each file/module must start with a brief description of its purpose and dependencies
+- **Logical Chunk Boundaries:** Organize code into coherent segments (e.g., one function or class per chunk)
+- **Metadata for Chunking:** Include metadata (e.g., @chunk, @context) in comments to help with code retrieval and grouping
+- **Cross-Referencing:** Add "See also" or "Related to" comments for interdependent logic
+- **Error Handling Rationale:** Provide comments explaining why exceptions are raised or caught
+- **Examples and Test References:** Provide short examples or link test cases in docstrings
+- **Architectural Markers:** Use markers for patterns, layers, and data flow notes to map code snippets to architecture
+
+## Coding Standards
 
 ### Base Style
 - PEP 8
@@ -117,14 +148,9 @@ logger = setup_logger("module.submodule")
 - Keep the summary line concise
 - Reference issue numbers when applicable
 
-## General Guidelines
+## Security Guidelines
 
-### Code Organization
-- **Self-Documenting Code:** Use descriptive names for variables, functions, and classes. Avoid overly generic names
-- **Module-Level Context Headers:** Each file/module must start with a brief description of its purpose and dependencies
-- **Logical Chunk Boundaries:** Organize code into coherent segments (e.g., one function or class per chunk)
-- **Metadata for Chunking:** Include metadata (e.g., @chunk, @context) in comments to help with code retrieval and grouping
-- **Cross-Referencing:** Add "See also" or "Related to" comments for interdependent logic
-- **Error Handling Rationale:** Provide comments explaining why exceptions are raised or caught
-- **Examples and Test References:** Provide short examples or link test cases in docstrings
-- **Architectural Markers:** Use markers for patterns, layers, and data flow notes to map code snippets to architecture
+* Never hard-code secrets (use environment variables or secret manager)
+* Regular dependency updates and vulnerability checks
+* Input validation and sanitization
+* Encryption for sensitive data (transit and rest)
