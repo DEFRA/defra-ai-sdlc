@@ -7,7 +7,8 @@
 - use @web if needed
 - make sure you add more than just error logs into the composer, include the previous positive logs so the composer can work out where the issue is
 - fixing the obsidian mirmaid width issues: https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options.
-- 
+- creating tests for specific files is more targeted and less likely to go wrong
+- consider locking the source code directory in Mac while creating tests to ensure the original code is not changed
 
 ## Implementing feature workflow
 1. create new branch
