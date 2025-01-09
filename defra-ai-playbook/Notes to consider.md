@@ -6,6 +6,8 @@
 - make sure you add @docs docs to add to any prompts for implementing features
 - use @web if needed
 - make sure you add more than just error logs into the composer, include the previous positive logs so the composer can work out where the issue is
+- fixing the obsidian mirmaid width issues: https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options.
+- 
 
 ## Implementing feature workflow
 1. create new branch
