@@ -9,6 +9,8 @@
 - fixing the obsidian mirmaid width issues: https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options.
 - creating tests for specific files is more targeted and less likely to go wrong
 - consider locking the source code directory in Mac while creating tests to ensure the original code is not changed
+- updated version of pinning bash line: ```cp requirements.txt requirements.tmp && for pkg in $(cat requirements.tmp); do base_pkg=$(echo "$pkg" | sed 's/\[.*\]//g' | cut -d'=' -f1 | cut -d'>' -f1 | cut -d'<' -f1); pip freeze | grep -i "^${base_pkg}\[.*\]==\|^${base_pkg}=="; done > requirements.tmp.new && mv requirements.tmp.new requirements.txt && rm requirements.tmp```
+- 
 
 ## Implementing feature workflow
 1. create new branch
