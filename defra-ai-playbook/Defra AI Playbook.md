@@ -60,3 +60,27 @@
 * **Code Repositories**: Links to relevant Git repositories
 
 *Note: The remaining sections (Project Stages, Service Design, etc.) should be expanded with similar detailed content following the established format.*
+
+
+**Tools**
+With disclaimer
+IDEs
+Windsurf
+Cursor
+Obsidian
+OpeanAI & Calude
+
+```
+# Coding Design Choices by the LLM
+
+Cursor seems to start coding with an object oriented approach when coding Python. The rationale being that the initial libraries we used favor OO approaches. An area to monitor would be when we start using libraries where the community favors other approaches will get a mismatch in coding style throughput the repo.
+
+We assume we could change or force the style with prompting in the .cursorrules file if needed
+```
+
+**AI Development Workflow**
+
+
+**Future considerations**
+- AI Agentic frameworks
+- MCP servers
