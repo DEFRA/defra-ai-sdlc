@@ -61,6 +61,8 @@
 
 *Note: The remaining sections (Project Stages, Service Design, etc.) should be expanded with similar detailed content following the established format.*
 
+**Logging and Debugging**
+- 
 
 **Tools**
 With disclaimer
@@ -69,6 +71,8 @@ Windsurf
 Cursor
 Obsidian
 OpeanAI & Calude
+Tree (brew)
+Mermaid
 
 ```
 # Coding Design Choices by the LLM
@@ -80,6 +84,7 @@ We assume we could change or force the style with prompting in the .cursorrules 
 
 **AI Development Workflow**
 
+**Mindset**
 
 **Future considerations**
 - AI Agentic frameworks
