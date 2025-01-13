@@ -15,6 +15,7 @@ kanban-plugin: board
 - [ ] PRD Mobbing, individual impliment
 - [ ] pip freeze, python lib mgmt - add to .cursorrules?
 - [ ] Check out Mermaid - https://www.mermaidchart.com/ (or learn)
+- [ ] React vs curent FE?
 
 
 ## Doing
