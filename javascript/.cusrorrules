@@ -10,20 +10,78 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 
 ## Language
 - JavaScript
+- TypeScript (for type checking only)
 
 ## Tech Stack
-- [libary or framework name]
-- [libary or framework name]
-- [libary or framework name]
+- Node.js
+- Webpack (bundling and asset management)
+- Babel (JavaScript transpilation)
+- Jest (testing framework)
+- ESLint & Prettier (code formatting and linting)
+- SCSS (styling)
+- GOV.UK Frontend
+- Hapi.js (server framework)
+- PostCSS (CSS processing)
+- Stylelint (CSS linting)
+- Nodemon (development server)
+
+## Project Structure
+```
+/
+├── src/                    # Source code
+│   ├── client/            # Frontend assets and code
+│   │   ├── common/        # Shared client utilities and helpers
+│   │   ├── javascripts/   # Client-side JavaScript
+│   │   └── stylesheets/   # SCSS stylesheets
+│   ├── server/            # Backend Node.js application code
+│   │   ├── about/         # About page routes and handlers
+│   │   ├── common/        # Shared server utilities
+│   │   ├── error/         # Error handling and pages
+│   │   ├── health/        # Health check endpoints
+│   │   ├── home/          # Home page routes and handlers
+│   │   ├── index.js       # Server entry point
+│   │   └── router.js      # Route definitions
+│   ├── config/            # Application configuration
+│   └── index.js           # Application entry point
+├── compose/               # Docker compose configuration files
+├── .github/               # GitHub workflows and templates
+├── .jest/                 # Jest test configuration
+├── .husky/                # Git hooks configuration
+├── config files           # Various configuration files:
+│   ├── .eslintrc.cjs     # ESLint configuration
+│   ├── .prettierrc.js    # Prettier configuration
+│   ├── babel.config.cjs  # Babel configuration
+│   ├── jest.config.js    # Jest configuration
+│   ├── webpack.config.js # Webpack configuration
+│   └── tsconfig.json     # TypeScript configuration
+└── package.json          # Project dependencies and scripts
+```
+
+Key directories and their purposes:
+- `src/client/common`: Shared client-side utilities and helpers
+- `src/client/javascripts`: Client-side JavaScript modules
+- `src/client/stylesheets`: SCSS styling organized into components, core, helpers, and partials
+- `src/server/about`: About page routes and handlers
+- `src/server/common`: Shared server-side utilities
+- `src/server/error`: Error handling and error pages
+- `src/server/health`: Health check endpoints
+- `src/server/home`: Home page routes and handlers
+- `compose/`: Docker compose files for different environments
+- `.github/`: CI/CD workflows and GitHub-specific configuration
+- `.jest/`: Test configuration and setup files
+- `.husky/`: Git hooks for maintaining code quality
+
+## Coding Standards
 
 ## Style
 ### Code Style
-- Use Standard JS for linting and formatting.
-- Maintain consistent indentation and code structure.
-- Avoid nested callbacks; prefer async/await.
-- Format code using prettier and use the .prettierrc file.
-
-- TODO: structure section
+- Use Standard JS for linting and formatting
+- Avoid nested callbacks; prefer async/await
+- Format code using prettier and use the .prettierrc file
+- Use JSDoc comments for type annotations in .js files
+- Use TypeScript for type checking only (no .ts files)
+- Include comprehensive JSDoc type definitions for function parameters and returns
+- Follow TypeScript-enhanced ESLint rules
 
 ### Styling
 - Use SCSS for styling
@@ -72,6 +130,9 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Do not embedd secrets in the codebase.
 - Validate configuration on startup
 - Separate configuration by concern (e.g., redis, session, logging)
+- Use postcss.config.js for PostCSS configuration
+- Use stylelint.config.js for CSS linting rules
+- Use nodemon.json for development server settings
 
 ### Error Handling
 - Use explicit error types
@@ -91,28 +152,30 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - For apis, test the API calls with expected input and output
 - For UI's, test the interface with expected behaviours 
 - Mock external dependencies like databases, file systems, API's
+- Maintain .jest/setup.js for global test configuration and mocks
 
 ## Logging
 - Use pino as the logging framework
+- Log levels controlled via environment variables
 - Different log formats for development (pretty) and production (ECS)
 - Include request ID in logs for tracing
 - Redact sensitive information in production logs
 
 ## Git Usage
-Commit Message Prefixes:
-- "fix:" for bug fixes
-- "feat:" for new features
-- "perf:" for performance improvements
-- "docs:" for documentation changes
-- "style:" for formatting changes
-- "refactor:" for code refactoring
-- "test:" for adding missing tests
-- "chore:" for maintenance tasks
 
-Git Rules:
-- Use lowercase for commit messages
+### Commit Message Prefixes
+- `fix:` for bug fixes
+- `feat:` for new features
+- `perf:` for performance improvements
+- `docs:` for documentation updates
+- `style:` for formatting changes
+- `refactor:` for code refactoring
+- `test:` for adding missing tests
+- `chore:` for maintenance tasks
+
+### Commit Guidelines
+- Use lowercase for messages
 - Keep the summary line concise
-- Include description for non-obvious changes
 - Reference issue numbers when applicable
 
 ## Documentation
