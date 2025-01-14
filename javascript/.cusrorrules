@@ -21,6 +21,9 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Use Standard JS for linting and formatting.
 - Maintain consistent indentation and code structure.
 - Avoid nested callbacks; prefer async/await.
+- Format code using prettier and use the .prettierrc file.
+
+- TODO: structure section
 
 ### Styling
 - Use SCSS for styling
@@ -34,7 +37,6 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Use BEM-style naming with 'app-' prefix for custom components
 
 ## Rules
-
 ### General Guidelines
 - Use vanilla JavaScript; avoid TypeScript.
 - Do not use front-end frameworks like React, Angular, or Vue.
@@ -67,7 +69,6 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 
 ### Configuration
 - Use convict for configuration management
-- Environment variables should have sensible defaults
 - Do not embedd secrets in the codebase.
 - Validate configuration on startup
 - Separate configuration by concern (e.g., redis, session, logging)
@@ -83,7 +84,6 @@ Every time you choose to apply a rule(s), explicitly state the rule(s) in the ou
 - Follow the same standards for linting and formatting as front-end code.
 
 ## Testing
-- Test files should be co-located with source files and end in .test.js
 - Use Jest as the testing framework
 - Include comprehensive test cases covering success and error scenarios
 - Test the functionality; not the implementation
