@@ -16,6 +16,7 @@ kanban-plugin: board
 - [ ] pip freeze, python lib mgmt - add to .cursorrules?
 - [ ] Check out Mermaid - https://www.mermaidchart.com/ (or learn)
 - [ ] React vs curent FE?
+- [ ] Add sub-modules to the repos to handle fronend and backend access to a single PRD?
 
 
 ## Doing
