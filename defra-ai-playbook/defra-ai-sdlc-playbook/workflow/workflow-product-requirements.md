@@ -2,7 +2,7 @@
 
 This section provides a structured approach to creating and refining product requirements for an AI-powered development workflow. Detailed and precise requirements are critical to ensuring successful feature development, especially in workflows that rely heavily on large language models (LLMs).
 
-It's possible, if not likely, you will spend up to 30% of workflow time on requirement generation and refinement.  The more time you spend on this step can significantly improve the efficiency and quality of the AI-powered development process and save time addressing issues later.
+It's possible, if not likely, you will spend more than 30% of workflow time on requirement generation and refinement.  The more time you spend on this step can significantly improve the efficiency and quality of the AI-powered development process and save time addressing issues later.
 
 ## 1. Understanding Prioritised Feature Requirements
 
@@ -67,27 +67,30 @@ Please create a detailed PRD document from the requirements below. Create a sing
 
 ### 3.2. Handling Broken Markdown Files
 
-If the generated markdown file is broken:
+If the generated markdown file is 'broken':
 
-1. Click the ‘copy’ icon at the bottom of the chat (this ensures cleaner copying than manual selection).
+1. Click the ‘copy’ icon at the bottom of the ChatGPT chat (this ensures cleaner copying than manual selection and copying).
     
 2. Run the copied markdown text through Claude or a similar tool with the following prompt:
     
     ```
     Please convert this to md format: [PASTE BROKEN MARKDOWN HERE]
     ```
-    
 
-## 4. Structuring the PRD
+## 4. Saving the PRD in the Repository
+
+Once you have the markdown text, save it in the folder or obsidian vault that was setup at the start of the project in `[filename].md` format.  It's important that is file is INSIDE the code repository, as we will have the AI-powered IDE reference it later in the workflow.
+
+## 5. Structuring the PRD
 
 The PRD format is advantageous for LLM-driven workflows as it breaks down feature requirements into numbered sections and subsections. This ensures that individual features can be easily interpreted and developed.
 
 - Include sections for feature overview, design specifications, API details, data model updates, and acceptance criteria.
 - If needed, integrate specific team requirements, such as user stories or Behaviour-Driven Development (BDD) test cases. However, for a fully AI-driven workflow, this step may be unnecessary.
 
-## 5. Ensuring Requirement Precision
+## 6. Ensuring Requirement Precision
 
 Dedicate substantial time and team effort to refining the prompt and the PRD to eliminate vagueness and potential misinterpretations.
 
-- Ensure all aspects are reviewed collaboratively.
+- Ensure all aspects are reviewed collaboratively by the team.
 - Revise any unclear sections to ensure the requirements are unambiguous and can be correctly interpreted by an LLM.
