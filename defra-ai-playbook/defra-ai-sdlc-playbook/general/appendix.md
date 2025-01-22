@@ -12,6 +12,8 @@ todo
 * **Pros and Cons**: Detailed analysis of benefits and limitations when implementing AI solutions
 * **Environmental Impact**: Assessment of computational resources and energy consumption in AI operations
 
+- something about using temperature of 0, context windows when calling llms
+
 other stuff
 - **Demonstrations**: Practical examples of AI implementation
 * **Proof of Concepts**: Documented trials and experiments

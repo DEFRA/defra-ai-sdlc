@@ -8,3 +8,4 @@ This section provides concise, practical guidance and resources to optimise the 
 - [[tool-cursor|Cursor AI IDE]]
 - [[tool-windsurf|Windsurf AI IDE]]
 - [[tool-obsidian|Obsidian]]
+- [[tool-ollama|Ollama]]

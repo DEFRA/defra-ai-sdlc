@@ -35,7 +35,7 @@ Please implement feature '1.2 Add Todo Task' from @prd-task-management.md. Make 
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
 - After completion, review the changes in the git diff viewer.
     - If changes are unexpected or involve large deletions, revert all changes, refine your prompt, and try again.
-    - Pro Tip: Avoid fixing unexpected deletions manually; revert and re-prompt instead to save time.
+    - 🚀 Pro Tip: If the llm makes file changes that contain large blocks of deleted code you don't expect, it's better to back out of those changes and try again with a different prompt rather than try to 'fix' the changes or asking it to restore the code. You can revert at any time, even if you've invest a good amount of time debugging.
 
 ### 5. Initial Testing and Iteration
 
