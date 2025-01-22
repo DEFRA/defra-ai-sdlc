@@ -18,12 +18,14 @@ Setting up a development project effectively using AI tools and techniques ensur
     - Choose an IDE such as Cursor or Windsurf.
 	    - [[tool-cursor|Cursor-specific guidance]]
 	    - [[tool-windsurf|Windsurf-specific guidance]]
-    - Install and configure any necessary plugins or extensions for AI-assisted development.
+    - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
 - **Add Language-Specific Files**:
     - From the playbook’s [[defra-ai-sdlc-playbook/language-specific/README| language-specific library]], add required files (e.g., `.cursorrules`).
 - **Edit Configuration Files**:
     - Customize the `.cursorrules` file to align with your team’s requirements.
     - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
+- **Update your system prompt**:
+	- Check that you have updated the system prompt / rules in your IDE so the LLM has a base understanding of it's role in development.  System prompts should be short as they are called during every new interaction with the LLM.
 
 ## Documentation Tools
 

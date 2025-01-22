@@ -11,7 +11,7 @@ Welcome! This playbook is a living document that aims to provide guidance on bes
 6. [[defra-ai-sdlc-playbook/workflow/README|AI Development Workflow]] (👀 READY FOR REVIEW)
 	1. [[workflow-project-setup|Project Setup]] (👀 READY FOR REVIEW)
 	2. Feature Development Lifecycle
-		1. [[workflow-product-requirements|Product Requirements]] (🚧 WIP)
+		1. [[workflow-product-requirements|Product Requirements]] (👀 READY FOR REVIEW)
 		2. [[workflow-development-and-testing|Development and Testing]] (🚧 WIP)
 		3. [[workflow-documentation-feedback|Documentation and Feedback]] (🚧 WIP)
 8. [[defra-ai-sdlc-playbook/tool-specific/README|Tool Specific Guidance and Resources]] (🚧 WIP)
