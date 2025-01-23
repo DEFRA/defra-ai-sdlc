@@ -7,7 +7,6 @@ Welcome! This playbook is a living document that aims to provide guidance on bes
 1. [Overview](#overview) (👀 READY FOR REVIEW)
 2. [[ai-working-mindset|AI Working Mindset]] (👀 READY FOR REVIEW)
 3. [[future-ai-opportunities|Future AI-driven Opportunities]] (👀 READY FOR REVIEW)
-4. [[defra-ai-can-cant|Where You Can / Can't Use AI at Defra]] (👀 READY FOR REVIEW - maybe needs to be made more clear and "official"?)
 6. [[defra-ai-sdlc-playbook/workflow/README|AI Development Workflow]] (👀 READY FOR REVIEW)
 	1. [[workflow-project-setup|Project Setup]] (👀 READY FOR REVIEW)
 	2. Feature Development Lifecycle
