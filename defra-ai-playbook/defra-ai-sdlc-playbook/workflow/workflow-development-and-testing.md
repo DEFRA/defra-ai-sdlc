@@ -1,6 +1,6 @@
 # Development and Testing
 
-This section outlines the recommended process for developing features using an AI-powered development workflow. By adhering to these steps, you can optimise collaboration with coding language models (LLMs) while maintaining code quality and project organisation.
+This section outlines the recommended process for developing features using an AI-powered development workflow. 
 
 ## Prerequisites
 
@@ -8,7 +8,7 @@ This section outlines the recommended process for developing features using an A
 2. **Clean Codebase**: Verify that the codebase is in a clean state:
     - All tests pass with good coverage.
     - Documentation is up to date.
-    - Refactoring has been completed where necessary.
+    - Refactoring has been completed where necessary and all code is implemented consconsistently.
     - Git changes are committed and pushed.
 
 ## Development Workflow
@@ -26,10 +26,7 @@ This section outlines the recommended process for developing features using an A
 ### 3. Prompt the AI IDE
 
 - Use an AI IDE in “Cascade” or “Agent” mode to implement the feature.
-- Example prompt (note the '@' notation to refer to a specific file in the IDE):
-```
-Please implement feature '1.2 Add Todo Task' from @prd-task-management.md. Make sure you understand all the requirements clearly. Examine the whole of the codebase and any documentation, think step by step, and create a plan before you implement.
-```
+- Use prompt templates from your prompt library 
 ### 4. Monitor and Evaluate Progress
 
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
@@ -49,15 +46,11 @@ Please implement feature '1.2 Add Todo Task' from @prd-task-management.md. Make 
 
 ### 7. Refactoring
 
-- Perform a “red-green-refactor” cycle if needed:
-    - Red: Add failing tests to highlight areas needing improvement.
-    - Green: Implement changes to make tests pass.
-    - Refactor: Clean up code without changing its behaviour.
-- Use the AI IDE’s chat mode to identify refactoring opportunities.
+- Similar to “red-green-refactor” approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed. 
 
 ### 8. Code Review
 
-- Conduct a thorough code review by walking through the git diff for every change.
+- At each step above, conduct a thorough code review by walking through the git diff for every change.
 - Make manual corrections or enhancements if required.
 
 ### 9. Documentation

@@ -1,41 +1,66 @@
 # General Development Guidance
 
-This section provides foundational guidance for leveraging AI tools and techniques to develop services effectively. While many principles align with standard development practices, an AI-driven workflow introduces unique considerations. The following subsections outline best practices tailored for integrating AI tools into your development process.
+This section outlines foundational practices for effectively integrating AI tools and techniques into your development workflow. While many principles mirror standard development practices, an AI-driven approach introduces specific considerations. The following subsections provide tailored best practices for leveraging AI in development.
 
-## Git Branching Strategies
+## AI-Specific Considerations
 
-Effective version control is crucial for any development project, and in AI-driven workflows, **git** becomes even more essential. The iterative and experimental nature of AI development requires a robust branching strategy to ensure changes are manageable and reversible.
+- **Rapid Code Generation**: AI-driven development enables rapid creation of new code and modification of existing code.
+- **Revert and Re-prompt Workflow**: If the generated code does not meet expectations, it is often due to an unclear initial prompt. Rather than iterating extensively to fix issues, it is more efficient to revert, refine the prompt, and reattempt.
+- **Context Limitations**: Large language models (LLMs) have limited context windows. As codebases grow in complexity, task specificity must increase.
+- **Tried and Tested Good Practices Still Apply:** Whilst an AI-driven approach introduces specific considerations, time-proven good engineering practices are still very relevant
 
-- **Branch per Feature/Experiment**: Create a separate branch for each new feature, bug fix, or experiment. This isolates changes and facilitates testing and code review before merging into the main branch.
-- **Frequent Commits**: Commit changes often with clear messages. This practice allows AI tools to better track the evolution of code and can serve as a "breadcrumb trail" to debug issues or backtrack on decisions.
-- **Rollback Readiness**: Use git to back out changes quickly if they introduce regressions or if product requirements evolve. AI-driven workflows rely on experimentation, so having a safety net is essential.
-- **Pull Requests and Reviews**: Always use pull requests to merge changes into the main branch. This encourages code reviews, where AI tools can be leveraged to analyze and optimize code quality.
+To address these considerations, the following practices are highly recommended:
 
-## High Test Coverage
+## Use Git
 
-High test coverage is critical in AI-accelerated development due to the rapid pace of iteration. Tests ensure that new features and updates do not introduce regressions.
+Effective version control is essential, particularly in AI-driven workflows, to manage and reverse changes as needed.
 
-- **Automated Testing**: Implement unit, integration, and end-to-end tests to cover all aspects of your application. Utilise AI tools to generate tests, but always review and refine them to match edge cases.
-- **Code Coverage Metrics**: Aim for high coverage (e.g., 80% or more) but prioritize testing critical paths and business logic.
-- **Regression Testing**: Regularly run regression tests to confirm that previous functionality remains intact. AI tools can help identify areas of code that may require additional testing.
-- **Continuous Integration (CI)**: Integrate testing into your CI pipeline to catch issues early and ensure rapid feedback during iterations.
+- **Branch Per Feature**: Create a separate branch for each feature, bug fix, or change. This ensures isolation and provides clear rollback points.
+- **Rollback Readiness**: Use Git to quickly revert changes if necessary, accommodating the pace of AI-driven code generation.
+- **Frequent Commits**: Commit changes frequently at logical rollback points to safeguard progress and avoid breaking previously stable functionality.
+- **Clear Commit Messages**: Write descriptive commit messages to track the evolution of code. This also aids AI tools in understanding changes for debugging or backtracking.
+- **Continuous Integration**: Avoid long-running branches. Regularly integrate changes to minimise merge conflicts and maintain project momentum.
+- **Pull Requests and Reviews**: Use pull requests to merge changes into the main branch. Define "feature complete" criteria, including passing tests and refactoring. Code reviews, whether human or AI-assisted, ensure quality and consistency.
 
-## The Importance of Logging
+## Ensure High Test Coverage
 
-Logging is a foundational practice in software development, and its importance is amplified when working with AI tools. A robust logging framework enables AI coding tools to diagnose and resolve issues more effectively.
+Thorough testing is critical in AI-accelerated development to prevent regressions and ensure the stability of rapid iterations.
 
-- **Set Up Logging Early, if not first**: Establish a consistent and comprehensive logging framework at the project's outset. AI tools can use these logs to better understand application behavior and pinpoint problems.
-- **Granularity and Debugging**: Ensure logs are sufficiently granular to provide context for issues. If an AI tool struggles to debug, prompt it to add more detailed logging lines to the code.
-- **Structured Logging**: Use structured logging formats (e.g., JSON) to make logs machine-readable and easier to analyze with AI-driven log analysis tools.
-- **Centralized Log Management**: Employ centralized logging solutions to aggregate logs from different environments, enabling seamless debugging and performance monitoring.
+- **Automated Testing**: Implement unit, integration, and end-to-end tests. AI tools can generate test cases, but these should be reviewed and refined to address edge cases.
+- **Coverage Goals**: Aim for high test coverage (e.g., 80% or more), focusing on critical paths and business logic.
+- **Regression Testing**: Regularly run regression tests to verify that existing functionality remains intact. AI tools can highlight areas requiring additional tests.
+- **Continuous Integration (CI)**: Integrate tests into the CI pipeline for early issue detection and rapid feedback during iterations.
+- **Manual Review**: Ensure tests are readable, understandable, and effectively document application functionality. Testing can be reviewed by QA, BAs, POs, or AI tools.
+- **Prompting**: Tailor prompts to generate tests that align with organisational standards and preferred testing styles.
 
-## Refactor the Code Often
+A note on **test driven development**. [insert explainer from Adam as to why this doesnt really work for unit testing]. However, the same outcome - well tested functional code - can be achieved by the process advocated in this playbook. Also, separately to the codebase and its unit tests, automated end-to-end tests can be written independently using the same requirements in "test first" manner. 
 
-AI-assisted development accelerates code generation but can also lead to technical debt if not managed carefully. Regular refactoring ensures the codebase remains clean, maintainable, and aligned with project standards.
+## Use Logging to Help Debug
 
-- **Refactor Between Features**: Perform code reviews before you merge changes and refactoring between feature implementations. This helps maintain a consistent and well-organized codebase.
-- **AI-Assisted Refactoring**: Use AI tools to assist in identifying areas of improvement, such as simplifying complex methods or consolidating duplicate code.  AI IDE tools allow you to 'chat' with your codebase, so you can ask it for opportunities to improve the architecture or refactoring advice.
-- **Project Guidelines with .cursorrules**: Define and enforce coding standards using tools like `.cursorrules` files. These guidelines help AI tools adhere to your project’s style and architecture preferences.
-- **Code Review Collaboration**: Pair AI tools with manual reviews for a comprehensive approach to refactoring. This combination leverages the AI’s speed and the developer’s judgment to achieve optimal results.
+Logging is a critical tool for diagnosing and resolving issues, particularly in AI-driven development workflows.
 
-By adhering to these practices, you can maximize the potential of AI tools while maintaining a high standard of quality and reliability in your services. The rapid iteration cycle enabled by AI requires careful attention to these foundational principles to ensure sustainable and successful development.
+- **Early Setup**: Establish a comprehensive logging framework at the start of the project. AI tools benefit from detailed logs to analyse behaviour and identify issues.
+- **Granularity and Debugging**: Include sufficiently granular debug-level logs to provide context for troubleshooting. AI tools can assist in adding detailed logs if required. Logs can be adjusted and reduced during refactoring when features are stable.
+- **Structured Logging**: Use machine-readable formats, such as JSON, to simplify analysis with AI-driven tools.
+- **Centralised Log Management**: Aggregate logs across environments with centralised solutions for streamlined debugging and performance monitoring.
+
+## Refactor Code Often
+
+AI-assisted development can accelerate code generation but also increase technical debt if left unmanaged. Regular refactoring ensures a clean, maintainable codebase.
+
+- **Refactor Between Features**: Perform code reviews and refactor code between feature implementations to maintain consistency and organisation.
+- **AI-Assisted Refactoring**: Leverage AI tools to identify and address code inefficiencies, such as overly complex methods or duplicate code. Use AI-driven IDEs to explore architectural improvements and refactoring opportunities.
+- **Enforce Standards**: Define coding standards with tools like .cursorrules files to guide AI tools in adhering to organisational style and architecture preferences.
+- **Collaborative Reviews**: Combine AI tools with manual reviews for a balanced approach, maximising both efficiency and human judgement.
+- **Prompting for Refactoring**: Craft prompts that guide AI tools to refactor code according to organisational standards and preferred styles.
+
+
+
+**A Note on Tried and Tested Good Practices**
+
+e: 
+
+Implement 
+
+
+By adhering to these practices, you can harness the full potential of AI tools while maintaining high standards of quality and reliability in your services.

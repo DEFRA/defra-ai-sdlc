@@ -2,7 +2,7 @@
 
 ## Overview
 
-Effective documentation is a cornerstone of successful software development. Leveraging an AI-powered development workflow, such as utilising large language models (LLMs), makes it easier to create and maintain high-quality, readable documentation. This section outlines best practices for incorporating documentation into your development workflow and how to maximise the benefits of LLM capabilities.
+Leveraging an AI-powered development workflow, such as utilising large language models (LLMs), makes it easier to create and maintain high-quality, readable documentation. This section outlines best practices for incorporating documentation into your development workflow and how to maximise the benefits of LLM capabilities.
 
 ## Maintaining Up-to-Date Documentation
 
