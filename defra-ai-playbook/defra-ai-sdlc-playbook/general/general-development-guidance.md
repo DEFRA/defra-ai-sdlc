@@ -33,7 +33,7 @@ Thorough testing is critical in AI-accelerated development to prevent regression
 - **Manual Review**: Ensure tests are readable, understandable, and effectively document application functionality. Testing can be reviewed by QA, BAs, POs, or AI tools.
 - **Prompting**: Tailor prompts to generate tests that align with organisational standards and preferred testing styles.
 
-A note on **test driven development**. [insert explainer from Adam as to why this doesnt really work for unit testing]. However, the same outcome - well tested functional code - can be achieved by the process advocated in this playbook. Also, separately to the codebase and its unit tests, automated end-to-end tests can be written independently using the same requirements in "test first" manner. 
+A note on **test driven development**. [TODO: insert explainer from Adam as to why this doesnt really work for unit testing]. However, the same outcome - well tested functional code - can be achieved by the process advocated in this playbook. Also, separately to the codebase and its unit tests, automated end-to-end tests can be written independently using the same requirements in "test first" manner. 
 
 ## Use Logging to Help Debug
 
@@ -53,14 +53,5 @@ AI-assisted development can accelerate code generation but also increase technic
 - **Enforce Standards**: Define coding standards with tools like .cursorrules files to guide AI tools in adhering to organisational style and architecture preferences.
 - **Collaborative Reviews**: Combine AI tools with manual reviews for a balanced approach, maximising both efficiency and human judgement.
 - **Prompting for Refactoring**: Craft prompts that guide AI tools to refactor code according to organisational standards and preferred styles.
-
-
-
-**A Note on Tried and Tested Good Practices**
-
-e: 
-
-Implement 
-
 
 By adhering to these practices, you can harness the full potential of AI tools while maintaining high standards of quality and reliability in your services.
