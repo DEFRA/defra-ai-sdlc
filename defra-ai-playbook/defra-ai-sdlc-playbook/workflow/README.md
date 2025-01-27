@@ -9,5 +9,5 @@ By following this workflow, teams can efficiently integrate AI into their develo
 1. **[[workflow-project-setup|Project Setup]]** - Define the foundational elements for the project, ensuring all necessary files, tools, and conventions are in place.
 2. **Feature Development Lifecycle**
 	1. [[workflow-product-requirements|Product Requirements]] - Establish clear and concise requirements for the feature using AI tools to draft and refine.
-	2. [[workflow-development-and-testing|Development and Testing]] - Develop the solution iteratively, leveraging AI for implementation, testing, and validation.
+	2. [[workflow-development-and-testing|Development and Testing]] - Develop the solution iteratively, leveraging AI for implementation, testing, and validation. Refactor once feature complete.
 	3. [[workflow-documentation-feedback|Documentation and Feedback]] - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals.  Documentation is then used to feedback to the AI tools for future iterations.

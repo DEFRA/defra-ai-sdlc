@@ -23,7 +23,11 @@ Effective prompting is essential for leveraging the full potential of large lang
 - Instead:
     1. Pause and assess the current output.
     2. Explicitly instruct the tool to reconsider its approach or address specific concerns.
-    3. Reformulate prompts to guide the model toward better solutions.
+    3. Rollback and reformulate initial prompt to guide the model toward better solutions.
+
+### Iterate Thoughtfully
+
+- If a solution requires multiple loops of refinement, the initial prompt will need revision. After 2-3 iterations, revert to the starting point, refine the prompt, or redefine the product requirement document (PRD), then restart.
 
 ## Handling Complexity
 
@@ -32,10 +36,6 @@ Effective prompting is essential for leveraging the full potential of large lang
 - As the task or codebase becomes more complex, narrow the scope of the prompt to focus on specific components or objectives.
     - Example: Instead of asking, _"Fix all issues in this code,"_ specify, _"Refactor the database query function to improve efficiency while maintaining existing functionality."_
 - Small context windows (amount of text you can send to an LLM in a single call) in current LLMs can limit their ability to handle large or sprawling tasks. Breaking tasks into smaller, manageable pieces is crucial until this limitation is addressed in future iterations.
-
-### Iterate Thoughtfully
-
-- If a solution requires multiple loops of refinement, the initial prompt may need revision. After 2-3 iterations, revert to the starting point, refine the prompt, or redefine the product requirement document (PRD).
 
 ## Prompt Engineering Strategies
 

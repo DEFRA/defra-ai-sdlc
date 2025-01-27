@@ -1,4 +1,3 @@
-# Appendix
 todo
 
 ## What is AI and LLMs and how do they work?
@@ -13,6 +12,12 @@ todo
 * **Environmental Impact**: Assessment of computational resources and energy consumption in AI operations
 
 - something about using temperature of 0, context windows when calling llms
+
+**Licensing** 
+A note on Cursor and Windsurf Licences
+
+**Privacy**
+A note on Cursor and Windsurf Features
 
 other stuff
 - **Demonstrations**: Practical examples of AI implementation
