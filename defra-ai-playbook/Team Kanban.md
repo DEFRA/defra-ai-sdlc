@@ -10,6 +10,11 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Prep demo for Wed with the Engineers
+- [ ] Port talk into new EE slide format - clean up
+- [ ] Ask Steve about - can we add this?
+	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
+- [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
 - [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight
 - [ ] Run playbook pages through the following prompt:
 	
@@ -24,14 +29,7 @@ kanban-plugin: board
 	
 	context: this is a playbook for professional company use
 	```
-- [ ] Update Docs in code checker tool
-- [ ] Port talk into new EE slide format - clean up
-- [ ] Prep demo for Wed with the Engineers
 - [ ] Read through Blueprint doc from Steve
-- [ ] Ask Steve about - can we add this?
-	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
-- [ ] Retro: Speed bump / cadence - what is a good cadence to prevent burnout? Try new R&D stuff - 1/2 day?
-- [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March?
 
 
 ## Doing
@@ -41,6 +39,7 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] Retro: Speed bump / cadence - what is a good cadence to prevent burnout? Try new R&D stuff - 1/2 day? (DECISION: Reserve Fridays for Experiments)
 
 
 
