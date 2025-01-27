@@ -11,6 +11,19 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight
+- [ ] Run playbook pages through the following prompt:
+	
+	```
+	review and improve this markdown document.  please keep the tone concise, understated and professional. use British English. 
+	
+	  
+	
+	keep the changes to content improvements. Do not change the structure.   
+	
+	  
+	
+	context: this is a playbook for professional company use
+	```
 - [ ] Update Docs in code checker tool
 - [ ] Port talk into new EE slide format - clean up
 - [ ] Prep demo for Wed with the Engineers

@@ -4,6 +4,8 @@ The Prompt Library provides a curated selection of prompts proven to optimize yo
 
 You don't need to use these prompts verbatim, however, it's good to browse the prompts to get an understanding of how to structure your own prompts well.
 
+TODO: @Adam to write a bit about tailoring prompts
+
 ## Available Prompts
 
 ## Product
