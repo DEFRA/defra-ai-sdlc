@@ -14,10 +14,10 @@ todo
 - something about using temperature of 0, context windows when calling llms
 
 **Licensing** 
-A note on Cursor and Windsurf Licences
+TODO - A note on Cursor and Windsurf Licences
 
 **Privacy**
-A note on Cursor and Windsurf Features
+TODO - A note on Cursor and Windsurf Features
 
 other stuff
 - **Demonstrations**: Practical examples of AI implementation

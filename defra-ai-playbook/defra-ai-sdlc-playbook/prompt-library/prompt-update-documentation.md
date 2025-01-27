@@ -1,11 +1,11 @@
 ```
-Review the updated codebase and update the documention. 
+Review the updated codebase and update the documentation. 
 
-Keep the strcuture and format of the existing documention, but add addartional contnt or change existing content as required.
+Keep the structure and format of the existing documentation, but add additional context  or change existing content as required.  Include updated data models in the documentation in addition to the other updates.
 
-Make content consice but infomative. Make the tone proffesional. Use British English 
+Make content concise but informative. Make the tone professional. Use British English 
 
-Documention to updates includes:
+Documentation to updates includes:
 README.md
 .cursorrules
 

@@ -54,4 +54,8 @@ AI-assisted development can accelerate code generation but also increase technic
 - **Collaborative Reviews**: Combine AI tools with manual reviews for a balanced approach, maximising both efficiency and human judgement.
 - **Prompting for Refactoring**: Craft prompts that guide AI tools to refactor code according to organisational standards and preferred styles.
 
-By adhering to these practices, you can harness the full potential of AI tools while maintaining high standards of quality and reliability in your services.
+## Thinking 'Script First'
+
+The LLM models are very good at writing bash scripts to perform repetitive tasks, such as clearing files before testing, backing up and restoring databases and running common functions within the app.
+
+If there is a task you need to perform, often it's faster to think 'script first' and ask the LLM to create a script rather than remembering the command line commands yourself.

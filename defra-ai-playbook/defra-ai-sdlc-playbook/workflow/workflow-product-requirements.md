@@ -94,3 +94,7 @@ Dedicate substantial time and team effort to refining the prompt and the PRD to 
 
 - Ensure all aspects are reviewed collaboratively by the team.
 - Revise any unclear sections to ensure the requirements are unambiguous and can be correctly interpreted by an LLM.
+
+## A Note About Design and UX
+
+The LLMs have been trained on GDS standards and have ingested GDS style layouts.  Therefore, they are often good at determining GDS-compliant designs while they implement features.   As long as your PRD and .cursorrules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features.  The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.

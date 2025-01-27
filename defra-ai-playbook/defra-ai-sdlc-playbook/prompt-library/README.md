@@ -6,8 +6,13 @@ You don't need to use these prompts verbatim, however, it's good to browse the p
 
 ## Available Prompts
 
+## Product
+- [[prompt-new-feature|Add a new Feature From PRD]]
 ### Testing
+- [[prompt-add-new-test|Adding New Tests]]
 - [[prompt-fix-test-errors|Fix Broken Tests]]
 - [[prompt-add-test-coverage|Adding Test Coverage]]
-
-todo
+### Refactoring
+- [[prompt-refactor-feature|Refactor Feature]]
+### Documentation
+- [[prompt-update-documentation|Update Documentation]]
