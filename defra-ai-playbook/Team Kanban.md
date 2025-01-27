@@ -12,6 +12,7 @@ kanban-plugin: board
 
 - [ ] Prep demo for Wed with the Engineers
 - [ ] Port talk into new EE slide format - clean up
+- [ ] Add in Andrew Rea's tool into the code checking tool
 - [ ] Ask Steve about - can we add this?
 	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
