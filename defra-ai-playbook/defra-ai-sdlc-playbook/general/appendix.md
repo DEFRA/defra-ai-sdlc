@@ -7,6 +7,7 @@ todo
 * **Data Training**: The process of feeding large datasets to AI models to help them learn patterns, relationships, and generate appropriate outputs
 * **RAG vs Finetune**: Comparison between Retrieval-Augmented Generation (adding context dynamically) and fine-tuning (specialized model training)
 * **Agents / Agentic AI**: AI systems capable of taking autonomous actions based on objectives and context
+* **Context Window**: #TODO 
 ### Considerations
 * **Pros and Cons**: Detailed analysis of benefits and limitations when implementing AI solutions
 * **Environmental Impact**: Assessment of computational resources and energy consumption in AI operations
