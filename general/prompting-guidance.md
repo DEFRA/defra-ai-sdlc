@@ -4,6 +4,10 @@ Effective prompting is essential for leveraging the full potential of large lang
 
 As an LLM has been trained on almost the entirety of the internet,  it can generate content about many different topics. The intention for your prompt is to give the LLM enough information so it can contextualise it's answer appropriately and to provide it useful instructions to detail how it should respond.
 
+## Playbook Prompt Library
+
+The [Playbook Prompt Library](/prompt-library/README.md) provides a curated selection of prompts proven to optimize your use of AI tools. Designed to streamline workflows and enhance precision, these examples are ready to use or adapt to fit your specific needs. Leverage this resource to accelerate development, reduce iteration, and achieve consistent, effective results.
+
 ## General Principles
 
 ### Be Specific and Verbose

@@ -2,5 +2,7 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
 }

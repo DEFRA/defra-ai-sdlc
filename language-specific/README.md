@@ -4,9 +4,7 @@ This section of the playbook provides dedicated resources, templates, and tools 
 
 ## Supported Languages
 ### Node.js
-- .cursorrules...
-- todo
-
+- [nodejs-cursorrules](/language-specific/nodejs/nodejs-cursorrules.md)
 ### Python
-- .cursorrules...
+- [python-cursorrules](/language-specific/python/python-cursorrules.md)
 - todo
