@@ -15,4 +15,5 @@ You shouldn't use these prompts verbatim, they are rather as a guideline for you
 ### Refactoring
 - [Refactor Feature](/prompt-library/prompt-refactor-feature.md)
 ### Documentation
+- [Add / Update Architecture Documentation](/prompt-library/prompt-add-architecture-docs.md)
 - [Update Documentation](/prompt-library/prompt-update-documentation.md)
