@@ -22,6 +22,10 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Read through Blueprint doc from Steve
+
+
+## Doing
+
 - [ ] Run playbook pages through the following prompt:
 	
 	```
@@ -30,19 +34,6 @@ kanban-plugin: board
 	keep the changes to content improvements. Do not change the structure.  
 	context: this is a playbook for professional company use
 	```
-- [ ] Alt version:
-	
-	```
-	review this markdown document.  please keep the tone concise, understated and professional. use British English. Only make targeted improvements if it helps with the readability. We do not want to lose content, so don't remove anything that would dimish the original ideas conveyed in the test.   
-	  
-	keep the changes to content improvements. Do not change the structure.   
-	  
-	context: this is a playbook for professional company use
-	```
-
-
-## Doing
-
 
 
 ## Done
