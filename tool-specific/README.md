@@ -2,8 +2,10 @@
 
 This section provides concise, practical guidance and resources to optimise the effective use of each tool, ensuring you achieve the best outcomes efficiently.
 
-## Available Tools
+## Applicable to most tools
+- [[tool-system-global-rules|Tool System/Global Rules]]
 
+## Available Tools
 - [[tool-ai-chat|AI Chat Tools (ChatGPT, Claude, etc.)]]
 - [[tool-cursor|Cursor AI IDE]]
 - [[tool-windsurf|Windsurf AI IDE]]
