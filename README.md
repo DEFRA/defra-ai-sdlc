@@ -19,6 +19,7 @@ Welcome! This playbook is a living document that aims to provide guidance on bes
 11. [Appendix](/general/appendix.md)
 	1. [Prompt Library](/prompt-library/README.md)
 	2. [Language Specific Resources](/language-specific/README.md)
+
 ## Overview
 
 The UK government’s Department for Environment, Food and Rural Affairs (Defra) is a complex organization tasked with responsibilities spanning environmental protection, food production, and rural development. Its intricate structure includes numerous sub-departments and arms-length bodies, each with unique mandates and operational frameworks. Coordinating these interconnected entities requires significant effort, given their diverse priorities and approaches.
@@ -27,3 +28,6 @@ The complexities of Defra's operations create a significant opportunity to lever
 
 This playbook has been written to help navigate these opportunities by identifying the best ways of working, as well as the tools, tips, and techniques that can be employed to fully exploit the potential of AI. By providing clear guidance and actionable insights, it aims to empower teams to maximize the benefits of AI, including lower development and maintenance costs, faster delivery of services, and improved efficiency. These advantages can drive innovation and ensure that Defra’s diverse and interconnected operations are equipped to meet their challenges effectively and sustainably.
 
+## Contributing
+
+We welcome contributions from the Defra community. Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to contribute to this playbook.
