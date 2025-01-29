@@ -15,7 +15,7 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Add a rules.md file for additional prompting when implementing a PRD - part of .cursorrules refactor
-- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts
+- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
 - [ ] Retro: Smaller PIDs, or User Story spike
 - [ ] Retro: Evaluate different models for different tasks
 

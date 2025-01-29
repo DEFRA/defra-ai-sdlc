@@ -4,21 +4,21 @@
 Welcome! This playbook is a living document that aims to provide guidance on best practices for ways of working, tooling, and context-specific use cases for the use of AI in the Software Development Lifecycle (SDLC) tailored to Defra’s unique needs and challenges.
 
 ## Table of Contents
-1. [Overview](#overview) (👀 READY FOR REVIEW)
-2. [[ai-working-mindset|AI Working Mindset]] (👀 READY FOR REVIEW)
-3. [[future-ai-opportunities|Future AI-driven Opportunities]] (👀 READY FOR REVIEW)
-6. [[defra-ai-sdlc-playbook/workflow/README|AI Development Workflow]] (👀 READY FOR REVIEW)
-	1. [[workflow-project-setup|Project Setup]] (👀 READY FOR REVIEW)
+1. [Overview](#overview)
+2. [[ai-working-mindset|AI Working Mindset]]
+3. [[future-ai-opportunities|Future AI-driven Opportunities]]
+6. [[defra-ai-sdlc-playbook/workflow/README|AI Development Workflow]]
+	1. [[workflow-project-setup|Project Setup]]
 	2. Feature Development Lifecycle
-		1. [[workflow-product-requirements|Product Requirements]] (👀 READY FOR REVIEW)
-		2. [[workflow-development-and-testing|Development and Testing]] (👀 READY FOR REVIEW)
-		3. [[workflow-documentation-feedback|Documentation and Feedback]] (👀 READY FOR REVIEW)
-8. [[defra-ai-sdlc-playbook/tool-specific/README|Tool Specific Guidance and Resources]] (🚧 WIP)
-9. [[prompting-guidance|Prompting Guidance]] (👀 READY FOR REVIEW)
-10. [[general-development-guidance|General Development Guidance]] (👀 READY FOR REVIEW)
-11. [[appendix|Appendix]] (🚧 WIP)
-	1. [[defra-ai-sdlc-playbook/prompt-library/README|Prompt Library]] (🚧 WIP)
-	2. [[defra-ai-sdlc-playbook/language-specific/README|Language Specific Resources]] (🚧 WIP)
+		1. [[workflow-product-requirements|Product Requirements]]
+		2. [[workflow-development-and-testing|Development and Testing]]
+		3. [[workflow-documentation-feedback|Documentation and Feedback]]
+8. [[defra-ai-sdlc-playbook/tool-specific/README|Tool Specific Guidance and Resources]]
+9. [[prompting-guidance|Prompting Guidance]]
+10. [[general-development-guidance|General Development Guidance]]
+11. [[appendix|Appendix]]
+	1. [[defra-ai-sdlc-playbook/prompt-library/README|Prompt Library]]
+	2. [[defra-ai-sdlc-playbook/language-specific/README|Language Specific Resources]]
 
 ## Overview
 
