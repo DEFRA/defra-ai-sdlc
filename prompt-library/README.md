@@ -7,12 +7,12 @@ You shouldn't use these prompts verbatim, they are rather as a guideline for you
 ## Available Prompts
 
 ## Product
-- [[prompt-new-feature|Add a new Feature From PRD]]
+- [Add a new Feature From PRD](prompt-new-feature.md)
 ### Testing
-- [[prompt-add-new-test|Adding New Tests]]
-- [[prompt-fix-test-errors|Fix Broken Tests]]
-- [[prompt-add-test-coverage|Adding Test Coverage]]
+- [Adding New Tests](prompt-add-new-test.md)
+- [Fix Broken Tests](prompt-fix-test-errors.md)
+- [Adding Test Coverage](prompt-add-test-coverage.md)
 ### Refactoring
-- [[prompt-refactor-feature|Refactor Feature]]
+- [Refactor Feature](prompt-refactor-feature.md)
 ### Documentation
-- [[prompt-update-documentation|Update Documentation]]
+- [Update Documentation](prompt-update-documentation.md)

@@ -26,7 +26,7 @@ IF USING OBSIDIAN… create obsidian vault
 - copy .cursorrules for you programming language into the root directory
 - Commit obsidian code
 - Add the obsidian workspace.json file to the .gitignore (e.g. codereview-frontend-vault/.obsidian/workspace.json)
-- Fixing the mermaid width issue in obsidian: [https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options)
+- Fixing the mermaid width issue in obsidian: [](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options)
 
 
 Mermaid

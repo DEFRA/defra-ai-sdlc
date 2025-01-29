@@ -10,11 +10,11 @@ Leveraging an AI-powered development workflow, such as utilising large language 
 
 During the normal development workflow, it is essential to update documentation regularly. Each time you introduce a new feature, refactor existing code, or resolve a bug, ensure that the corresponding documentation is revised to reflect these changes. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
-Use the [[prompt-update-documentation]] prompt to have the LLMs update the codebase documentation regularly.
+Use the [prompt-update-documentation](prompt-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
 ### Embedding Documentation into Development
 
-Consider documentation as an integral part of the development lifecycle (ref: [[workflow-development-and-testing]]), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides, and even API documentation in real-time.
+Consider documentation as an integral part of the development lifecycle (ref: [workflow-development-and-testing](workflow-development-and-testing.md)), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides, and even API documentation in real-time.
 
 ## Advanced Visual Documentation
 

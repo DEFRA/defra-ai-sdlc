@@ -26,7 +26,7 @@ This section outlines the recommended process for developing features using an A
 ### 3. Prompt the AI IDE
 
 - Use an AI IDE in “Cascade” or “Agent” mode to implement the feature.
-- Use prompt templates from your prompt library - [[prompt-new-feature]]
+- Use prompt templates from your prompt library - [prompt-new-feature](prompt-new-feature.md)
 ### 4. Monitor and Evaluate Progress
 
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
@@ -55,7 +55,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 9. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository’s architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [[prompt-update-documentation]] prompt for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository’s architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](prompt-update-documentation.md) prompt for this purpose.
 - Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
 
 ### 10. Finalise and Merge

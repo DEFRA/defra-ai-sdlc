@@ -16,11 +16,11 @@ Setting up a development project effectively using AI tools and techniques ensur
 
 - **Select and Configure an AI-Powered IDE**:
     - Choose an IDE such as Cursor or Windsurf.
-	    - [[tool-cursor|Cursor-specific guidance]]
-	    - [[tool-windsurf|Windsurf-specific guidance]]
+	    - [Cursor-specific guidance](tool-cursor.md)
+	    - [Windsurf-specific guidance](tool-windsurf.md)
     - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
 - **Add Language-Specific Files**:
-    - From the playbook’s [[defra-ai-sdlc-playbook/language-specific/README| language-specific library]], add required files (e.g., `.cursorrules`).
+    - From the playbook’s [ language-specific library](defra-ai-sdlc-playbook/language-specific/README), add required files (e.g., `.cursorrules`).
 - **Edit Configuration Files**:
     - Customize the `.cursorrules` file to align with your team’s requirements.
     - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
@@ -30,7 +30,7 @@ Setting up a development project effectively using AI tools and techniques ensur
 ## Documentation Tools
 
 - **Setup Obsidian (if using)**:
-    - Follow [[tool-obsidian|Obsidian-specific setup guidance]]
+    - Follow [Obsidian-specific setup guidance](tool-obsidian.md)
     - Create a vault for project documentation within the repository.
     - Link the workspace with the repository or team workspace for centralized knowledge sharing.
     - If not using Obsidian, setup directories in the repository to manage product requirement and architecture documentation that the IDE can access for reference.

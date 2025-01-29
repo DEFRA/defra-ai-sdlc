@@ -3,11 +3,11 @@
 This section provides concise, practical guidance and resources to optimise the effective use of each tool, ensuring you achieve the best outcomes efficiently.
 
 ## Applicable to most tools
-- [[tool-system-global-rules|Tool System/Global Rules]]
+- [Tool System/Global Rules](tool-system-global-rules.md)
 
 ## Available Tools
-- [[tool-ai-chat|AI Chat Tools (ChatGPT, Claude, etc.)]]
-- [[tool-cursor|Cursor AI IDE]]
-- [[tool-windsurf|Windsurf AI IDE]]
-- [[tool-obsidian|Obsidian]]
-- [[tool-ollama|Ollama]]
+- [AI Chat Tools (ChatGPT, Claude, etc.)](tool-ai-chat.md)
+- [Cursor AI IDE](tool-cursor.md)
+- [Windsurf AI IDE](tool-windsurf.md)
+- [Obsidian](tool-obsidian.md)
+- [Ollama](tool-ollama.md)

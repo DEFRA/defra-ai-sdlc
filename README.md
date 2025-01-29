@@ -5,21 +5,20 @@ Welcome! This playbook is a living document that aims to provide guidance on bes
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [[ai-working-mindset|AI Working Mindset]]
-3. [[future-ai-opportunities|Future AI-driven Opportunities]]
-6. [[defra-ai-sdlc-playbook/workflow/README|AI Development Workflow]]
-	1. [[workflow-project-setup|Project Setup]]
+2. [AI Working Mindset](ai-working-mindset.md)
+3. [Future AI-driven Opportunities](future-ai-opportunities.md)
+6. [AI Development Workflow](workflow/README.md)
+	1. [Project Setup](workflow-project-setup.md)
 	2. Feature Development Lifecycle
-		1. [[workflow-product-requirements|Product Requirements]]
-		2. [[workflow-development-and-testing|Development and Testing]]
-		3. [[workflow-documentation-feedback|Documentation and Feedback]]
-8. [[defra-ai-sdlc-playbook/tool-specific/README|Tool Specific Guidance and Resources]]
-9. [[prompting-guidance|Prompting Guidance]]
-10. [[general-development-guidance|General Development Guidance]]
-11. [[appendix|Appendix]]
-	1. [[defra-ai-sdlc-playbook/prompt-library/README|Prompt Library]]
-	2. [[defra-ai-sdlc-playbook/language-specific/README|Language Specific Resources]]
-
+		1. [Product Requirements](workflow-product-requirements.md)
+		2. [Development and Testing](workflow-development-and-testing.md)
+		3. [Documentation and Feedback](workflow-documentation-feedback.md)
+8. [Tool Specific Guidance and Resources](tool-specific/README.md)
+9. [Prompting Guidance](prompting-guidance.md)
+10. [General Development Guidance](general-development-guidance.md)
+11. [Appendix](appendix.md)
+	1. [Prompt Library](prompt-library/README.md)
+	2. [Language Specific Resources](language-specific/README.md)
 ## Overview
 
 The UK government’s Department for Environment, Food and Rural Affairs (Defra) is a complex organization tasked with responsibilities spanning environmental protection, food production, and rural development. Its intricate structure includes numerous sub-departments and arms-length bodies, each with unique mandates and operational frameworks. Coordinating these interconnected entities requires significant effort, given their diverse priorities and approaches.
