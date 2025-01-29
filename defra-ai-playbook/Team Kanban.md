@@ -10,11 +10,17 @@ kanban-plugin: board
 - [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight (parked - we're doing continuous showcases)
 
 
-## To Do
+## For Steve
 
+- [ ] Deployment plan for Code Checker to CDP
+- [ ] Setup Code Checker tool Roadmap Planning Session with Steve
 - [ ] Ask Steve about - can we add this?
 	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
+
+
+## To Do
+
 - [ ] Read through Blueprint doc from Steve
 - [ ] Run playbook pages through the following prompt:
 	
@@ -47,6 +53,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
 ```
 %%
