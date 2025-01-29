@@ -16,7 +16,7 @@ Setting up a development project effectively using AI tools and techniques ensur
 
 - **Select and Configure an AI-Powered IDE**:
     - Choose an IDE such as Cursor or Windsurf.
-	    - [Cursor-specific guidance](tool-cursor.md)
+	    - [Cursor-specific guidance](/tool-specific/tool-cursor.md)
 	    - [Windsurf-specific guidance](tool-windsurf.md)
     - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
 - **Add Language-Specific Files**:
