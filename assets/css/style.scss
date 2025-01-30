@@ -1,8 +1,13 @@
+$test-color: #ff0000;
+
 @import "jekyll-theme-minimal";
 @import "defra-styles";
 
 // GOV.UK and Defra colour variables
 :root {
+  // Test variable
+  --test-processed: #{$test-color};
+  
   // Defra colours
   --defra-green: #00a33b;
   --defra-dark-green: #008938;
