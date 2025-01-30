@@ -1,0 +1,22 @@
+@import "{{ site.theme }}";
+
+// GOV.UK and Defra colour variables
+:root {
+  // Defra colours
+  --defra-green: #00a33b;
+  --defra-dark-green: #008938;
+  --defra-light-green: #6fb524;
+  
+  // GOV.UK colours
+  --govuk-blue: #1d70b8;
+  --govuk-dark-blue: #003078;
+  --govuk-black: #0b0c0c;
+  --govuk-dark-grey: #505a5f;
+  --govuk-mid-grey: #b1b4b6;
+  --govuk-light-grey: #f3f2f1;
+  --govuk-white: #ffffff;
+  --govuk-link-hover: #003078;
+  --govuk-link-visited: #4c2c92;
+}
+
+[rest of your existing CSS content...] 
