@@ -62,15 +62,16 @@
 
         
         <footer>
-          {% if site.github.is_project_page %}
-          <p><small>View the Project on GitHub <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a></small></p>
-          {% endif %}
-
-          {% if site.github.is_project_page %}
-          <p><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small></p>
-          {% endif %}
-          <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-          <p><small>Site Version {{ site.version }}</small></p>
+          <p>
+            {% if site.github.is_project_page %}
+            <small>View the Project on GitHub <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a></small>
+            {% endif %}
+            {% if site.github.is_project_page %}
+            <<br /><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small>
+            {% endif %}
+            <br /><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+            <br /><small>Site Version {{ site.version }}</small>
+          </p>
         </footer>
       </div>
 
