@@ -1,12 +1,53 @@
 @import "{{ site.theme }}";
 
+// GOV.UK and Defra colour variables
+:root {
+  // Defra colours
+  --defra-green: #00a33b;
+  --defra-dark-green: #008938;
+  --defra-light-green: #6fb524;
+  
+  // GOV.UK colours
+  --govuk-blue: #1d70b8;
+  --govuk-dark-blue: #003078;
+  --govuk-black: #0b0c0c;
+  --govuk-dark-grey: #505a5f;
+  --govuk-mid-grey: #b1b4b6;
+  --govuk-light-grey: #f3f2f1;
+  --govuk-white: #ffffff;
+  --govuk-link-hover: #003078;
+  --govuk-link-visited: #4c2c92;
+}
+
+// Override default theme colours
+body {
+  color: var(--govuk-black);
+  background-color: var(--govuk-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--govuk-black);
+}
+
+a {
+  color: var(--govuk-blue);
+  
+  &:hover {
+    color: var(--govuk-link-hover);
+  }
+  
+  &:visited {
+    color: var(--govuk-link-visited);
+  }
+}
+
 // Navigation menu styling
 .site-nav {
   margin-top: 20px;
   margin-bottom: 20px;
 
   h2 {
-    color: #727272;
+    color: var(--govuk-dark-grey);
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -32,11 +73,30 @@
   }
 
   a {
-    color: #267CB9;
+    color: var(--defra-green);
     text-decoration: none;
     
     &:hover {
+      color: var(--defra-dark-green);
       text-decoration: underline;
+    }
+    
+    &:visited {
+      color: var(--defra-green);
+    }
+  }
+}
+
+// Header styling
+header {
+  border-right: 1px solid var(--govuk-mid-grey);
+  
+  h1 a {
+    color: var(--defra-green);
+    
+    &:hover {
+      color: var(--defra-dark-green);
+      text-decoration: none;
     }
   }
 }
@@ -48,5 +108,27 @@
     top: 0;
     max-height: 100vh;
     overflow-y: auto;
+  }
+}
+
+// Section styling
+section {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--defra-green);
+    border-bottom-color: var(--govuk-mid-grey);
+  }
+}
+
+// Footer styling
+footer {
+  color: var(--govuk-dark-grey);
+  border-top: 1px solid var(--govuk-mid-grey);
+  
+  a {
+    color: var(--defra-green);
+    
+    &:hover {
+      color: var(--defra-dark-green);
+    }
   }
 } 
