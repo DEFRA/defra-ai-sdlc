@@ -1,0 +1,52 @@
+@import "{{ site.theme }}";
+
+// Navigation menu styling
+.site-nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    color: #727272;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    margin-bottom: 5px;
+    
+    li {
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+  }
+
+  a {
+    color: #267CB9;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Make the navigation menu sticky on larger screens
+@media screen and (min-width: 960px) {
+  header {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+} 
