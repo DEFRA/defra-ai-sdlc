@@ -73,7 +73,7 @@ header {
   background: var(--govuk-white);
   
   .logo-container {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 1rem;
     border-bottom: 1px solid var(--govuk-mid-grey);
@@ -188,6 +188,7 @@ section {
   flex: 1;
   padding-left: 300px;
   margin-top: 2rem;
+  text-align: center;
 
   h1, h2, h3, h4, h5, h6 {
     color: var(--defra-green);
@@ -215,9 +216,12 @@ section {
 
 // Footer styling
 footer {
+  position: static;
+  width: 100%;
+  background: var(--govuk-white);
   color: var(--govuk-dark-grey);
   border-top: 1px solid var(--govuk-mid-grey);
-  padding: 1rem 0;
+  padding: 1rem;
   font-size: 0.8rem;
   margin-top: auto;
   
