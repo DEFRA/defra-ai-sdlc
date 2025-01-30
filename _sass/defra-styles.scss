@@ -86,26 +86,7 @@ a {
 
 // Content area styling
 .content {
-  flex: 1;
-  padding: 2rem;
-  
-  header {
-    margin-bottom: 2rem;
-    
-    h1 {
-      margin-top: 0;
-      margin-bottom: 1rem;
-      
-      a {
-        color: inherit;
-        text-decoration: none;
-        
-        &:hover {
-          color: var(--defra-dark-green);
-        }
-      }
-    }
-  }
+  padding-top: 2rem;
 }
 
 // Navigation menu styling
@@ -153,6 +134,24 @@ a {
 // Section styling
 section {
   margin-bottom: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--defra-dark-green);
+      }
+    }
+  }
 }
 
 // Footer styling
