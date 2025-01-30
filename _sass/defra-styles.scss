@@ -140,6 +140,7 @@ section {
 
 header {
   margin-bottom: 2rem;
+  position: relative;
   
   h1 {
     margin-top: 0;
@@ -163,6 +164,7 @@ header {
 }
 
 footer {
+  position: relative;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid var(--govuk-mid-grey);
