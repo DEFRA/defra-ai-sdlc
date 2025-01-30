@@ -28,6 +28,14 @@ kanban-plugin: board
 	https://www.bbc.com/news/articles/crr05jykzkxo
 	
 	https://notebooklm.google.com/notebook/ab3cdded-f776-4dba-9e74-832ef4cc1edf
+- [ ] Read through Dave Thomas's shared links (on the vpn):
+	
+	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
+	
+	Our [portfolio hub](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/Home.aspx) contains a list of templates. Not everything you need but a few things you might find interesting. The guidance there will refer to the current process, not what we’re moving towards.
+	
+	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
+- [ ] Get access to Dera Project Online
 
 
 ## Doing
