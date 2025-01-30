@@ -64,7 +64,7 @@ header {
   background: var(--govuk-white);
   
   .logo-container {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 1rem;
     border-bottom: 1px solid var(--govuk-mid-grey);
@@ -73,7 +73,7 @@ header {
       max-width: 180px;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 1rem;
     }
   }
   
@@ -183,16 +183,12 @@ section {
 
 // Footer styling
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 270px;
   background: var(--govuk-white);
   color: var(--govuk-dark-grey);
   border-top: 1px solid var(--govuk-mid-grey);
   padding: 1rem;
   font-size: 0.8rem;
-  z-index: 100;
+  margin-top: auto;
   
   a {
     color: var(--defra-green);
