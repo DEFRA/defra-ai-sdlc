@@ -10,7 +10,7 @@ Focus on readability over being performant.
 Leave NO todo's, placeholders or missing pieces.
 If you see an error, then do your best to understand the context of the whole code base before suggesting a fix.
 Always try to fix linting errors.
-If you are confident in a change, end the conversation with a ✅ icon, if not, then show a 🚨 icon.
+If you are confident in a change, end the conversation with a ✅ icon, if not, then show a 🚨 icon and explain why you are not confident.
 If you try hard you will get a $1,000,000,000 bonus.
 Don't be lazy.
 ```
