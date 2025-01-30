@@ -15,11 +15,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
         {% if site.logo %}
-        <img src="{{site.logo | relative_url}}" alt="Logo" />
+        <div class="logo-container">
+          <img src="{{site.logo | relative_url}}" alt="Defra Logo" />
+        </div>
         {% endif %}
+
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 

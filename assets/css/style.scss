@@ -29,37 +29,66 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--govuk-black);
 }
 
+// Global link styles
 a {
-  color: var(--govuk-blue);
+  color: var(--defra-green);
+  text-decoration: underline;
   
   &:hover {
-    color: var(--govuk-link-hover);
+    color: var(--defra-dark-green);
+    text-decoration: underline;
   }
   
-  &:visited {
-    color: var(--govuk-link-visited);
+  &:focus {
+    background-color: var(--govuk-light-grey);
+    outline: 3px solid var(--govuk-light-grey);
   }
+}
+
+// Wrapper styling
+.wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 // Header styling
 header {
   border-right: 1px solid var(--govuk-mid-grey);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: fixed;
+  width: 270px;
   
-  img {
-    max-width: 200px;
-    margin-bottom: 1rem;
+  .logo-container {
+    margin-bottom: 2rem;
+    text-align: center;
+    
+    img {
+      max-width: 200px;
+      height: auto;
+    }
   }
   
   h1 {
-    margin-top: 1rem;
+    margin-top: 0;
     
     a {
       color: var(--defra-green);
+      text-decoration: none;
       
       &:hover {
         color: var(--defra-dark-green);
         text-decoration: none;
       }
+    }
+  }
+
+  p.view a {
+    color: var(--defra-green);
+    
+    &:hover {
+      color: var(--defra-dark-green);
     }
   }
 }
@@ -68,6 +97,8 @@ header {
 .site-nav {
   margin-top: 20px;
   margin-bottom: 20px;
+  flex: 1;
+  overflow-y: auto;
 
   h2 {
     color: var(--govuk-dark-grey);
@@ -107,24 +138,35 @@ header {
     &:visited {
       color: var(--defra-green);
     }
-  }
-}
 
-// Make the navigation menu sticky on larger screens
-@media screen and (min-width: 960px) {
-  header {
-    position: sticky;
-    top: 0;
-    max-height: 100vh;
-    overflow-y: auto;
+    &:focus {
+      background-color: var(--govuk-light-grey);
+      outline: 3px solid var(--govuk-light-grey);
+    }
   }
 }
 
 // Section styling
 section {
+  flex: 1;
+  padding-left: 300px;
+
   h1, h2, h3, h4, h5, h6 {
     color: var(--defra-green);
     border-bottom-color: var(--govuk-mid-grey);
+  }
+
+  a {
+    color: var(--defra-green);
+    
+    &:hover {
+      color: var(--defra-dark-green);
+    }
+
+    &:focus {
+      background-color: var(--govuk-light-grey);
+      outline: 3px solid var(--govuk-light-grey);
+    }
   }
 }
 
@@ -132,6 +174,9 @@ section {
 footer {
   color: var(--govuk-dark-grey);
   border-top: 1px solid var(--govuk-mid-grey);
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.8rem;
   
   a {
     color: var(--defra-green);
@@ -139,5 +184,64 @@ footer {
     &:hover {
       color: var(--defra-dark-green);
     }
+
+    &:focus {
+      background-color: var(--govuk-light-grey);
+      outline: 3px solid var(--govuk-light-grey);
+    }
+  }
+}
+
+// Media queries
+@media print, screen and (max-width: 960px) {
+  div.wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  section {
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+
+  header {
+    padding-right: 320px;
+  }
+
+  section {
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap: break-word;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header ul, header p.view {
+    position: static;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  header ul {
+    width: 99%;
+  }
+
+  header li, header ul li + li + li {
+    width: 33%;
   }
 } 
