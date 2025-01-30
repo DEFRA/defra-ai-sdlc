@@ -81,7 +81,6 @@ header {
       max-width: 180px;
       height: auto;
       display: block;
-      margin: 0 auto;
     }
   }
 
@@ -185,9 +184,9 @@ header {
 // Section styling
 section {
   flex: 1;
-  padding-left: 300px;
+  padding-left: 280px;
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
 
   h1, h2, h3, h4, h5, h6 {
     color: var(--defra-green);
@@ -213,16 +212,16 @@ section {
   }
 }
 
+ol {
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
 // Footer styling
 footer {
-  position: relative;
-  width: 100%;
-  background: var(--govuk-white);
-  color: var(--govuk-dark-grey);
   border-top: 1px solid var(--govuk-mid-grey);
-  padding: 1rem;
+  padding-top: 1rem;
   font-size: 0.8rem;
-  margin-top: auto;
   
   a {
     color: var(--defra-green);
@@ -255,16 +254,6 @@ footer {
   section {
     padding: 20px;
     margin: 0 0 20px;
-  }
-
-  header {
-    padding: 1rem;
-  }
-
-  footer {
-    position: static;
-    width: auto;
-    padding: 1rem;
   }
 }
 
