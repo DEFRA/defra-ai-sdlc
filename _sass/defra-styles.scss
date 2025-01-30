@@ -66,12 +66,11 @@ header {
   border-right: 1px solid var(--govuk-mid-grey);
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   position: fixed;
   width: 270px;
   padding: 2rem 1rem;
   background: var(--govuk-white);
-  overflow-y: auto;
   
   .logo-container {
     margin-bottom: 5rem;
@@ -85,6 +84,14 @@ header {
       display: block;
       margin: 0 auto;
     }
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
   }
   
   h1 {
@@ -123,9 +130,10 @@ header {
 
 // Navigation menu styling
 .site-nav {
+  flex: 1;
   margin-top: 20px;
   margin-bottom: 2rem;
-  flex: 1;
+  overflow-y: auto;
 
   h2 {
     color: var(--defra-green);
