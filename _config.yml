@@ -1,3 +1,22 @@
 theme: jekyll-theme-minimal
 title: Defra AI in the SDLC Playbook
 description: This playbook is a living document that aims to provide guidance on best practices for ways of working, tooling, and context-specific use cases for the use of AI in the Software Development Lifecycle (SDLC) tailored to Defra's unique needs and challenges.
+
+# Additional settings
+markdown: kramdown
+show_downloads: false
+google_analytics: # Add your Google Analytics tracking ID here if needed
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - .obsidian/
+  - defra-ai-sdlc-team/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .gitignore
+  - CONTRIBUTING.md
