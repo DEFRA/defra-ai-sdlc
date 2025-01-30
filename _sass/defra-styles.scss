@@ -87,7 +87,9 @@ a {
 // Content area styling
 .content {
   flex: 1;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   overflow-y: auto;
 }
 
@@ -133,11 +135,6 @@ a {
   }
 }
 
-// Section styling
-section {
-  margin-bottom: 2rem;
-}
-
 header {
   margin-bottom: 2rem;
   position: relative;
@@ -166,7 +163,7 @@ header {
 footer {
   position: relative;
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--govuk-mid-grey);
   font-size: 0.8rem;
 }
