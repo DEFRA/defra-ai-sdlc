@@ -21,11 +21,18 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Read through Blueprint doc from Steve
+- [ ] Read through Blueprint doc from Steve - https://www.gov.uk/government/publications/a-blueprint-for-modern-digital-government/a-blueprint-for-modern-digital-government-html
+	
+	[https://www.gov.uk/government/news/prime-minister-sets-out-blueprint-to-turbocharge-ai](https://www.gov.uk/government/news/prime-minister-sets-out-blueprint-to-turbocharge-ai)
+	
+	https://www.bbc.com/news/articles/crr05jykzkxo
+	
+	https://notebooklm.google.com/notebook/ab3cdded-f776-4dba-9e74-832ef4cc1edf
 
 
 ## Doing
 
+- [ ] Refactoring Code Review Backend
 - [ ] Run playbook pages through the following prompt:
 	
 	```
