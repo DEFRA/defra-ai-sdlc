@@ -324,6 +324,15 @@ code {
   font-family: monospace;
 }
 
+h2 {
+  code {
+    padding: 0;
+    background-color: transparent;
+    color: var(--header-color);
+    font-family: monospace;
+  }
+}
+
 /* Base footer styles */
 .govuk-footer {
   background-color: #f3f2f1;
@@ -404,4 +413,8 @@ code {
 .govuk-footer__link:hover, a:hover, a:focus {
   color: #003078;
   text-decoration: underline;
+}
+
+pre.highlight {
+  color: var(--govuk-black);
 }
