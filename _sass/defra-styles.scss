@@ -21,7 +21,7 @@
   --bg-color: var(--govuk-white);
   --text-color: var(--govuk-black);
   --link-color: var(--govuk-blue);
-  --link-hover-color: var(--govuk-dark-blue);
+  --link-hover-color: var(--govuk-blue);
   --nav-bg: var(--govuk-white);
   --border-color: var(--govuk-mid-grey);
   --header-color: var(--govuk-blue);
@@ -87,7 +87,7 @@ a {
 
 .theme-toggle-switch {
   display: inline-block;
-  background: var(--govuk-dark-grey);
+  background: var(--govuk-light-grey);
   border-radius: 16px;
   width: 58px;
   height: 32px;
