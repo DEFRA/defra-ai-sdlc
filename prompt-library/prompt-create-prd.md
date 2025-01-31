@@ -1,0 +1,13 @@
+- add prompt to prompt to create a PRD:
+```
+please create a PRD out of the following requirements. create it in a downloadable markdown format in a single file. use best practices standards for a GDS-compliant application:
+
+[PRD PROMPT TEXT HERE]
+```
+
+Follow up prompt to Anthropic Claude to make the cleaned up markdown file:
+```
+make this into a single file in a markdown format. Keep the headings and subheadings in an enumerated format. Don't change any of the text or examples, just convert to a md format only:
+
+[PASTE PRD TEXT FROM PREVIOUS PROMPT]
+```

@@ -46,7 +46,8 @@ This section outlines the recommended process for developing features using an A
 
 ### 7. Refactoring
 
-- Similar to “red-green-refactor” approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed. 
+- Similar to “red-green-refactor” approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed.
+- General "please refactor the codebase" prompts do not work well. We have much more success when we instruct the model on specific things we want it to refactor.  Visit the [Prompt Library](../prompt-library/README.md) for examples of well-formed refactoring workflow prompts.
 
 ### 8. Code Review
 

@@ -1,0 +1,4 @@
+- Did a demo of the AI-enabled workflows and tooling for the Principal Engineers, with a positive reception
+- Refactored and added new tests for the GOV.UK compliant / CDP-ready code checking tool, getting ready for deployment to CDP next week.
+- Created new workflows and prompts for refactoring and testing, to be added to the playbook shortly
+- Draft version of our v0.1 playbook, now ported to github pages: [https://defra.github.io/defra-ai-sdlc/](https://defra.github.io/defra-ai-sdlc/)

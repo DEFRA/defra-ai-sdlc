@@ -16,6 +16,7 @@ The [Playbook Prompt Library](../prompt-library/README.md) provides a curated se
 	- Provide clear instructions, context, and examples when applicable.
 - Include details about the format, tone, or structure of the desired output. 
 	- For instance, instead of asking, _"Summarise this text,"_ say, _"Summarise this text in bullet points focusing on key events and their impacts."_
+- 🚀 Pro Tip: If you are fixing UI issues, it can be helpful to take a screenshot of the UI issues you are having, then upload the image with your prompt to help diagnose and fix issues.  Also, pasting in markup from the browser can have a similar effect.
 
 ### Encourage Step-by-Step Reasoning
 
@@ -25,6 +26,12 @@ The [Playbook Prompt Library](../prompt-library/README.md) provides a curated se
     - Coding specific example: _"Before you fix this issue, think step-by-step and come up with a plan. consider the whole of the codebase before making any changes."_
 - This approach improves the coherence and depth of the response.
 - Most content the LLM has been trained on will not look like this. Meaning explicitly stating you want a step-by-step reasoning will enhance the response.
+
+### Interactive Problem Solving
+
+- For complex tasks, it is useful to use the pattern of splitting up the task into an **analysis** and **implementation** step.
+- First ask the LLM, without making edits, to fully analyse the issue you are trying to solve and make recommendations for potential solutions.  This *thinking* step will give the implementation step better context for making targeted changes.
+- In the implementation step, use the output of the analysis step to as input context into the prompt before directing the LLM to actually implement the changes in the codebase.
 
 ### Avoid the Lazy Doom Loop
 
@@ -48,6 +55,7 @@ The [Playbook Prompt Library](../prompt-library/README.md) provides a curated se
 - Small context windows (amount of text you can send to an LLM in a single call) in current LLMs can limit their ability to handle large or sprawling tasks. 
 - Breaking tasks into smaller, manageable pieces is crucial until this limitation is addressed in future iterations.
 - Considering referencing specific documents or files within your prompt instead of relying on the LLMs retrieval capabilities
+- Using terms like "...make targeted edits" will help the LLM update only code that needs to be updated or deleted, as they sometimes tend to remove too much code when the context is too large.
 
 ## Prompt Engineering Strategies
 
