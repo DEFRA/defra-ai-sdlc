@@ -265,6 +265,8 @@ footer {
 
 // Footer meta styling
 .govuk-footer__meta {
+  max-width: 100%;
+  overflow-x: hidden;
   border-top: 4px solid var(--govuk-dark-grey); // Thick divider bar
 }
 
@@ -316,12 +318,10 @@ hr {
 }
 
 code {
-  background-color: var(--code-bg-color);
-  padding: 0.4em 0.6em;
-  margin: 0.2em 0;
-  border-radius: 4px;
-  display: inline-block;
-  overflow-x: auto;
+  padding: 0;
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: monospace;
 }
 
 /* Base footer styles */
@@ -373,7 +373,6 @@ code {
 
 .govuk-footer__licence-description {
   display: inline-block;
-  color: #0b0c0c;
 }
 
 /* Footer links */
