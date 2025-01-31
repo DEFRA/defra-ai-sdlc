@@ -21,7 +21,7 @@
   --bg-color: var(--govuk-white);
   --text-color: var(--govuk-black);
   --link-color: var(--govuk-blue);
-  --link-hover-color: var(--govuk-blue);
+  --link-hover-color: var( --govuk-dark-blue);
   --nav-bg: var(--govuk-white);
   --border-color: var(--govuk-mid-grey);
   --header-color: var(--govuk-blue);
@@ -80,6 +80,10 @@ a {
 
 // Theme toggle styles
 .theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
   cursor: pointer;
   display: inline-block;
   margin: 1rem 0;
