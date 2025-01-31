@@ -4,7 +4,7 @@ This section of the playbook provides dedicated resources, templates, and tools 
 
 ## A note on `.cursorrules` and `.windsurfrules`
 
-The [Cursor](/tool-specific/tool-cursor.md) and [Windsurf](/tool-specific/tool-windsurf.md) IDEs both have a (dot)file that instructs the LLM on every prompt to follow certain rules for the IDE.  On Cursor, this is called `.cursorrules` and in Windsurf, this is called `.windsurfrules`.  They serve effectively the same function, so to be compatible with both systems, we recommend creating a `.cursorrules` file, then symlinking it to `.windsurfrules` via the command: `ln -s .cursorrules .windsurfrules`.  This means if you change the rules file, it will sync between the two IDEs
+The [Cursor](../tool-specific/tool-cursor.md) and [Windsurf](../tool-specific/tool-windsurf.md) IDEs both have a (dot)file that instructs the LLM on every prompt to follow certain rules for the IDE.  On Cursor, this is called `.cursorrules` and in Windsurf, this is called `.windsurfrules`.  They serve effectively the same function, so to be compatible with both systems, we recommend creating a `.cursorrules` file, then symlinking it to `.windsurfrules` via the command: `ln -s .cursorrules .windsurfrules`.  This means if you change the rules file, it will sync between the two IDEs
 
 ## Supported Languages
 ### Node.js

@@ -20,7 +20,7 @@ Setting up a development project effectively using AI tools and techniques ensur
 	    - [Windsurf-specific guidance](../tool-specific/tool-windsurf.md)
     - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
 - **Add Language-Specific Files**:
-    - From the playbook’s [ language-specific library](../language-specific/README), add required files (e.g., `.cursorrules`).
+    - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., `.cursorrules`).
 - **Edit Configuration Files**:
     - Customize the `.cursorrules` file to align with your team’s requirements.
     - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
