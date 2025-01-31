@@ -20,11 +20,11 @@
 :root[data-theme="light"] {
   --bg-color: var(--govuk-white);
   --text-color: var(--govuk-black);
-  --link-color: var(--govuk-dark-blue);
-  --link-hover-color: var(--govuk-blue);
+  --link-color: var(--govuk-blue);
+  --link-hover-color: var(--govuk-dark-blue);
   --nav-bg: var(--govuk-white);
   --border-color: var(--govuk-mid-grey);
-  --header-color: var(--govuk-dark-blue);
+  --header-color: var(--govuk-blue);
 }
 
 :root[data-theme="dark"] {
@@ -78,85 +78,77 @@ a {
   }
 }
 
-// Theme toggle button
+// Theme toggle styles
 .theme-toggle {
-  background: none;
-  border: none;
   cursor: pointer;
-  padding: 0;
+  display: inline-block;
   margin: 1rem 0;
-  width: 48px;
-  height: 24px;
+}
+
+.theme-toggle-switch {
+  display: inline-block;
+  background: var(--govuk-dark-grey);
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
   position: relative;
-  
-  .toggle-track {
-    width: 100%;
-    height: 100%;
-    background: var(--govuk-dark-grey);
-    border-radius: 12px;
-    position: relative;
-    transition: background-color 0.3s ease;
-  }
+  vertical-align: middle;
+  transition: background 0.25s;
 
-  .toggle-thumb {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    background: var(--govuk-white);
+  &:before {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, var(--govuk-white) 0%, var(--govuk-light-grey) 100%);
     border-radius: 50%;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+    z-index: 2;
+  }
 
-    svg {
-      width: 12px;
-      height: 12px;
-      color: var(--govuk-dark-grey);
+  .toggle-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+    &.light {
+      left: 6px;
+      color: var(--govuk-white);
+    }
+    
+    &.dark {
+      right: 6px;
+      color: var(--govuk-white);
     }
   }
 
-  &:hover {
-    .toggle-track {
-      background: var(--govuk-blue);
-    }
+  .theme-toggle:hover &:before {
+    background: linear-gradient(to bottom, var(--govuk-white) 0%, var(--govuk-white) 100%);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
   }
 
-  &:focus {
-    outline: 3px solid var(--govuk-light-grey);
-    outline-offset: 2px;
+  .theme-toggle-checkbox:checked + & {
+    background: var(--defra-green);
+    
+    &:before {
+      left: 30px;
+    }
   }
 }
 
-[data-theme="light"] .theme-toggle {
-  .toggle-track {
-    background: var(--govuk-blue);
-  }
-  
-  .toggle-thumb {
-    transform: translateX(0);
-    
-    svg {
-      color: var(--govuk-blue);
-    }
-  }
+.theme-toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
 }
 
-[data-theme="dark"] .theme-toggle {
-  .toggle-track {
-    background: var(--govuk-dark-blue);
-  }
-  
-  .toggle-thumb {
-    transform: translateX(24px);
-    background: var(--govuk-light-grey);
-    
-    svg {
-      color: var(--govuk-dark-blue);
-    }
-  }
+// Update the JavaScript to handle the checkbox
+[data-theme="dark"] .theme-toggle-checkbox {
+  checked: true;
 }
 
 // Wrapper styling
