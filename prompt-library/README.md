@@ -6,7 +6,7 @@ You shouldn't use these prompts verbatim, they are rather as a guideline for you
 
 ## Available Prompts
 
-## Product
+### Product
 - [Add a new Feature From PRD](prompt-new-feature.md)
 ### Testing
 - [Adding New Tests](prompt-add-new-test.md)
