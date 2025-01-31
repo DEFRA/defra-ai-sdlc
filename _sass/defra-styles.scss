@@ -8,6 +8,7 @@
   // GOV.UK colours
   --govuk-blue: #1d70b8;
   --govuk-dark-blue: #003078;
+  --govuk-light-blue: #5694ca;
   --govuk-black: #0b0c0c;
   --govuk-dark-grey: #505a5f;
   --govuk-mid-grey: #b1b4b6;
@@ -19,19 +20,21 @@
 :root[data-theme="light"] {
   --bg-color: var(--govuk-white);
   --text-color: var(--govuk-black);
-  --link-color: var(--defra-green);
+  --link-color: var(--govuk-blue);
+  --link-hover-color: var(--govuk-dark-blue);
   --nav-bg: var(--govuk-white);
   --border-color: var(--govuk-mid-grey);
-  --header-color: var(--defra-green);
+  --header-color: var(--govuk-blue);
 }
 
 :root[data-theme="dark"] {
   --bg-color: #1a1a1a;
   --text-color: #e0e0e0;
-  --link-color: var(--defra-light-green);
+  --link-color: var(--govuk-light-blue);
+  --link-hover-color: var(--govuk-blue);
   --nav-bg: #2d2d2d;
   --border-color: #404040;
-  --header-color: var(--defra-light-green);
+  --header-color: var(--govuk-light-blue);
 }
 
 // Override default theme colours
@@ -54,7 +57,7 @@ a {
   text-decoration: underline;
   
   &:hover {
-    color: var(--defra-dark-green);
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
   
@@ -66,7 +69,7 @@ a {
   }
 
   &:active {
-    color: var(--defra-dark-green);
+    color: var(--link-hover-color);
     background-color: transparent;
   }
 
@@ -80,37 +83,78 @@ a {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  padding: 0;
+  margin: 1rem 0;
+  width: 100%;
   color: var(--text-color);
   
+  .toggle-track {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 8px;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    transition: color 0.3s;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
   &:hover {
-    background-color: rgba(128, 128, 128, 0.1);
+    .toggle-track {
+      background: #e8e8e8;
+    }
+  }
+}
+
+[data-theme="light"] .theme-toggle {
+  .toggle-track {
+    background: var(--govuk-light-grey);
   }
   
-  .sun-icon {
-    display: none;
+  .toggle-item.light {
+    color: var(--govuk-black);
+    background: var(--govuk-white);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .moon-icon {
-    display: block;
+  .toggle-item.dark {
+    color: var(--govuk-dark-grey);
   }
 }
 
 [data-theme="dark"] .theme-toggle {
-  .sun-icon {
-    display: block;
+  .toggle-track {
+    background: #2d2d2d;
   }
   
-  .moon-icon {
-    display: none;
+  .toggle-item.dark {
+    color: var(--govuk-white);
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
   
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  .toggle-item.light {
+    color: var(--govuk-mid-grey);
   }
 }
 
@@ -193,7 +237,7 @@ section {
     text-decoration: none;
     
     &:hover {
-      color: var(--defra-dark-green);
+      color: var(--link-hover-color);
       text-decoration: underline;
     }
   }
@@ -213,7 +257,7 @@ header {
       text-decoration: none;
       
       &:hover {
-        color: var(--defra-dark-green);
+        color: var(--link-hover-color);
       }
     }
   }
@@ -299,40 +343,22 @@ hr {
   border-color: var(--border-color);
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: var(--text-color);
-  
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .sun-icon {
-    display: none;
-  }
-  
-  .moon-icon {
+.logo-container {
+  img.logo-light {
     display: block;
+  }
+  img.logo-dark {
+    display: none;
   }
 }
 
-[data-theme="dark"] .theme-toggle {
-  .sun-icon {
-    display: block;
-  }
-  
-  .moon-icon {
-    display: none;
-  }
-  
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+[data-theme="dark"] {
+  .logo-container {
+    img.logo-light {
+      display: none;
+    }
+    img.logo-dark {
+      display: block;
+    }
   }
 }
