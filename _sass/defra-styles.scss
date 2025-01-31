@@ -35,6 +35,7 @@
   --nav-bg: #2d2d2d;
   --border-color: #404040;
   --header-color: var(--govuk-light-blue);
+  --code-bg-color: var(--govuk-light-grey);
 }
 
 // Override default theme colours
@@ -52,30 +53,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Global link styles
-a {
-  color: var(--link-color);
-  text-decoration: underline;
-  
-  &:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-  }
-  
-  &:focus {
-    color: var(--text-color);
-    background-color: var(--govuk-light-grey);
-    outline: 3px solid var(--govuk-light-grey);
-    text-decoration: none;
-  }
+a:link, a:visited {
+  color: #1d70b8;
+}
 
-  &:active {
-    color: var(--link-hover-color);
-    background-color: transparent;
-  }
+a:hover, a:focus {
+  color: #003078;
+}
 
-  &:visited {
-    color: var(--link-color);
-  }
+a:active {
+  color: #0b0c0c;
 }
 
 // Theme toggle styles
@@ -319,4 +306,10 @@ hr {
       display: block;
     }
   }
+}
+
+code {
+  background-color: var(--code-bg-color);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
 }
