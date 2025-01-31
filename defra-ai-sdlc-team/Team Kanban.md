@@ -30,6 +30,8 @@ kanban-plugin: board
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
 - [ ] Get access to Defa Project Online
+- [ ] Write workflow for refactoring in playbook
+- [ ] Write workflow for testing in playbook
 
 
 ## Doing
