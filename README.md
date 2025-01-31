@@ -5,20 +5,20 @@ Welcome! This playbook is a living document that aims to provide guidance on bes
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [AI Working Mindset](/general/ai-working-mindset.md)
-3. [Future AI-driven Opportunities](/general/future-ai-opportunities.md)
-6. [AI Development Workflow](/workflow/README.md)
-	1. [Project Setup](/workflow/workflow-project-setup.md)
+2. [AI Working Mindset](general/ai-working-mindset.md)
+3. [Future AI-driven Opportunities](general/future-ai-opportunities.md)
+4. [AI Development Workflow](workflow/README.md)
+	1. [Project Setup](workflow/workflow-project-setup.md)
 	2. Feature Development Lifecycle
-		1. [Product Requirements](/workflow/workflow-product-requirements.md)
-		2. [Development and Testing](/workflow/workflow-development-and-testing.md)
-		3. [Documentation and Feedback](/workflow/workflow-documentation-feedback.md)
-8. [Tool Specific Guidance and Resources](/tool-specific/README.md)
-9. [Prompting Guidance](/general/prompting-guidance.md)
-10. [General Development Guidance](/general/general-development-guidance.md)
-11. [Appendix](/general/appendix.md)
-	1. [Prompt Library](/prompt-library/README.md)
-	2. [Language Specific Resources](/language-specific/README.md)
+		1. [Product Requirements](workflow/workflow-product-requirements.md)
+		2. [Development and Testing](workflow/workflow-development-and-testing.md)
+		3. [Documentation and Feedback](workflow/workflow-documentation-feedback.md)
+5. [Tool Specific Guidance and Resources](tool-specific/README.md)
+6. [Prompting Guidance](general/prompting-guidance.md)
+7. [General Development Guidance](general/general-development-guidance.md)
+8. [Appendix](general/appendix.md)
+	1. [Prompt Library](prompt-library/README.md)
+	2. [Language Specific Resources](language-specific/README.md)
 
 ## Overview
 
