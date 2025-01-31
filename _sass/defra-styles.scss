@@ -320,6 +320,8 @@ code {
   padding: 0.4em 0.6em;
   margin: 0.2em 0;
   border-radius: 4px;
+  display: inline-block;
+  overflow-x: auto;
 }
 
 /* Base footer styles */
@@ -397,4 +399,10 @@ code {
 [data-theme="dark"] strong {
   color: #ffffff;
   font-weight: bold;
+}
+
+// Ensure all links have an underline on hover
+.govuk-footer__link:hover, a:hover, a:focus {
+  color: #003078;
+  text-decoration: underline;
 }
