@@ -20,11 +20,11 @@
 :root[data-theme="light"] {
   --bg-color: var(--govuk-white);
   --text-color: var(--govuk-black);
-  --link-color: var(--govuk-dark-blue);
-  --link-hover-color: var(--govuk-blue);
+  --link-color: var(--govuk-blue);
+  --link-hover-color: var(--govuk-dark-blue);
   --nav-bg: var(--govuk-white);
   --border-color: var(--govuk-mid-grey);
-  --header-color: var(--govuk-dark-blue);
+  --header-color: var(--govuk-blue);
 }
 
 :root[data-theme="dark"] {
