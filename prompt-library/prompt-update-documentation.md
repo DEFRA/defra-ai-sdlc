@@ -1,13 +1,44 @@
+Update existing documentation
+
 ```
-Review the updated codebase and update the documentation. 
+Please review the codebase and update the following documentation files while maintaining their existing structure and format.
 
-Keep the structure and format of the existing documentation, but add additional content or change existing content as required.  Include updated data models in the documentation in addition to the other updates.
+Required Documentation Updates:
+1. README.md
+2. ARCHITECTURE.md
 
-Make content concise but informative. Make the tone professional. Use British English 
+Key constraints:
+- This is an incremental update to existing documentation
+- Only update or add documention as necessary 
+- Keep a consitent tone and style with existing content
+- Use British English   
 
-Documentation to updates includes:
-@README.md 
-@ARCHITECTURE.md 
+Please provide the complete, final version of all documentation updates in a single response. Any internal reasoning should remain private.
+```
 
-**Important:** Provide the document as a single, complete snippet that satisfies all requirements on the first try. Do not provide multiple revisions or partial—just the single final version. If you need to reason internally, do so silently.
+Add new documentation
+
+```
+Please review the codebase and update the following documentation files while maintaining their existing structure and format. Provide a complete, production-ready update in British English with a professional tone.
+
+Required Documentation Updates:
+1. README.md
+2. ARCHITECTURE.md
+
+Documentation Standards:
+- Maintain existing document structure
+- Be concise yet informative
+- Use professional British English
+- Use proper Markdown formatting
+- Ensure all diagrams are up to date
+
+Focus Areas:
+4. Technical accuracy
+5. Clarity and readability
+6. Completeness of information
+7. Consistency across documents
+8. Current best practices
+9. Data model documentation
+
+Please provide the complete, final version of all documentation updates in a single response. Any internal reasoning should remain private.
 ```

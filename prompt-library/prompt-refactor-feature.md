@@ -1,16 +1,18 @@
-Refactoring should be done in an considered, incremental way. Start with this prompt, then incrementally implement its recommendations one by one, checking them and testing them. 
+Refactoring should be done in an considered, incremental way. It is advised to read the code yourself and direct the Model to implement specific refactors that you want. 
 
-Consider using the 'chat' mode (mode that will not modify files automatically). 
+As well as this, the prompt below can also be used as a "general cleanup". This should be done for a specific file or grouping of files, rather than a whole codebase. 
 
 ```
-Please analyze this codebase and provide:
+I want ro refactor @file. The goal is to make it easy to read and reason about.
+
+Do the following:
 
 1. First, outline your analysis approach and methodology.
 
 2. Then, perform a detailed code review focusing on:
+   - Readability and maintainability
    - Consistency of design patterns and naming conventions
    - Code duplication and opportunities for reuse
-   - Readability and maintainability issues
    - Focus on incremental improvements rather than major redesigns  
 
 3. Deliver your findings as:
@@ -28,13 +30,17 @@ Please analyze this codebase and provide:
 Key constraints:
 - Maintain existing design patterns - do not introduce new ones
 - Prioritize consistency and readability over performance optimizations
-- Ensure all changes align with @.custorrules guidelines
+- Ensure all changes align with @.cursorrules guidelines
 - Focus on incremental improvements rather than major redesigns
+  
+Prompt me for feedback before implementing.  
 ```
 
 If you want to do a more significant refactor then remove `Focus on incremental improvements rather than major redesigns`
 
 If the refactor breaks tests, then this prompt is useful.
+
+TODO - Review after Adams work
 
 ```
 Analyze the failing tests after the refactor. For each failing test:
