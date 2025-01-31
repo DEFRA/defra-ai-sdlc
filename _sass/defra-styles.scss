@@ -63,6 +63,7 @@ a:hover, a:focus {
 
 a:active {
   color: #0b0c0c;
+  background-color: #ffdd00; // GOV.UK yellow
 }
 
 // Theme toggle styles
@@ -310,6 +311,12 @@ hr {
 
 code {
   background-color: var(--code-bg-color);
-  padding: 0.2em 0.4em;
+  padding: 0.4em 0.6em;
+  margin: 0.2em 0;
   border-radius: 4px;
+}
+
+[data-theme="dark"] strong {
+  color: #ffffff;
+  font-weight: bold;
 }
