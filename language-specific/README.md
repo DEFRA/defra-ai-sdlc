@@ -9,6 +9,7 @@ The [Cursor](/tool-specific/tool-cursor.md) and [Windsurf](/tool-specific/tool-w
 ## Supported Languages
 ### Node.js
 - [nodejs .cursorrules file](/language-specific/nodejs/nodejs-cursorrules.md)
+
 ### Python
 - [python .cursorrules file](/language-specific/python/python-cursorrules.md)
 - todo
