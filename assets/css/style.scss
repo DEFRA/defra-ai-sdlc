@@ -1,7 +1,8 @@
 ---
+sass:
+  style: compressed
 ---
-{
-@import "{{ site.theme }}";
+@import "jekyll-theme-minimal";
 @import "defra-styles";
 
 :root[data-theme="light"] {
@@ -25,26 +26,32 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wrapper {
   background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
 }
 
 .navigation {
   background-color: var(--nav-bg);
+  transition: background-color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--header-color);
+  transition: color 0.3s ease;
 }
 
 a {
   color: var(--link-color);
+  transition: color 0.3s ease;
 }
 
 hr {
   border-color: var(--border-color);
+  transition: border-color 0.3s ease;
 }
 
 .theme-toggle {
@@ -57,6 +64,7 @@ hr {
   top: 20px;
   right: 20px;
   color: var(--text-color);
+  transition: background-color 0.3s ease;
   
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -83,5 +91,4 @@ hr {
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
-}
 } 
