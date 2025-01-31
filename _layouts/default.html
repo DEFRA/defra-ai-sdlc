@@ -20,7 +20,7 @@
         <div class="logo-container">
           <a href="/defra-ai-sdlc">
             <img class="logo-light" src="{{site.logo | relative_url}}" alt="Defra Logo" />
-            <img class="logo-dark" src="/assets/images/defra-logo-white.svg" alt="Defra Logo" />
+            <img class="logo-dark" src="{{ "/assets/images/defra-logo-white.svg" | relative_url }}" alt="Defra Logo" />
           </a>
         </div>
         {% endif %}
@@ -33,9 +33,9 @@
         <!-- Theme Toggle -->
         <label class="theme-toggle">
           <input class="theme-toggle-checkbox" type="checkbox">
-          <div class="theme-toggle-switch">
-            <span class="toggle-icon light">
-              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="theme-toggle-switch" style="background: var(--govuk-dark-grey);">
+            <span class="toggle-icon light" style="display: flex; align-items: center;">
+              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
                 <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -47,7 +47,7 @@
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
               </svg>
             </span>
-            <span class="toggle-icon dark">
+            <span class="toggle-icon dark" style="display: flex; align-items: center;">
               <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
