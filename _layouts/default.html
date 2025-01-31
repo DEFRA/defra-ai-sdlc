@@ -31,9 +31,10 @@
         </header>
 
         <!-- Theme Toggle -->
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-          <span class="toggle-track">
-            <span class="toggle-item light">
+        <label class="theme-toggle">
+          <input class="theme-toggle-checkbox" type="checkbox">
+          <div class="theme-toggle-switch">
+            <span class="toggle-icon light">
               <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -45,16 +46,14 @@
                 <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
               </svg>
-              <span>LIGHT</span>
             </span>
-            <span class="toggle-item dark">
+            <span class="toggle-icon dark">
               <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
-              <span>DARK</span>
             </span>
-          </span>
-        </button>
+          </div>
+        </label>
 
         <!-- Navigation Menu -->
         <nav class="site-nav">
@@ -113,7 +112,7 @@
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script>
       // Dark mode toggle functionality
-      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggle = document.querySelector('.theme-toggle-checkbox');
       const html = document.documentElement;
       
       // Check for saved theme preference, otherwise use system preference
@@ -129,15 +128,15 @@
       const setTheme = (theme) => {
         html.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
+        themeToggle.checked = theme === 'dark';
       };
 
       // Initial theme setup
       setTheme(getPreferredTheme());
 
       // Toggle theme
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      themeToggle.addEventListener('change', () => {
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
         setTheme(newTheme);
       });
 
