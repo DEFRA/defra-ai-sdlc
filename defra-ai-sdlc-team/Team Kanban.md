@@ -7,21 +7,22 @@ kanban-plugin: board
 ## Backlog
 
 - [ ] Add in Andrew Rea's tool into the code checking tool
-- [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight (parked - we're doing continuous showcases)
+- [ ] Ask Steve about - can we add this?
+	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
+- [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight (parked - we're doing continuous showcases) - ONE BIG SHOWCASE AT THE END
 
 
 ## For Steve
 
-- [ ] Deployment plan for Code Checker to CDP
-- [ ] Setup Code Checker tool Roadmap Planning Session with Steve
-- [ ] Ask Steve about - can we add this?
-	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
 
 
 ## To Do
 
-- [ ] Fix the prompt library on github pages
+- [ ] Deployment plan for Code Checker to CDP
+- [ ] Write workflow for refactoring in playbook
+- [ ] Write workflow for testing in playbook
+- [ ] Developer demo - community of practice next Thurs
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
@@ -30,8 +31,6 @@ kanban-plugin: board
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
 - [ ] Get access to Defa Project Online
-- [ ] Write workflow for refactoring in playbook
-- [ ] Write workflow for testing in playbook
 
 
 ## Doing
@@ -49,6 +48,8 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] Setup Code Checker tool Roadmap Planning Session with Steve
+- [ ] Fix the prompt library on github pages
 - [ ] Read through Blueprint doc from Steve - https://www.gov.uk/government/publications/a-blueprint-for-modern-digital-government/a-blueprint-for-modern-digital-government-html
 	
 	[https://www.gov.uk/government/news/prime-minister-sets-out-blueprint-to-turbocharge-ai](https://www.gov.uk/government/news/prime-minister-sets-out-blueprint-to-turbocharge-ai)
