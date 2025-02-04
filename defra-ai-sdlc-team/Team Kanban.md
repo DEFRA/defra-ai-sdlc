@@ -36,6 +36,7 @@ kanban-plugin: board
 ## Doing
 
 - [ ] Refactoring Code Review Backend
+- [ ] Code Checker Roadmapping Session
 - [ ] Run playbook pages through the following prompt:
 	
 	```
@@ -48,6 +49,7 @@ kanban-plugin: board
 
 ## Done
 
+**Complete**
 - [ ] Setup Code Checker tool Roadmap Planning Session with Steve
 - [ ] Fix the prompt library on github pages
 - [ ] Read through Blueprint doc from Steve - https://www.gov.uk/government/publications/a-blueprint-for-modern-digital-government/a-blueprint-for-modern-digital-government-html
