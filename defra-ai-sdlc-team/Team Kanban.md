@@ -19,6 +19,7 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Add caveat to playbook re: draft state
 - [ ] Deployment plan for Code Checker to CDP
 - [ ] Write workflow for refactoring in playbook
 - [ ] Write workflow for testing in playbook
