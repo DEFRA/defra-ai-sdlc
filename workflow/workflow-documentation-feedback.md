@@ -2,55 +2,50 @@
 
 ## Overview
 
-AI tools make it easier to create and maintain clear documentation. This guide explains how to use AI effectively for documentation and how to use that documentation to improve your AI tools.
+Leveraging an AI-powered development workflow, such as utilising large language models (LLMs), makes it easier to create and maintain high-quality, readable documentation. This section outlines best practices for incorporating documentation into your development workflow and how to maximise the benefits of LLM capabilities.
 
-## Keep documentation up to date
+## Maintaining Up-to-Date Documentation
 
-### Regular updates
+### Regular Updates
 
-Update your documentation each time you:
-- Add a new feature
-- Change existing code
-- Fix a bug
+During the normal development workflow, it is essential to update documentation regularly. Each time you introduce a new feature, refactor existing code, or resolve a bug, ensure that the corresponding documentation is revised to reflect these changes. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
-This helps both your team and the AI tools understand your code better.
+Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
-Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt to help AI tools update documentation.
+### Embedding Documentation into Development
 
-### Make documentation part of development
+Consider documentation as an integral part of the development lifecycle (ref: [workflow-development-and-testing](workflow-development-and-testing.md)), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides, and even API documentation in real-time.
 
-Document as you work, not as an afterthought. AI tools can help you write:
-- Function descriptions
-- Usage guides
-- API documentation
+## Advanced Visual Documentation
 
-## Create visual documentation
+### Creating Complex Visuals
 
-### Visual aids
+LLMs can generate complex visual aids to support documentation, improving clarity and understanding. Examples include:
 
-AI tools can create diagrams to explain your code:
+- **Sequence Flow Diagrams**: Use tools like Mermaid or similar to depict workflows, interactions, and dependencies clearly.
+- **Conceptual Data Models**: Visualise database schemas, entity-relationship diagrams, and other structural elements to provide a comprehensive understanding of the system.
 
-- **Sequence diagrams**: Show how things work together using Mermaid
-- **Data models**: Show how your data is structured
+These visuals help developers, stakeholders, and the LLM itself to contextualise the system's design and logic effectively.
 
-These visuals help everyone understand your system better.
+## Establishing a Feedback Loop
 
-## Use documentation to improve AI
+### Documentation as a Knowledge Base
 
-### Documentation as a knowledge base
+Good documentation is not merely a static reference; it creates a feedback loop for the LLM. By providing detailed, up-to-date information about the codebase, the documentation becomes a critical resource for:
 
-Good documentation helps AI tools:
-- Understand your code better
-- Avoid mistakes
-- Create solutions that match your existing code
+- Assisting the LLM in understanding the context for future development tasks.
+- Reducing the likelihood of errors or redundant changes in the code.
+- Enhancing the LLM's ability to predictively generate solutions aligned with existing patterns and architecture.
 
-### Scale as you grow
+### Scaling with the Codebase
 
-As your code grows, good documentation becomes more important. Without it, AI tools become less effective. Keep improving your documentation to help both your team and AI work better.
+As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM’s effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
-## Best practices
+## Best Practices
 
-1. Include documentation in your 'definition of done'
-2. Use AI to write and check documentation
-3. Use tools like Mermaid for diagrams
-4. Check documentation regularly to keep it accurate
+1. Treat documentation updates as part of your definition of "done" for each development task.
+2. Use LLMs to draft, review, and refine documentation continuously.
+3. Integrate tools like Mermaid for visualisation to enhance clarity.
+4. Regularly review documentation to ensure accuracy, completeness, and relevance.
+
+By embedding these practices into your development workflow, you can ensure a robust, scalable, and efficient system that benefits from both human and AI collaboration.

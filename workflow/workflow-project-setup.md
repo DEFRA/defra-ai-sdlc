@@ -4,8 +4,8 @@ Setting up a development project effectively using AI tools and techniques ensur
 
 ## Project Kickoff
 
-- **Choose a code hosting service**: Select GitHub, GitLab or Bitbucket for your project.
-- **Set up version control**: Choose a Git branching strategy such as Gitflow or trunk-based development.
+- **Determine Hosting Platform**: Decide where the project will be hosted (e.g., GitHub, GitLab, or Bitbucket).
+- **Agree on Git Branching Strategies**: Establish a branching strategy (e.g., Gitflow, trunk-based development) to ensure clear collaboration guidelines.
 
 ## Repository Setup
 
@@ -14,18 +14,18 @@ Setting up a development project effectively using AI tools and techniques ensur
 
 ## IDE and AI Tools Setup
 
-- **Set up your AI-enabled development environment**:
-    - Install either Cursor or Windsurf IDE
-	    - [Set up Cursor](../tool-specific/tool-cursor.md)
-	    - [Set up Windsurf](../tool-specific/tool-windsurf.md)
-    - Install required Visual Studio Code extensions - these are compatible with both IDEs
-- **Configure language settings**:
-    - Add required files from the [language-specific library](../language-specific/README.md)
-    - Set up your `.cursorrules` file with team requirements
-    - Create a compatibility link: `ln -s .cursorrules .windsurfrules`
-- **Configure your AI assistant**:
-	- Update the system prompt in your IDE settings
-	- Keep the prompt concise as it runs with each interaction
+- **Select and Configure an AI-Powered IDE**:
+    - Choose an IDE such as Cursor or Windsurf.
+	    - [Cursor-specific guidance](../tool-specific/tool-cursor.md)
+	    - [Windsurf-specific guidance](../tool-specific/tool-windsurf.md)
+    - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
+- **Add Language-Specific Files**:
+    - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., `.cursorrules`).
+- **Edit Configuration Files**:
+    - Customize the `.cursorrules` file to align with your team’s requirements.
+    - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
+- **Update your system prompt**:
+	- Check that you have updated the system prompt / rules in your IDE so the LLM has a base understanding of it's role in development.  System prompts should be short as they are called during every new interaction with the LLM.
 
 ## Documentation Tools
 

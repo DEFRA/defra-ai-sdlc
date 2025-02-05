@@ -1,8 +1,8 @@
 # Product Requirements
 
-This guide explains how to create and refine product requirements when using AI in your development workflow. Clear requirements are essential for successful feature development with large language models (LLMs).
+This section provides a structured approach to creating and refining product requirements for an AI-powered development workflow. Detailed and precise requirements are critical to ensuring successful feature development, especially in workflows that rely heavily on large language models (LLMs).
 
-Expect to spend about one-third of your time on requirements. This investment will improve the quality of your AI-assisted development and reduce issues later.
+It's possible, if not likely, you will spend more than 30% of workflow time on requirement generation and refinement.  The more time you spend on this step can significantly improve the efficiency and quality of the AI-powered development process and save time addressing issues later.
 
 ## 1. Understanding Prioritised Feature Requirements
 
@@ -14,12 +14,12 @@ Before embarking on detailed requirement creation, it is essential to clearly un
 
 ## 2. Writing a Detailed Feature Prompt
 
-Write a clear, detailed prompt for your feature. This will help create your Product Requirements Document (PRD). Include:
+For the feature you wish to develop, craft a comprehensive and detailed prompt. This prompt will serve as the foundation for the subsequent generation of the Product Requirements Document (PRD). Your prompt should include the following:
 
-### 2.1. Feature Summary
+### 2.1. Overview of the Feature
 
-- What the feature does and why it matters
-- How it fits into your existing service
+- A concise description of the feature, outlining its purpose and intended impact.
+- How the feature integrates into the existing system or service.
 
 ### 2.2. Frontend Requirements
 
@@ -53,7 +53,7 @@ Write a clear, detailed prompt for your feature. This will help create your Prod
 
 ## 3. Generating the Product Requirements Document (PRD)
 
-Once the team is satisfied with the feature prompt, use an advanced LLM, such as ChatGPT (model 'o1'), to generate a detailed PRD.
+Once the team is satisfied with the feature prompt, use an advanced LLM, such as ChatGPT (model ‘o1’), to generate a detailed PRD.
 
 ### 3.1. Prompt for PRD Generation
 
@@ -69,7 +69,7 @@ Please create a detailed PRD document from the requirements below. Create a sing
 
 If the generated markdown file is 'broken':
 
-1. Click the 'copy' icon at the bottom of the ChatGPT chat (this ensures cleaner copying than manual selection and copying).
+1. Click the ‘copy’ icon at the bottom of the ChatGPT chat (this ensures cleaner copying than manual selection and copying).
     
 2. Run the copied markdown text through Claude or a similar tool with the following prompt:
     
@@ -97,7 +97,4 @@ Dedicate substantial time and team effort to refining the prompt and the PRD to 
 
 ## A Note About Design and UX
 
-The AI tools understand GDS design patterns and standards. If your requirements specify GDS compliance, the AI will:
-- Create GDS-compliant designs
-- Suggest GDS-compliant alternatives where needed
-- Flag any areas that do not meet GDS standards
+The LLMs have been trained on GDS standards and have ingested GDS style layouts.  Therefore, they are often good at determining GDS-compliant designs while they implement features.   As long as your PRD and .cursorrules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features.  The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
