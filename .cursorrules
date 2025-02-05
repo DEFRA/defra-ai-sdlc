@@ -3,9 +3,9 @@ Context: This is a playbook for the UK Government Department for Environment, Fo
 When adding or editing content:
 - Keep the tone understated and professional.
 - use British English.
-- Use the GOV.UK guidance for content design (https://www.gov.uk/guidance/content-design).
+- Use the GOV.UK guidance for content design (@https://www.gov.uk/guidance/content-design).
 - Do not use overly complicated technical jargon.
-- Also use the guidance from this style manual (http://stylemanual.org/)
+- Also use the guidance from this style manual (@http://stylemanual.org/)
   
 When reviewing content:
 - Adhere to the rules above for adding or editing content.

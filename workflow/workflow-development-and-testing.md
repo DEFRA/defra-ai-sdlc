@@ -1,15 +1,16 @@
 # Development and Testing
 
-This section outlines the recommended process for developing features using an AI-powered development workflow. 
+This guide explains how to develop features using AI-assisted development.
 
-## Prerequisites
+## Before you start
 
-1. **Feature Requirement PRD**: Ensure there is a detailed Product Requirement Document (PRD) for the feature stored in the code repository. The PRD should be accessible to the AI-powered IDE.
-2. **Clean Codebase**: Verify that the codebase is in a clean state:
-    - All tests pass with good coverage.
-    - Documentation is up to date.
-    - Refactoring has been completed where necessary and all code is implemented consistently.
-    - Git changes are committed and pushed.
+Make sure you have:
+1. A detailed Product Requirement Document (PRD) for your feature in the code repository
+2. A clean codebase where:
+    - All tests pass
+    - Documentation is current
+    - Code is consistent and refactored
+    - All changes are committed to Git
 
 ## Development Workflow
 
@@ -56,7 +57,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 9. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository’s architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
 - Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
 
 ### 10. Finalise and Merge
@@ -70,10 +71,10 @@ This section outlines the recommended process for developing features using an A
 - Incorporate feedback into your prompt library for continuous improvement.
 - Run at team retrospective to reflect and improve ways of working
 
-## Gotchas to Avoid
+## Common issues to avoid
 
-- **Context Window Limitations**: As the codebase grows more complex, the scope of tasks given to the LLM needs to be increasingly specific. If the scope is too broad, the LLM may make assumptions or overlook details due to its limited context window.
+- **Keep tasks focused**: As your code grows more complex, give the AI specific, focused tasks. Broad tasks may lead to mistakes.
     
-- **Iterative Loops Indicate Prompt Issues**: If you find yourself needing to go through multiple iterations (2-3 loops) to get usable output, it’s likely that your initial prompt was unclear or incomplete. Stop, revert all changes, refine your prompt or the PRD, and restart the process.
+- **Refine unclear prompts**: If you need more than 2 or 3 attempts to get useful output, your prompt needs work. Start over with a clearer prompt.
     
-- **Old Library Versions**: LLMs often default to using older versions of libraries. For cutting-edge tools or features (e.g., Anthropics, MCP, or new agent libraries), you may need to explicitly reference updated versions. Use @web to fetch the latest versions or override defaults as needed.
+- **Check library versions**: AI tools often default to older library versions. For new tools like Anthropics or MCP, specify the version you need. Use @web to find current versions.
