@@ -23,6 +23,7 @@ kanban-plugin: board
 - [ ] Deployment plan for Code Checker to CDP
 - [ ] Write workflow for refactoring in playbook
 - [ ] Write workflow for testing in playbook
+- [ ] Write workflow for product analysis
 - [ ] Developer demo - community of practice next Thurs
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
