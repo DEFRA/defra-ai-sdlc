@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+---
+# General Rules
+
+- Think step by step and plan before making any additions or changes to the code.
+- Always make targeted edits when changing.
+- Make sure you do not remove any text or code that is needed, validate you have made a targeted edit.
+- Always summarise your changes to validate after making changes.

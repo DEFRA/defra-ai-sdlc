@@ -1,0 +1,12 @@
+---
+description: Style guide for adding or editing playbook content
+globs: *.md
+---
+Context: This is a playbook for the UK Government Department for Environment, Food & Rural Affairs (Defra) that outlines the best practices for using AI tools and techniques in the Software Development Lifecycle (SDLC). This is a playbook for professional use.
+
+When adding or editing content:
+- Adhere to the rules in [general-development-guidance.md](mdc:general/general-development-guidance.md)
+- Keep the tone understated and professional
+- use British English
+- Use the GOV.UK guidance for content design ( https://www.gov.uk/guidance/content-design )
+- Also use the guidance from this style manual ( http://stylemanual.org/ )
