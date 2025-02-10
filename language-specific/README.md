@@ -23,4 +23,3 @@ This ensures rule changes are synchronized between both IDEs.
 
 ### Python
 - [Python .cursorrules file](python/python-cursorrules.md)
-- todo
