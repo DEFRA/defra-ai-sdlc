@@ -22,7 +22,7 @@ Setting up a development project effectively using AI tools and techniques ensur
 - **Add Language-Specific Files**:
     - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., `.cursorrules`).
 - **Edit Configuration Files**:
-    - Customize the `.cursorrules` file to align with your team’s requirements.
+    - Customize the `.cursorrules` file to align with your team's requirements.
     - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
 - **Update your system prompt**:
 	- Check that you have updated the system prompt / rules in your IDE so the LLM has a base understanding of it's role in development.  System prompts should be short as they are called during every new interaction with the LLM.
@@ -32,8 +32,20 @@ Setting up a development project effectively using AI tools and techniques ensur
 - **Setup Obsidian (if using)**:
     - Follow [Obsidian-specific setup guidance](../tool-specific/tool-obsidian.md)
     - Create a vault for project documentation within the repository.
+    - Configure essential plugins:
+        - Git integration for version control
+        - Markdown formatting tools
+    - Set up templates for:
+        - Technical specifications
+        - Architecture decisions
+        - Meeting notes
     - Link the workspace with the repository or team workspace for centralized knowledge sharing.
-    - If not using Obsidian, setup directories in the repository to manage product requirement and architecture documentation that the IDE can access for reference.
+    - If not using Obsidian, setup directories in the repository to manage:
+        - Product requirements
+        - Architecture documentation
+        - API specifications
+        - Development guidelines
+        - Ensure all documentation is accessible to the IDE for reference
 
 ## Frameworks and Initial Testing
 

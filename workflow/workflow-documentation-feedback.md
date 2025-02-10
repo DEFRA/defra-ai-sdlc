@@ -8,7 +8,9 @@ Leveraging an AI-powered development workflow, such as utilising large language 
 
 ### Regular Updates
 
-During the normal development workflow, it is essential to update documentation regularly. Each time you introduce a new feature, refactor existing code, or resolve a bug, ensure that the corresponding documentation is revised to reflect these changes. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
+During the normal development workflow, it is essential to update documentation every time you make a change. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
+
+ensure that the corresponding documentation is revised to reflect these changes. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
 Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
@@ -22,8 +24,14 @@ Consider documentation as an integral part of the development lifecycle (ref: [w
 
 LLMs can generate complex visual aids to support documentation, improving clarity and understanding. Examples include:
 
-- **Sequence Flow Diagrams**: Use tools like Mermaid or similar to depict workflows, interactions, and dependencies clearly.
-- **Conceptual Data Models**: Visualise database schemas, entity-relationship diagrams, and other structural elements to provide a comprehensive understanding of the system.
+- **Sequence Flow Diagrams**: Use Mermaid to create diagrams that show, for example:
+  - API request/response flows
+  - User authentication processes
+  - Data transformation pipelines
+- **Conceptual Data Models**: Visualise system architecture using, for example:
+  - Database schema diagrams
+  - Service interaction maps
+  - Component dependency graphs
 
 These visuals help developers, stakeholders, and the LLM itself to contextualise the system's design and logic effectively.
 
@@ -39,7 +47,7 @@ Good documentation is not merely a static reference; it creates a feedback loop 
 
 ### Scaling with the Codebase
 
-As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM’s effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
+As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
 ## Best Practices
 

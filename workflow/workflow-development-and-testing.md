@@ -25,7 +25,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 3. Prompt the AI IDE
 
-- Use an AI IDE in “Cascade” or “Agent” mode to implement the feature.
+- Use an AI IDE in "Cascade" or "Agent" mode to implement the feature.
 - Use prompt templates from your prompt library - [prompt-new-feature](../prompt-library/prompt-new-feature.md)
 ### 4. Monitor and Evaluate Progress
 
@@ -43,11 +43,12 @@ This section outlines the recommended process for developing features using an A
 
 - Use prompt templates from your prompt library to ensure comprehensive test coverage for the new feature.
 - Run all tests to confirm they pass successfully.
+- Verify test coverage meets team standards (typically 80% or higher)
 
 ### 7. Refactoring
 
-- Similar to “red-green-refactor” approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed.
-- General "please refactor the codebase" prompts do not work well. We have much more success when we instruct the model on specific things we want it to refactor.  Visit the [Prompt Library](../prompt-library/README.md) for examples of well-formed refactoring workflow prompts.
+- Similar to "red-green-refactor" approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed.
+- General "please refactor the codebase" prompts do not work well. We have much more success when we instruct the model on specific things we want it to refactor. Visit the [Prompt Library](../prompt-library/README.md) for examples of well-formed refactoring workflow prompts.
 
 ### 8. Code Review
 
@@ -56,7 +57,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 9. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository’s architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
 - Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
 
 ### 10. Finalise and Merge
@@ -74,6 +75,6 @@ This section outlines the recommended process for developing features using an A
 
 - **Context Window Limitations**: As the codebase grows more complex, the scope of tasks given to the LLM needs to be increasingly specific. If the scope is too broad, the LLM may make assumptions or overlook details due to its limited context window.
     
-- **Iterative Loops Indicate Prompt Issues**: If you find yourself needing to go through multiple iterations (2-3 loops) to get usable output, it’s likely that your initial prompt was unclear or incomplete. Stop, revert all changes, refine your prompt or the PRD, and restart the process.
+- **Iterative Loops Indicate Prompt Issues**: If you find yourself needing to go through multiple iterations (2-3 loops) to get usable output, it's likely that your initial prompt was unclear or incomplete. Stop, revert all changes, refine your prompt or the PRD, and restart the process.
     
 - **Old Library Versions**: LLMs often default to using older versions of libraries. For cutting-edge tools or features (e.g., Anthropics, MCP, or new agent libraries), you may need to explicitly reference updated versions. Use @web to fetch the latest versions or override defaults as needed.

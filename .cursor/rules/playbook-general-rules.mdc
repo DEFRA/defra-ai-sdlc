@@ -1,6 +1,6 @@
 ---
-description: 
-globs: 
+description: General playbook rules
+globs: *.md
 ---
 # General Rules
 
