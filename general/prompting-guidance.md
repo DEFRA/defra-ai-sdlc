@@ -12,11 +12,13 @@ The [Playbook Prompt Library](../prompt-library/README.md) provides a curated se
 
 ### Be Specific and Verbose
 
-- Ambiguous or overly brief prompts can lead to unpredictable or generic responses.
+- Ambiguous or overly brief prompts often lead to unpredictable or generic responses.
 	- Provide clear instructions, context, and examples when applicable.
-- Include details about the format, tone, or structure of the desired output. 
-	- For instance, instead of asking, _"Summarise this text,"_ say, _"Summarise this text in bullet points focusing on key events and their impacts."_
-- 🚀 Pro Tip: If you are fixing UI issues, it can be helpful to take a screenshot of the UI issues you are having, then upload the image with your prompt to help diagnose and fix issues.  Also, pasting in markup from the browser can have a similar effect.
+- Include specific details about the format, tone, and structure of the desired output. 
+	- For instance, instead of asking, _"Summarise this text,"_ say, _"Summarise this text in bullet points, focusing on key events and their impacts."_
+- 🚀 Pro Tip: For UI issues, provide visual context by:
+    - Uploading screenshots of the UI issues
+    - Including relevant markup from the browser
 
 ### Encourage Step-by-Step Reasoning
 
@@ -29,13 +31,14 @@ The [Playbook Prompt Library](../prompt-library/README.md) provides a curated se
 
 ### Interactive Problem Solving
 
-- For complex tasks, it is useful to use the pattern of splitting up the task into an **analysis** and **implementation** step.
-- First ask the LLM, without making edits, to fully analyse the issue you are trying to solve and make recommendations for potential solutions.  This *thinking* step will give the implementation step better context for making targeted changes.
-- In the implementation step, use the output of the analysis step to as input context into the prompt before directing the LLM to actually implement the changes in the codebase.
+- For complex tasks, split the work into distinct **analysis** and **implementation** phases:
+    1. First, request a thorough analysis of the issue and potential solutions without making edits
+    2. Then, use the analysis output as context for implementing specific changes
+- This *thinking* step will give the implementation step better context for making targeted changes.
 
 ### Avoid the Lazy Doom Loop
 
-- When iteratively refining outputs, it’s easy to fall into a cycle of issuing one-word or overly simple prompts. This "lazy doom loop" results in a lack of clarity and compounds errors.
+- When iteratively refining outputs, it's easy to fall into a cycle of issuing one-word or overly simple prompts. This "lazy doom loop" results in a lack of clarity and compounds errors.
 - Instead:
     1. Pause and assess the current output.
     2. Explicitly instruct the tool to reconsider its approach or address specific concerns.

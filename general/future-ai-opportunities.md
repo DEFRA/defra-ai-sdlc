@@ -10,14 +10,22 @@ Dev agents can assist software development teams by automating repetitive coding
 
 ### Quality Assurance (QA) Agents
 
-QA agents provide automated testing and validation of software, policies, or processes. By continuously monitoring systems and providing real-time feedback, these agents ensure adherence to standards and improve overall quality. In Defra’s context, QA agents could help validate environmental models, check for policy compliance, or assess the performance of digital services.
+QA agents provide automated testing and validation of software, policies, or processes. By continuously monitoring systems and providing real-time feedback, these agents ensure adherence to standards and improve overall quality. In Defra's context, QA agents could help validate environmental models, check for policy compliance, or assess the performance of digital services.
 
 ### Governance and Assurance Agents
 
 Governance and assurance agents, such as a GDS Assessor agent, ensure compliance with regulations and organizational policies. These agents can automatically review documentation, audit workflows, and highlight areas of non-compliance. They provide critical support to governance teams, reducing administrative burdens while maintaining high standards of accountability and transparency.
 
 ### Assistant Agents
-#TODO: The heading is about how agents can help defra in general - that leads me to think that you mean outside the SDLC. So things like assistants to books meetings, take notes etc.. are also on the table.
+
+AI assistants could enhance productivity across Defra's operations by:
+- Automating administrative tasks like scheduling meetings and taking notes
+- Managing document workflows and version control
+- Providing real-time support for common queries and processes
+- Facilitating knowledge sharing and collaboration across teams
+- Supporting project management and resource allocation
+
+These capabilities extend beyond the SDLC to improve overall organisational efficiency.
 
 ### Agents and Tool Use
 
@@ -40,8 +48,20 @@ These capabilities will enable Defra to lead with agility and innovation, transf
 
 ## Specialised LLM Models
 
-Specialised LLMs represent an emerging trend where models are designed for specific tasks or domains. Unlike general-purpose LLMs, these models are optimised for efficiency and relevance, providing high performance with reduced computational requirements. Opportunities include:
+Specialised LLMs represent an emerging trend where models are designed for specific tasks or domains. Unlike general-purpose LLMs, these models are optimised for efficiency and relevance, providing high performance with reduced computational requirements. Key opportunities include:
 
-- **On-Device Models:** Small, efficient models capable of running on local devices (even mobiles) which ensures privacy and reduce reliance on cloud infrastructure. This is particularly useful for fieldwork and remote operations within Defra.
-- **Domain-Specific Models:** Tailored models designed for tasks like ecological modelling, agricultural analysis, or specific knowledge sets like regulatory compliance can deliver precise insights and recommendations.
-- **Distilled Models**: These are still general purpose models but at a much lower computational footprint than larger models. They are trained to mimic the response of larger models retaining a lot of their generative properties but at a fraction of the cost.
+- **On-Device Models:** 
+    - Small, efficient models capable of running on local devices
+    - Ensures privacy and reduces cloud infrastructure dependency
+    - Particularly valuable for fieldwork and remote operations
+
+- **Domain-Specific Models:** 
+    - Tailored models for ecological modelling and agricultural analysis
+    - Specialised knowledge bases for regulatory compliance
+    - Enhanced precision in domain-specific tasks
+
+- **Distilled Models**: 
+    - General-purpose models with reduced computational footprint
+    - Trained to mimic larger models' responses
+    - Maintains generative capabilities at lower cost
+    - Enables wider deployment across resource-constrained environments

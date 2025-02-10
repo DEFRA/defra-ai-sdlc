@@ -6,13 +6,21 @@ The following subsections provide tailored best practices for leveraging AI in d
 
 ## AI-Specific Considerations
 
-- **Rapid Code Generation**: AI-driven development enables rapid creation of new code and modification of existing code. 
-	- As code is now even easier to create it even more throwaway.
-- **Revert and Re-prompt Workflow**: If the generated code does not meet expectations, it is often due to an unclear initial prompt. 
-	- Rather than iterating extensively to fix issues, it is more efficient to revert, refine the prompt, and reattempt.
-- **Context Limitations**: Large language models (LLMs) have limited context windows, meaning that like humans they can only retain a limited amount of cognitive burden.
-	- As codebases grow in complexity, task specificity must increase to reduce this burden.
-- **Tried and Tested Good Practices Still Apply:** Whilst an AI-driven approach introduces specific considerations, time-proven good engineering practices are still very relevant
+- **Rapid Code Generation**: AI-driven development enables rapid creation and modification of code
+    - Code is even more disposable than in traditional development
+    - Focus on quality over quantity in generated code
+- **Revert and Re-prompt Workflow**: When generated code doesn't meet requirements:
+    - Issues often stem from unclear initial prompts
+    - Instead of extensive iterations, it is more efficient to:
+        1. Revert changes
+        2. Refine the prompt
+        3. Generate fresh code
+- **Context Limitations**: LLMs have finite context windows
+    - Like humans, they can only handle limited cognitive load
+    - As complexity increases, tasks must become more specific
+- **Traditional Best Practices Apply**: While AI brings new considerations:
+    - Established engineering principles remain crucial
+    - Quality, maintainability, and testing are still paramount
 
 To address these considerations, the following practices are highly recommended:
 
@@ -47,16 +55,24 @@ Additionally, automated end-to-end tests can be written independently which are 
 
 ## Use Logging to Help Debug
 
-Logging is a critical tool for diagnosing and resolving issues, particularly in AI-driven development workflows.
+Logging is essential for diagnosing issues, particularly in AI-driven development workflows.
 
-- **Early Setup**: Establish a comprehensive logging framework at the start of the project. AI tools benefit from detailed logs to analyse behaviour and identify issues.
-- **Granularity and Debugging**: Include sufficiently granular debug-level logs to provide context for troubleshooting. 
-	- AI tools can assist in adding detailed logs if required. 
-	- Logs can be adjusted and reduced during refactoring when features are stable.
-- **Structured Logging**: Use machine-readable formats, such as JSON, to simplify analysis with AI-driven tools.
-- **Centralised Log Management**: Aggregate logs across environments with centralised solutions for streamlined debugging and performance monitoring.
+- **Early Implementation**: 
+    - Establish comprehensive logging framework at project start
+    - Enable AI tools to analyse behaviour and identify issues effectively
+- **Granular Debugging**: 
+    - Include detailed debug-level logs for troubleshooting context
+    - AI tools can assist in adding targeted logging statements
+    - Adjust log levels during refactoring as features stabilise
+- **Structured Format**: 
+    - Use machine-readable formats (e.g., JSON)
+    - Simplifies analysis with AI-driven tools
+- **Centralised Management**: 
+    - Aggregate logs across environments
+    - Enable streamlined debugging and monitoring
+    - Facilitate AI-assisted performance analysis
 
-This provides a highly detailed debugging framework which the LLM can now interpret, allowing it to better compare the logging and error messages against the codebase to diagnose bugs and generate fixes. 
+This framework provides detailed debugging context that LLMs can interpret, improving their ability to diagnose issues and generate effective fixes.
 
 ## Refactor Code Often
 
