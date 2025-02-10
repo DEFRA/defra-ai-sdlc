@@ -1,16 +1,20 @@
-# Prompt Library Introduction
+# Prompt Library
 
-The Prompt Library provides a curated selection of prompts proven to optimize your use of AI tools. Designed to streamline workflows and enhance precision, these examples are ready to use or adapt to fit your specific needs. Leverage this resource to accelerate development, reduce iteration, and achieve consistent, effective results.
+This library provides a curated selection of prompts to optimise your use of AI tools in the development workflow. These examples serve as guidelines that you can adapt to your specific project needs rather than using them verbatim.
 
-You shouldn't use these prompts verbatim, they are rather as a guideline for you to tailor your own project specific prompts. As the requirements for each project will be different, subtly changing the prompts to better adhere to your requirements and designs will lead to better generated content. It's good to browse the prompts to get an understanding of how to structure your own prompts well.
+## Best Practices
+- Tailor prompts to your project's specific requirements
+- Modify prompts to align with your design patterns
+- Review and understand prompt structure before use
+- Iterate and refine prompts based on results
 
 ## Available Prompts
 
-### Product
-- [Create a new PRD](prompt-create-prd.md)
-- [Add a new Feature From PRD](prompt-new-feature.md)
+### Product Development
+- [Create a Product Requirements Document](prompt-create-prd.md)
+- [Add a New Feature from PRD](prompt-new-feature.md)
 
-### Testing
+### Testing and Quality Assurance
 - [Adding New Tests](prompt-add-new-test.md)
 - [Fix Broken Tests](prompt-fix-test-errors.md)
 - [Adding Test Coverage](prompt-add-test-coverage.md)
@@ -19,5 +23,5 @@ You shouldn't use these prompts verbatim, they are rather as a guideline for you
 - [Refactor Feature](prompt-refactor-feature.md)
 
 ### Documentation
-- [Add / Update Architecture Documentation](prompt-add-architecture-docs.md)
+- [Add/Update Architecture Documentation](prompt-add-architecture-docs.md)
 - [Update Documentation](prompt-update-documentation.md)
