@@ -1,13 +1,13 @@
-# Tool Specific Guidance and Resources
+# Tool-Specific Guidance and Resources
 
-This section provides concise, practical guidance and resources to optimise the effective use of each tool, ensuring you achieve the best outcomes efficiently.
+This section provides detailed guidance and configuration instructions for AI-powered development tools used within Defra projects. Each tool's documentation includes setup instructions, best practices, and recommended workflows.
 
-## Applicable to most tools
-- [Tool System/Global Rules](tool-system-global-rules.md)
+## Core System Rules
+- [Tool System and Global Rules](tool-system-global-rules.md)
 
-## Available Tools
+## Supported Tools
 - [AI Chat Tools (ChatGPT, Claude, etc.)](tool-ai-chat.md)
 - [Cursor AI IDE](tool-cursor.md)
 - [Windsurf AI IDE](tool-windsurf.md)
-- [Obsidian](tool-obsidian.md)
-- [Ollama](tool-ollama.md)
+- [Obsidian Knowledge Management](tool-obsidian.md)
+- [Ollama Local AI Models](tool-ollama.md)

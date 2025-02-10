@@ -1,41 +1,41 @@
-# Obsidian
+# Obsidian Setup Guide
 
-todo
+## Initial Setup
 
-obsidian setup in a project...
+1. Create Obsidian vault for your project
+2. Configure basic settings:
+   - Remove the default welcome file
+   - Set appearance theme to 'Minimal' (recommended)
+   - Configure Files and Links settings:
+     - Set "Default location for new notes" to "Same folder as current file"
+     - Set "Default location for new attachments" to "in subfolder under current folder"
 
-IF USING OBSIDIAN… create obsidian vault
-- Remove the welcome file
-- (optional) fix the appearance to be ‘Minimal’ or another template
-- Files and links….
-- Change “Default location for new notes” = “Same folder as current file”
-- Change “Default location for new attachments” = “in subfolder under current folder” (leave folder name unchanged as ‘attachments’)
-- Turn on community plugins and reload
-- Browse community plugins, install and enable the following:
-- Excalidraw
-- Kanban
-- Git
+## Required Plugins
 
-- Git options… “Custom base path (git repository path)” = ‘../’
-- Create ‘product-requirements’ folder in the root of the vault
-- Create ‘architecture’ folder in the root of the vault
-- (optional) create kanban board for project todos
-- Add the vault folder to the .prettierignore file (e.g. codereview-frontend-vault)
-- Go to the defra-ai-sdlc repository, and download the .cursorrules and prompts for your programming environment
-- Copy default-prompts for your programming language into the obsidian directory if using obsidian
-- copy .cursorrules for you programming language into the root directory
-- Commit obsidian code
-- Add the obsidian workspace.json file to the .gitignore (e.g. codereview-frontend-vault/.obsidian/workspace.json)
-- Fixing the mermaid width issue in obsidian: [](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options](https://unmesh.dev/post/obsidian_mermaid/#:~:text=By%20adjusting%20the%20CSS%20styles,control%20and%20better%20rendering%20options)
+Enable community plugins and install:
+- Excalidraw (for diagrams)
+- Kanban (for project management)
+- Git (for version control)
 
+## Project Structure Setup
 
-Mermaid
-Markdown formatting
+1. Configure Git integration:
+   - Set "Custom base path (git repository path)" to '../'
 
-```
-# Coding Design Choices by the LLM
+2. Create essential folders:
+   - `product-requirements/` - For product documentation
+   - `architecture/` - For system architecture documentation
 
-Cursor seems to start coding with an object oriented approach when coding Python. The rationale being that the initial libraries we used favor OO approaches. An area to monitor would be when we start using libraries where the community favors other approaches will get a mismatch in coding style throughput the repo.
+3. Version Control Setup:
+   - Add the vault folder to `.prettierignore`
+   - Add `.obsidian/workspace.json` to `.gitignore`
+   - Copy relevant `.cursorrules` and prompts from the defra-ai-sdlc repository
 
-We assume we could change or force the style with prompting in the .cursorrules file if needed
-```
+## Additional Configuration
+
+### Mermaid Diagram Support
+- To improve Mermaid diagram rendering, adjust the CSS styles as documented in the [Obsidian Mermaid Guide](https://unmesh.dev/post/obsidian_mermaid/).
+
+### Optional Setup
+- Create a Kanban board for project task tracking
+- Configure additional appearance settings as needed
