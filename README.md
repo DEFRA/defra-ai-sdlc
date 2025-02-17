@@ -1,5 +1,7 @@
 # Defra AI SDLC Playbook
-## Version 0.1
+Version 0.1
+
+**Document status: DRAFT**
 
 This playbook provides guidance on best practices for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra's needs and challenges. It serves as a living document, continuously updated to reflect emerging practices and lessons learned.
 
