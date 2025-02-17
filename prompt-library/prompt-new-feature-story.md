@@ -1,9 +1,7 @@
 An example for starting a new feature on a new branch. Use a new context window. 
 
-Context: the Story file (note the '@' notation to refer to a specific file in the IDE):
-
 ```
-Please analyze the User Story `@story-file` and implement the 'Technical Design' as follows:
+Please analyze the User Story [] and implement the 'Technical Design' as follows:
 
 1. First, outline your understanding of:
    - The specific requirements from this story
@@ -12,7 +10,6 @@ Please analyze the User Story `@story-file` and implement the 'Technical Design'
 
 2. Perform a codebase analysis focusing on:
    - Existing patterns and conventions to follow
-   - Similar features that can serve as templates
    - Integration points for the new feature
    - Reusable components or utilities
 
@@ -20,8 +17,6 @@ Please analyze the User Story `@story-file` and implement the 'Technical Design'
    - Component/file structure
    - Required changes to existing code
    - New components/modules to be created
-   - Database changes (if any)
-   - API endpoints (if any)
 
 4. For the implementation:
    - Follow existing code conventions and patterns
@@ -35,7 +30,8 @@ Please analyze the User Story `@story-file` and implement the 'Technical Design'
 
 Constraints:
 - Maintain consistency with existing codebase
-- Follow established patterns and standards
+- Follow GOV.UK Frontend cursor rules
+- Do not add any unit tests at this time
 ```
 
 A useful follow-up prompt:
