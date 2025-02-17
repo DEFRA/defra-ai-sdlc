@@ -15,6 +15,7 @@ kanban-plugin: board
 ## For Steve
 
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
+- [ ] Steve to setup calls with Jenny Taylor and Richard Baines re: governance
 
 
 ## To Do

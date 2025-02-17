@@ -1,0 +1,5 @@
+- Completed a lot of work around testing and refactoring workflows
+- Did talk and demo for the Defra Dev community of practice
+- Joined the kick off meeting of the governance transformation work
+- Started work on the governance checklist tool
+- Refined and updated playbook - ready for sharing as we continue to update
