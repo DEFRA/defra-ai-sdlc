@@ -15,17 +15,17 @@ kanban-plugin: board
 ## For Steve
 
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
-- [ ] Steve to setup calls with Jenny Taylor and Richard Baines re: governance
+- [ ] Steve to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 
 
 ## To Do
 
-- [ ] Deployment plan for Code Checker to CDP
-- [ ] Add caveat to playbook re: draft state
 - [ ] Write workflow for refactoring in playbook
 - [ ] Write workflow for testing in playbook
 - [ ] Write workflow for product analysis
-- [ ] Developer demo - community of practice next Thurs
+- [ ] refactor the language-specific section re: new cursorrules format
+- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
+- [ ] Demo governance checklist tool for Dave Thomas
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
@@ -34,14 +34,20 @@ kanban-plugin: board
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
 - [ ] Get access to Defa Project Online
-- [ ] refactor the language-specific section re: new cursorrules format
+- [ ] Leyla Kee-McParlin - UXer for Governance
 
 
 ## Doing
 
-- [ ] Refactoring Code Review Backend
-- [ ] Code Checker Roadmapping Session
-- [ ] Run playbook pages through the following prompt:
+- [ ] Deployment plan for Code Checker to CDP
+- [ ] Finish integration testing agents on Code Checker
+
+
+## Done
+
+**Complete**
+- [x] Developer demo - community of practice next Thurs
+- [x] Run playbook pages through the following prompt:
 	
 	```
 	review and improve this markdown document.  please keep the tone concise, understated and professional. use British English. 
@@ -49,11 +55,9 @@ kanban-plugin: board
 	keep the changes to content improvements. Do not change the structure.  
 	context: this is a playbook for professional company use
 	```
-
-
-## Done
-
-**Complete**
+- [x] Code Checker Roadmapping Session
+- [x] Refactoring Code Review Backend
+- [x] Add caveat to playbook re: draft state
 - [ ] Setup Code Checker tool Roadmap Planning Session with Steve
 - [ ] Fix the prompt library on github pages
 - [ ] Read through Blueprint doc from Steve - https://www.gov.uk/government/publications/a-blueprint-for-modern-digital-government/a-blueprint-for-modern-digital-government-html

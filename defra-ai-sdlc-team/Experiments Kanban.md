@@ -13,11 +13,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Add sub-modules to the repos to handle fronend and backend access to a single PRD?
-- [ ] Retro: Smaller PIDs, or User Story spike
-- [ ] Create a PRD, ask o1 to split into detailed stories with BDD-style acceptance criteria
-- [ ] Add a rules.md file for additional prompting when implementing a PRD - part of .cursorrules refactor
-- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
 - [ ] Retro: Evaluate different models for different tasks
 
 
@@ -28,6 +23,10 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] Add sub-modules to the repos to handle fronend and backend access to a single PRD?
+- [x] Add a rules.md file for additional prompting when implementing a PRD - part of .cursorrules refactor
+- [x] Create a PRD, ask o1 to split into detailed stories with BDD-style acceptance criteria
+- [x] Retro: Smaller PIDs, or User Story spike
 - [ ] PRD Mobbing, individual impliment
 
 
