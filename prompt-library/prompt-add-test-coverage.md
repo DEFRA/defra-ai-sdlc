@@ -1,19 +1,39 @@
+
 ```
-For this missing test coverage report:
+Please improve test coverage for the classifications API endpoints and the dependent modules listed below.  
 
-[paste coverage report line here]
+## Current Coverage  
+1. These are the coverage reports for modules have missing coverage
+Name                                           Stmts   Miss  Cover   Missing
+src/repositories/classification_repo.py           70     18    74%   44-56, 72, 77, 83, 97-99
 
-1. If a test file already exists for this file, run this test file only - verify the test itself is correct
-2. If not test file exists, create a new one with ONLY the coverage tests needed.  Add tests for a single block of lines at a time.
-3. Note that if this is a plugin, then the tests need to be in the `tests` folder of the plugin itself, if not, then the tests should go in the `tests` folder of the root of the application.
-4. Think through mocking strategy, follow the existing testing conventions in the code, and only add tests for the missing lines of coverage.
-5. Provide complete implementation (no placeholders)
-6. Make sure you understand the functionality being tested BEFORE writing the tests.  Think step by step and plan your changes.
-7. Don't change the source file, only fix the test file issues
-8. Run tests to confirm/verify the fix
-9. Fix any warnings, if there are any
-10. run the full tests to see if you've addressed all the coverage for the given file
-11. only finish working once you've verified there is full coverage, the tests pass, and there are no warnings
+## Implemention steps
+1. First check the actual routes in src/api/v1/classifications.py  
+  
+2. Review existing tests in tests/integration/test_classifications_api.py 
 
-**Important:** Provide the final test code as a single, complete snippet that satisfies all requirements on the first try. Do not provide multiple revisions or partial code—just the single final version. If you need to reason internally, do so silently.
-``` 
+3. Add missing test scenarios ONLY for existing functionality:
+- Focus on error cases and edge cases for the 3 existing routes  
+- Do not add tests for non-existent routes/functionality  
+  
+4. Follow project testing standards from .cursor/rules/02_testing.mdc:  
+- Given-When-Then pattern  
+- Mock database operations appropriately  
+- Use existing test utilities and fixtures  
+  
+5. Copy existing integration tests patterns and conventions in test_classifications_api.py
+- Improve test coverage in but do so using integration tests that test API's and mock external dependencies 
+
+Add tests only to improve coverage of existing code paths.
+```
+
+Follow up: 
+
+```
+this is the coverage report now:
+src/repositories/classification_repo.py 70 18 74% 44-56, 72, 77, 83, 97-99  
+  
+Analyse @classification_repo.py - does it actually need the code for the lines that are missing - should we refactor?  
+  
+Or are we still missing some integreation tests in @test_classifications_api.py?
+```
