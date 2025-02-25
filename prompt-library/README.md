@@ -25,5 +25,5 @@ This library provides a curated selection of prompts to optimise your use of AI 
 - [Refactor Feature](prompt-refactor-feature.md)
 
 ### Documentation
-- [Add/Update Architecture Documentation](prompt-add-architecture-docs.md)
+- [Add/Update Architecture Documentation](documentation-writing/prompt-add-architecture-docs.md)
 - [Update Documentation](prompt-update-documentation.md)

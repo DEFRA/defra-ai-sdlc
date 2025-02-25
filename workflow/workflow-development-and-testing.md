@@ -61,7 +61,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 9. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompts for this purpose.
 - Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
 
 ### 10. Finalise and Merge

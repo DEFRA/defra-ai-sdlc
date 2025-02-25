@@ -12,7 +12,7 @@ During the normal development workflow, it is essential to update documentation 
 
 ensure that the corresponding documentation is revised to reflect these changes. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
-Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
+Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompts to have the LLMs update the codebase documentation regularly.
 
 ### Embedding Documentation into Development
 
