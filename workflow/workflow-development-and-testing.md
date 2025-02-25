@@ -42,6 +42,10 @@ This section outlines the recommended process for developing features using an A
 ### 6. Ensure Test Coverage
 
 - Use prompt templates from your prompt library to ensure comprehensive test coverage for the new feature.
+  - [Adding New Tests](../prompt-library/testing/prompt-add-new-test.md)
+  - [Adding Test Coverage](../prompt-library/testing/prompt-add-test-coverage.md)
+  - [Adding Functional Tests](../prompt-library/testing/prompt-add-functional-test.md)
+  - [Adding E2E Tests](../prompt-library/testing/prompt-add-e2e-test.md)
 - Run all tests to confirm they pass successfully.
 - Verify test coverage meets team standards (typically 80% or higher)
 
