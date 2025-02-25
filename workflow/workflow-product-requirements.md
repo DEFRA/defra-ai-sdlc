@@ -2,7 +2,7 @@
 
 This section provides a structured approach to creating and refining product requirements for an AI-powered development workflow. Detailed and precise requirements are critical to ensuring successful feature development, especially in workflows that rely heavily on large language models (LLMs).
 
-It's possible, if not likely, you will spend more than 30% of workflow time on requirement generation and refinement.  The more time you spend on this step can significantly improve the efficiency and quality of the AI-powered development process and save time addressing issues later.
+It's possible, if not likely, you will spend more than 30+% of workflow time on requirement generation and refinement.  The more time you spend on this step can significantly improve the efficiency and quality of the AI-powered development process and save time addressing issues later.
 
 ## 1. Understanding Prioritised Feature Requirements
 
