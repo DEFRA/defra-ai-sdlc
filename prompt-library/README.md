@@ -11,8 +11,10 @@ This library provides a curated selection of prompts to optimise your use of AI 
 ## Available Prompts
 
 ### Product Development
-- [Create a Product Requirements Document](prompt-create-prd.md)
-- [Add a New Feature from PRD](prompt-new-feature.md)
+ - For detailed prompts, refer to the workflow steps in [workflow-product-requirements](../workflow/workflow-product-requirements.md)
+
+## Feature / Story Implementation
+- [Implement New Feature / Story](prompt-new-feature-story.md)
 
 ### Testing and Quality Assurance
 - [Adding New Tests](prompt-add-new-test.md)
