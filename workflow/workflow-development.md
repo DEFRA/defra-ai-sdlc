@@ -1,84 +1,81 @@
 # Development
 
-This section outlines the recommended process for developing features using an AI-powered development workflow. 
+This section outlines the recommended process and guidelines for developing features using an AI-powered development workflow. 
 
-## Prerequisites
+That fact that AI-powered development enables rapid creation and modification of code means that there are certain considerations, but the established engineering principles still remain, and code still needs to be readable, maintainable, extensible, and testable.
 
-1. **Feature Requirement PRD**: Ensure there is a detailed Product Requirement Document (PRD) for the feature stored in the code repository. The PRD should be accessible to the AI-powered IDE.
-2. **Clean Codebase**: Verify that the codebase is in a clean state:
+## Workflow
+
+Prerequisites:
+1. **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the product requirements workflow. This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
+2. **IDE Rules:** Ensure there are detailed IDE rules guide AI tools in adhering to code style and design preferences
+3. **Clean Codebase**: Verify that the codebase is in a clean state:
     - All tests pass with good coverage.
     - Documentation is up to date.
     - Refactoring has been completed where necessary and all code is implemented consistently.
     - Git changes are committed and pushed.
 
-## Development Workflow
-
-### 1. Select Features for Development
-
-- Choose the features or sub-features to develop.
-- Limit the scope to a manageable set of changes to prevent the LLM from making overly broad assumptions.
-- Leverage the PRD to provide the LLM with the necessary context for structuring files and data models.
-
-### 2. Create a Development Branch
+### 1. Create a new git branch
 
 - Create a new git branch dedicated to the feature. For example, `feature/add-todo-task`.
 
-### 3. Prompt the AI IDE
+### 2. Interactively prompt the IDE
 
-- Use an AI IDE in "Cascade" or "Agent" mode to implement the feature.
-- Use prompt templates from your prompt library - [prompt-new-feature](../prompt-library/prompt-new-feature.md)
-### 4. Monitor and Evaluate Progress
-
+- Use an IDE in agentic "Chat" mode to implement the feature
+- Use prompt templates from your prompt library to initiate the process - [prompt-new-feature](../prompt-library/prompt-new-feature.md) and reference your requirements file using the @file feature
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
-- After completion, review the changes in the git diff viewer.
-    - If changes are unexpected or involve large deletions, revert all changes, refine your prompt, and try again.
-    - 🚀 Pro Tip: If the llm makes file changes that contain large blocks of deleted code you don't expect, it's better to back out of those changes and try again with a different prompt rather than try to 'fix' the changes or asking it to restore the code. You can revert at any time, even if you've invest a good amount of time debugging.
+- After completion "Accept" the changes, then review the changes in the git diff viewer. If changes are unexpected or involve large deletions, revert all changes, refine your prompt, and try again.
 
-### 5. Initial Testing and Iteration
+### 3. Initial Testing and Iteration
 
-- Test the generated feature manually to ensure functionality.
+- Test the generated feature manually to ensure functionality is correct.
 - Iterate as needed, verifying each code change aligns with expectations.
+- Feeding log messages back into the model when it has issues enables it to rapidly identify and fix issues.
 
-### 6. Ensure Test Coverage
+### 4. Test
 
-- Use prompt templates from your prompt library to ensure comprehensive test coverage for the new feature.
-  - [Adding New Tests](../prompt-library/testing/prompt-add-new-test.md)
-  - [Adding Test Coverage](../prompt-library/testing/prompt-add-test-coverage.md)
-  - [Adding Functional Tests](../prompt-library/testing/prompt-add-functional-test.md)
-  - [Adding E2E Tests](../prompt-library/testing/prompt-add-e2e-test.md)
-- Run all tests to confirm they pass successfully.
-- Verify test coverage meets team standards (typically 80% or higher)
+- See testing workflow
 
-### 7. Refactoring
+### 5. Refactor
 
-- Similar to "red-green-refactor" approach in traditional software engineering, refactor your code after adding tests. This ensures that your feature is implemented consistently, there is code reuse, but the behaviour is not changed.
-- General "please refactor the codebase" prompts do not work well. We have much more success when we instruct the model on specific things we want it to refactor. Visit the [Prompt Library](../prompt-library/README.md) for examples of well-formed refactoring workflow prompts.
+- See refactoring workflow
 
-### 8. Code Review
+### 6. Code Review
 
-- At each step above, conduct a thorough code review by walking through the git diff for every change.
-- Make manual corrections or enhancements if required.
+- Conduct a thorough code review by walking through the git diff for every change.
+- Make corrections or enhancements if required.
 
-### 9. Documentation
+### 7. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompts for this purpose.
-- Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/documentation-writing/prompt-update-documentation.md) prompts for this purpose.
+- Update the IDE rules files as necessary. 
+- Maintaining clear and up-to-date rules documentation ensures better context for future development cycles.
 
-### 10. Finalise and Merge
+### 8. Finalise and Merge
 
-- Push the feature branch to the repository and merge it into the main branch after acceptance.
+- Use the standard git workflow of push the feature branch to the repository and creating a MR for review. Then merge into the main branch after acceptance.
 - Delete the feature branch after merging.
 
-### 11. Reflect and Optimise Prompts
+### 9. Reflect and Optimise Prompts
 
 - Analyse your prompts and ask the LLM for feedback on how to improve future prompt writing.
 - Incorporate feedback into your prompt library for continuous improvement.
 - Run at team retrospective to reflect and improve ways of working
 
-## Gotchas to Avoid
+## Best Practices
 
-- **Context Window Limitations**: As the codebase grows more complex, the scope of tasks given to the LLM needs to be increasingly specific. If the scope is too broad, the LLM may make assumptions or overlook details due to its limited context window.
-    
-- **Iterative Loops Indicate Prompt Issues**: If you find yourself needing to go through multiple iterations (2-3 loops) to get usable output, it's likely that your initial prompt was unclear or incomplete. Stop, revert all changes, refine your prompt or the PRD, and restart the process.
-    
-- **Old Library Versions**: LLMs often default to using older versions of libraries. For cutting-edge tools or features (e.g., Anthropics, MCP, or new agent libraries), you may need to explicitly reference updated versions. Use @web to fetch the latest versions or override defaults as needed.
+- **Avoid multiple branches or simultaneous changes**: Avoid having two or more people separately changing the same codebase or at least the same of areas of the codebase at the same time. 
+
+- **Revert and Re-prompt Workflow**: If you find yourself needing to go through multiple iterations (2-3 loops) with the model and the code doesn't meet requirements, it's likely that your initial prompt was unclear. Instead of extensive iterations, it is more efficient to stop, revert all changes, refine your prompt or the requirements, and restart the process.
+
+- **Use Git to manage rapid change**: Git is a robust, proven and simple tool to manage and reverse changes as needed. The established processes still apply; do each new feature on a branch; commit little and often; continuously integrate with main.  
+
+- **Use logging to rapidly debug.** Feeding log messages back into the model when it has issues enables it to rapidly identify and fix issues. Include detailed debug-level logs in the code when on the branch, this can always be removed / reduced when you refactor at the end of the feature. 
+
+- **Consider Complexity**: As the codebase grows larger and more complex, the scope of tasks given to the LLM needs to be increasingly specific. If the scope is too broad, the LLM may make assumptions or overlook details due to its limited context window.
+
+- **Old Library Versions**: Models will default to versions of libraries that were current at the time they where trained. For cutting-edge libraries, you may need to explicitly reference updated versions. Use the @Web annotation to fetch the latest versions or override defaults as needed.
+
+- **Thinking 'Script First'**: The models are very good at writing scripts, such as bash scripts, to perform repetitive tasks. 
+
+- **Terminal Commands**: IDEs like cursor and windsurf also have integration with the command line, meaning that you can often write your intention in plain english and have the model generate the appropriate terminal command. 

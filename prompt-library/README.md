@@ -14,7 +14,7 @@ This library provides a curated selection of prompts to optimise your use of AI 
  - For detailed prompts, refer to the workflow steps in [workflow-product-requirements](../workflow/workflow-product-requirements.md)
 
 ### Feature / Story Implementation
-- [Implement New Feature / Story](prompt-new-feature-story.md)
+- [Implement New Feature / Story](development/prompt-new-feature-story.md)
 
 ### Testing and Quality Assurance
 - [Adding New Tests](testing/prompt-add-new-test.md)
@@ -24,11 +24,11 @@ This library provides a curated selection of prompts to optimise your use of AI 
 - [Adding E2E Tests](testing/prompt-add-e2e-test.md)
 
 ### Refactoring
-- [Refactor Feature](prompt-refactor-feature.md)
+- [Refactor Feature](refactoring/prompt-refactor-feature.md)
 
 ### Documentation
 - [Add/Update Architecture Documentation](documentation-writing/prompt-add-architecture-docs.md)
-- [Update Documentation](prompt-update-documentation.md)
+- [Update Documentation](documentation-writing/prompt-update-documentation.md)
 
 ### Learning
 - [Add Code Knowledge and Teaching](prompt-add-coding-knowledge-teaching.md)

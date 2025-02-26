@@ -1,4 +1,4 @@
-Refactoring should be done in an considered, incremental way. It is advised to read the code yourself and direct the Model to implement specific refactors that you want. 
+As per the refactoring workflow, it is important that you directs the Model to implement specific refactors that you want, and do not just ask it to simply refactor. 
 
 As well as this, the prompt below can also be used as a "general cleanup". This should be done for a specific file or grouping of files, rather than a whole codebase. 
 

@@ -25,7 +25,7 @@ This template ensures that every document maintains a baseline level of quality 
 
 During the normal development workflow, it is essential to update documentation every time you make a change. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
-Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompts to have the LLMs update the codebase documentation regularly.
+Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/documentation-writing/prompt-update-documentation.md) prompts to have the LLMs update the codebase documentation regularly.
 
 As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
