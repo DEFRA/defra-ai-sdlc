@@ -22,10 +22,8 @@ kanban-plugin: board
 
 - [ ] Write workflow for refactoring in playbook
 - [ ] Write workflow for testing in playbook
-- [ ] Write workflow for product analysis
 - [ ] refactor the language-specific section re: new cursorrules format
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
-- [ ] Demo governance checklist tool for Dave Thomas
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
@@ -34,18 +32,22 @@ kanban-plugin: board
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
 - [ ] Get access to Defa Project Online
-- [ ] Leyla Kee-McParlin - UXer for Governance
 
 
 ## Doing
 
 - [ ] Deployment plan for Code Checker to CDP
-- [ ] Finish integration testing agents on Code Checker
+- [ ] Leyla Kee-McParlin - UXer for Governance
+- [ ] Write workflow for documentation and code understanding
 
 
 ## Done
 
 **Complete**
+- [x] Deploy Governance tool to CDP
+- [x] Write workflow for product analysis
+- [x] Finish integration testing agents on Code Checker
+- [x] Demo governance checklist tool for Dave Thomas
 - [x] Developer demo - community of practice next Thurs
 - [x] Run playbook pages through the following prompt:
 	
