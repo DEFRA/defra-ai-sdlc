@@ -27,6 +27,7 @@ kanban-plugin: board
 - [ ] Playbook - Development standards refactor (Ben)
 - [ ] Write workflow for testing in playbook (Adam)
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
+- [ ] Fix the github pages navigation after refactor (Todd)
 - [ ] Reach out to Richard Stockley re: Governance tool
 - [ ] Kick off Agentic workflow Ideation
 - [ ] Read through Dave Thomas's shared links (on the vpn):
