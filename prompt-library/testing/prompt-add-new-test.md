@@ -36,7 +36,7 @@ Create integrations tests for [feature] in [file path].
 3. Quality Standards:
    - Clear test descriptions
    - Meaningful assertions
-[prompt-fix-test-errors](prompt-fix-test-errors.md)   - Efficient test setup and teardown
+   - Efficient test setup and teardown
    - Appropriate use of test utilities and helpers @conftest.py
    - Follow the project's test data management pattern in @test_data.py
    - Do not define test data directly in test files

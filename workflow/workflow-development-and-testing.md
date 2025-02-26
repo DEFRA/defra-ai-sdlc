@@ -42,6 +42,10 @@ This section outlines the recommended process for developing features using an A
 ### 6. Ensure Test Coverage
 
 - Use prompt templates from your prompt library to ensure comprehensive test coverage for the new feature.
+  - [Adding New Tests](../prompt-library/testing/prompt-add-new-test.md)
+  - [Adding Test Coverage](../prompt-library/testing/prompt-add-test-coverage.md)
+  - [Adding Functional Tests](../prompt-library/testing/prompt-add-functional-test.md)
+  - [Adding E2E Tests](../prompt-library/testing/prompt-add-e2e-test.md)
 - Run all tests to confirm they pass successfully.
 - Verify test coverage meets team standards (typically 80% or higher)
 
@@ -57,7 +61,7 @@ This section outlines the recommended process for developing features using an A
 
 ### 9. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompt for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/prompt-update-documentation.md) prompts for this purpose.
 - Update the `README.md` and `.cursorrules` files as necessary. Maintaining clear and up-to-date documentation ensures better context for future development cycles.
 
 ### 10. Finalise and Merge

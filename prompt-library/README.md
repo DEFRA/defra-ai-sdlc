@@ -17,13 +17,15 @@ This library provides a curated selection of prompts to optimise your use of AI 
 - [Implement New Feature / Story](prompt-new-feature-story.md)
 
 ### Testing and Quality Assurance
-- [Adding New Tests](prompt-add-new-test.md)
-- [Fix Broken Tests](prompt-fix-test-errors.md)
-- [Adding Test Coverage](prompt-add-test-coverage.md)
+- [Adding New Tests](testing/prompt-add-new-test.md)
+- [Fix Broken Tests](testing/prompt-fix-test-errors.md)
+- [Adding Test Coverage](testing/prompt-add-test-coverage.md)
+- [Adding Functional Tests](testing/prompt-add-functional-test.md)
+- [Adding E2E Tests](testing/prompt-add-e2e-test.md)
 
 ### Refactoring
 - [Refactor Feature](prompt-refactor-feature.md)
 
 ### Documentation
-- [Add/Update Architecture Documentation](prompt-add-architecture-docs.md)
+- [Add/Update Architecture Documentation](documentation-writing/prompt-add-architecture-docs.md)
 - [Update Documentation](prompt-update-documentation.md)
