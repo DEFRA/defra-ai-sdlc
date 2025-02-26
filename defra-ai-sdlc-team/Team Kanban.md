@@ -22,7 +22,6 @@ kanban-plugin: board
 
 - [ ] Write workflow for refactoring in playbook
 - [ ] Write workflow for testing in playbook
-- [ ] Write workflow for product analysis
 - [ ] refactor the language-specific section re: new cursorrules format
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
 - [ ] Read through Dave Thomas's shared links (on the vpn):
@@ -38,7 +37,6 @@ kanban-plugin: board
 ## Doing
 
 - [ ] Deployment plan for Code Checker to CDP
-- [ ] Deploy Governance tool to CDP
 - [ ] Leyla Kee-McParlin - UXer for Governance
 - [ ] Write workflow for documentation and code understanding
 
@@ -46,6 +44,8 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] Deploy Governance tool to CDP
+- [x] Write workflow for product analysis
 - [x] Finish integration testing agents on Code Checker
 - [x] Demo governance checklist tool for Dave Thomas
 - [x] Developer demo - community of practice next Thurs
