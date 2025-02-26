@@ -13,7 +13,7 @@ This library provides a curated selection of prompts to optimise your use of AI 
 ### Product Development
  - For detailed prompts, refer to the workflow steps in [workflow-product-requirements](../workflow/workflow-product-requirements.md)
 
-## Feature / Story Implementation
+### Feature / Story Implementation
 - [Implement New Feature / Story](prompt-new-feature-story.md)
 
 ### Testing and Quality Assurance
