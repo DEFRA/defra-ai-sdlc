@@ -1,4 +1,6 @@
-the .cursorrules for Defra Node.js applications
+the .windsurfrules for Defra Node.js applications
+
+Windsurf has a single rule file in the root of the repository called `.windsurfrules`
 
 ```
 # [PROJECT TITLE] - [SHORT PROJECT DESCRIPTION]
