@@ -13,8 +13,8 @@ This playbook provides guidance on best practices for integrating AI into the So
 	1. [Project Setup](workflow/workflow-project-setup.md)
 	2. Feature Development Lifecycle
 		1. [Product Requirements](workflow/workflow-product-requirements.md)
-		2. [Development and Testing](workflow/workflow-development-and-testing.md)
-		3. [Documentation and Feedback](workflow/workflow-documentation-feedback.md)
+		2. [Development and Testing](workflow/workflow-development.md)
+		3. [Documentation and Feedback](workflow/workflow-documentation.md)
 5. [Tool Specific Guidance and Resources](tool-specific/README.md)
 6. [Prompting Guidance](general/prompting-guidance.md)
 7. [General Development Guidance](general/general-development-guidance.md)

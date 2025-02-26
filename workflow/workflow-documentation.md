@@ -1,4 +1,4 @@
-# Documentation and Feedback
+# Documentation
 
 ## Overview
 
@@ -16,7 +16,7 @@ Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/p
 
 ### Embedding Documentation into Development
 
-Consider documentation as an integral part of the development lifecycle (ref: [workflow-development-and-testing](workflow-development-and-testing.md)), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides, and even API documentation in real-time.
+Consider documentation as an integral part of the development lifecycle (ref: [workflow-development](workflow-development.md)), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides, and even API documentation in real-time.
 
 ## Advanced Visual Documentation
 

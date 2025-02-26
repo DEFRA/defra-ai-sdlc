@@ -21,9 +21,9 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Write workflow for refactoring in playbook
-- [ ] Write workflow for testing in playbook
-- [ ] refactor the language-specific section re: new cursorrules format
-- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
+- [ ] Write workflow for testing in playbook (Adam)
+- [ ] refactor the language-specific section re: new cursorrules format (Todd)
+- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
@@ -38,7 +38,7 @@ kanban-plugin: board
 
 - [ ] Deployment plan for Code Checker to CDP
 - [ ] Leyla Kee-McParlin - UXer for Governance
-- [ ] Write workflow for documentation and code understanding
+- [ ] Write workflow for documentation and code understanding (Adam)
 
 
 ## Done

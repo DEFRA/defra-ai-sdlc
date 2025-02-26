@@ -1,4 +1,4 @@
-# Development and Testing
+# Development
 
 This section outlines the recommended process for developing features using an AI-powered development workflow. 
 

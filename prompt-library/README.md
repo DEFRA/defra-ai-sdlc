@@ -29,3 +29,6 @@ This library provides a curated selection of prompts to optimise your use of AI 
 ### Documentation
 - [Add/Update Architecture Documentation](documentation-writing/prompt-add-architecture-docs.md)
 - [Update Documentation](prompt-update-documentation.md)
+
+### Learning
+- [Add Code Knowledge and Teaching](prompt-add-coding-knowledge-teaching.md)
