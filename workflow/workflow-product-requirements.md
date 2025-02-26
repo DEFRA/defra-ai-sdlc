@@ -70,7 +70,7 @@ Consider adding the following to your detailed description. However, don't be li
 
 Once you have a detailed description of the business and technical requirements, use an LLM to create a detailed data model. If the data model is not correct and does not follow the logic of your business requirements at this early stage, then it's unlikely the end result of the development process will function as expected. A data model also gives the LLMs guidance later in the process on how to structure code and models to conform to the data being stored, processed and retrieved.
 
-Use the following prompt to define the data model, use an advanced reasoning model, such as o3-mini or a 'thinking' data model for all heavy analysis product work:
+Use the following prompt to define the data model, use an advanced reasoning model, such as a 'thinking' model for all heavy analysis product work:
 
 ```
 I'd like to create a data model based on the following project business and technical requirements. 
@@ -85,7 +85,7 @@ Ask any follow up questions that will clear up any ambiguities if needed.
 
 IMPLEMENTATION PHASE:
 
-Think about the above requirements and work out a simplified data model suitable for use with MongoDB. Also produce a Mermaid diagram so it is understandable in a relational format. Feel free to change labels to be more clear if needed if they are more logical. The data model should be in a single, downloadable file using markdown formatting.
+Think about the above requirements and work out a simplified data model suitable for use with [MongoDB]. Also produce a Mermaid diagram so it is understandable in a relational format. Feel free to change labels or column names to be more clear if needed if they are more logical. The data model should be in a single, downloadable file using markdown formatting.
 
 VERIFICATION AND COMPLETION PHASE:
 
@@ -104,17 +104,19 @@ If the generated markdown file is 'broken':
 2. Run the copied markdown text through Claude or a similar tool with the following prompt:
     
     ```
-    Please convert this to md format: [PASTE BROKEN MARKDOWN HERE]
+    Please convert this to a single file md format.  Do not change any of the content:
+    
+    [PASTE BROKEN MARKDOWN HERE]
     ```
 
-## 5. Deep Product Interrogation of the Solution
+## 5. Deep Product Analysis of the Solution
 
-Using your original product requirements and the data model, the solution can be interrogated using LLMs as a pair evaluator to help find gaps in the solution, analyse cost/benefits, pros/cons and conduct future-perspective evaluation.
+Using your original product requirements and the data model, the solution can be analysed using LLMs as a pair evaluator to help find gaps in the solution, analyse cost/benefits, pros/cons and conduct future-perspective evaluation.
 
-Run the following prompt for meta analysis, use an advanced reasoning model, such as Claude 3 Opus or a 'thinking' data model for all heavy analysis product work:
+Run the following prompt for meta analysis, use an advanced reasoning model:
 
 ```
-Do some meta analysis to analyse the following product requirements, including what it does, and how effective it could be. Come up with a pros and cons list, thinking about how it will be used over the lifetime of the app. Come up with a list of recommendations to improve it, or alternatives to consider for a tool we could build.
+Do some meta analysis to analyse the following product requirements, including what it does, and how effective it could be. Come up with a pros and cons list, thinking about how it will be used over the lifetime of the product. Come up with a list of recommendations to improve it, or alternatives to consider for a tool we could build.
 
 ANALYSIS PHASE:
 
@@ -137,9 +139,9 @@ Do deep analysis of the proposed solution and write a report detailing the follo
 [Including any gaps in the requirements]
 # Alternatives to Consider
 # Futurespective
-[What are some potential issues users might face using this app a few years from now?]
+[What are some potential issues users might face using this product a few years from now?]
 # Benefits
-[What could be the overall benefits to an organisation who adopts this tool?]
+[What could be the overall benefits to an organisation who adopts this product?]
 # Costs
 [What are some of the possible costs of adoption]
 
@@ -152,7 +154,7 @@ VERIFICATION AND COMPLETION PHASE:
 - Suggest improvements where possible.
 ```
 
-Once you have this report, you can save it alongside your other product documentation. You can also continue to chat with the LLM if this report is run in a web interface to drill down on more detail. The goal of this step is to consider alternatives so our own confirmation biases are less likely to affect the final product.
+Once you have this report, you can save it alongside your other product documentation. You can also continue to chat with the LLM if this report is created in a chat interface to drill down on more detail. The goal of this step is to consider alternatives so your own confirmation biases are less likely to affect the final product.
 
 Review this output with your team to see if the input requirements need to be updated, then re-run the process if required.
 
@@ -160,7 +162,7 @@ Review this output with your team to see if the input requirements need to be up
 
 If using an API for your backend, generate API endpoint requirements based on your refined data model:
 
-Run the following prompt, use an advanced reasoning model, such as Claude 3 Opus or a 'thinking' data model for all heavy analysis product work:
+Run the following prompt, use an advanced reasoning model:
 
 ```
 Given the attached data model, please create requirements for API endpoints that follow this example. Please also include examples of the objects that will be sent in to each endpoint for reference. Make sure you use the plural version of the naming:
@@ -197,7 +199,7 @@ Review the API endpoints with the team. Refine and re-prompt if required. Save t
 
 Develop interface mock-ups of the screens related to your requirements. This can be done in an advanced tool like Figma, or in an online whiteboard tool such as Miro or Mural. Take screenshots of each mock-up page. Ensure all the elements are clear and readable in the image.
 
-IMPORTANT: Make sure you thoroughly annotate the mock-ups with the expected behaviour of each element. This will help the LLM better understand the interface requirements in the next step.
+**IMPORTANT:** Make sure you thoroughly annotate the mock-ups with the expected behaviour of each element and the annotations are visible in the screenshots. This will help the LLM better understand the interface requirements in the next step.
 
 ## 8. Create Interface Requirements
 
@@ -217,7 +219,7 @@ Review the frontend requirements with the team. Refine and re-prompt if required
 
 ## 9. Combined Product Requirements
 
-This is the final phase where we generate the combined product requirements. Use the most advanced reasoning model possible, such as o3-mini-high to create a detailed features and user stories for the coding tools to implement.
+This is the final phase where we generate the combined product requirements. Use the most advanced reasoning model possible to create a detailed requirements document for the coding tools to implement.
 
 Use the following prompt to create the combined requirements:
 
@@ -257,7 +259,7 @@ You should also give any overarching context in the feature description.
 At the top of the document include the detail of the data model for reference.
 
 Do NOT include any summary, timelines, or non-functional requirements, unless they are relevant to the specific feature implementations.
-Do NOT add any functionality that isn't in the above web pages, only add the functionality already defined.
+Do NOT add any functionality that isn't in the above requirements, only add the functionality already defined.
 
 Include a short 'Context' part at the top of the document that details the purpose and background information that is relevant to the project overall.
 
@@ -271,11 +273,11 @@ Once you have the markdown text, save it in the folder or Obsidian vault that wa
 
 ## 11. Ensuring Requirement Precision
 
-Dedicate substantial time and team effort to refining the prompt and the PRD to eliminate vagueness and potential misinterpretations.
+Dedicate substantial time and team effort to refining the prompts and the Product Requirements document to eliminate vagueness and potential misinterpretations.
 
 - Ensure all aspects are reviewed collaboratively by the team.
 - Revise any unclear sections to ensure the requirements are unambiguous and can be correctly interpreted by an LLM.
 
 ## A Note About Design and UX
 
-The LLMs have been trained on GDS standards and have ingested GDS style layouts. Therefore, they are often good at determining GDS-compliant designs while they implement features. As long as your PRD and .cursor rules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features. The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
+The LLMs have been trained on GDS standards and have ingested GDS style layouts. Therefore, they are often good at determining GDS-compliant designs while they implement features. As long as your product requirements document and .cursor rules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features. The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
