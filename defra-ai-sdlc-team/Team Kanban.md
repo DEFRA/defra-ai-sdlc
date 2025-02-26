@@ -25,9 +25,7 @@ kanban-plugin: board
 
 - [ ] Playbook - General development guidance - move to workflow (Ben)
 - [ ] Playbook - Development standards refactor (Ben)
-- [ ] Write workflow for refactoring in playbook (Ben)
 - [ ] Write workflow for testing in playbook (Adam)
-- [ ] refactor the language-specific section re: new cursorrules format (Todd)
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 - [ ] Reach out to Richard Stockley re: Governance tool
 - [ ] Kick off Agentic workflow Ideation
@@ -45,6 +43,8 @@ kanban-plugin: board
 - [ ] Deployment plan for Code Checker to CDP
 - [ ] Leyla Kee-McParlin - UXer for Governance
 - [ ] Write workflow for documentation and code understanding (Adam)
+- [ ] refactor the language-specific section re: new cursorrules format (Todd)
+- [ ] Write workflow for refactoring in playbook (Ben)
 
 
 ## Done
