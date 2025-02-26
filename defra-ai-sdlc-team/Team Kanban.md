@@ -20,7 +20,9 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Write workflow for refactoring in playbook
+- [ ] Playbook - General development guidance - move to workflow (Ben)
+- [ ] Playbook - Development standards refactor (Ben)
+- [ ] Write workflow for refactoring in playbook (Ben)
 - [ ] Write workflow for testing in playbook (Adam)
 - [ ] refactor the language-specific section re: new cursorrules format (Todd)
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
