@@ -30,6 +30,7 @@ kanban-plugin: board
 - [ ] Fix the github pages navigation after refactor (Todd)
 - [ ] Reach out to Richard Stockley re: Governance tool
 - [ ] Kick off Agentic workflow Ideation
+- [ ] Back port learnings to the CDP python template - include logging changes
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
