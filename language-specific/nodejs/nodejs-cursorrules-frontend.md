@@ -417,7 +417,7 @@ export function buildNavigation(request) {
    {% raw %}{% extends "layouts/layout.njk" %}{% endraw %}
    {% block content %}
      {# Page content here #}
-   {% endblock %}
+   {% endblock %}{% endraw %}
    ```
 
 ## Testing
