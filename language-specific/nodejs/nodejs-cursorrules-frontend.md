@@ -199,7 +199,7 @@ globs: *.njk, *.js
 - Use govuk-grid-row and govuk-grid-column-* for grid layouts
 
 ## Template Inheritance
-- Always use search path style imports (e.g. {% extends "layouts/page.njk" %})
+- Always use search path style imports (e.g. {% raw %}{% extends "layouts/page.njk" %}{% endraw %})
 - Never use relative paths in extends/include statements
 - Base template is at src/server/common/templates/layouts/page.njk
 - Feature templates should be in src/server/{feature}/views/
@@ -414,7 +414,7 @@ export function buildNavigation(request) {
 
 3. Create view templates for new navigation items:
    ```nunjucks
-   {% extends "layouts/layout.njk" %}
+   {% raw %}{% extends "layouts/layout.njk" %}{% endraw %}
    {% block content %}
      {# Page content here #}
    {% endblock %}
