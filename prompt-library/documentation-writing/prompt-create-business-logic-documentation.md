@@ -1,3 +1,4 @@
+```
 # Business Logic Technical Document Prompt
 
 Please create an expert-level document that thoroughly explains the business logic of a software system. The document must provide an in-depth breakdown of not only **how** the business logic is implemented but also **why** it is designed and executed in that particular way. Use the outline below as your guide:
@@ -84,3 +85,4 @@ Please create an expert-level document that thoroughly explains the business log
 ---
 
 Ensure that throughout the document, every section clearly breaks down both **how** the business logic is implemented and **why** each design decision was made. This dual perspective will help both technical and non-technical stakeholders understand the system’s operations and underlying business strategies.
+```

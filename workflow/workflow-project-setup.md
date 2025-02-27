@@ -2,58 +2,48 @@
 
 Setting up a development project effectively using AI tools and techniques ensures smooth collaboration, high productivity, and adherence to best practices. Below is a detailed guide for initializing your project:
 
-## Project Kickoff
+This guide outlines how to set up a development project using AI tools and techniques. A proper setup ensures:
+- smooth collaboration
+- high productivity
+- adherence to best practices
 
-- **Determine Hosting Platform**: Decide where the project will be hosted (e.g., GitHub, GitLab, or Bitbucket).
-- **Agree on Git Branching Strategies**: Establish a branching strategy (e.g., Gitflow, trunk-based development) to ensure clear collaboration guidelines.
+## Initial Setup
 
-## Repository Setup
+1. **Choose Project Platform**
+   - select hosting platform (GitHub, GitLab, Bitbucket)
+   - agree on Git branching strategy
+   - document collaboration guidelines
 
-- **Using CDP**: If using a Continuous Development Platform (CDP), initialize the CDP project to create and configure the GitHub repository.
-- **Without CDP**: Manually create a GitHub repository and configure necessary settings (e.g., branch protection rules, issue templates).
+2. **Configure Repository**
+   With CDP:
+   - initialise CDP project
+   - configure GitHub repository automatically
+   
+   Without CDP:
+   - create GitHub repository manually
+   - set branch protection rules
+   - add issue templates
 
-## IDE and AI Tools Setup
+## Development Environment
 
-- **Select and Configure an AI-Powered IDE**:
-    - Choose an IDE such as Cursor or Windsurf.
-	    - [Cursor-specific guidance](../tool-specific/tool-cursor.md)
-	    - [Windsurf-specific guidance](../tool-specific/tool-windsurf.md)
-    - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
-- **Add Language-Specific Files**:
-    - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., `.cursorrules`).
-- **Edit Configuration Files**:
-    - Customize the `.cursorrules` file to align with your team's requirements.
-    - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
-- **Update your system prompt**:
-	- Check that you have updated the system prompt / rules in your IDE so the LLM has a base understanding of it's role in development.  System prompts should be short as they are called during every new interaction with the LLM.
+1. **Configure AI-Powered IDE**
+   - install Cursor or Windsurf
+   - add required VS Code extensions
+   - set up language-specific plugins
 
-## Documentation Tools
+2. **Add Required Files**
+   - copy language-specific files from [language-specific library](../language-specific/README.md)
+   - customise IDE rules for team requirements
+   - update system prompt for LLM base understanding
 
-- **Setup Obsidian (if using)**:
-    - Follow [Obsidian-specific setup guidance](../tool-specific/tool-obsidian.md)
-    - Create a vault for project documentation within the repository.
-    - Configure essential plugins:
-        - Git integration for version control
-        - Markdown formatting tools
-    - Set up templates for:
-        - Technical specifications
-        - Architecture decisions
-        - Meeting notes
-    - Link the workspace with the repository or team workspace for centralized knowledge sharing.
-    - If not using Obsidian, setup directories in the repository to manage:
-        - Product requirements
-        - Architecture documentation
-        - API specifications
-        - Development guidelines
-        - Ensure all documentation is accessible to the IDE for reference
+## Using Repository Documentation
 
-## Frameworks and Initial Testing
+Create directory within the repository to store documentation, such as:
+- product requirements
+- architecture documentation
+- development rules and guidelines (reference [IDE rules](../language-specific/README.md))
 
-- **Logging Framework**:
-    - Set up or verify the presence of a logging framework for effective debugging and monitoring.
-- **Testing Framework**:
-    - Set up or ensure a testing framework is available for the project (e.g., Jest for JavaScript / Node.js, Pytest for Python, etc).
-- **Verify Baseline Functionality**:
-    - Run all existing tests to ensure they pass.
-    - Compile the project and ensure it builds successfully.
-    - If applicable, deploy the project to a test environment and verify deployment success.
+Ensure all documentation is:
+- version controlled
+- accessible to the IDE
+- formatted in markdown

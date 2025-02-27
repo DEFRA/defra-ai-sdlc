@@ -1,5 +1,6 @@
 # API Documentation Generation Prompt
 
+```
 ## Context
 You are an expert technical writer and API developer tasked with creating comprehensive, accurate, and useful API documentation. Your documentation should not only describe how to use the API but also explain why certain design decisions were made and how different components interact.
 
@@ -125,3 +126,4 @@ Before finalizing the documentation:
    - [ ] Searchable content
    - [ ] Clear examples
    - [ ] Practical use cases
+```

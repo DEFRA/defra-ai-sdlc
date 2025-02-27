@@ -10,20 +10,24 @@ kanban-plugin: board
 - [ ] Ask Steve about - can we add this?
 	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
 - [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight (parked - we're doing continuous showcases) - ONE BIG SHOWCASE AT THE END
+- [ ] Get access to Defa Project Online
 
 
 ## For Steve
 
+- [ ] Talk to Richard Baines re: possible next project
+- [ ] Identify next team to onboard with AI-driven workflows
 - [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
 - [ ] Steve to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 
 
 ## To Do
 
-- [ ] Write workflow for refactoring in playbook
-- [ ] Write workflow for testing in playbook
-- [ ] refactor the language-specific section re: new cursorrules format
-- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook
+- [ ] Add documentation rules to the playbook rules (and our repos)
+- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
+- [ ] Reach out to Richard Stockley re: Governance tool
+- [ ] Kick off Agentic workflow Ideation
+- [ ] Back port learnings to the CDP python template - include logging changes
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
@@ -31,19 +35,24 @@ kanban-plugin: board
 	Our [portfolio hub](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/Home.aspx) contains a list of templates. Not everything you need but a few things you might find interesting. The guidance there will refer to the current process, not what we’re moving towards.
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
-- [ ] Get access to Defa Project Online
 
 
 ## Doing
 
-- [ ] Deployment plan for Code Checker to CDP
 - [ ] Leyla Kee-McParlin - UXer for Governance
-- [ ] Write workflow for documentation and code understanding
+- [ ] Fix the github pages navigation after refactor (Todd)
 
 
 ## Done
 
 **Complete**
+- [x] Deployment plan for Code Checker to CDP
+- [x] Write workflow for documentation and code understanding (Adam)
+- [x] Write workflow for refactoring in playbook (Ben)
+- [x] refactor the language-specific section re: new cursorrules format (Todd)
+- [x] Write workflow for testing in playbook (Adam)
+- [x] Playbook - General development guidance - move to workflow (Ben)
+- [x] Playbook - Development standards refactor (Ben)
 - [x] Deploy Governance tool to CDP
 - [x] Write workflow for product analysis
 - [x] Finish integration testing agents on Code Checker

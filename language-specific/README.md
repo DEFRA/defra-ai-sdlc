@@ -4,22 +4,17 @@ This section of the playbook provides dedicated resources, templates, and tools 
 
 ## IDE Configuration Files
 
-The rules files for Cursor and Windsurf instruct the LLM on how to write code in a way that is consistent.
+Both Cursor and Windsurf instruct the LLM on how to write code in a way that is consistent.
 
-Both [Cursor](../tool-specific/tool-cursor.md) and [Windsurf](../tool-specific/tool-windsurf.md) IDEs use configuration files to instruct their AI assistants. For compatibility:
-
-1. Create a `.cursorrules` file in your project root
-2. Create a symlink to `.windsurfrules` using:
-   ```bash
-   ln -s .cursorrules .windsurfrules
-   ```
-
-This ensures rule changes are synchronized between both IDEs.
+Cursor saves the rules files in the repository in the `.cursor/rules` directory.  Windsurf has a single rule file in the root of the repository called `.windsurfrules`
 
 ## Supported Languages
 
 ### Node.js
-- [Node.js .cursorrules file](nodejs/nodejs-cursorrules.md)
+- [Node.js Cursor Rules Files - Frontend](nodejs/nodejs-cursorrules-frontend.md)
+- [Node.js Cursor Rules Files - Backend](nodejs/nodejs-cursorrules-bakend.md)
+- [Node.js .windsurfrules file](nodejs/nodejs-windsurfrules.md)
 
 ### Python
-- [Python .cursorrules file](python/python-cursorrules.md)
+- [Python Cursor Rules Files - Backend](python/python-cursorrules-backend.md)
+- [Python .windsurfrules file](python/python-windsurfrules.md)
