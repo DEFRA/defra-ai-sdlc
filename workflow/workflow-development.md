@@ -8,13 +8,15 @@ That fact that AI-powered development enables rapid creation and modification of
 
 ### Prerequisites
 
-1. **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the [Product Workflow](workflow-product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
-2. **IDE Rules:** Ensure there are detailed [IDE rules for your chosen language](../language-specific/README.md) to guide the AI tools in adhering to code style and design preferences.
-3. **Clean Codebase**: Verify that the codebase is in a clean state:
-    - All tests pass with good coverage.
-    - Documentation is up to date.
-    - Refactoring has been completed where necessary and all code is implemented consistently.
-    - Git changes are committed and pushed.
+Before starting development, ensure you have:
+
+1. **Clear Requirements**: Detailed feature requirements with defined scope, as outlined in the [Product Workflow](workflow-product-requirements.md)
+2. **IDE Configuration**: Language-specific [IDE rules](../language-specific/README.md) for consistent code style and design
+3. **Clean Codebase**: 
+    - passing tests with good coverage
+    - up-to-date documentation
+    - completed refactoring
+    - committed git changes
 
 ### 1. Create a new git branch
 

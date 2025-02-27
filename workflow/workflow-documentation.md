@@ -23,7 +23,11 @@ This template ensures that every document maintains a baseline level of quality 
 
 ### Keep Your Documents Up to Date
 
-During the normal development workflow, it is essential to update documentation every time you make a change. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
+Update documentation whenever you make changes to the codebase. This practice:
+- helps team members understand recent changes
+- ensures the LLM has an accurate understanding of the current system
+- reduces technical debt
+- makes onboarding new team members easier
 
 Use the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
@@ -35,7 +39,7 @@ Consider documentation as an integral part of the development lifecycle (ref: [w
 
 ### Using Documentation as a Knowledge Base
 
-Good documentation is not merely a static reference; it creates a feedback loop for the LLM. By providing detailed, up-to-date information about the codebase, the documentation becomes a critical resource for:
+Well-maintained documentation serves as a vital knowledge base for both team members and LLMs. It provides:
 
 - **Contextual Assistance:** Feeding detailed documentation into the LLM helps it understand the context and history behind implementation decisions. For example, when an LLM reviews a legacy function, it can refer back to a well-documented design decision to suggest updates or improvements.
 - **Error Reduction:** Maintaining a knowledge base minimizes the likelihood of errors or redundant changes by providing a clear reference for what has been implemented.
