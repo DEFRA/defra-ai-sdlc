@@ -1,138 +1,98 @@
+# Testing Workflow
 
-# Integration Testing Workflow
+Testing effectively with AI can be challenging—often more so than developing new features. While AI can readily generate tests, these tests are not always valuable in the long term. We have observed that the automated creation of unit tests without careful consideration often produces brittle, tightly coupled tests that break with code changes, offering little practical value.
 
-This document describes a recommended workflow for designing and implementing **integration tests** in a codebase that favors testing functionality (rather than implementation details). It explains ***why*** we test the way we do and how we balance integration tests with occasional targeted unit tests.
+This document outlines a recommended workflow for designing and implementing robust and sustainable tests utilising AI.
 
----
+## Terminology
 
-## Overview
+Software testing often suffers from ambiguous terminology, with similar terms used interchangeably or different terms referring to the same concept. This issue is further exacerbated by outdated concepts such as the "test pyramid". Just as this lack of standardisation can lead to miscommunication among team members, it can also affect how models interpret prompts. Let us first clarify the two testing styles advocated here.
 
-Testing properly with AI can be challenging—often more so than developing new features. While AI can easily generate tests, those tests are not always valuable in the long run. We have observed that **automated creation of unit tests without careful consideration** often produces brittle, tightly coupled tests that break upon even minor code changes, offering little real value. To avoid this pitfall, we focus on **Black Box Testing**: treating each feature as a whole, identifying its inputs and outputs, and ensuring its external behavior remains consistent
+### End-to-End Testing
 
----
+End-to-end testing involves testing the entire application and its dependencies via its primary interface—whether that be a human interface or a computer interface, such as an API. A good example of an end-to-end testing framework is [Playwright](https://playwright.dev/).
 
-## Core Principles
+### Integration Testing
+
+Integration testing is a style of testing that focuses on functionality rather than internal implementation details. It examines each feature as a whole—identifying its inputs and outputs and ensuring that its external behaviour remains consistent through the use of mocking. For example, when testing a REST API that interacts with a backend database, integration tests would mock the database and then call the API endpoints to validate the intervening logic.
+
+Integration tests ensure that components work together correctly under realistic conditions. By concentrating on **external behaviour** (inputs and outputs) rather than **internal implementation**, they can:
+
+- Provide robust coverage for real-world workflows.
+- Reduce test brittleness, allowing safe refactoring without breaking tests.
+- Serve as documentation of the expected system behaviour for end-users or dependent services.
+
+### Unit Tests
+
+While we emphasise integration-style tests, isolated unit tests remain valuable in certain contexts, such as:
+
+- **Complex Pure Functions:** Functions with intricate logic or algorithms that benefit from isolated testing to ensure boundary conditions are correctly handled.
+- **Utility Libraries:** Code that is loosely coupled to the main flow but used in multiple locations can benefit from unit tests.
+- **Edge or Error Cases:** When it is impractical or overly complex to rely on mocks to simulate certain scenarios, a unit test may be a more pragmatic solution.
+
+If an integration test already comprehensively covers a specific logic path, a separate unit test may be unnecessary—unless explicit clarity for debugging or further documentation is required. 
+
+## Principles
 
 1. **Test the Functionality, Not the Implementation**  
-   - Write tests that consider the service or endpoint as a "black box."  
-   - Provide known inputs and verify that the outputs, side effects, or responses match the expected results.
+   - Write tests that treat the service or endpoint as a "black box": supply known inputs and verify that the final responses, returned data, or side effects match the expected outcomes.  
+   - Focus on overall functionality rather than internal method calls, keeping tests resilient to code changes.
 
-2. **Mock External Dependencies, Not Internal Modules**  
-   - **Do mock**: Databases, external APIs, file systems, or any third-party service.  
-   - **Don’t mock**: Classes, functions, or modules within your own codebase—test them together to ensure realistic coverage.  
+2. **Prefer Integration Tests Over Isolated Unit Tests**  
+   - Integration tests simulate real-world usage and interactions between components, often revealing issues that isolated unit tests may miss.  
+   - Reserve unit tests for discrete utility functions or algorithms that are sufficiently complex to warrant independent testing.
 
-3. **Prefer Integration Tests Over Unit Tests**  
-   - Integration tests often uncover issues missed by unit tests because they simulate real-world usage and interactions between components.  
-   - Use unit tests only where they add clear value (e.g., checking complex utility functions or pure algorithmic code that can fail independently).  
+3. **Realistic Mocking of External Dependencies**  
+   - **Do mock:** Truly external systems such as databases, third-party APIs, and file systems—simulate realistic responses and error conditions.  
+   - **Don’t mock:** Internal modules, classes, or functions; test these together to ensure authentic interactions and comprehensive coverage.
 
-4. **Avoid Brittle Tests**  
-   - Avoid hardcoding details of internal function calls, class structures, or other code-level specifics.  
-   - If minor refactors break a large portion of your test suite, it means you may be testing implementation details rather than functional outcomes.
+4. **Adopt a Structured Test Design**  
+   - Utilise a clear narrative structure, such as the Given-When-Then format:
+     - **Given:** Establish preconditions, test data, and necessary configurations.
+     - **When:** Execute the core logic or function.
+     - **Then:** Validate that the outcomes meet the specified expectations.
+   - This approach emphasises outcomes over internal details and aids in maintaining clarity and consistency.
 
----
+5. **Avoid Brittle Tests**  
+   - Refrain from hardcoding internal implementation details, such as specific function calls or class structures.  
+   - Overreliance on internal details can lead to fragile tests that break with minor refactors.
 
-## Why Integration Tests?
+## Integration Testing Workflow
 
-Integration tests ensure your components work together correctly under realistic conditions. By focusing on ***external behavior*** (inputs and outputs) rather than ***internal implementation***, the tests can:
-- Provide more robust coverage for real-world workflows.  
-- Reduce test brittleness, allowing safe refactoring without breaking tests.  
-- Document how the system should behave for end-users or dependent services.
+The emphasis of the testing workflow is to have test-specific cursor rules and detailed prompts, along with close human interaction and review. 
 
----
+### Prerequisites
 
-## Why This Approach is Better than LLM-Generated Unit Tests
+- **Feature Requirements:** Ensure that detailed feature requirements, with a clear scope (such as a User Story or Product Requirement Document in markdown format), are available to the AI-powered IDE.
+- **IDE Rules:** Confirm that there are comprehensive IDE guidelines to direct AI tools in adhering to test styles and preferences.
 
-LLMs often produce highly coupled unit tests that mirror the implementation details unless expressly told otherwise—and even then, they may default to this pattern. Testing at this level can lead to:
+### 1. Interactively Prompt the IDE
 
-- **Brittle Coverage**: When every internal detail is tested in isolation, even minor refactors break a significant portion of the tests.  
-- **“Marking Its Own Homework”**: Having the LLM generate tests for the same functions it wrote may simply confirm the logic it already encoded, rather than assert correct outcomes for real use cases.  
-- **Excessive Maintenance Overhead**: High coverage plus tightly coupled tests means any change triggers widespread test failures, slowing down development.  
-- **Focus on Implementation Rather Than Results**: Unit tests often focus on the *how*, whereas integration tests focus on the *what*. With an LLM rapidly changing the *how*, testing the *what* (expected behavior) provides stability and confidence in real-world scenarios.
+- Utilise an IDE in agentic "Chat" mode to implement the feature.
+- Use prompt templates from your prompt library—such as TODO —and reference your requirements file using the @file feature.
+- As the AI generates the tests, monitor its plan to ensure alignment with your expectations.
+- Once complete, "accept" the changes and review them in the git diff viewer. If the changes are unexpected or involve significant deletions, revert all changes, refine your prompt, and try again.
 
-By emphasizing integration tests that treat your code as a black box and validate outcomes, you gain a more reliable, maintainable, and genuinely useful test suite—even if the underlying implementation is frequently regenerated by an LLM.
+### 2. Run the Tests and Refine  
 
----
+- Execute the tests.
+- If issues arise, feed the results back into the chat to address them, providing sufficiently detailed prompting to guide the best course of action.
 
-## High-Level Workflow
+### 3. Review and Improve Test Coverage  
 
-1. **User Specifies Feature and Location**  
-   - Provide the feature or agent name and its file path in the codebase.  
-   - This context ensures the LLM knows exactly what is being tested and where it resides.
+- If there are opportunities for enhanced test coverage, prompt the IDE with precise guidance and include the output from the test coverage report.
+- Address improvements on a feature-by-feature or file-by-file basis.
+- Avoid asking for improvements to the entire codebase coverage in a single prompt.
 
-2. **LLM Identifies Entry Points and Dependencies**  
-   - The LLM scans the feature to discover all public-facing methods or endpoints.  
-   - It notes external dependencies—such as databases, third-party services, or other modules that need to be mocked.
+### 4. User Review  
 
-3. **LLM Creates a Test Plan**  
-   - The LLM proposes integration test scenarios, input/output structures, and how to mock dependencies.  
-   - It outlines both typical “happy path” scenarios and critical edge cases.  
-   - The user reviews this plan, gives feedback, and clarifies any missing requirements.
+- It is crucial that tests are thoroughly reviewed and understood.  
+- Do not allow agents to generate tests unchecked; relying solely on them is akin to marking their own homework, which offers little practical value.
 
-4. **LLM Generates Integration Tests**  
-   - The LLM writes the actual test files, following the agreed-upon scenarios.  
-   - Tests are designed to validate the feature’s “black box” behavior, not internal implementation details.
+## End-to-End Testing Workflow
 
-5. **User Reviews and Merges**  
-   - The user verifies correctness, maintainability, and alignment with project standards.  
-   - Once approved, tests are merged into the main codebase.
+The workflow for end-to-end testing is similar to that for integration testing, with the key difference being that end-to-end tests are decoupled from the underlying code. This decoupling enables you to prompt the model to generate tests using only the requirements and rules, without referencing the source code.
 
----
+Consequently, AI-generated end-to-end tests can be conducted either prior to code generation or independently by a dedicated QA team if desired.
 
-## Testing Design Philosophy
-
-- **Given-When-Then Format**  
-  - Tests follow a clear, structured narrative:
-    - **Given**: Setup or preconditions (test data, mock configurations).  
-    - **When**: Execution of the core logic (calling the endpoint or function).  
-    - **Then**: Validation that the outcome matches expected results.
-
-- **Realistic Mocking of External Services**  
-  - Only mock *truly external* systems like databases or third-party APIs.  
-  - Simulate realistic responses and error conditions to ensure thorough testing.  
-  - Avoid mocking internal modules or classes; test them together to capture real interactions.
-
-- **Outcome-Focused**  
-  - Emphasize verifying final responses, returned data, and side effects instead of internal method calls.  
-  - Keep tests resilient to underlying code changes and refactors.
-
----
-
-## Why This Approach Works
-
-1. **Resilience to Change**  
-   By focusing on outcomes (rather than internal function calls), tests allow for safe refactoring. As long as the “contract” remains intact, the test suite will still pass.
-
-2. **Clarity & Maintainability**  
-   Each test case tells a story about how a user or another system interacts with this feature. This is more intuitive than verifying a series of function calls or mocking internal methods.
-
-3. **Meaningful Coverage**  
-   Having experienced the downsides of chasing 100% coverage with brittle unit tests, we now seek *meaningful coverage*—covering realistic usage scenarios that reflect how the system is actually used.
-
-4. **Reduced Duplicate Testing Effort**  
-   Integration tests naturally cover multiple modules simultaneously, so we avoid writing separate tests for each function that do not add additional value.
-
----
-
-## Balancing Integration and Unit Tests
-
-While we emphasize integration tests, unit tests still have a place, such as:
-
-- **Complex Pure Functions**  
-  Functions with intricate logic or algorithms that can be tested in isolation, ensuring correctness of boundary conditions.
-- **Utility Libraries**  
-  Code that is loosely coupled to the main flow but used in multiple places can benefit from unit tests for quick coverage and confidence.
-- **Performance Critical Sections**  
-  When you need to ensure a small piece of the code is highly optimized, targeted testing might be necessary.
-
-If your integration test already covers a specific logic path comprehensively, a separate unit test may be unnecessary—unless you need explicit clarity for debugging or further documentation.
-
----
-
-## Conclusions & Take-Homes
-
-- **AI Can Generate Tests, But Value Matters**: Generating code (including tests) with AI is fast, but without proper strategy and planning, the tests can be fragile and noisy.  
-- **Focus on External Behavior**: Test the *what*, not the *how*, to keep your suite robust against internal changes.  
-- **Mock External Dependencies Only**: Aim for realistic interactions and avoid mimicking internal classes or modules.  
-- **Integration First, Unit When Needed**: Integration tests form a strong foundation; unit tests fill in gaps where specialized logic or performance concerns warrant focused coverage.
-
-By following these guidelines, teams can create an effective, maintainable test suite that stays robust through AI-driven code evolutions and supports long-term stability.
+TODO link to prompt
