@@ -414,7 +414,7 @@ export function buildNavigation(request) {
 
 3. Create view templates for new navigation items:
    ```nunjucks
-   {% raw %}{% extends "layouts/layout.njk" %}{% endraw %}
+   {% raw %}{% extends "layouts/layout.njk" %}
    {% block content %}
      {# Page content here #}
    {% endblock %}{% endraw %}
