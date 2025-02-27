@@ -1,3 +1,4 @@
+This is an example prompt, you will need to update the "Test Setup" and "Test Interaction Data" sections to suit your specific requirements.
 
 ```
 Create a Playwright end-to-end (E2E) test that meets the requirements in this user story: []

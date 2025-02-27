@@ -123,7 +123,7 @@ Each test file should follow this structure:
 5. Helper functions (if needed)
 
 ## Database Mocking Approach
-If the test require MongoDB - reference [03_mongodb_mocking.mdc](mdc:.cursor/rules/03_mongodb_mocking.mdc)
+If the test require MongoDB - reference [03_mongodb_mocking.mdc](mdc:.cursor/rules/mongodb_mocking.mdc)
 
 ## Background Process Mocking
 When testing endpoints that spawn background processes:

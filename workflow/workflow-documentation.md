@@ -8,7 +8,7 @@ This documentation can be in the form of helpful user guides like README.md file
 
 This section outlines best practices for incorporating documentation into your development workflow and how to maximise the benefits of LLM capabilities.
 
-## Useful Documentation Patterns
+## Guidelines
 
 ### Have a Documentation Rules File
 
@@ -25,7 +25,7 @@ This template ensures that every document maintains a baseline level of quality 
 
 During the normal development workflow, it is essential to update documentation every time you make a change. This practice not only benefits human collaborators but also ensures the LLM has an accurate understanding of the current state of the codebase.
 
-Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/documentation-writing/prompt-update-documentation.md) prompts to have the LLMs update the codebase documentation regularly.
+Use the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
 As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
@@ -98,11 +98,11 @@ In addition to your typical repository documentation, having technical documenta
 
 Additionally, these documents are beneficial when starting to work in a legacy codebase that may have no documentation or only outdated information.
 
-#### Software Layers
+### Software Layers
 
 To generalize the software documentation process, the workflow splits the documentation using the software architecture layering paradigm. For example, the repository layer handles data access, while the service layer contains business logic. Documenting each layer clarifies the role of each component in one document—providing a large amount of context in one condensed representation.
 
-The entry point to use these prompts starts at the same place shown in  [EXAMPLE_create_documentation](../prompt-library/documentation-writing/EXAMPLE_create_documentation.md), of note - you should have already run the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md):
+The entry point to use these prompts starts at the same place shown below, of note - you should have already run the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md):
 
 ```
 Run {{PROMPT_FOR_CREATING_DOCUMENTATION.md}} after reviewing the entire codebase.
@@ -115,10 +115,10 @@ Export your report as a markdown file in /docs
 It is best to use this prompt with a advanced reasoning model as this helps the model gather more context and 'reason' about the implementation of the code and why some of the functionality is present in addition to what it is doing.
 
 The prompts to create technical documentation are below:
-- [prompt_create_api_documentation](../prompt-library/documentation-writing/prompt_create_api_documentation.md)
-- [prompt_create_service_layer_documentation](../prompt-library/documentation-writing/prompt_create_service_layer_documentation.md)
-- [prompt_create_business_logic_documentation](../prompt-library/documentation-writing/prompt_create_business_logic_documentation.md)
-- [prompt_create_repository_documentation](../prompt-library/documentation-writing/prompt_create_repository_documentation.md)
+- [prompt-create-api-documentation](../prompt-library/documentation-writing/prompt-create-api-documentation.md)
+- [prompt-create-service-layer-documentation](../prompt-library/documentation-writing/prompt-create-service-layer-documentation.md)
+- [prompt-create-business-logic-documentation](../prompt-library/documentation-writing/prompt-create-business-logic-documentation.md)
+- [prompt-create-repository-documentation](../prompt-library/documentation-writing/prompt-create-repository-documentation.md)
 
 This provides a great starting point for creating business case documentation and user stories for features.
 

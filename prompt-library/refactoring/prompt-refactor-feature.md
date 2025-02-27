@@ -1,4 +1,4 @@
-As per the refactoring workflow, it is important that you directs the Model to implement specific refactors that you want, and do not just ask it to simply refactor. 
+As per the [refactoring workflow](../../workflow/workflow-refactoring.md), it is important that you direct the Model to implement specific refactors that you want, and do not just ask it to simply refactor.
 
 As well as this, the prompt below can also be used as a "general cleanup". This should be done for a specific file or grouping of files, rather than a whole codebase. 
 
@@ -30,43 +30,8 @@ Do the following:
 Key constraints:
 - Maintain existing design patterns - do not introduce new ones
 - Prioritize consistency and readability over performance optimizations
-- Ensure all changes align with @.cursorrules guidelines
+- Ensure all changes align with cursor rules guidelines
 - Focus on incremental improvements rather than major redesigns
   
 Prompt me for feedback before implementing.  
 ```
-
-If you want to do a more significant refactor then remove `Focus on incremental improvements rather than major redesigns`
-
-If the refactor breaks tests, then this prompt is useful.
-
-TODO - Review after Adams work
-
-```
-Analyze the failing tests after the refactor. For each failing test:
-
-1. First describe your analysis methodology, including:
-   - How you'll evaluate whether test or implementation changes are needed
-   - What factors you'll consider in your decision-making
-
-2. Then for each failing test, provide:
-   - Test name and location
-   - Current failure message/behavior
-   - Root cause analysis
-   - Determination if the failure indicates:
-     a) An implementation bug introduced by the refactor
-     b) A test that needs updating to match valid implementation changes
-     c) A test that's revealing previously undetected issues
-   
-3. For each failure, provide detailed recommendations including:
-   - Specific proposed changes (to implementation or test)
-   - Rationale for the recommendation
-   - Any ripple effects to consider
-   - Suggested verification steps after making the change
-
-4. Finally, provide:
-   - Recommended sequence for fixing the issues
-   - Any patterns observed across multiple failures
-   - Additional tests that should be added or modified
-```
-

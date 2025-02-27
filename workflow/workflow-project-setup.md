@@ -15,22 +15,19 @@ Setting up a development project effectively using AI tools and techniques ensur
 ## IDE and AI Tools Setup
 
 - **Select and Configure an AI-Powered IDE**:
-    - Choose an IDE such as Cursor or Windsurf.
-	    - [Cursor-specific guidance](../tool-specific/tool-cursor.md)
-	    - [Windsurf-specific guidance](../tool-specific/tool-windsurf.md)
+    - Choose an AI-enabled IDE such as Cursor or Windsurf.
     - Install and configure any necessary plugins or extensions for AI-assisted development.  Both the above tools are based on Visual Studio, and the VS Code extensions will work.
 - **Add Language-Specific Files**:
-    - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., `.cursorrules`).
+    - From the playbook’s [language-specific library](../language-specific/README.md), add required files (e.g., IDE rules).
 - **Edit Configuration Files**:
-    - Customize the `.cursorrules` file to align with your team's requirements.
-    - For cross-IDE compatibility, create a symlink: `ln -s .cursorrules .windsurfrules`.
+    - Customise the IDE rules files to align with your team's requirements.
 - **Update your system prompt**:
 	- Check that you have updated the system prompt / rules in your IDE so the LLM has a base understanding of it's role in development.  System prompts should be short as they are called during every new interaction with the LLM.
 
 ## Documentation Tools
 
 - **Setup Obsidian (if using)**:
-    - Follow [Obsidian-specific setup guidance](../tool-specific/tool-obsidian.md)
+    - Follow the setup guidance below
     - Create a vault for project documentation within the repository.
     - Configure essential plugins:
         - Git integration for version control
@@ -47,13 +44,44 @@ Setting up a development project effectively using AI tools and techniques ensur
         - Development guidelines
         - Ensure all documentation is accessible to the IDE for reference
 
-## Frameworks and Initial Testing
+# Obsidian Setup Guide
 
-- **Logging Framework**:
-    - Set up or verify the presence of a logging framework for effective debugging and monitoring.
-- **Testing Framework**:
-    - Set up or ensure a testing framework is available for the project (e.g., Jest for JavaScript / Node.js, Pytest for Python, etc).
-- **Verify Baseline Functionality**:
-    - Run all existing tests to ensure they pass.
-    - Compile the project and ensure it builds successfully.
-    - If applicable, deploy the project to a test environment and verify deployment success.
+## Initial Setup
+
+1. Create Obsidian vault for your project
+2. Configure basic settings:
+   - Remove the default welcome file
+   - Set appearance theme to 'Minimal' (recommended)
+   - Configure Files and Links settings:
+     - Set "Default location for new notes" to "Same folder as current file"
+     - Set "Default location for new attachments" to "in subfolder under current folder"
+
+## Required Plugins
+
+Enable community plugins and install:
+- Excalidraw (for diagrams)
+- Kanban (for project management)
+- Git (for version control)
+
+## Project Structure Setup
+
+1. Configure Git integration:
+   - Set "Custom base path (git repository path)" to '../'
+
+2. Create essential folders:
+   - `product-requirements/` - For product documentation
+   - `architecture/` - For system architecture documentation
+
+3. Version Control Setup:
+   - Add the vault folder to `.prettierignore`
+   - Add `.obsidian/workspace.json` to `.gitignore`
+   - Copy relevant `.cursorrules` and prompts from the defra-ai-sdlc repository
+
+## Additional Configuration
+
+### Mermaid Diagram Support
+- To improve Mermaid diagram rendering, adjust the CSS styles as documented in the [Obsidian Mermaid Guide](https://unmesh.dev/post/obsidian_mermaid/).
+
+### Optional Setup
+- Create a Kanban board for project task tracking
+- Configure additional appearance settings as needed

@@ -1,6 +1,4 @@
-Note that the term "integration tests" is used here to mean style of "unit" testing that emphasises functional unit testing. This style of unit testing tests the functionality; not the implementation. Multiple units are tested together. External dependencies are mocked. 
-
-The other style of testing is end-to-end (e2e), which has other prompts.
+These are examples of integration test prompts for different styles of tests.
 
 # API Integration Tests
 
@@ -10,10 +8,9 @@ Create integrations tests for [feature] in [file path].
 ## Context
 - Feature location: [file path]
 - Related services/dependencies: [repo, service]
-- Testing standards reference: .cursor/rules/02_testing.mdc
 
 ## Analysis Requirements
-1. Review testing standards from .cursor/rules/02_testing.mdc
+1. Review testing standards from the testing cursor rules
 2. Study existing integration tests for patterns and conventions
 3. Analyze:
    - Source code architecture
@@ -49,22 +46,6 @@ Create integrations tests for [feature] in [file path].
 
 ## Output
 Provide the complete test implementation in a single code block, following all project conventions and testing standards.
-```
-
-A useful prompt if it creates failing tests. However, the best approach is also to manually check why its failing and add specific instructions too:
-```
-this test is failing. think step by step and consider the functionality under test - what are you trying to test and why?
-```
-
-Then to do some refactoring of the test once it's working OK:
-```
-Compare [new test file] to [good test file] and see how it compares in terms of conventions and standards.
-  
-Compare in the context of @02_testing.mdc testing rules.
-  
-Think step by step and give me a set of reccomendations for improvement.  
-  
-Prompt me for feedback before implementing.
 ```
 
 # Agent Integration Tests
@@ -104,7 +85,7 @@ Create integration tests for **[feature name]** located at **[file path]**.
 
 ## Testing Standards & Analysis Requirements
 1. **Review Testing Standards:**
-   - Refer to the standards defined in `.cursor/rules/02_testing.mdc`.
+   - Refer to the standards defined in testing cursor rules.
    - Study existing tests for established patterns and conventions.
    - Check for existing fixture and patterns that can be reused (eg. in conftest.py)
 
@@ -207,7 +188,7 @@ Before finalizing the tests, verify:
 - **Step 3:** Once the user has confirmed, provide the complete test implementation in one code block.
 ```
 
-## FrontEnd Integration Test
+## Front End Integration Test
 
 ```
 Create tests for [feature].

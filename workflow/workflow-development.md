@@ -8,8 +8,8 @@ That fact that AI-powered development enables rapid creation and modification of
 
 ### Prerequisites
 
-1. **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the product requirements workflow. This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
-2. **IDE Rules:** Ensure there are detailed IDE rules guide AI tools in adhering to code style and design preferences
+1. **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the [Product Workflow](workflow-product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
+2. **IDE Rules:** Ensure there are detailed [IDE rules for your chosen language](../language-specific/README.md) to guide the AI tools in adhering to code style and design preferences.
 3. **Clean Codebase**: Verify that the codebase is in a clean state:
     - All tests pass with good coverage.
     - Documentation is up to date.
@@ -22,8 +22,8 @@ That fact that AI-powered development enables rapid creation and modification of
 
 ### 2. Interactively prompt the IDE
 
-- Use an IDE in agentic "Chat" mode to implement the feature
-- Use prompt templates from your prompt library to initiate the process - [prompt-new-feature](../prompt-library/prompt-new-feature.md) and reference your requirements file using the @file feature
+- Use an IDE in agentic mode to implement the feature
+- Use prompt templates from your prompt library to initiate the process - [prompt-new-feature-story](../prompt-library/development/prompt-new-feature-story.md) and reference your requirements file using the @file feature
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
 - After completion "Accept" the changes, then review the changes in the git diff viewer. If changes are unexpected or involve large deletions, revert all changes, refine your prompt, and try again.
 
@@ -35,11 +35,11 @@ That fact that AI-powered development enables rapid creation and modification of
 
 ### 4. Test
 
-- See testing workflow
+- See [Testing Workflow](workflow-testing.md)
 
 ### 5. Refactor
 
-- See refactoring workflow
+- See [Refactoring Workflow](workflow-refactoring.md)
 
 ### 6. Code Review
 
@@ -48,7 +48,7 @@ That fact that AI-powered development enables rapid creation and modification of
 
 ### 7. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-architecture-docs](../prompt-library/documentation-writing/prompt-add-architecture-docs.md) and [prompt-update-documentation](../prompt-library/documentation-writing/prompt-update-documentation.md) prompts for this purpose.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt for this purpose.
 - Update the IDE rules files as necessary.
 - Maintaining clear and up-to-date rules documentation ensures better context for future development cycles.
 
@@ -63,20 +63,20 @@ That fact that AI-powered development enables rapid creation and modification of
 - Incorporate feedback into your prompt library for continuous improvement.
 - Run at team retrospective to reflect and improve ways of working
 
-## Best Practices
+## Guidelines
+
+- **Quality, consistent results**: The combination of good quality [IDE rules](../language-specific/README.md), good quality [prompts](../prompt-library/README.md) and clear [product requirements](workflow-product-requirements.md) are essential to limit the scope and be clear to the IDE tools on what they are trying to achieve.  This limiting of scope and clarity is critical for getting consistent and predictable results throughout the development process.
 
 - **Avoid multiple branches or simultaneous changes**: Avoid having two or more people separately changing the same codebase or at least the same of areas of the codebase at the same time.
-
-- **Revert and Re-prompt Workflow**: If you find yourself needing to go through multiple iterations (2-3 loops) with the model and the code doesn't meet requirements, it's likely that your initial prompt was unclear. Instead of extensive iterations, it is more efficient to stop, revert all changes, refine your prompt or the requirements, and restart the process.
 
 - **Use Git to manage rapid change**: Git is a robust, proven and simple tool to manage and reverse changes as needed. The established processes still apply; do each new feature on a branch; commit little and often; continuously integrate with main.  
 
 - **Use logging to rapidly debug.** Feeding log messages back into the model when it has issues enables it to rapidly identify and fix issues. Include detailed debug-level logs in the code when on the branch, this can always be removed / reduced when you refactor at the end of the feature.
 
 - **Consider Complexity**: As the codebase grows larger and more complex, the scope of tasks given to the LLM needs to be increasingly specific. If the scope is too broad, the LLM may make assumptions or overlook details due to its limited context window.
-
-- **Old Library Versions**: Models will default to versions of libraries that were current at the time they where trained. For cutting-edge libraries, you may need to explicitly reference updated versions. Use the @Web annotation to fetch the latest versions or override defaults as needed.
+  
+- **Revert and Re-prompt Workflow**: If you find yourself needing to go through multiple iterations (i.e. a "Doom Loop") with the model and the code doesn't meet requirements, it's likely that your initial prompt was unclear. Instead of extensive iterations, it is more efficient to stop, revert all changes, refine your prompt or the requirements, and restart the process.
 
 - **Thinking 'Script First'**: The models are very good at writing scripts, such as bash scripts, to perform repetitive tasks.
 
-- **Terminal Commands**: IDEs like cursor and windsurf also have integration with the command line, meaning that you can often write your intention in plain english and have the model generate the appropriate terminal command.
+- **Terminal Commands**: AI-IDEs also have integration with the command line, meaning that you can often write your intention in plain english and have the model generate the appropriate terminal command.

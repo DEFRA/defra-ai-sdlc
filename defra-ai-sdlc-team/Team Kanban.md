@@ -23,11 +23,8 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Playbook - General development guidance - move to workflow (Ben)
-- [ ] Playbook - Development standards refactor (Ben)
-- [ ] Write workflow for testing in playbook (Adam)
+- [ ] Add documentation rules to the playbook rules (and our repos)
 - [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
-- [ ] Fix the github pages navigation after refactor (Todd)
 - [ ] Reach out to Richard Stockley re: Governance tool
 - [ ] Kick off Agentic workflow Ideation
 - [ ] Back port learnings to the CDP python template - include logging changes
@@ -42,16 +39,20 @@ kanban-plugin: board
 
 ## Doing
 
-- [ ] Deployment plan for Code Checker to CDP
 - [ ] Leyla Kee-McParlin - UXer for Governance
-- [ ] Write workflow for documentation and code understanding (Adam)
-- [ ] refactor the language-specific section re: new cursorrules format (Todd)
-- [ ] Write workflow for refactoring in playbook (Ben)
+- [ ] Fix the github pages navigation after refactor (Todd)
 
 
 ## Done
 
 **Complete**
+- [x] Deployment plan for Code Checker to CDP
+- [x] Write workflow for documentation and code understanding (Adam)
+- [x] Write workflow for refactoring in playbook (Ben)
+- [x] refactor the language-specific section re: new cursorrules format (Todd)
+- [x] Write workflow for testing in playbook (Adam)
+- [x] Playbook - General development guidance - move to workflow (Ben)
+- [x] Playbook - Development standards refactor (Ben)
 - [x] Deploy Governance tool to CDP
 - [x] Write workflow for product analysis
 - [x] Finish integration testing agents on Code Checker

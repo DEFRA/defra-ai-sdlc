@@ -5,10 +5,6 @@ Cursor saves the rules files in the repository in the `.cursor/rules` directory.
 **api-integration.mdc**
 ````
 ---
-description: API Frontend  / Backend Integration
-globs: *.js,*.tsx
----
- ---
 description: API Integration Standards
 globs: src/**/*.js
 ---

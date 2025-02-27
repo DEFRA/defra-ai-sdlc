@@ -5,10 +5,6 @@ Cursor saves the rules files in the repository in the `.cursor/rules` directory.
 **api-testing.mdc**
 ````
 ---
-description: Jest API testing
-globs: tests/*.js
----
----
 description: API Testing Standards
 globs: tests/*.js
 ---

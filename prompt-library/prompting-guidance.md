@@ -6,7 +6,7 @@ As LLMs have been trained on a vast array of internet content, they can generate
 
 ## Prompt Library
 
-The [Playbook Prompt Library](../prompt-library/README.md) presents a curated collection of prompts that have been proven to optimise the use of AI development tools. These examples can be tailored to meet your specific requirements.
+The [Playbook Prompt Library](README.md) presents a curated collection of prompts that have been proven to optimise the use of AI development tools. These examples can be tailored to meet your specific requirements.
 
 ## The Fundamentals of a Good Prompt
 
@@ -54,21 +54,21 @@ The following guidelines are founded on two key principles:
     3. Instruct the IDE to plan rather than generate code immediately. For instance: *“Outline the steps you will follow and prompt me for feedback before proceeding.”* Following this, you can ask it to execute some or all of its plan.
 - Alternatively, focus on one section at a time. For example: *“Analyse this product requirements document and only implement section 5.1. Do not address any other sections.”*
 
-### Avoid the Lazy Doom Loop
+### Avoid the "Doom Loop"
 
-- Iterative refinement can sometimes lead to a cycle of overly simplistic prompts, resulting in a lack of clarity and compounded errors.
+- Iterative refinement can sometimes lead to a cycle of overly simplistic prompts, where the tools make rapid changes without any sort of planning or reflection, resulting in a lack of clarity and compounded errors.
 - Instead, roll back and reformulate the initial prompt to guide the model towards more effective solutions.
+
+### Ask for Feedback
+
+- If your process involves several unintended iterations, conclude by asking: *"What was missing from the original prompt (and/or file) that contributed to the issues?"*
+- This feedback can be invaluable in refining future prompts.
 
 ### Narrow the Scope as Complexity Increases
 
 - As tasks or codebases become more complex, narrow your prompt to focus on specific components or objectives.
 - Reference particular documents or files within your prompt instead of relying solely on the model’s internal retrieval capabilities.
 - Phrasing such as "...make targeted edits" helps the model modify only the necessary parts, avoiding unnecessary changes.
-
-### Ask for Feedback
-
-- If your process involves several unintended iterations, conclude by asking: *"What was missing from the original prompt (and/or file) that contributed to the issues?"*
-- This feedback can be invaluable in refining future prompts.
 
 ### Encourage Step-by-Step Reasoning
 

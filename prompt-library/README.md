@@ -3,32 +3,31 @@
 This library provides a curated selection of prompts to optimise your use of AI tools in the development workflow. These examples serve as guidelines that you can adapt to your specific project needs rather than using them verbatim.
 
 ## Best Practices
+- Refer to [Prompting Guidance](prompting-guidance.md) for detailed guidance on writing effective prompts
 - Tailor prompts to your project's specific requirements
-- Modify prompts to align with your design patterns
-- Review and understand prompt structure before use
 - Iterate and refine prompts based on results
 
 ## Available Prompts
 
 ### Product Development
- - For detailed prompts, refer to the workflow steps in [workflow-product-requirements](../workflow/workflow-product-requirements.md)
+ - For detailed prompts, refer to the workflow steps in [Product Workflow](../workflow/workflow-product-requirements.md)
 
 ### Feature / Story Implementation
 - [Implement New Feature / Story](development/prompt-new-feature-story.md)
 
 ### Testing and Quality Assurance
-- [Adding New Tests](testing/prompt-add-new-test.md)
-- [Fix Broken Tests](testing/prompt-fix-test-errors.md)
-- [Adding Test Coverage](testing/prompt-add-test-coverage.md)
-- [Adding Functional Tests](testing/prompt-add-functional-test.md)
-- [Adding E2E Tests](testing/prompt-add-e2e-test.md)
+- [Add End-to-End Test](testing/prompt-add-e2e-test.md)
+- [Add Integration Test](testing/prompt-add-integration-test.md)
 
 ### Refactoring
 - [Refactor Feature](refactoring/prompt-refactor-feature.md)
 
 ### Documentation
-- [Add/Update Architecture Documentation](documentation-writing/prompt-add-architecture-docs.md)
-- [Update Documentation](documentation-writing/prompt-update-documentation.md)
+- [Add / Update Documentation](documentation-writing/prompt-add-update-documentation.md)
+- [Create Business Logic Documentation](documentation-writing/prompt-create-business-logic-documentation.md)
+- [Create API Documentation](documentation-writing/prompt-create-api-documentation.md)
+- [Create Repository Documentation](documentation-writing/prompt-create-repository-documentation.md)
+- [Create Service Layer Documentation](documentation-writing/prompt-create-service-layer-documentation.md)
 
 ### Learning
-- [Add Code Knowledge and Teaching](prompt-add-coding-knowledge-teaching.md)
+- [Add Code Knowledge and Teaching](learning/prompt-add-coding-knowledge-teaching.md)

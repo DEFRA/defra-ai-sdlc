@@ -4,7 +4,7 @@ This section of the playbook provides dedicated resources, templates, and tools 
 
 ## IDE Configuration Files
 
-Both [Cursor](../tool-specific/tool-cursor.md) and [Windsurf](../tool-specific/tool-windsurf.md) instruct the LLM on how to write code in a way that is consistent.
+Both Cursor and Windsurf instruct the LLM on how to write code in a way that is consistent.
 
 Cursor saves the rules files in the repository in the `.cursor/rules` directory.  Windsurf has a single rule file in the root of the repository called `.windsurfrules`
 

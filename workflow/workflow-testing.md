@@ -22,6 +22,8 @@ Integration tests ensure that components work together correctly under realistic
 - Reduce test brittleness, allowing safe refactoring without breaking tests.
 - Serve as documentation of the expected system behaviour for end-users or dependent services.
 
+Examples of integration testing frameworks would be Pytest (for Python) or Jest (for Javascript).
+
 ### Unit Tests
 
 While we emphasise integration-style tests, isolated unit tests remain valuable in certain contexts, such as:
@@ -63,13 +65,13 @@ The emphasis of the testing workflow is to have test-specific cursor rules and d
 
 ### Prerequisites
 
-- **Feature Requirements:** Ensure that detailed feature requirements, with a clear scope (such as a User Story or Product Requirement Document in markdown format), are available to the AI-powered IDE.
-- **IDE Rules:** Confirm that there are comprehensive IDE guidelines to direct AI tools in adhering to test styles and preferences.
+- **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the [Product Workflow](workflow-product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
+- **IDE Rules:** Ensure there are detailed [IDE rules for your chosen language](../language-specific/README.md) to guide the AI tools in adhering to code style and design preferences.
 
 ### 1. Interactively Prompt the IDE
 
-- Utilise an IDE in agentic "Chat" mode to implement the feature.
-- Use prompt templates from your prompt library—such as TODO —and reference your requirements file using the @file feature.
+- Utilise an IDE in agentic mode to implement the tests.
+- Use testing prompt templates from your [prompt library](../prompt-library/README.md) and reference your requirements file using the @file feature.
 - As the AI generates the tests, monitor its plan to ensure alignment with your expectations.
 - Once complete, "accept" the changes and review them in the git diff viewer. If the changes are unexpected or involve significant deletions, revert all changes, refine your prompt, and try again.
 
@@ -95,4 +97,4 @@ The workflow for end-to-end testing is similar to that for integration testing, 
 
 Consequently, AI-generated end-to-end tests can be conducted either prior to code generation or independently by a dedicated QA team if desired.
 
-TODO link to prompt
+Refer to the [prompt-add-e2e-test](../prompt-library/testing/prompt-add-e2e-test.md) for an example.

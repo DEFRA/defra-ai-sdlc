@@ -1,3 +1,4 @@
+```
 # Service Layer Technical Document Prompt
 
 Please create an expert-level service layer technical document that follows the structure below. The document must not only detail how each component of the service layer is implemented but also clearly explain why each design decision and approach was chosen. Use the following outline as your guide:
@@ -99,4 +100,5 @@ Please create an expert-level service layer technical document that follows the 
 ---
 
 Throughout the document, ensure that each section not only explains **how** the service layer functions but also emphasizes **why** each element is designed and implemented in that specific manner. This dual focus on technical details and underlying rationale will provide clear insights for developers, stakeholders, and any new team members.
+```
 
