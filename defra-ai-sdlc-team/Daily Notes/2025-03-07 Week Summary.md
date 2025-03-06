@@ -1,0 +1,4 @@
+- Spend the majority of the week learning about LangGraph and Agentic frameworks and workflows.
+- Planning first Agentic workflow project for Defra.
+- Creating initial .cursor rules files for LangGraph agentic workflows - to be tested and added to the playbook once refined and verified.
+- Updated the governance checklist tool based on feedback.
