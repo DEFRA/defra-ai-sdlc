@@ -22,17 +22,19 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Schedule and Finish Deck for final playback
+- [ ] Create final report with recommendations per SOW
 - [ ] EE Blogin for Playbook
 - [ ] Add documentation rules to the playbook rules (and our repos)
 - [ ] Reach out to Richard Stockley re: Governance tool
 - [ ] Kick off Agentic workflow Ideation
 - [ ] Back port learnings to the CDP python template - include logging changes
+- [ ] Add Miro workflow diagram into the playbook
 
 
 ## Doing
 
 - [ ] Talk to Richard Baines re: possible next project
-- [ ] Create Deck for final playback
 - [ ] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
