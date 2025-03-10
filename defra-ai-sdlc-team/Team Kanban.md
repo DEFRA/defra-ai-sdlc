@@ -9,46 +9,55 @@ kanban-plugin: board
 - [ ] Add in Andrew Rea's tool into the code checking tool
 - [ ] Ask Steve about - can we add this?
 	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
-- [ ] Setup showcases - invite people we interviewed, tech folks, every fortnight (parked - we're doing continuous showcases) - ONE BIG SHOWCASE AT THE END
 - [ ] Get access to Defa Project Online
 
 
 ## For Steve
 
-- [ ] Identify next team to onboard with AI-driven workflows
-- [ ] Retro: Mid-term - how do we start to collect justification for tool use in Defra after March? (Agree with Phil and Ryan)
-- [ ] Steve to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
+- [ ] (Steve) Identify next team to onboard with AI-driven workflows
+	- Grants team?
+	- Future RPS
+- [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 
 
 ## To Do
 
-- [ ] Schedule and Finish Deck for final playback
-- [ ] Create final report with recommendations per SOW
-- [ ] EE Blogin for Playbook
-- [ ] Add documentation rules to the playbook rules (and our repos)
-- [ ] Reach out to Richard Stockley re: Governance tool
-- [ ] Kick off Agentic workflow Ideation
-- [ ] Back port learnings to the CDP python template - include logging changes
+- [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
+	- licensing costs
+	- LLM tools / credits
+- [ ] (Steve) Schedule and Finish Deck for final playback - To be scheduled for the 27th.
+- [ ] (Todd) Create final report with recommendations per SOW
+- [ ] (Todd) EE Blogin for Playbook
+- [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] Add Miro workflow diagram into the playbook
 
 
 ## Doing
 
-- [ ] Talk to Richard Baines re: possible next project
-- [ ] Read through Dave Thomas's shared links (on the vpn):
+- [ ] (All) Find possible next project
+- [ ] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
+- [ ] (Ben) Reach out to Richard Stockley re: Governance tool
+- [ ] (Ben) Review CDP Python template
+
+
+## Done
+
+**Complete**
+
+
+***
+
+## Archive
+
+- [x] Add documentation rules to the playbook rules (and our repos)
+- [x] Leyla Kee-McParlin - UXer for Governance
+- [x] Read through Dave Thomas's shared links (on the vpn):
 	
 	This is our [SharePoint page for service readiness](https://defra.sharepoint.com/sites/Community3272/SitePages/Welcome-to-Service-Readiness-on-GIO-Connect.aspx). This will be a much more complete description of it than I could give. That has the templates for the service design pack and the SDRB presentation. They’ve added operational to the start of everything since I last looked. If you want more detail Kerrie-Anne Conder is a good person to speak to, although quite busy.
 	
 	Our [portfolio hub](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/Home.aspx) contains a list of templates. Not everything you need but a few things you might find interesting. The guidance there will refer to the current process, not what we’re moving towards.
 	
 	Our page on [spend control](https://defra.sharepoint.com/sites/def-ddts-portfoliohub/SitePages/GDS-Spend-Control-and-Assurance.aspx) has the spend control forms on the right hand side half way down. It’s the over £100k one that we mostly have to fill in.
-- [ ] Leyla Kee-McParlin - UXer for Governance
-- [ ] Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
-
-
-## Done
-
-**Complete**
 - [x] Fix the github pages navigation after refactor (Todd)
 - [x] Deployment plan for Code Checker to CDP
 - [x] Write workflow for documentation and code understanding (Adam)
@@ -86,9 +95,6 @@ kanban-plugin: board
 - [ ] Playbook draft review
 - [ ] Prep demo for Wed with the Engineers
 - [ ] Retro: Speed bump / cadence - what is a good cadence to prevent burnout? Try new R&D stuff - 1/2 day? (DECISION: Reserve Fridays for Experiments)
-
-
-
 
 %% kanban:settings
 ```
