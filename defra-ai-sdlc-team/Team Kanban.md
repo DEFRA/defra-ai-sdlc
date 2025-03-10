@@ -35,7 +35,6 @@ kanban-plugin: board
 ## Doing
 
 - [ ] (All) Find possible next project
-- [ ] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 - [ ] (Ben) Reach out to Richard Stockley re: Governance tool
 - [ ] (Ben) Review CDP Python template
 
@@ -43,6 +42,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 
 
 ***
