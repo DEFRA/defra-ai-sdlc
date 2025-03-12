@@ -14,35 +14,35 @@ kanban-plugin: board
 
 ## For Steve
 
-- [ ] (Steve) Identify next team to onboard with AI-driven workflows
-	- Grants team?
-	- Future RPS
 - [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 
 
 ## To Do
 
-- [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
-	- licensing costs
-	- LLM tools / credits
-- [ ] (Steve) Schedule and Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] (Todd) Create final report with recommendations per SOW
-- [ ] (Todd) EE Blogin for Playbook
-- [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] Add Miro workflow diagram into the playbook
+- [ ] (Todd) EE Blogin for Playbook
 
 
 ## Doing
 
+- [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] (All) Find possible next project
-- [ ] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
-- [ ] (Ben) Reach out to Richard Stockley re: Governance tool
-- [ ] (Ben) Review CDP Python template
+- [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
+	- licensing costs
+	- LLM tools / credits
+- [ ] (Steve) Schedule and Finish Deck for final playback - To be scheduled for the 27th.
+- [ ] (Steve) Identify next team to onboard with AI-driven workflows
+	- Grants team?
+	- Future RPS
 
 
 ## Done
 
 **Complete**
+- [x] (Ben) Review CDP Python template
+- [x] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
+- [x] (Ben) Reach out to Richard Stockley re: Governance tool
 
 
 ***
