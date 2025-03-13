@@ -12,14 +12,10 @@ kanban-plugin: board
 - [ ] Get access to Defa Project Online
 
 
-## For Steve
-
-- [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
-
-
 ## To Do
 
-- [ ] (Todd) Create final report with recommendations per SOW
+- [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
+- [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] Add Miro workflow diagram into the playbook
 - [ ] (Todd) EE Blogin for Playbook
 
@@ -27,11 +23,11 @@ kanban-plugin: board
 ## Doing
 
 - [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
+- [ ] (Todd) Create final report with recommendations per SOW
 - [ ] (All) Find possible next project
 - [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
 	- licensing costs
 	- LLM tools / credits
-- [ ] (Steve) Schedule and Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] (Steve) Identify next team to onboard with AI-driven workflows
 	- Grants team?
 	- Future RPS
@@ -98,6 +94,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false]}
 ```
 %%
