@@ -14,16 +14,15 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Add Miro workflow diagram into the playbook
 - [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 - [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
-- [ ] Add Miro workflow diagram into the playbook
 - [ ] (Todd) EE Blogin for Playbook
 
 
 ## Doing
 
 - [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
-- [ ] (Todd) Create final report with recommendations per SOW
 - [ ] (All) Find possible next project
 - [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
 	- licensing costs
@@ -36,6 +35,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] (Todd) Create final report with recommendations per SOW
 - [x] (Ben) Review CDP Python template
 - [x] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 - [x] (Ben) Reach out to Richard Stockley re: Governance tool

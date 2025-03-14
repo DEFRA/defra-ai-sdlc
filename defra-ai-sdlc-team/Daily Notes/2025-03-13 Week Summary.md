@@ -1,5 +1,5 @@
+- Created a prototype Greyhound Welfare form - going from raw PDF to a fully functioning Defra-style frontend/api backend **deployed on CDP in < 1 day**.  Complete with GOV.UK content and design components using 100% AI code generation techniques.
 - Updated the governance checklist tool to add explicit ordering for both workflows and checklist items per David Thomas’s feedback
-- Created a prototype Greyhound Welfare form - going from raw PDF to a fully functioning Defra-style frontend/api backend deployed on CDP in < 1 day.  Complete with GOV.UK content and design components using 100% AI code generation techniques.
 - Started work on our first Agentic workflow using LangGraph - an automated agent that analyses codebases and reports on the current state.  Also developing .cursor rules files for LangGraph development to be eventually added to the playbook once we’ve refined them.
 - Met with the IPAFSS team to talk about AI tooling that could aid in their code base analysis
 - Started to welcome and onboard Stewart Jumbe onto the team
