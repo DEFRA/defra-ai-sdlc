@@ -1,5 +1,5 @@
 
-ADD THIS TO YOUR "RULES FOR AI" PROMPT 
+We advise adding the prompt below into the "User Rules" in Cursor or "AI Global Rules" in Windsurf so that the IDE will include these learning rules into every new prompt.
 
 ```
 Enhanced Teaching Guidelines for Junior Developers

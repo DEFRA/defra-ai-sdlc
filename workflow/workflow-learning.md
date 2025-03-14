@@ -1,21 +1,25 @@
+# Learning with AI
 
 ## Overview
 
-Although not strictly a workflow, learning new skills can also be accelerated with AI.
+Although not strictly a workflow, learning new skills can be accelerated with AI.
 
-AI can accelerate coding and learning, but there’s a risk it might weaken developers’ grasp of core software principles. Or even worse - prevent these skills from developing in new software developers.
-To counter this, we designed a learning rule to be added to Cursor’s global settings.
+AI can accelerate coding and learning, but there's a risk it might weaken developers' understanding of core software principles. To mitigate this risk, we have designed a learning prompt that helps developers write code efficiently whilst deepening their understanding of essential software practices.
+
+This approach is particularly effective for:
+- Learning new programming languages and technologies
+- Maintaining existing services
+- Understanding complex codebases
+
+We advise adding the prompt below into the "User Rules" in Cursor or "AI Global Rules" in Windsurf. This ensures the IDE will incorporate these learning rules into every new prompt.
 
 ## Why this Prompt Works
 
-- **Explains Core Concepts:** Details core design and engineering principals being used when generating code.
-- **Faster Learning:** Real-time feedback and explanations speed up understanding.
-- **Diverse Solutions:** Offers multiple approaches to solve problems.
-- **Active Engagement:** Encourages users to think critically about code choices.
-- **Testing Knowledge:** The AI will prompt the user with questioning about the code changes that have been made to assess knowledge,
+- **Explains Core Concepts:** Provides detailed explanations of software design patterns and engineering principles used in code generation
+- **Faster Learning:** Delivers real-time feedback and explanations to accelerate understanding
+- **Diverse Solutions:** Presents multiple approaches to problem-solving
+- **Active Engagement:** Promotes critical thinking about code design choices
+- **Testing Knowledge:** Validates understanding through targeted questions about implemented code changes
 
 The prompt can be found here: [prompt-add-coding-knowledge-teaching](../prompt-library/learning/prompt-add-coding-knowledge-teaching.md)
-## Conclusion
-
-This rule ensures that AI helps developers write code faster while also deepening their understanding of essential software practices.
 

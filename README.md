@@ -18,7 +18,8 @@ This playbook provides guidance on best practices for integrating AI into the So
 3. [Prompting Guidance](prompt-library/prompting-guidance.md)
 4. [Prompt Library](prompt-library/README.md)
 5. [Language Specific Resources](language-specific/README.md)
-6. [AI Working Mindset](general/ai-working-mindset.md)
+6. [Learning with AI](workflow/workflow-learning.md)
+7. [AI Working Mindset](general/ai-working-mindset.md)
 
 ## Overview
 
