@@ -14,6 +14,7 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Test the CDP Python Template
 - [ ] Add Miro workflow diagram into the playbook
 - [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 - [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
