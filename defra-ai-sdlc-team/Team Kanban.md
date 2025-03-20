@@ -14,6 +14,7 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [ ] Test the CDP Python Template
 - [ ] Add Miro workflow diagram into the playbook
 - [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
