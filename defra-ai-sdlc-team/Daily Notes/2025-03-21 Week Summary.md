@@ -1,0 +1,3 @@
+- Continued work on our first Agentic workflow using LangGraph - an automated agent that analyses codebases and reports on the current state.  Currently have a functioning workflow that reverse engineers a service data model from the source code base.  Will be adding more analysis agents today.
+- Met with the UX lead on the governance transformation workgroup to demo the code checker tool.
+- Started discussions with other Defra teams on exploring a hub-and-spoke model for having project teams adopt AI in the SDLC ways of working.
