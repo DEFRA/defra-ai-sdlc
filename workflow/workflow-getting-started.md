@@ -7,7 +7,8 @@ To get started working with AI ways of working, it's helpful to have a conceptua
 Below is a diagram that provides a high-level overview of the steps defined in this playbook. For the most part, this development workflow follows recognised best practices already established throughout government, with the additional aid of AI tools and techniques.
 
 ![](attachments/development-workflow-diagram.png)
-*Simplified development workflow diagram*
+
+*Image: Simplified development workflow diagram*
 
 ### Key stages of the workflow
 
@@ -26,7 +27,8 @@ Below is a diagram that provides a high-level overview of the steps defined in t
 To generate consistent code, multiple elements must come together as depicted in this diagram:
 
 ![](attachments/venn-diagram-consistent-code.png)
-*Venn diagram depicting the intersection of elements for consistent AI code generation*
+
+*Image: Venn diagram depicting the intersection of elements for consistent AI code generation*
 
 | Element                       | Purpose                                                                                                                                                                                                                                  | Where created                                                                                                                                                                                                                                                    |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
