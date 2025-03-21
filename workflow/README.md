@@ -6,8 +6,9 @@ By following this workflow, teams can efficiently integrate AI into their develo
 
 ## Workflow Steps
 
-1. **[Project Setup](workflow-project-setup.md)** - Define the foundational elements for the project, ensuring all necessary files, tools, and conventions are in place.
-2. **Feature Development Lifecycle**
+1. **[Getting Started](workflow-getting-started.md)** - A conceptual overview of getting started with AI development workflows.
+2. **[Project Setup](workflow-project-setup.md)** - Define the foundational elements for the project, ensuring all necessary files, tools, and conventions are in place.
+3. **Feature Development Lifecycle**
 	1. [Product Requirements](workflow-product-requirements.md) - Establish clear and concise requirements for the feature using AI tools to draft and refine.
 	2. [Development](workflow-development.md) - Develop the solution iteratively, leveraging AI for implementation.
 	3. [Testing](workflow-testing.md) - Unit, Functional and End to End testing
