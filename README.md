@@ -1,5 +1,5 @@
 # Defra AI SDLC Playbook
-Version 0.2
+Version 0.3
 
 **Document status: DRAFT**
 
@@ -8,8 +8,9 @@ This playbook provides guidance on best practices for integrating AI into the So
 ## Table of Contents
 1. [Overview](#overview)
 2. [AI Development Workflow](workflow/README.md)
-	1. [Project Setup](workflow/workflow-project-setup.md)
-	2. Feature Development Lifecycle
+	1. [Getting Started](workflow/workflow-getting-started.md)
+	2. [Project Setup](workflow/workflow-project-setup.md)
+	3. Feature Development Lifecycle
 		1. [Product Requirements](workflow/workflow-product-requirements.md)
 		2. [Development](workflow/workflow-development.md)
 		3. [Testing](workflow/workflow-testing.md)

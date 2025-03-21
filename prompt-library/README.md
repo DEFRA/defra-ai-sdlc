@@ -11,6 +11,7 @@ This library provides a curated selection of prompts to optimise your use of AI 
 
 ### Product Development
  - For detailed prompts, refer to the workflow steps in [Product Workflow](../workflow/workflow-product-requirements.md)
+ - [User Story Creation](product/prompt-user-story-creation.md)
 
 ### Feature / Story Implementation
 - [Implement New Feature / Story](development/prompt-new-feature-story.md)

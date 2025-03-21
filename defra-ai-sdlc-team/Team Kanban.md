@@ -14,6 +14,7 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Move the Product prompts into the prompt library
 - [ ] Find Hub-and-spoke team to use AI ways of working
 - [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
