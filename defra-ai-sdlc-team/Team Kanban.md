@@ -14,29 +14,30 @@ kanban-plugin: board
 
 ## To Do
 
+- [ ] Find Hub-and-spoke team to use AI ways of working
 - [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
-- [ ] Test the CDP Python Template
-- [ ] Add Miro workflow diagram into the playbook
-- [ ] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
 - [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] (Todd) EE Blogin for Playbook
 
 
 ## Doing
 
+- [ ] Add Miro workflow diagram into the playbook
+- [ ] Test the CDP Python Template
 - [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] (All) Find possible next project
 - [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
 	- licensing costs
 	- LLM tools / credits
-- [ ] (Steve) Identify next team to onboard with AI-driven workflows
-	- Grants team?
-	- Future RPS
 
 
 ## Done
 
 **Complete**
+- [x] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
+- [x] (Steve) Identify next team to onboard with AI-driven workflows
+	- Grants team?
+	- Future RPS
 - [x] (Todd) Create final report with recommendations per SOW
 - [x] (Ben) Review CDP Python template
 - [x] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
