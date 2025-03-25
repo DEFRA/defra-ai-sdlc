@@ -15,13 +15,13 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Move the Product prompts into the prompt library
-- [ ] Find Hub-and-spoke team to use AI ways of working
 - [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [ ] (Todd) EE Blogin for Playbook
 
 
 ## Doing
 
+- [ ] Find Hub-and-spoke team to use AI ways of working
 - [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] (All) Find possible next project
