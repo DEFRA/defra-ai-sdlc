@@ -22,7 +22,6 @@ kanban-plugin: board
 ## Doing
 
 - [ ] Find Hub-and-spoke team to use AI ways of working
-- [ ] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] (All) Find possible next project
 - [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
@@ -33,6 +32,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [x] Test the CDP Python Template
 - [x] Add Miro workflow diagram into the playbook
 - [x] (Steve) to setup calls with Jenny Taylor (service assessments) and Richard Baines re: governance
