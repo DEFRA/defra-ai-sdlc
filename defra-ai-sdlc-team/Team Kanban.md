@@ -14,7 +14,6 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] Move the Product prompts into the prompt library
 - [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [ ] (Todd) EE Blogin for Playbook
 
@@ -32,6 +31,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] Move the Product prompts into the prompt library
 - [x] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [x] Test the CDP Python Template
 - [x] Add Miro workflow diagram into the playbook
