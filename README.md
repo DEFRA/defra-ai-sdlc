@@ -1,5 +1,5 @@
 # Defra AI SDLC Playbook
-Version 0.3
+Version 0.4
 
 **Document status: DRAFT**
 
