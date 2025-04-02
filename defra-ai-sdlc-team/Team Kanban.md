@@ -12,6 +12,14 @@ kanban-plugin: board
 - [ ] Get access to Defa Project Online
 
 
+## Hub-n-Spoke Leads
+
+- [ ] MMO - Gavin Williams
+- [ ] Waste - Johnathan Mundy
+- [ ] LAP (Legacy Apps) - Jehenga?
+- [ ] IPAFSS - Pete Anning
+
+
 ## To Do
 
 - [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
@@ -20,8 +28,9 @@ kanban-plugin: board
 
 ## Doing
 
+- [ ] Prototype Tool Guidance Reporting
+- [ ] (All) Agentic workflow  - Large codebase
 - [ ] Find Hub-and-spoke team to use AI ways of working
-- [ ] (All) Kick off Agentic workflow Ideation - Large codebase IPAFFS, SRABPI
 - [ ] (All) Find possible next project
 - [ ] (Steve) to talk to Charlie re: AI tools and Playwrite on the tech Radar
 	- licensing costs
@@ -31,6 +40,12 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+
+
+***
+
+## Archive
+
 - [x] Move the Product prompts into the prompt library
 - [x] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [x] Test the CDP Python Template
@@ -43,12 +58,6 @@ kanban-plugin: board
 - [x] (Ben) Review CDP Python template
 - [x] (Adam) Retro: Adding additional .cursorrules for dev levels, e.g. Junior learning prompts - Learn with AI section in the playbook (Adam)
 - [x] (Ben) Reach out to Richard Stockley re: Governance tool
-
-
-***
-
-## Archive
-
 - [x] Add documentation rules to the playbook rules (and our repos)
 - [x] Leyla Kee-McParlin - UXer for Governance
 - [x] Read through Dave Thomas's shared links (on the vpn):
@@ -98,6 +107,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
 ```
 %%
