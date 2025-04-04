@@ -4,17 +4,13 @@ This section of the playbook provides dedicated resources, templates, and tools 
 
 ## IDE Configuration Files
 
-Both Cursor and Windsurf instruct the LLM on how to write code in a way that is consistent.
-
-Cursor saves the rules files in the repository in the `.cursor/rules` directory.  Windsurf has a single rule file in the root of the repository called `.windsurfrules`
+Cursor saves "Rules for AI" in the repository in the `.cursor/rules` directory
 
 ## Supported Languages
 
 ### Node.js
 - [Node.js Cursor Rules Files - Frontend](nodejs/nodejs-cursorrules-frontend.md)
 - [Node.js Cursor Rules Files - Backend](nodejs/nodejs-cursorrules-bakend.md)
-- [Node.js .windsurfrules file](nodejs/nodejs-windsurfrules.md)
 
 ### Python
 - [Python Cursor Rules Files - Backend](python/python-cursorrules-backend.md)
-- [Python .windsurfrules file](python/python-windsurfrules.md)

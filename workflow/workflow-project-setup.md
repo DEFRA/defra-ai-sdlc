@@ -18,7 +18,7 @@ This guide outlines how to set up a development project using AI tools and techn
    With CDP:
    - initialise CDP project
    - configure GitHub repository automatically
-   
+
    Without CDP:
    - create GitHub repository manually
    - set branch protection rules
@@ -27,11 +27,17 @@ This guide outlines how to set up a development project using AI tools and techn
 ## Development Environment
 
 1. **Configure AI-Powered IDE**
-   - install Cursor or Windsurf
+   - install Cursor
    - add required VS Code extensions
    - set up language-specific plugins
 
-2. **Add Required Files**
+2. **Configure Privacy Settings - IMPORTANT**
+   - In ChatGPT -> Settings -> Data Controls -> "Improve the model for everyone" ->  toggle off / disable
+   - In Cursor -> Settings -> General -> Privacy Mode -> enabled
+
+**IMPORTANT:** Privacy settings must be enabled. This ensures that data is not persisted on providers servers and it is not used for training models. 
+
+3. **Add Required Files**
    - copy language-specific files from [language-specific library](../language-specific/README.md)
    - customise IDE rules for team requirements
    - update system prompt for LLM base understanding

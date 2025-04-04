@@ -11,7 +11,7 @@ This approach is particularly effective for:
 - Maintaining existing services
 - Understanding complex codebases
 
-We advise adding the prompt below into the "User Rules" in Cursor or "AI Global Rules" in Windsurf. This ensures the IDE will incorporate these learning rules into every new prompt.
+We advise adding the prompt below into the "User Rules" in Cursor. This ensures the IDE will incorporate these learning rules into every new prompt.
 
 ## Why this Prompt Works
 

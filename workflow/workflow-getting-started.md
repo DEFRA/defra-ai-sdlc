@@ -13,7 +13,7 @@ Below is a diagram that provides a high-level overview of the steps defined in t
 ### Key stages of the workflow
 
 - **Product / Service idea** - This represents the problems to be solved for your users using existing service design and user research techniques.
-- **Prompt to generate requirements documents and designs** - Using advanced models, such as the latest "thinking" models, the clearly defined ideas can be used to generate requirements documentation (features, user stories, data models, etc.) that the AI IDEs (Integrated Development Environment, e.g. Cursor or Windsurf, etc.) can later use to generate code. 
+- **Prompt to generate requirements documents and designs** - Using advanced models, such as the latest "thinking" models, the clearly defined ideas can be used to generate requirements documentation (features, user stories, data models, etc.) that the AI IDEs (Integrated Development Environment - Cursor) can later use to generate code. 
 - **Create a new feature branch in git** - This workflow uses traditional git branching strategies for code versioning.
 - **Take requirements and prompt to generate code** - The requirements generated in the previous step are then used to prompt the AI IDE tools to generate code.
 - **Take requirements and prompt to generate tests** - Tests can be generated from the same product requirements in the AI IDE, ensuring the business logic defined in the requirements are tested independently from the code generation.
@@ -39,6 +39,6 @@ To generate consistent code, multiple elements must come together as depicted in
 
 ## Next steps
 
-To get started, ensure that your [project is set up for AI development](workflow-project-setup.md) and follow the steps in the [Playbook Workflow](README.md).
+To get started, ensure that your [project is set up for AI development](workflow-project-setup.md) and follow the steps in the [Playbook Workflow](README.md). **IMPORTANT - this includes ensuring that privacy settings are enabled, per the [project is set up](workflow-project-setup.md).** 
 
 We also advise reading and understanding the detailed [Prompting Guidance](../prompt-library/prompting-guidance.md) before you start.
