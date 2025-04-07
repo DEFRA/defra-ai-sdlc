@@ -24,6 +24,11 @@ kanban-plugin: board
 
 - [ ] (Todd) EE Blogin for Playbook
 - [ ] Create short deck for using online tooling
+- [ ] Chrome on Windows may be clipping text in the playbook:
+	
+	"it is the .wrapper class on the surrounding div, disabling the width "fixes" the issue"
+	
+	[https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html](https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html)
 
 
 ## Doing
