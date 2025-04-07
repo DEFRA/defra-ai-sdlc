@@ -22,8 +22,8 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [ ] (Todd) EE Blogin for Playbook
+- [ ] Create short deck for using online tooling
 
 
 ## Doing
@@ -40,6 +40,7 @@ kanban-plugin: board
 ## Done
 
 **Complete**
+- [x] For Tim: can we use AI tools to help analyse the IPAFFS code?
 
 
 ***

@@ -1,0 +1,5 @@
+- Developed Tool Guidance prototype website to provide both a detailed and summary report of the data and privacy facts regarding AI tools.
+- Writing up Team Principles document for communicating the roll out of AI ways of working within Defra
+- Caught up with MMO and IPAFSS on the Hub-and-Spoke model for AI use within teams
+- Met Sophie Bliss (via David Thomas) from the Cabinet Office to demo the Governance Checklist tool and align on her plans to help streamline governance.  Positive meeting, hope to collaborate with her team as we develop the tool.
+- Continued work on the code analysis agentic workflow.  Have the repository chunking library written and LangGraph workflow POC complete.
