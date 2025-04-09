@@ -39,6 +39,11 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
+/* Default text size adjustments */
+body {
+  font-size: 0.95rem; /* Backup for browsers that don't fully support root font-size */
+}
+
 /* Ensure containers adapt to font size */
 .wrapper, .content, .navigation {
   height: auto !important;

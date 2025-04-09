@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-size: 1rem;
+  font-size: 0.95rem;  /* Reduced from 1rem for smaller default text size */
 }
 
 // Typography
@@ -199,7 +199,7 @@ section {
 
   h2 {
     color: var(--header-color);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 1rem;
   }
 
@@ -219,7 +219,7 @@ section {
     
     li {
       margin-bottom: 3px;
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 
@@ -241,7 +241,7 @@ header {
   h1 {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     
     a {
       color: inherit;
@@ -256,7 +256,7 @@ header {
 
   p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -441,7 +441,7 @@ pre {
 
 // Add responsive font scaling for better accessibility
 html {
-  font-size: 100%;
+  font-size: 90%;  /* Reduced from 100% to make default text smaller */
 }
 
 // Table styling to ensure they're responsive
@@ -463,4 +463,10 @@ table {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Make paragraphs and lists more readable with the smaller default size
+p, li {
+  line-height: 1.5;
+  margin-bottom: 0.8em;
 }
