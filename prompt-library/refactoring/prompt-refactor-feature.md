@@ -3,7 +3,7 @@ As per the [refactoring workflow](../../workflow/workflow-refactoring.md), it is
 As well as this, the prompt below can also be used as a "general cleanup". This should be done for a specific file or grouping of files, rather than a whole codebase. 
 
 ```
-I want ro refactor @file. The goal is to make it easy to read and reason about.
+I want to refactor @file. The goal is to make it easy to read and reason about.
 
 Do the following:
 
