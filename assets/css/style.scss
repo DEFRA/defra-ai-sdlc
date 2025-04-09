@@ -37,17 +37,22 @@ pre:hover .copy-code-button {
 /* Accessibility and font-size override fixes */
 html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  overflow-x: hidden; /* Prevent horizontal scrolling at root level */
 }
 
 /* Default text size adjustments */
 body {
   font-size: 0.95rem; /* Backup for browsers that don't fully support root font-size */
+  overflow-x: hidden; /* Prevent horizontal scrolling at body level */
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Ensure containers adapt to font size */
 .wrapper, .content, .navigation {
   height: auto !important;
   min-height: 0 !important;
+  max-width: 100vw;
 }
 
 /* Make sure all text elements can wrap properly */
@@ -56,4 +61,23 @@ p, li, td, th, h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   -ms-word-break: break-word;
   word-break: break-word;
+  hyphens: auto; /* Enable hyphenation for better text wrapping */
+}
+
+/* Better handling of very large font sizes */
+@media screen and (max-width: 480px), screen and (min-width: 481px) and (max-font-size: 24px) {
+  html {
+    font-size: 85%; /* Scale down base font size even more for very large default fonts */
+  }
+  
+  /* Ensure content containers can handle large text */
+  .content, .navigation {
+    overflow-x: auto !important;
+  }
+  
+  /* Force line breaks for very long words */
+  * {
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+  }
 }

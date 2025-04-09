@@ -151,14 +151,20 @@ a:active {
   flex-direction: row;
   min-height: 100vh;
   background-color: var(--bg-color);
+  width: 100%;
+  max-width: 100vw; /* Ensure wrapper doesn't exceed viewport width */
+  overflow-x: hidden; /* Prevent horizontal scrolling at wrapper level */
 }
 
 // Navigation styling
 .navigation {
   width: 270px;
+  min-width: 200px; /* Minimum width to prevent squeezing */
+  max-width: 30vw; /* Cap width on very large screens */
   padding: 2rem 1rem;
   background: var(--nav-bg);
   border-right: 1px solid var(--border-color);
+  overflow-x: auto; /* Allow horizontal scrolling within nav when needed */
   
   .logo-container {
     margin-bottom: 2rem;
@@ -183,6 +189,7 @@ a:active {
   overflow-x: auto;
   background-color: var(--bg-color);
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   word-wrap: break-word;
 }
@@ -280,24 +287,60 @@ footer {
 @media print, screen and (max-width: 960px) {
   .wrapper {
     flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .navigation {
     width: auto;
+    max-width: 100%; /* Full width on small screens */
+    min-width: 0; /* Override the minimum width */
     border-right: none;
     border-bottom: 1px solid var(--border-color);
+    overflow-x: auto;
   }
 
   .content {
     padding: 1rem;
     max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
   }
 }
 
+// Even smaller screens or very large fonts
 @media print, screen and (max-width: 480px) {
   .navigation, .content {
     padding: 0.5rem;
     width: 100%;
+  }
+  
+  // Adjust typography for very small screens / very large fonts
+  h1 { font-size: 1.2rem; }
+  h2 { font-size: 1.1rem; }
+  h3 { font-size: 1rem; }
+  
+  // Make navigation more compact
+  .site-nav {
+    li {
+      margin-bottom: 3px;
+      
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+  
+  // Adjust footer for very small screens
+  .govuk-footer__meta {
+    display: block;
+  }
+  
+  // Ensure table horizontal scrolling
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
   }
 }
 
