@@ -13,9 +13,29 @@
     <![endif]-->
     {% include head-custom.html %}
     <style>
+      /* Global styles for proper centering */
+      html, body {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+    
       .content {
-        overflow-x: auto;
+        overflow-x: auto; /* Changed from hidden to auto */
         max-width: 100%;
+      }
+      
+      /* Center wrapper while maintaining responsiveness */
+      .wrapper {
+        margin: 0 auto !important;
+        max-width: 1400px !important;
       }
       
       /* Extra fallback for very large font sizes */
@@ -24,6 +44,7 @@
           display: block !important;
           width: 100% !important;
           max-width: 100vw !important;
+          margin: 0 auto !important;
         }
         
         .navigation, .content {
@@ -31,6 +52,7 @@
           max-width: 100% !important;
           box-sizing: border-box !important;
           padding: 0.5rem !important;
+          margin: 0 auto !important;
         }
       }
     </style>

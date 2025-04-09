@@ -46,6 +46,8 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling at body level */
   width: 100%;
   max-width: 100vw;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
 }
 
 /* Ensure containers adapt to font size */
@@ -53,6 +55,11 @@ body {
   height: auto !important;
   min-height: 0 !important;
   max-width: 100vw;
+}
+
+/* Center the content area */
+.content {
+  margin: 0 auto;
 }
 
 /* Make sure all text elements can wrap properly */
