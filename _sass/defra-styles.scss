@@ -44,6 +44,8 @@ body {
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-size: 1rem;
 }
 
 // Typography
@@ -178,7 +180,11 @@ a:active {
   padding-left: 3rem;
   padding-right: 3rem;
   overflow-y: auto;
+  overflow-x: auto;
   background-color: var(--bg-color);
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 section {
@@ -284,12 +290,14 @@ footer {
 
   .content {
     padding: 1rem;
+    max-width: 100%;
   }
 }
 
 @media print, screen and (max-width: 480px) {
   .navigation, .content {
     padding: 0.5rem;
+    width: 100%;
   }
 }
 
@@ -429,4 +437,30 @@ pre.highlight {
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+// Add responsive font scaling for better accessibility
+html {
+  font-size: 100%;
+}
+
+// Table styling to ensure they're responsive
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  table {
+    white-space: normal;
+  }
+}
+
+// Images should scale with container
+img {
+  max-width: 100%;
+  height: auto;
 }

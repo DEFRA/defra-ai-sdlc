@@ -33,3 +33,22 @@ pre:hover .copy-code-button {
 .copy-code-button:active {
   background-color: #ccc;
 }
+
+/* Accessibility and font-size override fixes */
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+/* Ensure containers adapt to font size */
+.wrapper, .content, .navigation {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Make sure all text elements can wrap properly */
+p, li, td, th, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
