@@ -322,6 +322,8 @@ code {
   background-color: transparent;
   color: var(--text-color);
   font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 [data-theme="dark"] pre code {
@@ -424,4 +426,7 @@ pre.highlight {
   color: var(--govuk-black);
 }
 
-pre code {white-space: pre-wrap; word-wrap: break-word;}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
