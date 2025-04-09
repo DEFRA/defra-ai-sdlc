@@ -165,7 +165,7 @@ a:active {
   width: 270px;
   min-width: 200px; /* Minimum width to prevent squeezing */
   max-width: 30vw; /* Cap width on very large screens */
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem 2rem 2rem; /* Increased left padding from 1rem to 2rem */
   background: var(--nav-bg);
   border-right: 1px solid var(--border-color);
   overflow-x: auto; /* Allow horizontal scrolling within nav when needed */
