@@ -71,6 +71,25 @@ p, li, td, th, h1, h2, h3, h4, h5, h6 {
   hyphens: auto; /* Enable hyphenation for better text wrapping */
 }
 
+/* Handle text wrapping on small screens */
+@media screen and (max-width: 768px) {
+  /* Force all elements to respect container width */
+  body * {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  /* Adjust specifically for mobile navigation items */
+  .navigation li {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
 /* Better handling of very large font sizes */
 @media screen and (max-width: 480px), screen and (min-width: 481px) and (max-font-size: 24px) {
   html {
@@ -86,5 +105,10 @@ p, li, td, th, h1, h2, h3, h4, h5, h6 {
   * {
     max-width: 100% !important;
     overflow-wrap: break-word !important;
+  }
+  
+  /* Fix for long URLs and paths */
+  a, code, pre {
+    word-break: break-all;
   }
 }

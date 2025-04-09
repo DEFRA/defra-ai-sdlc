@@ -58,12 +58,28 @@
           padding: 0.5rem !important;
           margin: 0 auto !important;
         }
+        
+        /* Force text wrapping on small screens */
+        .content * {
+          max-width: 100% !important;
+          overflow-wrap: break-word !important;
+          word-wrap: break-word !important;
+          word-break: break-word !important;
+          hyphens: auto !important;
+        }
       }
       
       @media screen and (max-width: 480px) {
         .wrapper {
           padding-left: 1rem !important; /* Match further reduced padding for smallest screens */
           padding-right: 1rem !important; /* Match further reduced padding for smallest screens */
+        }
+        
+        /* Further improve content display on smallest screens */
+        .content {
+          padding-left: 0.25rem !important;
+          padding-right: 0.25rem !important;
+          overflow-x: hidden !important;
         }
       }
     </style>

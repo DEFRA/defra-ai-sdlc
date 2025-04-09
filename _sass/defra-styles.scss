@@ -198,6 +198,7 @@ a:active {
   max-width: 100%;
   box-sizing: border-box;
   word-wrap: break-word;
+  word-break: break-word; /* Added to force break words */
   margin: 0 auto; /* Center content */
 }
 
@@ -339,6 +340,13 @@ footer {
     margin: 0 auto;
   }
   
+  /* Improve content display on small screens */
+  .content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
+  
   // Adjust typography for very small screens / very large fonts
   h1 { font-size: 1.2rem; }
   h2 { font-size: 1.1rem; }
@@ -365,6 +373,27 @@ footer {
     display: block;
     width: 100%;
     overflow-x: auto;
+  }
+  
+  // Handle long text and URLs
+  a, code, pre, .govuk-footer__link {
+    word-break: break-all;
+    max-width: 100%;
+  }
+  
+  // Long text in footer items
+  .govuk-footer__meta-item {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  // Reduce long text
+  .govuk-footer__inline-list-item {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 5px;
   }
 }
 
