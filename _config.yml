@@ -23,6 +23,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Include files that are normally excluded
+include:
+  - CONTRIBUTING.md
+
 # Exclude files from processing
 exclude:
   - .obsidian/
