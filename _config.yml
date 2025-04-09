@@ -32,7 +32,6 @@ exclude:
   - node_modules/
   - vendor/
   - .gitignore
-  - CONTRIBUTING.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
