@@ -158,6 +158,7 @@ a:active {
   max-width: 1400px; /* Limit maximum width */
   overflow-x: hidden; /* Prevent horizontal scrolling at wrapper level */
   margin: 0 auto; /* Center the wrapper */
+  padding-left: 2rem; /* Add left padding to the entire page */
 }
 
 // Navigation styling
@@ -165,7 +166,7 @@ a:active {
   width: 270px;
   min-width: 200px; /* Minimum width to prevent squeezing */
   max-width: 30vw; /* Cap width on very large screens */
-  padding: 2rem 1.5rem 2rem 2rem; /* Increased left padding from 1rem to 2rem */
+  padding: 2rem 1.5rem 2rem 0.5rem; /* Reduced left padding to balance with wrapper padding */
   background: var(--nav-bg);
   border-right: 1px solid var(--border-color);
   overflow-x: auto; /* Allow horizontal scrolling within nav when needed */
@@ -296,6 +297,7 @@ footer {
     overflow-x: hidden;
     margin: 0 auto;
     max-width: 960px; /* Adjusted for this breakpoint */
+    padding-left: 1.5rem; /* Reduced padding for smaller screens */
   }
 
   .navigation {
@@ -325,6 +327,7 @@ footer {
   
   .wrapper {
     max-width: 100%; /* Full width on smallest screens */
+    padding-left: 1rem; /* Further reduce padding on smallest screens */
   }
   
   .navigation, .content {
