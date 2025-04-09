@@ -30,4 +30,4 @@ This playbook guides teams in realising these opportunities through practical wa
 
 ## Contributing
 
-We welcome contributions from the Defra community. Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+We welcome contributions from the Defra community. Please see the [CONTRIBUTING](/CONTRIBUTING.md) file for more information on how to contribute to this playbook.
