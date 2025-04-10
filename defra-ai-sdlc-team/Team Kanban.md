@@ -22,8 +22,10 @@ kanban-plugin: board
 
 ## To Do
 
-- [ ] (Todd) EE Blogin for Playbook
+- [ ] Github Co-pilot eval
+- [ ] Create demo for Sophie Bliss
 - [ ] Create short deck for using online tooling
+- [ ] (Todd) EE Blogin for Playbook
 - [ ] Chrome on Windows may be clipping text in the playbook:
 	
 	"it is the .wrapper class on the surrounding div, disabling the width "fixes" the issue"
