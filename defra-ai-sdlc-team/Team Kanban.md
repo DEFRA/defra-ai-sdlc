@@ -21,6 +21,14 @@ kanban-plugin: board
 - [ ] IPAFSS - Pete Anning
 
 
+## Stuff to Investigate
+
+- [ ] Self-healing / writing of cursor rules
+- [ ] Google Agent2Agent (A2A)
+- [ ] Gemini 2.5 pro
+- [ ] Llama 4
+
+
 ## To Do
 
 - [ ] Github Co-pilot eval
@@ -116,6 +124,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
 ```
 %%
