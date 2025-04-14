@@ -8,17 +8,17 @@ kanban-plugin: board
 
 - [ ] Guardrails patterns app
 - [ ] Add in Andrew Rea's tool into the code checking tool
+- [ ] Port over Code Checker to Agent workflow
 - [ ] Ask Steve about - can we add this?
 	[https://github.com/DEFRA/gwa-etl](https://github.com/DEFRA/gwa-etl)
-- [ ] Get access to Defa Project Online
 
 
 ## Hub-n-Spoke Leads
 
 - [ ] MMO - Gavin Williams
 - [ ] Waste - Johnathan Mundy
-- [ ] LAP (Legacy Apps) - Jehenga?
 - [ ] IPAFSS - Pete Anning
+- [ ] LAP (Legacy Apps) - Jehenga?
 
 
 ## Stuff to Investigate
@@ -32,14 +32,8 @@ kanban-plugin: board
 ## To Do
 
 - [ ] Github Co-pilot eval
-- [ ] Create demo for Sophie Bliss
 - [ ] Create short deck for using online tooling
 - [ ] (Todd) EE Blogin for Playbook
-- [ ] Chrome on Windows may be clipping text in the playbook:
-	
-	"it is the .wrapper class on the surrounding div, disabling the width "fixes" the issue"
-	
-	[https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html](https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html)
 
 
 ## Doing
@@ -56,13 +50,19 @@ kanban-plugin: board
 ## Done
 
 **Complete**
-- [x] For Tim: can we use AI tools to help analyse the IPAFFS code?
 
 
 ***
 
 ## Archive
 
+- [x] Chrome on Windows may be clipping text in the playbook:
+	
+	"it is the .wrapper class on the surrounding div, disabling the width "fixes" the issue"
+	
+	[https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html](https://defra.github.io/defra-ai-sdlc/workflow/workflow-getting-started.html)
+- [x] Create demo for Sophie Bliss
+- [x] For Tim: can we use AI tools to help analyse the IPAFFS code?
 - [x] Move the Product prompts into the prompt library
 - [x] (Todd) Finish Deck for final playback - To be scheduled for the 27th.
 - [x] Test the CDP Python Template
