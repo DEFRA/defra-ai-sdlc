@@ -10,7 +10,7 @@ This library provides a curated selection of prompts to optimise your use of AI 
 ## Available Prompts
 
 ### Product Development
- - For understanding of product requirements prompt sequencing, please refer to the workflow steps in [Product Workflow](../workflow/workflow-product-requirements.md)
+ - For understanding of product requirements prompt sequencing, please refer to the workflow steps in [Workflow](../../Pages/2-core-concepts/2.1-workflow.md)
  - [Example Product Requirements Input](product/example-product-requirements-input.md)
  - [Data Model Generation](product/prompt-data-model-generation.md)
  - [API Requirements](product/prompt-api-requirements.md)

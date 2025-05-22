@@ -21,5 +21,5 @@ We advise adding the prompt below into the "User Rules" in Cursor. This ensures 
 - **Active Engagement:** Promotes critical thinking about code design choices
 - **Testing Knowledge:** Validates understanding through targeted questions about implemented code changes
 
-The prompt can be found here: [prompt-add-coding-knowledge-teaching](../prompt-library/learning/prompt-add-coding-knowledge-teaching.md)
+The prompt can be found here: [prompt-add-coding-knowledge-teaching](prompt-library/learning/prompt-add-coding-knowledge-teaching.md)
 

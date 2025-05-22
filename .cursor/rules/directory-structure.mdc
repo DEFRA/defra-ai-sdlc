@@ -1,0 +1,52 @@
+name: Directory Structure Rule
+description: This rule documents the directory structure of the defra-ai-sdlc site
+
+directory_structure:
+  root:
+    - README.md: "Main homepage content"
+    - _config.yml: "Jekyll site configuration"
+    - Gemfile: "Ruby dependencies"
+    - assets/: "Static assets for the site"
+      - images/: "Images including logos and icons"
+      - css/: "CSS stylesheets"
+    - _layouts/: "Jekyll layout templates"
+      - default.html: "Main layout template with navigation"
+    - _sass/: "SASS files for styling"
+    - Pages/: "Main content pages in new structure"
+      - 2-core-concepts/: "Core concepts content"
+        - 2.1-workflow.md: "Workflow documentation"
+        - 2.2-Four-pillars.md: "The Four pillars documentation"
+        - 2.3-project-setup.md: "Project setup documentation"
+        - index.md: "Core concepts overview"
+      - 3-feature-development/: "Feature development content"
+        - 3.1-product-requirements.md: "Product requirements documentation"
+        - 3.2-development.md: "Development documentation"
+        - 3.3-testing.md: "Testing documentation"
+        - 3.4-refactoring.md: "Refactoring documentation"
+        - 3.5-documentation.md: "Documentation guidelines"
+        - index.md: "Feature development overview"
+      - 4-ai-working-mindset.md: "AI working mindset documentation"
+    - appendix/: "Appendix content"
+      - prompt-library/: "Prompt library content"
+      - language-specific/: "Language specific resources"
+      - workflow-learning.md: "Learning with AI documentation"
+
+url_structure:
+  base: "/defra-ai-sdlc"
+  navigation:
+    - "1. Welcome": "/"
+    - "2. Core concepts": "/Pages/2-core-concepts/"
+      - "2.1. Workflow": "/Pages/2-core-concepts/2.1-workflow/"
+      - "2.2. The Four Pillars": "/Pages/2-core-concepts/2.2-four-pillars/"
+      - "2.3. Project Setup": "/Pages/2-core-concepts/2.3-project-setup/"
+    - "3. Feature Development": "/Pages/3-feature-development/"
+      - "3.1. Lifecycle": "/Pages/3-feature-development/3.1-product-requirements/"
+      - "3.2. Development": "/Pages/3-feature-development/3.2-development/"
+      - "3.3. Testing": "/Pages/3-feature-development/3.3-testing/"
+      - "3.4. Refactoring": "/Pages/3-feature-development/3.4-refactoring/"
+      - "3.5. Documentation": "/Pages/3-feature-development/3.5-documentation/"
+    - "4. AI Working Mindset": "/Pages/4-ai-working-mindset/"
+    - "5. Appendix": 
+      - "Prompt Library": "/appendix/prompt-library"
+      - "Language Specific Resources": "/appendix/language-specific"
+      - "Learning With AI": "/appendix/workflow-learning" 

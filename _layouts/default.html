@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-GB" }}" data-theme="light">
+<html lang="{{ site.lang  }}" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,278 +11,350 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <title>SDLC Playbook</title>
     {% include head-custom.html %}
     <style>
-      /* Global styles for proper centering */
       html, body {
-        display: flex;
-        justify-content: center;
-        width: 100%;
         margin: 0;
         padding: 0;
-      }
-      
-      body {
+        width: 100%;
+        font-family: "GDS Transport", arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        min-height: 100vh;
       }
-    
+      
+      /* Main container */
+      .main-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 300px; /* Space for navigation - increased from 250px */
+        margin-top: 0; /* No more header to account for */
+      }
+      
+      .navigation {
+        background-color: #ffffff;
+        position: fixed;
+        left: 0;
+        top: 0; /* Start from top now that header is gone */
+        bottom: 0;
+        width: 300px; /* Increased from 250px */
+        z-index: 90;
+        overflow-y: auto;
+      }
+      
+      .navigation-inner {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      
+      /* Content area with GOV.UK-like width */
       .content {
-        overflow-x: auto; /* Changed from hidden to auto */
+        padding: 30px;
+        max-width: 960px;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+      }
+      
+      /* Ensure content fits within container */
+      .content img, 
+      .content pre, 
+      .content table,
+      .content iframe {
         max-width: 100%;
+        height: auto;
       }
       
-      /* Center wrapper while maintaining responsiveness */
-      .wrapper {
-        margin: 0 auto !important;
-        max-width: 1400px !important;
-        padding-left: 2rem !important; /* Match the padding from the CSS */
-        padding-right: 2rem !important; /* Match the padding from the CSS */
+      /* Navigation styles */
+      .site-nav h2 {
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #0b0c0c;
+      }
+
+
+      .site-nav ul ul {
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+      .site-nav li {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.3;
       }
       
-      /* Extra fallback for very large font sizes */
+      .site-nav ul ul li {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      
+      .site-nav a {
+        text-decoration: none;
+      }
+
+      .site-nav a:hover {
+        text-decoration: none;
+    }
+      
+      /* Global link styles */
+      a {
+        color: #1d70b8;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        font-weight: attr(font-weight);
+        background-color: #e5e5e5;
+      }
+
+      /* Content typography */
+      .content h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #0b0c0c;
+      }
+      
+      .content h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 45px;
+        margin-bottom: 20px;
+        color: #0b0c0c;
+      }
+      
+      .content h3 {
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        color: #0b0c0c;
+      }
+      
+      .content p {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #0b0c0c;
+      }
+      
+      .content ul, .content ol {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        color: #0b0c0c;
+      }
+      
+      .content li {
+        margin-bottom: 10px;
+      }
+      
+      /* Code blocks */
+      .content pre {
+        background-color: #f3f2f1;
+        padding: 15px;
+        overflow-x: auto;
+        margin-bottom: 20px;
+        border: 1px solid #b1b4b6;
+      }
+      
+      .content code {
+        font-family: monospace;
+        font-size: 16px;
+        color: #0b0c0c;
+      }
+      
+      /* Footer - positioned at the bottom */
+      .site-footer {
+        background-color: #f3f2f1;
+        border-top: 1px solid #b1b4b6;
+        padding: 30px 0;
+        z-index: 80;
+        width: 100%;
+      }
+      
+      .footer-content {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+      
+      /* Support links */
+      .support-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .support-links li {
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+      
+      .support-links a {
+        color: #1d70b8;
+        text-decoration: underline;
+      }
+      
+      /* Theme toggle */
+      .theme-toggle {
+        display: none;
+      }
+      
+      /* Logo styling */
+      .logo-container {
+        margin-bottom: 20px;
+      }
+      
+      .logo-light {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Responsive styles */
       @media screen and (max-width: 768px) {
-        .wrapper {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100vw !important;
-          margin: 0 auto !important;
-          padding-left: 1.5rem !important; /* Match reduced padding for smaller screens */
-          padding-right: 1.5rem !important; /* Match reduced padding for smaller screens */
+        .main-container {
+          flex-direction: column;
+          margin-left: 0;
         }
         
-        .navigation, .content {
-          width: 100% !important;
-          max-width: 100% !important;
-          box-sizing: border-box !important;
-          padding: 0.5rem !important;
-          margin: 0 auto !important;
+        .navigation {
+          position: relative;
+          width: 100%;
+          height: auto;
+          border-bottom: 1px solid #b1b4b6;
         }
         
-        /* Force text wrapping on small screens */
-        .content * {
-          max-width: 100% !important;
-          overflow-wrap: break-word !important;
-          word-wrap: break-word !important;
-          word-break: break-word !important;
-          hyphens: auto !important;
-        }
-      }
-      
-      @media screen and (max-width: 480px) {
-        .wrapper {
-          padding-left: 1rem !important; /* Match further reduced padding for smallest screens */
-          padding-right: 1rem !important; /* Match further reduced padding for smallest screens */
+        .navigation-inner {
+          height: auto;
+          padding: 15px;
         }
         
-        /* Further improve content display on smallest screens */
         .content {
-          padding-left: 0.25rem !important;
-          padding-right: 0.25rem !important;
-          overflow-x: hidden !important;
+          width: 100%;
+          padding: 20px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="navigation">
-        {% if site.logo %}
-        <div class="logo-container">
-          <a href="/defra-ai-sdlc">
-            <img class="logo-light" src="{{site.logo | relative_url}}" alt="Defra Logo" />
-            <img class="logo-dark" src="{{ "/assets/images/defra-logo-white.svg" | relative_url }}" alt="Defra Logo" />
-          </a>
-        </div>
-        {% endif %}
-
-        <header>
-          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-        </header>
-
-        <!-- Theme Toggle -->
-        <label class="theme-toggle">
-          <input class="theme-toggle-checkbox" type="checkbox">
-          <div class="theme-toggle-switch" style="background: var(--govuk-dark-grey);">
-            <span class="toggle-icon light" style="display: flex; align-items: center;">
-              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </span>
-            <span class="toggle-icon dark" style="display: flex; align-items: center;">
-              <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-              </svg>
-            </span>
+    <div class="main-container">
+      <nav class="navigation">
+        <div class="navigation-inner">
+          <div class="logo-container">
+            <a href="/defra-ai-sdlc">
+              <img class="logo-light" src="{{site.logo | relative_url}}" alt="Defra Logo" />
+            </a>
           </div>
-        </label>
+         
+  
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <!-- Navigation Menu -->
-        <nav class="site-nav">
-          <h2>Navigation</h2>
-          <ul>
-            <li><a href="/defra-ai-sdlc/">Home</a></li>
-            <li><a href="/defra-ai-sdlc/#overview">Overview</a></li>
-             <li>
-              <a href="/defra-ai-sdlc/workflow/">AI Development Workflow</a>
+          <!-- Theme Toggle REMOVED -->
+
+          <div class="navigation-inner">
+            <!-- Navigation Menu -->
+            <nav class="site-nav">
+              <h2>Navigation</h2>
               <ul>
-                <li><a href="/defra-ai-sdlc/workflow/workflow-getting-started">Getting Started</a></li>
-                <li><a href="/defra-ai-sdlc/workflow/workflow-project-setup">Project Setup</a></li>
-                <li><a href="/defra-ai-sdlc/workflow/">Feature Development Lifecycle</a></li>
+                <li><a href="/defra-ai-sdlc/">1. Welcome</a></li>
+                <li>
+                  <a href="/defra-ai-sdlc/Pages/2-core-concepts/">2. Core concepts</a>
                   <ul>
-                    <li><a href="/defra-ai-sdlc/workflow/workflow-product-requirements">Product Requirements</a></li>
-                    <li><a href="/defra-ai-sdlc/workflow/workflow-development">Development</a></li>
-                    <li><a href="/defra-ai-sdlc/workflow/workflow-testing">Testing</a></li>
-                    <li><a href="/defra-ai-sdlc/workflow/workflow-refactoring">Refactoring</a></li>
-                    <li><a href="/defra-ai-sdlc/workflow/workflow-documentation">Documentation</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/2-core-concepts/2.1-workflow/">2.1. Workflow</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/2-core-concepts/2.2-four-pillars/">2.2. The 4 Pillars</a>
+                    </li>
+                    <li><a href="/defra-ai-sdlc/Pages/2-core-concepts/2.3-project-setup/">2.3. Project Setup</a></li>
                   </ul>
                 </li>
+                <li>
+                  <a href="/defra-ai-sdlc/Pages/3-feature-development/">3. Feature Development</a>
+                  <ul>
+                    <li><a href="/defra-ai-sdlc/Pages/3-feature-development/3.1-product-requirements/">3.1. Product Requirements</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/3-feature-development/3.2-development/">3.2. Development</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/3-feature-development/3.3-testing/">3.3. Testing</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/3-feature-development/3.4-refactoring/">3.4. Refactoring</a></li>
+                    <li><a href="/defra-ai-sdlc/Pages/3-feature-development/3.5-documentation/">3.5. Documentation</a></li>
+                  </ul>
+                </li>
+                <li><a href="/defra-ai-sdlc/Pages/4-ai-working-mindset/">4. AI Working Mindset</a></li>
+                <li>
+                  Appendix
+                  <ul>
+                    <li><a href="/defra-ai-sdlc/appendix/prompt-library">Prompt Library</a></li>
+                    <li><a href="/defra-ai-sdlc/appendix/language-specific">Language Specific Resources</a></li>
+                    <li><a href="/defra-ai-sdlc/appendix/workflow-learning">Learning with AI</a></li>
+                  </ul>
+                </li>      
               </ul>
-            </li>
-            <li><a href="/defra-ai-sdlc/prompt-library/prompting-guidance">Prompting Guidance</a></li>
-            <li><a href="/defra-ai-sdlc/prompt-library">Prompting Library</a></li>
-            <li><a href="/defra-ai-sdlc/language-specific">Language Specific Resources</a></li>
-            <li><a href="/defra-ai-sdlc/workflow/workflow-learning">Learning with AI</a></li>
-            <li><a href="/defra-ai-sdlc/general/ai-working-mindset">AI Working Mindset</a></li>        
-          </ul>
-        </nav>
-        
-        <footer>
-          <p>
-            {% if site.github.is_project_page %}
-            <small>View the Project on GitHub <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a></small>
-            {% endif %}
-            {% if site.github.is_project_page %}
-            <br /><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small>
-            {% endif %}
-            <br /><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
-            <br /><small>Site Version {{ site.version }}</small>
-          </p>
-        </footer>
-      </div>
+            </nav>
+            
+            <footer>
+              <p>
+                {% if site.github.is_project_page %}
+                <small>View the Project on GitHub <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a></small>
+                {% endif %}
+                {% if site.github.is_project_page %}
+                <br /><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small>
+                {% endif %}
+                <br /><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+                <br /><small>Site Version {{ site.version }}</small>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </nav>
 
-      <div class="content">
+      <main class="content">
         <section>
           {{ content }}
         </section>
-
-        <!-- Footer -->
-        <div class="govuk-footer__meta">
-            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-                <h2 class="govuk-visually-hidden">Support links</h2>
-                <ul class="govuk-footer__inline-list govuk-!-display-none-print">
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs (Defra)</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help">Help</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;2&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/privacy-notice">Privacy</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;3&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/cookies">Cookies</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;4&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/accessibility-statement">Accessibility statement</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;5&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/contact">Contact</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;6&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/help/terms-conditions">Terms and conditions</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" lang="cy" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;7&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/cymraeg">Rhestr o Wasanaethau Cymraeg</a>
-                    </li>
-                    <li class="govuk-footer__inline-list-item">
-                      <a class="govuk-footer__link" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;footer&quot;,&quot;index_link&quot;:&quot;8&quot;,&quot;index_section&quot;:&quot;3&quot;,&quot;index_section_count&quot;:&quot;5&quot;,&quot;index_total&quot;:&quot;8&quot;,&quot;section&quot;:&quot;Support links&quot;}" href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
-                    </li>
-                </ul>
-                <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    class="govuk-footer__licence-logo"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 483.2 195.7"
-                    height="17"
-                    width="41">
-                    <path
-                      fill="currentColor"
-                      d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
-                  </svg>
-                  <span class="govuk-footer__licence-description">
-                    All content is available under the
-                    <a
-                      class="govuk-footer__link"
-                      href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-                      rel="license">Open Government Licence v3.0</a>, except where otherwise stated
-                  </span>
-                </div>
-                <br/>
-                <div class="govuk-footer__meta-item">
-                  <a
-                    class="govuk-footer__link govuk-footer__copyright-logo"
-                    href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
-                    <img src="{{ '/assets/images/govuk-crest.svg' | relative_url }}" alt="GOV.UK crest" width="125" height="102" />
-                    <br/>
-                    © Crown copyright
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+      </main>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script>
-      // Dark mode toggle functionality
-      const themeToggle = document.querySelector('.theme-toggle-checkbox');
-      const html = document.documentElement;
-      
-      // Check for saved theme preference, otherwise use system preference
-      const getPreferredTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          return savedTheme;
-        }
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      // Apply theme
-      const setTheme = (theme) => {
-        html.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        themeToggle.checked = theme === 'dark';
-      };
-
-      // Initial theme setup
-      setTheme(getPreferredTheme());
-
-      // Toggle theme
-      themeToggle.addEventListener('change', () => {
-        const newTheme = themeToggle.checked ? 'dark' : 'light';
-        setTheme(newTheme);
-      });
-
-      // Listen for system theme changes
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-          setTheme(e.matches ? 'dark' : 'light');
-        }
-      });
-    </script>
-
+    
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Support links -->
+        <div class="support-links">
+          <h2 class="govuk-visually-hidden">Support links</h2>
+          <ul>
+            <li><a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs (Defra)</a></li>
+            <li><a href="https://www.gov.uk/help">Help</a></li>
+            <li><a href="https://www.gov.uk/help/privacy-notice">Privacy</a></li>
+            <li><a href="https://www.gov.uk/help/cookies">Cookies</a></li>
+            <li><a href="https://www.gov.uk/help/accessibility-statement">Accessibility statement</a></li>
+            <li><a href="https://www.gov.uk/contact">Contact</a></li>
+            <li><a href="https://www.gov.uk/help/terms-conditions">Terms and conditions</a></li>
+            <li><a lang="cy" href="https://www.gov.uk/cymraeg">Rhestr o Wasanaethau Cymraeg</a></li>
+            <li><a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a></li>
+          </ul>
+          
+          <div class="licence-statement">
+            <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+              <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+            </svg>
+            <span>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</span>
+          </div>
+          
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+              <img src="{{ '/assets/images/govuk-crest.svg' | relative_url }}" alt="GOV.UK crest" width="125" height="102" />
+              <br/>© Crown copyright
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         // Find all pre elements (common container for code blocks)
@@ -320,6 +392,5 @@
         });
       });
     </script>
-
   </body>
 </html> 

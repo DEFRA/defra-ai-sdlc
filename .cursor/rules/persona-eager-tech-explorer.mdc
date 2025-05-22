@@ -1,0 +1,102 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# cursor.rules.yaml
+
+persona:
+  name: The Eager Explorer
+  summary: >
+    A mid-level software developer (3–5 years experience) excited about AI, but still unsure how to fully integrate LLMs into their development workflow. They've dabbled with ChatGPT, Cursor, and GitHub Copilot, but only scratched the surface. Eager to learn and apply AI practically, but overwhelmed by jargon and inconsistent results.
+    They are a govenment employee, so while enthusiastic, they should be professional and respectful at all times.
+
+background_experience:
+  - Proficient with common programming languages and development tools
+  - Experienced in traditional software development practices
+  - Familiar with ChatGPT for small tasks or questions
+  - Installed tools like Cursor or Copilot, but only used them for autocomplete or shallow use cases
+  - Has tried AI code generation but didn’t find it successful or intuitive
+
+knowledge_level:
+  - Understands basic LLM concepts at a surface level
+  - Cannot distinguish between different models or providers
+  - No exposure to prompt engineering beyond basic instructions
+  - Unfamiliar with terms like fine-tuning, embeddings, or RAG
+  - Doesn’t know how to integrate AI deeply into the dev workflow
+
+motivations_goals:
+  - Wants to boost productivity and innovation with AI
+  - Fears being left behind as AI transforms the industry
+  - Seeks practical use cases that solve daily dev problems
+  - Hopes to gain a competitive career edge by learning AI tools
+  - Wants to impress peers and stay current with emerging trends
+  - Curious about AI’s long-term impact on software careers
+
+pain_points:
+  - Struggles to get consistently useful code from AI
+  - Doesn’t know how to ask AI the “right” questions
+  - Finds some AI outputs buggy or confusing
+  - Overwhelmed by fast-paced changes and jargon
+  - Unsure which tools are worth learning or investing time in
+  - Concerned AI use might erode core coding skills
+
+communication_style:
+  tone:
+    - Encouraging
+    - Friendly
+    - Empowering
+    - Realistic, not hyped
+    - Professional
+    - Never colloquial
+  language:
+    - Clear, plain English
+    - Avoid jargon and buzzwords
+    - Like a knowledgeable peer, not a professor
+    - Skimmable sections with clear headings
+    - Use metaphors (e.g., “AI as a pair programmer”)
+  structure:
+    - Step-by-step tutorials with screenshots or code snippets
+    - Code examples first, explanation second
+    - Include copyable prompts and inputs
+    - Show before/after coding examples
+    - Use quick wins to hook interest early
+
+what_they_find_useful:
+  use_cases:
+    - Writing boilerplate (e.g. REST APIs)
+    - Explaining or generating regex
+    - Summarizing or understanding codebases
+    - Creating tests from functions
+    - Real-world tool walkthroughs (Cursor vs ChatGPT vs Copilot)
+    - Prompt templates and copy/paste examples
+    - Comparison tables of tools/models with minimal technical depth
+    - Troubleshooting AI-generated bugs
+    - Practical ethical considerations
+    - Clear guidance on when to use AI vs traditional coding
+    - Skill-building roadmaps
+
+  model_guidance:
+    - Provide plain-English advice on model selection
+    - Example: “GPT-4-turbo is good for general code help. Claude 3 excels at summarizing.”
+    - Emphasize simplicity: start with ChatGPT Plus for versatility
+
+  tools_recommendation:
+    - Recommend tools without hype
+    - Explain how and why to use Cursor, Copilot, or ChatGPT in specific workflows
+    - Include lightweight intro to VSCode extensions or browser tools
+    - Provide screenshots or gifs of tools in action
+
+educational_approach:
+  - Teach by doing — not theory
+  - Start small: prompt-writing basics, then tool use, then debugging AI output
+  - Give AI “conversation starters” they can reuse
+  - Acknowledge limitations of AI, and when to switch back to manual coding
+  - Reinforce learning through iterative prompt refinement
+  - Include common mistake breakdowns and fixes
+
+context:
+  - This persona is at an inflection point: from curious beginner to competent AI-aided developer.
+  - Your tutorial should help them cross that chasm with clarity, confidence, and concrete next steps.
+
+
