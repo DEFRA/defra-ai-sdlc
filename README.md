@@ -1,30 +1,49 @@
 # Welcome to the Defra AI SDLC Playbook
 Version 1.1
 
-This playbook offers hands-on guidance for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra’s needs. Rather than theoretical concepts, you’ll find practical techniques, real-world examples, and step-by-step tutorials ready for immediate use in your projects. It’s a living document—continuously updated with insights and improvements from developers like you.
+## Intro
 
-By following this playbook, you’ll learn how to:
+Ever wished you could spend less time on repetitive coding tasks and more time solving interesting problems? This playbook offers hands-on guidance for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra’s needs.
 
-* Streamline routine development tasks and free up time for creative problem-solving
-* Build more robust, maintainable applications using AI-assisted methods
-* Facilitate cross-departmental collaboration through integrated systems
+Here you'll find practical techniques, code examples, and step-by-step guides to help guide you on your journey to using AI tools, whilst ensuring Defra’s diverse operations can meet their objectives sustainably.
 
-The focus remains on practical, proven techniques rather than theoretical concepts—offering tangible solutions for government software development challenges.
+## What you'll learn
 
-## Who This Playbook Is For
+By using this playbook, you'll discover how to:
 
-This guide is built for developers with some experience who’ve dabbled in AI tools like ChatGPT or GitHub Copilot and are ready to explore further. If you've asked ChatGPT for code snippets or installed Cursor but mostly use its autocomplete, this playbook will help you go deeper. It's for curious, hands-on developers eager to get more out of these tools—without getting lost in AI jargon or hype.
+* Cut through routine development tasks in half the time
+* Build more reliable, maintainable code with AI assistance
+* Work more effectively with colleagues across departments
+* Know exactly when (and when not) to use AI in your workflow
 
-## New to AI Tools? Start Here
+## Who this playbook is for
 
-If you feel overwhelmed by AI terminology or you’re just getting started:
+If you've tried asking ChatGPT for code snippets or installed Cursor but mostly use it for autocomplete, you're in the right place. This guide is for people who:
 
-1. **Begin with ChatGPT**: Create a free account at [Chat GPT](https://chat.openai.com) and try asking simple coding questions
-2. **Install Cursor**: Download this AI-powered code editor at [Cursor](https://cursor.so) to experience real-time AI support as you code.
-3. **Return to this guide**: Once you've had some hands-on experience with these tools, this playbook will help you use them more effectively
+* Have some coding experience but are new to AI-assisted development
+* Want practical examples, not AI jargon or theory
+* Are curious about getting more from AI tools but not sure where to start
+* Need guidance that works in government development environments
+
+## New to AI tools? Start here
+
+Feeling a bit overwhelmed? Don't worry—we've all been there:
+
+1. **First steps with ChatGPT**: Create a free account at [Chat GPT](https://chat.openai.com) and experiment with simple coding questions
+2. **Try Cursor**: Download this AI-powered code editor at [Cursor](https://cursor.so) for real-time coding assistance
+3. **Come back here**: After some hands-on practice, this playbook will help you use these tools more effectively
+
+## How to use this playbook
+
+Think of this as your practical AI coding companion:
+
+* Start with the core concepts for a solid foundation
+* Explore specific use cases that match your immediate needs
+* Bookmark sections relevant to your current projects
+* Check back regularly—we update this playbook with new techniques and examples based on real-world use
 
 ## Contributing
 
-We welcome contributions from the Defra community. Please see the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+Got something that works well? We'd love you to share it! See the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) guide for how to help improve this resource for everyone.
 
-## [Let’s get going -> Core Concepts](pages/core-concepts/)
+## [Let's get going -> Core Concepts](pages/core-concepts/)
