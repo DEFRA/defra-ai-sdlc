@@ -1,33 +1,30 @@
-# Defra AI SDLC Playbook
-Version 1.0
+# Welcome to the Defra AI SDLC Playbook
+Version 1.1
 
-This playbook provides guidance on best practices for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra's needs and challenges. It serves as a living document, continuously updated to reflect emerging practices and lessons learned.
+This playbook offers hands-on guidance for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra’s needs. Rather than theoretical concepts, you’ll find practical techniques, real-world examples, and step-by-step tutorials ready for immediate use in your projects. It’s a living document—continuously updated with insights and improvements from developers like you.
 
-## Table of Contents
-1. [Overview](#overview)
-2. [AI Development Workflow](workflow/README.md)
-	1. [Getting Started](workflow/workflow-getting-started.md)
-	2. [Project Setup](workflow/workflow-project-setup.md)
-	3. Feature Development Lifecycle
-		1. [Product Requirements](workflow/workflow-product-requirements.md)
-		2. [Development](workflow/workflow-development.md)
-		3. [Testing](workflow/workflow-testing.md)
-		4. [Refactoring](workflow/workflow-refactoring.md)
-		5. [Documentation](workflow/workflow-documentation.md)
-3. [Prompting Guidance](prompt-library/prompting-guidance.md)
-4. [Prompt Library](prompt-library/README.md)
-5. [Language Specific Resources](language-specific/README.md)
-6. [Learning with AI](workflow/workflow-learning.md)
-7. [AI Working Mindset](general/ai-working-mindset.md)
+By following this playbook, you’ll learn how to:
 
-## Overview
+* Streamline routine development tasks and free up time for creative problem-solving
+* Build more robust, maintainable applications using AI-assisted methods
+* Facilitate cross-departmental collaboration through integrated systems
 
-The UK Government's Department for Environment, Food and Rural Affairs (Defra) manages a broad portfolio of responsibilities across environmental protection, food production and rural development. The organisation operates through multiple sub-departments and arms-length bodies, each with distinct mandates and operational frameworks.
+The focus remains on practical, proven techniques rather than theoretical concepts—offering tangible solutions for government software development challenges.
 
-The scale and complexity of Defra's operations create opportunities to leverage artificial intelligence (AI) throughout the software development lifecycle. AI can enhance processes from design through to maintenance by automating routine tasks, optimising resource allocation and providing predictive insights. These capabilities support improved cross-departmental collaboration and evidence-based decision-making.
+## Who This Playbook Is For
 
-This playbook guides teams in realising these opportunities through practical ways of working, tools and techniques. It provides actionable guidance to help teams harness AI effectively, leading to reduced development costs, accelerated service delivery and improved operational efficiency. This approach enables innovation while ensuring Defra's diverse operations can meet their objectives sustainably.
+This guide is built for developers with some experience who’ve dabbled in AI tools like ChatGPT or GitHub Copilot and are ready to explore further. If you've asked ChatGPT for code snippets or installed Cursor but mostly use its autocomplete, this playbook will help you go deeper. It's for curious, hands-on developers eager to get more out of these tools—without getting lost in AI jargon or hype.
+
+## New to AI Tools? Start Here
+
+If you feel overwhelmed by AI terminology or you’re just getting started:
+
+1. **Begin with ChatGPT**: Create a free account at [Chat GPT](https://chat.openai.com) and try asking simple coding questions
+2. **Install Cursor**: Download this AI-powered code editor at [Cursor](https://cursor.so) to experience real-time AI support as you code.
+3. **Return to this guide**: Once you've had some hands-on experience with these tools, this playbook will help you use them more effectively
 
 ## Contributing
 
-We welcome contributions from the Defra community. Please see the [CONTRIBUTING](CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+We welcome contributions from the Defra community. Please see the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+
+## [Let’s get going -> Core Concepts](pages/core-concepts/)

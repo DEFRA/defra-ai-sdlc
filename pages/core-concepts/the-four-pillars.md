@@ -1,0 +1,90 @@
+# The Four Pillars
+
+Think of AI code generation like building a house. You wouldn't start construction without a blueprint, the right tools, and quality materials. The same principle applies to getting consistent, useful code from AI tools like Cursor, ChatGPT, or GitHub Copilot.
+
+Getting AI to generate code that actually works (and doesn't need major rewrites) requires four key elements working together:
+
+![](attachments/venn-diagram-consistent-code.png)
+
+*Image: Venn diagram depicting the intersection of elements for consistent AI code generation*
+
+When all four pillars align, you'll notice a dramatic improvement in the quality and usefulness of AI-generated code. Let's break down each one:
+
+## Clear Requirements
+
+Before you even open your AI tool, you need to know exactly what you're building. This isn't just "I want a login system" – it's the detailed blueprint that guides everything else.
+
+**What this looks like:**
+- Specific functionality: "Users should be able to log in with email/password, see a 'forgot password' link, and get redirected to a dashboard after successful login"
+- Technical constraints: "Must work with our existing MySQL database and Express.js backend"
+- Expected behavior: "Show validation errors in real-time as users type"
+
+**Why it matters:** Vague requirements lead to vague code. AI tools are incredibly literal – they'll build exactly what you ask for, even if it's not what you actually need.
+
+**Quick win:** Before writing any prompts, spend 5 minutes jotting down what success looks like for your feature. This simple step will save hours of back-and-forth with the AI.
+
+## Good Prompts
+
+This is your conversation with the AI – how you ask for what you want. Think of it like giving directions to a brilliant programmer who's never seen your project before.
+
+**What makes a prompt "good":**
+- **Specific context:** "I'm building a React component for user profiles in an e-commerce app"
+- **Clear expectations:** "Generate a function that validates email addresses and returns helpful error messages"
+- **Examples when helpful:** "Similar to how Amazon shows product reviews, but for user testimonials"
+
+**Common mistake to avoid:** Don't just say "write me a login function." Instead: "Create a JavaScript function that takes email and password, validates the format, makes an API call to /auth/login, and returns either user data or error messages."
+
+**Pro tip:** Start with simple, focused requests. You can always follow up with "Now add error handling"
+
+**Meta:** Write your initial prompt draft yourself, then have an AI refine it before implementation.
+
+## IDE Rules for AI
+
+These are like style guides for your AI tools – they ensure consistency across your entire codebase. Instead of explaining your preferences in every single prompt, you set them once and they automatically apply.
+
+Think about it like teaching a child to ride a bike. If they make a mistake or have a style you want to change, add a new AI Rule to describe the behaviour you want/don't want, and the AI will learn, and won't make the same mistake again. 
+
+**What IDE rules handle:**
+- **Code style:** "Always use arrow functions instead of function declarations"
+- **File organization:** "Put components in /src/components, utilities in /src/utils"
+- **Naming conventions:** "Use camelCase for variables, PascalCase for components"
+- **Technology preferences:** "Use TypeScript, prefer functional components over class components"
+
+**Real example:** Instead of repeatedly telling the AI "use async/await instead of .then()", you set this rule once in your IDE configuration.
+
+**Getting started:** Most AI-powered IDEs like Cursor let you create a `.cursor/rules` file or similar. Start with 3-5 basic rules about your preferred coding style and build from there.
+
+**Meta:** In Cursor, you can have the AI analyse your codebase and generate its own rule files by prompting it with "Inspect this codebase and create some rule files to ensure consistency."
+
+## Capable Code Generation Model
+
+Not all AI models are created equal, and choosing the right one for your task makes a huge difference. It's like choosing between a Swiss Army knife and a specialized tool – both have their place.
+
+**Current recommendations for code generation:**
+- **Claude Sonnet:** Excellent for complex logic, refactoring, and explaining existing code
+- **GPT-4:** Great all-around choice for language based tasks
+- **GitHub Copilot:** Good for autocomplete and small code snippets within your IDE
+
+**Model selection tips:**
+- **For learning:** Use ChatGPT or Claude – they're great at explaining concepts
+- **For production code:** Claude Sonnet currently produces the most reliable results
+- **For quick fixes:** GitHub Copilot excels at completing patterns it recognizes
+
+**Don't overthink it:** Start with one good model (Claude Sonnet is a safe bet) and get comfortable with it before exploring others.
+
+## Putting It All Together
+
+Here's how these pillars work in practice:
+
+1. **Start with requirements:** "I need a contact form that sends emails and stores submissions in a database"
+2. **Set up IDE rules:** Configure your editor to prefer your coding style and file structure
+3. **Craft a good prompt:** "Create a React contact form component with name, email, and message fields. Include client-side validation and submit to /api/contact endpoint"
+4. **Choose the right model:** Use Claude 3.5 Sonnet for the initial generation, then GitHub Copilot for small tweaks
+
+When you get all four working together, you'll spend less time debugging AI-generated code and more time building features that matter.
+
+## Next Steps
+
+Ready to dive deeper into crafting better prompts? Check out our detailed [Prompting Guidance](../../pages/appendix/prompt-library/prompting-guidance.md) to level up your AI conversations.
+
+## [Next -> Project Setup](project-setup.md)

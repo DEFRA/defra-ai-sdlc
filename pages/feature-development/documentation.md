@@ -29,13 +29,13 @@ Update documentation whenever you make changes to the codebase. This practice:
 - reduces technical debt
 - makes onboarding new team members easier
 
-Use the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
+Use the [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
 As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
 ### Embedding Documentation into Development
 
-Consider documentation as an integral part of the development lifecycle (ref: [workflow-development](workflow-development.md)), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides and code doc-strings in real-time.
+Consider documentation as an integral part of the [Development Workflow](../core-concepts/workflow.md), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides and code doc-strings in real-time.
 
 ### Using Documentation as a Knowledge Base
 
@@ -106,7 +106,7 @@ Additionally, these documents are beneficial when starting to work in a legacy c
 
 To generalize the software documentation process, the workflow splits the documentation using the software architecture layering paradigm. For example, the repository layer handles data access, while the service layer contains business logic. Documenting each layer clarifies the role of each component in one document—providing a large amount of context in one condensed representation.
 
-The entry point to use these prompts starts at the same place shown below, of note - you should have already run the [prompt-add-update-documentation](../prompt-library/documentation-writing/prompt-add-update-documentation.md):
+The entry point to use these prompts starts at the same place shown below, of note - you should have already run the [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md):
 
 ```
 Run {{PROMPT_FOR_CREATING_DOCUMENTATION.md}} after reviewing the entire codebase.
@@ -119,10 +119,10 @@ Export your report as a markdown file in /docs
 It is best to use this prompt with a advanced reasoning model as this helps the model gather more context and 'reason' about the implementation of the code and why some of the functionality is present in addition to what it is doing.
 
 The prompts to create technical documentation are below:
-- [prompt-create-api-documentation](../prompt-library/documentation-writing/prompt-create-api-documentation.md)
-- [prompt-create-service-layer-documentation](../prompt-library/documentation-writing/prompt-create-service-layer-documentation.md)
-- [prompt-create-business-logic-documentation](../prompt-library/documentation-writing/prompt-create-business-logic-documentation.md)
-- [prompt-create-repository-documentation](../prompt-library/documentation-writing/prompt-create-repository-documentation.md)
+- [prompt-create-api-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-create-api-documentation.md)
+- [prompt-create-service-layer-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-create-service-layer-documentation.md)
+- [prompt-create-business-logic-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-create-business-logic-documentation.md)
+- [prompt-create-repository-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-create-repository-documentation.md)
 
 This provides a great starting point for creating business case documentation and user stories for features.
 
@@ -134,3 +134,5 @@ This provides a great starting point for creating business case documentation an
 4. Regularly review documentation to ensure accuracy, completeness, and relevance.
 
 By embedding these practices into your development workflow, you can ensure a robust, scalable, and efficient system that benefits from both human and AI collaboration.
+
+## [Next -> AI Working Mindset](../ai-working-mindset.md)
