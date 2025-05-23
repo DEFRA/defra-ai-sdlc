@@ -1,6 +1,6 @@
 # Project Setup
 
-Setting up a development project effectively using AI tools and techniques ensures smooth collaboration, high productivity, and adherence to best practices. Below is a detailed guide for initializing your project:
+Setting up a development project effectively using AI tools and techniques ensures smooth collaboration, high productivity, and adherence to best practices. Below is a detailed guide for initialising your project:
 
 This guide outlines how to set up a development project using AI tools and techniques. A proper setup ensures:
 - smooth collaboration
@@ -38,7 +38,7 @@ This guide outlines how to set up a development project using AI tools and techn
 **IMPORTANT:** Privacy settings must be enabled. This ensures that data is not persisted on providers servers and it is not used for training models. 
 
 3. **Add Required Files**
-   - copy language-specific files from [language-specific library](../language-specific/README.md)
+   - copy language-specific files from [language-specific library](../../pages/appendix/language-specific)
    - customise IDE rules for team requirements
    - update system prompt for LLM base understanding
 
@@ -47,9 +47,11 @@ This guide outlines how to set up a development project using AI tools and techn
 Create directory within the repository to store documentation, such as:
 - product requirements
 - architecture documentation
-- development rules and guidelines (reference [IDE rules](../language-specific/README.md))
+- development rules and guidelines (reference [IDE rules](../../pages/appendix/language-specific))
 
 Ensure all documentation is:
 - version controlled
 - accessible to the IDE
 - formatted in markdown
+
+## [Next -> Feature Development](../feature-development)
