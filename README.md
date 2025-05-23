@@ -5,17 +5,17 @@ This playbook provides guidance on best practices for integrating AI into the So
 
 ## Table of Contents
 1. [Welcome](README.md)
-2. [Getting Started](pages/getting-started)
-    1. [Workflow](pages/getting-started/workflow)
-    2. [The Four Pillars](pages/getting-started/the-four-pillars)
-    3. [Project Setup](pages/getting-started/project-setup)
-3. [Feature Development](pages/feature-development)
-    1. [Product Requirements](pages/feature-development/product-requirements)
-    2. [Development](pages/feature-development/development)
-    3. [Testing](pages/feature-development/testing)
-    4. [Refactoring](pages/feature-development/refactoring)
-    5. [Documentation](pages/feature-development/documentation)
-4. [AI Working Mindset](pages/ai-working-mindset)
+2. [Getting Started](pages/getting-started/README.md)
+    1. [Workflow](pages/getting-started/workflow.md)
+    2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
+    3. [Project Setup](pages/getting-started/project-setup.md)
+3. [Feature Development](pages/feature-development/README.md)
+    1. [Product Requirements](pages/feature-development/product-requirements.md)
+    2. [Development](pages/feature-development/development.md)
+    3. [Testing](pages/feature-development/testing.md)
+    4. [Refactoring](pages/feature-development/refactoring.md)
+    5. [Documentation](pages/feature-development/documentation.md)
+4. [AI Working Mindset](pages/ai-working-mindset.md)
 
 ## Overview
 
