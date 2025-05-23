@@ -281,3 +281,5 @@ Dedicate substantial time and team effort to refining the prompts and the Produc
 ## A Note About Design and UX
 
 The LLMs have been trained on GDS standards and have ingested GDS style layouts. Therefore, they are often good at determining GDS-compliant designs while they implement features. As long as your product requirements document and .cursor rules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features. The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
+
+## [Next -> Development](development.md)

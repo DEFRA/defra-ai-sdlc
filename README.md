@@ -4,21 +4,18 @@ Version 1.0
 This playbook provides guidance on best practices for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra's needs and challenges. It serves as a living document, continuously updated to reflect emerging practices and lessons learned.
 
 ## Table of Contents
-1. [Overview](#overview)
-2. [AI Development Workflow](workflow/README.md)
-	1. [Getting Started](workflow/workflow-getting-started.md)
-	2. [Project Setup](workflow/workflow-project-setup.md)
-	3. Feature Development Lifecycle
-		1. [Product Requirements](workflow/workflow-product-requirements.md)
-		2. [Development](workflow/workflow-development.md)
-		3. [Testing](workflow/workflow-testing.md)
-		4. [Refactoring](workflow/workflow-refactoring.md)
-		5. [Documentation](workflow/workflow-documentation.md)
-3. [Prompting Guidance](prompt-library/prompting-guidance.md)
-4. [Prompt Library](prompt-library/README.md)
-5. [Language Specific Resources](language-specific/README.md)
-6. [Learning with AI](workflow/workflow-learning.md)
-7. [AI Working Mindset](general/ai-working-mindset.md)
+1. [Welcome](README.md)
+2. [Getting Started](pages/getting-started)
+    1. [Workflow](pages/getting-started/workflow)
+    2. [The Four Pillars](pages/getting-started/the-four-pillars)
+    3. [Project Setup](pages/getting-started/project-setup)
+3. [Feature Development](pages/feature-development)
+    1. [Product Requirements](pages/feature-development/product-requirements)
+    2. [Development](pages/feature-development/development)
+    3. [Testing](pages/feature-development/testing)
+    4. [Refactoring](pages/feature-development/refactoring)
+    5. [Documentation](pages/feature-development/documentation)
+4. [AI Working Mindset](pages/ai-working-mindset)
 
 ## Overview
 
@@ -30,4 +27,4 @@ This playbook guides teams in realising these opportunities through practical wa
 
 ## Contributing
 
-We welcome contributions from the Defra community. Please see the [CONTRIBUTING](CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+We welcome contributions from the Defra community. Please see the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for more information on how to contribute to this playbook.

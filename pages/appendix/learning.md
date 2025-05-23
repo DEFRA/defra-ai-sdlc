@@ -31,7 +31,7 @@ The AI ecosystem evolves rapidly with daily updates to models, IDEs, and service
 
 Clear communication with LLMs is essential. Treat them as capable junior developers needing explicit requirements. Well-crafted prompts yield better results. Iiterate on prompts to optimise outcomes.
 
-Refer to [Prompting Guidance](../prompt-library/prompting-guidance.md) for details on how to write effective prompts.
+Refer to [Prompting Guidance](prompt-library/prompting-guidance.md) for details on how to write effective prompts.
 
 ### Test-and-Learn Approach
 
