@@ -1,3 +1,5 @@
+# Deep Product Analysis
+
 ```
 Do some meta analysis to analyse the following product requirements, including what it does, and how effective it could be. Come up with a pros and cons list, thinking about how it will be used over the lifetime of the product. Come up with a list of recommendations to improve it, or alternatives to consider for a tool we could build.
 

@@ -1,6 +1,6 @@
+# Add Code Knowledge and Teaching
 
-We advise adding the prompt below into the "User Rules" in Cursor so that the IDE will include these learning rules into every new prompt.
-
+The the prompt below can be added into the "User Rules" in Cursor so that the IDE will include these learning rules into every new prompt.
 ```
 Enhanced Teaching Guidelines for Junior Developers
 

@@ -1,4 +1,6 @@
-This is an example prompt, you will need to update the "Test Setup" and "Test Interaction Data" sections to suit your specific requirements.
+# Add End-to-End Test
+
+This is an example prompt, for illustration. You will need to update the "Test Setup" and "Test Interaction Data" sections to suit your specific requirements.
 
 ```
 Create a Playwright end-to-end (E2E) test that meets the requirements in this user story: []
@@ -27,7 +29,7 @@ Use these values to interact with the application:
 - Note: Do not expect specific IDs, as these can change between environments
 
 Important Considerations:
-- Give special consideration to scoping elements - like finding classifications and standards within table rows, and using :has() selectors for parent-child relationships.
+- Give special consideration to scoping elements - like finding classifications and standards within table rows, and using :has() selectors for parent-child relationships.
 - The tests will be end-to-end (E2E) tests with the real application. No mocks
 - Use JavaScript (not TypeScript)
 
@@ -39,5 +41,5 @@ IMPLEMENTATION PHASE:
 Adding an accessibility scan:
 
 ```
-Please add a simple test to use `@axe-core/playwright` to do an accessibility scan against the page. Search @Web for how to do this
+Please add a simple test to use `@axe-core/playwright` to do an accessibility scan against the page. Search @Web for how to do this
 ```
