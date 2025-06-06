@@ -1,9 +1,0 @@
----
-description: rules for reviewing and refactoring playbook content
-globs: *.md
----
-When reviewing and refactoring content:
-- Only make targeted improvements if it helps with the readability.
-- We do not want to lose content, so don't remove anything that would diminish the original ideas conveyed in the text.
-- Don't overly generalise things, make the content specific.
-- Keep the changes to content improvements. Do not change the structure.
