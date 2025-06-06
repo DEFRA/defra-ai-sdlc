@@ -1,7 +1,7 @@
-An example for starting a new feature on a new branch. Use a new context window. 
-
+# Implement New Feature / Story
+An example for starting a new feature on a new branch.
 ```
-Please analyze the User Story [] and implement the 'Technical Design' as follows:
+I have provided you with a Product Requirements document(PRD). Please analyze the features and User Stories and implement as follows:
 
 1. First, outline your understanding of:
    - The specific requirements from this story
@@ -30,14 +30,6 @@ Please analyze the User Story [] and implement the 'Technical Design' as follows
 
 Constraints:
 - Maintain consistency with existing codebase
-- Follow GOV.UK Frontend cursor rules
+- Follow the cursor rules
 - Do not add any unit tests at this time
 ```
-
-A useful follow-up prompt:
-
-```
-check `@story-file` against the implementation and let me know what is missing. give me a detailed breakdown of what has been implemented and what is missing before continuing 
-```
-
-

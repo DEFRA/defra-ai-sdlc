@@ -1,3 +1,5 @@
+# Add / Update Documentation
+
 ```
 Please review the codebase and create or update the following documentation files while maintaining their existing structure and format.
 
@@ -22,8 +24,8 @@ Focus Areas:
 
 Key constraints:
 - This is an incremental update to existing documentation
-- Only update or add documention as necessary 
-- Keep a consitent tone and style with existing content
+- Only update or add documentation as necessary 
+- Keep a consistent tone and style with existing content
 - Use British English
 
 Provide a complete, production-ready update in British English with a professional tone.

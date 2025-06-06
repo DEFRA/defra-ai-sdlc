@@ -1,3 +1,5 @@
+# Refactor Feature
+
 As per the [refactoring workflow](../../../feature-development/refactoring.md), it is important that you direct the Model to implement specific refactors that you want, and do not just ask it to simply refactor.
 
 As well as this, the prompt below can also be used as a "general cleanup". This should be done for a specific file or grouping of files, rather than a whole codebase. 
