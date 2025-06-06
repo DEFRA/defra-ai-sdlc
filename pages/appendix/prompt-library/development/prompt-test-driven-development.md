@@ -1,6 +1,6 @@
 # Test Driven Development
 
-This example was done using in Claude Sonnet 4. The 3 prompts are done in sequence. 
+The three prompts below are applied in sequence
 
 ```
 I have provided you with a Product Requirements document(PRD). Please analyze the features and User Stories and implement Feature []. 

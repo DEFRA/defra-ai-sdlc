@@ -29,16 +29,7 @@ I have provided you with a Product Requirements document(PRD). Please analyze th
    - Note any assumptions or decisions made
 
 Constraints:
-
 - Maintain consistency with existing codebase
 - Follow the cursor rules
 - Do not add any unit tests at this time
 ```
-
-A useful follow-up prompt:
-
-```
-check `@story-file` against the implementation and let me know what is missing. give me a detailed breakdown of what has been implemented and what is missing before continuing 
-```
-
-
