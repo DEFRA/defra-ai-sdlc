@@ -1,7 +1,7 @@
 # Defra AI SDLC Playbook
 Version 1.1
 
-This playbook provides guidance on best practices for integrating AI into the Software Development Lifecycle (SDLC), specifically tailored to Defra's needs and challenges. It serves as a living document, continuously updated to reflect emerging practices and lessons learned.
+This playbook shows you how to use AI tools in software development. It's designed for Defra teams and updated regularly with new practices and lessons learned.
 
 ## Table of Contents
 1. [Welcome](README.md)
@@ -19,12 +19,10 @@ This playbook provides guidance on best practices for integrating AI into the So
 
 ## Overview
 
-The UK Government's Department for Environment, Food and Rural Affairs (Defra) manages a broad portfolio of responsibilities across environmental protection, food production and rural development. The organisation operates through multiple sub-departments and arms-length bodies, each with distinct mandates and operational frameworks.
+Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies, each with different roles and ways of working.
 
-The scale and complexity of Defra's operations create opportunities to leverage artificial intelligence (AI) throughout the software development lifecycle. AI can enhance processes from design through to maintenance by automating routine tasks, optimising resource allocation and providing predictive insights. These capabilities support improved cross-departmental collaboration and evidence-based decision-making.
-
-This playbook guides teams in realising these opportunities through practical ways of working, tools and techniques. It provides actionable guidance to help teams harness AI effectively, leading to reduced development costs, accelerated service delivery and improved operational efficiency. This approach enables innovation while ensuring Defra's diverse operations can meet their objectives sustainably.
+Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques. You'll get actionable guidance to use AI effectively. This leads to lower development costs, faster service delivery and better operational efficiency. You can innovate while making sure Defra's operations meet their goals sustainably.
 
 ## Contributing
 
-We welcome contributions from the Defra community. Please see the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for more information on how to contribute to this playbook.
+We welcome contributions from the Defra community. See the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for how to contribute to this playbook.
