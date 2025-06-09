@@ -3,7 +3,7 @@
 This guide shows you how to set up a development project using AI tools and techniques. 
 ## Initial Setup
 
-1. . **Configure Repository**
+1. **Configure Repository**
 
    With CDP:
    - initialise CDP project

@@ -2,17 +2,17 @@
 
 ## Overview
 
-Leveraging an AI-powered development workflow, such as utilising large language models (LLMs), makes it easier to create and maintain high-quality, readable documentation. 
+Using an AI-powered development workflow, such as using large language models (LLMs), makes it easier to create and maintain high-quality, readable documentation. 
 
 This documentation can be in the form of helpful user guides like README.md files aimed at setting the scene of what the repository is for and how to set up the required libraries and environment in order to start developing on the codebase. This is part of traditional repository hygiene and updating these documents should be done regularly.
 
-This section outlines best practices for incorporating documentation into your development workflow and how to maximise the benefits of LLM capabilities.
+This section outlines best practices for adding documentation to your development workflow and how to get the most from LLM capabilities.
 
 ## Guidelines
 
 ### Have a Documentation Rules File
 
-To ensure that documentation adheres to a specific standard or company guidelines, it is recommended to create a documentation rules file. This file can include a template or checklist with items such as:
+To ensure that documentation follows a specific standard or company guidelines, create a documentation rules file. This file can include a template or checklist with items such as:
 
 - **Consistency Guidelines:** Naming conventions, formatting rules, and style preferences.
 - **Content Requirements:** Mandatory sections (e.g., Overview, Setup, Usage, Contribution Guidelines).
@@ -31,18 +31,18 @@ Update documentation whenever you make changes to the codebase. This practice:
 
 Use the [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt to have the LLMs update the codebase documentation regularly.
 
-As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system diminishes. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
+As the codebase grows, the importance of comprehensive documentation increases. Without it, the LLM's effectiveness in managing and evolving the system reduces. Regularly revisiting and enriching documentation ensures that both human and AI contributors can operate efficiently in a complex development environment.
 
-### Embedding Documentation into Development
+### Embed Documentation into Development
 
 Consider documentation as an integral part of the [Development Workflow](../getting-started/workflow.md), not a separate task to be completed later. LLMs make it straightforward to maintain clear and consistent documentation as you work, generating drafts for function descriptions, usage guides and code doc-strings in real-time.
 
-### Using Documentation as a Knowledge Base
+### Use Documentation as a Knowledge Base
 
 Well-maintained documentation serves as a vital knowledge base for both team members and LLMs. It provides:
 
-- **Contextual Assistance:** Feeding detailed documentation into the LLM helps it understand the context and history behind implementation decisions. For example, when an LLM reviews a legacy function, it can refer back to a well-documented design decision to suggest updates or improvements.
-- **Error Reduction:** Maintaining a knowledge base minimizes the likelihood of errors or redundant changes by providing a clear reference for what has been implemented.
+- **Contextual Help:** Feeding detailed documentation into the LLM helps it understand the context and history behind implementation decisions. For example, when an LLM reviews a legacy function, it can refer back to a well-documented design decision to suggest updates or improvements.
+- **Error Reduction:** Maintaining a knowledge base reduces the likelihood of errors or redundant changes by providing a clear reference for what has been implemented.
 - **Predictive Generation:** With a robust documentation base, the LLM can predictively generate solutions aligned with existing patterns and architectural decisions.
 
 ## Advanced Visual Documentation
@@ -94,7 +94,7 @@ graph TD
 ```
 
 
-These visuals help developers, stakeholders, and the LLM itself to contextualise the system's design and logic effectively.
+These visuals help developers, stakeholders, and the LLM itself to understand the system's design and logic effectively.
 
 ## Creating Technical Documentation
 
@@ -104,7 +104,7 @@ Additionally, these documents are beneficial when starting to work in a legacy c
 
 ### Software Layers
 
-To generalize the software documentation process, the workflow splits the documentation using the software architecture layering paradigm. For example, the repository layer handles data access, while the service layer contains business logic. Documenting each layer clarifies the role of each component in one document—providing a large amount of context in one condensed representation.
+To generalise the software documentation process, the workflow splits the documentation using the software architecture layering paradigm. For example, the repository layer handles data access, while the service layer contains business logic. Documenting each layer clarifies the role of each component in one document—providing a large amount of context in one condensed representation.
 
 The entry point to use these prompts starts at the same place shown below, of note - you should have already run the [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md):
 
@@ -116,7 +116,7 @@ Also consult @ARCHITECTURE.md and use documentation.mdc as a cursor rule.
 Export your report as a markdown file in /docs
 ```
 
-It is best to use this prompt with a advanced reasoning model as this helps the model gather more context and 'reason' about the implementation of the code and why some of the functionality is present in addition to what it is doing.
+It is best to use this prompt with an advanced reasoning model as this helps the model gather more context and 'reason' about the implementation of the code and why some of the functionality is present in addition to what it is doing.
 
 The prompts to create technical documentation are below:
 - [prompt-create-api-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-create-api-documentation.md)
@@ -130,7 +130,7 @@ This provides a great starting point for creating business case documentation an
 
 1. Treat documentation updates as part of your definition of "done" for each development task.
 2. Use LLMs to draft, review, and refine documentation continuously.
-3. Integrate tools like Mermaid for visualisation to enhance clarity.
+3. Integrate tools like Mermaid for visualisation to improve clarity.
 4. Regularly review documentation to ensure accuracy, completeness, and relevance.
 
 By embedding these practices into your development workflow, you can ensure a robust, scalable, and efficient system that benefits from both human and AI collaboration.
