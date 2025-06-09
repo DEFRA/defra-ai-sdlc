@@ -269,7 +269,7 @@ Validate your work to check that all the features defined in the documents above
 
 ## 10. Saving the Combined Requirements in the Repository
 
-Once you have the markdown text, save it in the folder or Obsidian vault that was set up at the start of the project in `[filename].md` format. It's important that this file is INSIDE the code repository, as we will have the AI-powered IDE reference it later in the workflow.
+Once you have the markdown text, save it in the folder or Obsidian vault that was set up at the start of the project in `[filename].md` format. It's important that this file is INSIDE the code repository, as we will have the Artificial Intelligence Coding Assistant (AICA) reference it later in the workflow.
 
 ## 11. Ensuring Requirement Precision
 

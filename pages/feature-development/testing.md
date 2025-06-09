@@ -62,12 +62,12 @@ The focus of the testing workflow is to have test-specific cursor rules and deta
 
 ### Prerequisites
 
-- **Feature Requirements**: Ensure there are detailed feature requirements with clear scope, as per the [Product Requirements](product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
-- **IDE Rules:** Ensure there are detailed [IDE rules for your chosen language](../../pages/appendix/language-specific) to guide the AI tools in following code style and design preferences.
+- **Feature Requirements**: Ensure there are detailed feature requirements with clear scope, as per the [Product Requirements](product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the Artificial Intelligence Coding Assistant (AICA).
+- **AICA Rules:** Ensure there are detailed [rules for your chosen language](../../pages/appendix/language-specific) to guide the AI tools in following code style and design preferences.
 
-### 1. Prompt the IDE Interactively
+### 1. Prompt the AICA Interactively
 
-- Use an IDE in agentic mode to implement the tests.
+- Use an Artificial Intelligence Coding Assistant (AICA) to implement the tests.
 - Use testing prompt templates from your [prompt library](../../pages/appendix/prompt-library) and reference your requirements file using the @file feature.
 - As the AI generates the tests, monitor its plan to ensure alignment with your expectations.
 - Once complete, "accept" the changes and review them in the git diff viewer. If the changes are unexpected or involve significant deletions, revert all changes, refine your prompt, and try again.
@@ -79,7 +79,7 @@ The focus of the testing workflow is to have test-specific cursor rules and deta
 
 ### 3. Review and Improve Test Coverage  
 
-- If there are opportunities for better test coverage, prompt the IDE with precise guidance and include the output from the test coverage report.
+- If there are opportunities for better test coverage, prompt the AICA with precise guidance and include the output from the test coverage report.
 - Address improvements on a feature-by-feature or file-by-file basis.
 - Avoid asking for improvements to the entire codebase coverage in a single prompt.
 

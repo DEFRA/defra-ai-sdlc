@@ -11,7 +11,7 @@ AI-powered development enables rapid creation and modification of code. This mea
 Before starting development, ensure you have:
 
 1. **Clear Requirements**: Detailed feature requirements with defined scope, as outlined in the [Product Requirements](product-requirements.md)
-2. **IDE Configuration**: Language-specific [IDE rules](../../pages/appendix/language-specific) for consistent code style and design
+2. **AICA Configuration**: Language-specific [AI rules](../appendix/language-specific) for consistent code style and design
 3. **Clean Codebase**: 
     - passing tests with good coverage
     - up-to-date documentation
@@ -22,10 +22,10 @@ Before starting development, ensure you have:
 
 Create a new git branch dedicated to the feature. For example, `feature/add-todo-task`.
 
-### 2. Prompt the IDE interactively
+### 2. Prompt the AICA interactively
 
-- Use an IDE in agentic mode to implement the feature
-- Use prompt templates from your prompt library to start the process - [prompt-new-feature-story](../../pages/appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements file using the @file feature
+- Use an Artificial Intelligence Coding Assistant (AICA) to implement the feature e.g. Cursor
+- Use prompt templates from your prompt library to start the process - [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements file using the @file feature
 - As the AI generates the code, monitor its plan to ensure it aligns with your expectations.
 - After completion "Accept" the changes, then review the changes in the git diff viewer. If changes are unexpected or involve large deletions, revert all changes, refine your prompt, and try again.
 
@@ -50,8 +50,8 @@ See [Refactoring Workflow](refactoring.md)
 
 ### 7. Documentation
 
-- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt for this purpose.
-- Update the IDE rules files as necessary.
+- Prompt the AI to update or create relevant documentation in the repository's architecture folder, including regular updates to the data models, implementation specifics and general architecture. Use the [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) prompt for this purpose.
+- Update the AI rules files as necessary.
 - Keep clear and up-to-date rules documentation to ensure better context for future development cycles.
 
 ### 8. Finalise and Merge
@@ -67,7 +67,7 @@ See [Refactoring Workflow](refactoring.md)
 
 ## Guidelines
 
-- **Quality, consistent results**: The combination of good quality [IDE rules](../../pages/appendix/language-specific), good quality [prompts](../../pages/appendix/prompt-library) and clear [product requirements](product-requirements.md) are essential to limit the scope and be clear to the IDE tools on what they are trying to achieve. This limiting of scope and clarity is critical for getting consistent and predictable results throughout the development process.
+- **Quality, consistent results**: As per [the four pillars](../getting-started/the-four-pillars), the combination of good quality [AI rules](../appendix/language-specific), good quality [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) are essential for getting consistent and predictable results.
 
 - **Avoid multiple branches or simultaneous changes**: Avoid having two or more people separately changing the same codebase or at least the same areas of the codebase at the same time.
 
@@ -81,6 +81,6 @@ See [Refactoring Workflow](refactoring.md)
 
 - **Think 'Script First'**: The models are very good at writing scripts, such as bash scripts, to do repetitive tasks.
 
-- **Terminal Commands**: AI-IDEs also have integration with the command line, meaning that you can often write your intention in plain English and have the model generate the appropriate terminal command.
+- **Terminal Commands**: AICAs also have integration with the command line, meaning that you can often write your intention in plain English and have the model generate the appropriate terminal command.
 
 ## [Next -> Testing](testing.md)
