@@ -1,12 +1,14 @@
-# Language-Specific Resources
+# Language-specific resources
 
-This section of the playbook provides dedicated resources, templates, and tools tailored for specific programming languages. Each language subsection includes file templates and prompts designed to help you produce code that aligns with Defra's development standards. These materials are crafted to streamline your workflow and ensure compliance with best practices. As our tools and standards evolve, this section is regularly updated to reflect the latest guidelines and improvements. We encourage you to check back frequently to stay up-to-date with the most recent changes and enhancements.
+This section provides resources for specific programming languages used within Defra. Each language section includes Rules for AI to help you write code that meets Defra's development standards. We update this section regularly to reflect the latest guidelines and improvements. Check back frequently to stay up to date with recent changes.
 
-## IDE Configuration Files
+## Rules for AI
 
-Cursor saves "Rules for AI" in the repository in the `.cursor/rules` directory
+Most Artificial Intelligence Coding Assistants (AICAs) have the concept of rules for AI. 
 
-## Supported Languages
+For Cusor, the documentation can be found at https://docs.cursor.com/context/rules
+
+Some examples of rules for the programming languages and standards used within Defra are given below. 
 
 ### Node.js
 - [Node.js Cursor Rules Files - Frontend](nodejs/nodejs-cursorrules-frontend.md)
