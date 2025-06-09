@@ -1,20 +1,10 @@
 # Project Setup
 
-Setting up a development project effectively using AI tools and techniques ensures smooth collaboration, high productivity, and adherence to best practices. Below is a detailed guide for initialising your project:
-
-This guide outlines how to set up a development project using AI tools and techniques. A proper setup ensures:
-- smooth collaboration
-- high productivity
-- adherence to best practices
-
+This guide shows you how to set up a development project using AI tools and techniques. 
 ## Initial Setup
 
-1. **Choose Project Platform**
-   - select hosting platform (GitHub, GitLab, Bitbucket)
-   - agree on Git branching strategy
-   - document collaboration guidelines
+1. . **Configure Repository**
 
-2. **Configure Repository**
    With CDP:
    - initialise CDP project
    - configure GitHub repository automatically
@@ -26,16 +16,16 @@ This guide outlines how to set up a development project using AI tools and techn
 
 ## Development Environment
 
-1. **Configure AI-Powered IDE**
+1. **Configure Artificial Intelligence Coding Assistants (AICAs)**
    - install Cursor
    - add required VS Code extensions
    - set up language-specific plugins
 
-2. **Configure Privacy Settings - IMPORTANT**
+2. **Configure Privacy Settings**
    - In ChatGPT -> Settings -> Data Controls -> "Improve the model for everyone" ->  toggle off / disable
    - In Cursor -> Settings -> General -> Privacy Mode -> enabled
 
-**IMPORTANT:** Privacy settings must be enabled. This ensures that data is not persisted on providers servers and it is not used for training models. 
+   **IMPORTANT:** You *must* enable privacy settings. This makes sure that data is not stored on providers servers and it is not used for training models. 
 
 3. **Add Required Files**
    - copy language-specific files from [language-specific library](../../pages/appendix/language-specific)
@@ -44,12 +34,12 @@ This guide outlines how to set up a development project using AI tools and techn
 
 ## Using Repository Documentation
 
-Create directory within the repository to store documentation, such as:
+Create a directory within your repository to store documentation, such as:
 - product requirements
 - architecture documentation
 - development rules and guidelines (reference [IDE rules](../../pages/appendix/language-specific))
 
-Ensure all documentation is:
+Make sure all documentation is:
 - version controlled
 - accessible to the IDE
 - formatted in markdown
