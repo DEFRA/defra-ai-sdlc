@@ -1,8 +1,4 @@
-# Getting Started
-
-To start working with AI, you need to understand how to use this playbook to generate quality, consistent code.
-
-## Workflow overview
+# Workflow
 
 The diagram below shows the main steps defined in this playbook. It is deliberately simplified. This development workflow follows recognised best practices already established throughout government, with the help of AI tools and techniques.
 

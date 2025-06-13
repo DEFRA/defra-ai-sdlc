@@ -134,5 +134,3 @@ This provides a great starting point for creating business case documentation an
 4. Regularly review documentation to ensure accuracy, completeness, and relevance.
 
 By embedding these practices into your development workflow, you can ensure a robust, scalable, and efficient system that benefits from both human and AI collaboration.
-
-## [Next -> AI Working Mindset](../ai-working-mindset.md)

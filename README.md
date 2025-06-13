@@ -8,14 +8,14 @@ This playbook shows you how to use AI tools in software development. It's design
 2. [Getting Started](pages/getting-started/README.md)
     1. [Workflow](pages/getting-started/workflow.md)
     2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
-    3. [Project Setup](pages/getting-started/project-setup.md)
+    3. [Mindset](pages/getting-started/ai-working-mindset.md)
+    4. [Project Setup](pages/getting-started/project-setup.md)
 3. [Feature Development](pages/feature-development/README.md)
     1. [Product Requirements](pages/feature-development/product-requirements.md)
     2. [Development](pages/feature-development/development.md)
     3. [Testing](pages/feature-development/testing.md)
     4. [Refactoring](pages/feature-development/refactoring.md)
     5. [Documentation](pages/feature-development/documentation.md)
-4. [AI Working Mindset](pages/ai-working-mindset.md)
 
 ## Overview
 

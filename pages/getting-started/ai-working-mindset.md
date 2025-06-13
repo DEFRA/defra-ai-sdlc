@@ -1,4 +1,4 @@
-# AI Working Mindset
+# Mindset
 
 ### AI Problem Solving Mentality
 
@@ -41,7 +41,7 @@ Reduce these through:
 
 Clear communication with LLMs is essential. They are highly capable but they have no context. Well-crafted prompts give better results. Iterate on prompts to improve outcomes.
 
-Refer to [Prompting Guidance](appendix/prompt-library/prompting-guidance.md) for details on how to write effective prompts.
+Refer to [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) for details on how to write effective prompts.
 
 ### Test-and-Learn Approach
 
@@ -50,3 +50,5 @@ Rather than lengthy iterations, experiment and test ideas quickly. This mindset 
 ### Evolving Best Practices
 
 This playbook captures current best practices, acknowledging they will evolve rapidly. Embrace this constant change as an opportunity for growth.
+
+## [Next -> Project Setup](project-setup.md)

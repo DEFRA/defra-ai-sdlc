@@ -1,4 +1,4 @@
-# The Four Pillars for Generating Consistent Code
+# The Four Pillars
 
 To generate consistent code, four elements must come together as shown in this diagram:
 
@@ -42,5 +42,4 @@ To generate consistent code, four elements must come together as shown in this d
 
 We recommend reading and understanding the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
 
-
-## [Next -> Project Setup](project-setup.md)
+## [Next -> Mindset](ai-working-mindset.md)
