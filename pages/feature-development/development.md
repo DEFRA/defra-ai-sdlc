@@ -22,7 +22,7 @@ Before starting development, ensure you have:
 
 Create a new git branch dedicated to the feature. For example, `feature/add-todo-task`.
 
-### 2. Prompt the AICA interactively
+### 2. Prompt the Coding Assistant interactively
 
 - Use an Artificial Intelligence Coding Assistant (AICA) to implement the feature e.g. Cursor
 - Use prompt templates from your prompt library to start the process - [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements file using the @file feature
@@ -81,6 +81,6 @@ See [Refactoring Workflow](refactoring.md)
 
 - **Think 'Script First'**: The models are very good at writing scripts, such as bash scripts, to do repetitive tasks.
 
-- **Terminal Commands**: AICAs also have integration with the command line, meaning that you can often write your intention in plain English and have the model generate the appropriate terminal command.
+- **Terminal Commands**: Coding Assistants also have integration with the command line, meaning that you can often write your intention in plain English and have the model generate the appropriate terminal command.
 
 ## [Next -> Testing](testing.md)

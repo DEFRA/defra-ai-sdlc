@@ -14,14 +14,8 @@ For example, prompt the model to move some logic into a reusable function, or to
 
 - **Prompting for Refactoring**: Write prompts that guide AI tools to refactor specific areas of code. Do not prompt it to refactor generally. Refer to [prompt-refactor-feature](../../pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md) for an example.
 
-- **Collaborative Refactoring**: First, work with AI tools to identify areas for refactoring, such as overly complex methods or duplicate code, or areas that do not meet the AICA rules. Then guide the model on what specific things it should refactor 
+- **Collaborative Refactoring**: First, work with AI tools to identify areas for refactoring, such as overly complex methods or duplicate code, or areas that do not meet the AI rules. Then guide the model on what specific things it should refactor
 
-- **Enforce Standards**: Define coding standards with tools like AICA rules files to guide AI tools in following code style and design preferences.
+- **Enforce Standards**: Define coding standards with tools like [AI Rules](../appendix/rules-for-ai) to guide the Coding Assistants in following code style and design preferences.
 
 ## [Next -> Documentation](documentation.md)
-
-
-
-
-
- 
