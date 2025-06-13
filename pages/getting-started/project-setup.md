@@ -1,55 +1,28 @@
 # Project Setup
 
-Setting up a development project effectively using AI tools and techniques ensures smooth collaboration, high productivity, and adherence to best practices. Below is a detailed guide for initialising your project:
+This is a summary of the main areas to set up.
+## IDE
 
-This guide outlines how to set up a development project using AI tools and techniques. A proper setup ensures:
-- smooth collaboration
-- high productivity
-- adherence to best practices
+1. **Install and Configure an Artificial Intelligence Coding Assistants (AICAs)**
+   - install Cursor, or another Defra approved Coding Assistant
 
-## Initial Setup
-
-1. **Choose Project Platform**
-   - select hosting platform (GitHub, GitLab, Bitbucket)
-   - agree on Git branching strategy
-   - document collaboration guidelines
-
-2. **Configure Repository**
-   With CDP:
-   - initialise CDP project
-   - configure GitHub repository automatically
-
-   Without CDP:
-   - create GitHub repository manually
-   - set branch protection rules
-   - add issue templates
-
-## Development Environment
-
-1. **Configure AI-Powered IDE**
-   - install Cursor
-   - add required VS Code extensions
-   - set up language-specific plugins
-
-2. **Configure Privacy Settings - IMPORTANT**
+2. **Configure Privacy Settings**
    - In ChatGPT -> Settings -> Data Controls -> "Improve the model for everyone" ->  toggle off / disable
    - In Cursor -> Settings -> General -> Privacy Mode -> enabled
 
-**IMPORTANT:** Privacy settings must be enabled. This ensures that data is not persisted on providers servers and it is not used for training models. 
+   **IMPORTANT:** You *must* enable privacy settings. This makes sure that data is not stored on providers servers and it is not used for training models.
 
-3. **Add Required Files**
-   - copy language-specific files from [language-specific library](../../pages/appendix/language-specific)
-   - customise IDE rules for team requirements
-   - update system prompt for LLM base understanding
+3. **Add AI Rules Files**
+   - add [Rules for AI](../../pages/appendix/rules-for-ai) and commit them to version control in your repository
 
-## Using Repository Documentation
+## Repository Documentation
 
-Create directory within the repository to store documentation, such as:
+Create a directory within your repository to store documentation, such as:
 - product requirements
 - architecture documentation
-- development rules and guidelines (reference [IDE rules](../../pages/appendix/language-specific))
+- development rules and guidelines (reference [IDE rules](../../pages/appendix/rules-for-ai))
 
-Ensure all documentation is:
+Make sure all documentation is:
 - version controlled
 - accessible to the IDE
 - formatted in markdown

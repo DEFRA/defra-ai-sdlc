@@ -2,11 +2,11 @@
 
 Testing effectively with AI can be challenging—often more so than developing new features. While AI can readily generate tests, these tests are not always valuable in the long term. We have observed that automated test creation without careful consideration often produces brittle, tightly coupled tests that break with code changes, offering little practical value.
 
-This document outlines a recommended workflow for designing and implementing robust and sustainable tests utilising AI.
+This document outlines a recommended workflow for designing and implementing robust and sustainable tests using AI.
 
 ## Terminology
 
-Software testing often suffers from ambiguous terminology, with similar terms used interchangeably or different terms referring to the same concept. This issue is further exacerbated by outdated concepts such as the "test pyramid". Just as this lack of standardisation can lead to miscommunication among team members, it can also affect how models interpret prompts. Let us first clarify the two testing styles advocated here.
+Software testing often suffers from unclear terminology, with similar terms used interchangeably or different terms referring to the same concept. This issue is made worse by outdated concepts such as the "test pyramid". Just as this lack of standardisation can lead to miscommunication among team members, it can also affect how models interpret prompts. Let us first clarify the two testing styles advocated here.
 
 ### End-to-End Testing
 
@@ -26,51 +26,48 @@ Examples of integration testing frameworks would be Pytest (for Python) or Jest 
 
 ### Unit Tests
 
-While we emphasise integration-style tests, isolated unit tests remain valuable in certain contexts, such as:
+While we focus on integration-style tests, isolated unit tests remain valuable in certain contexts, such as:
 
 - **Complex Pure Functions:** Functions with intricate logic or algorithms that benefit from isolated testing to ensure boundary conditions are correctly handled.
 - **Utility Libraries:** Code that is loosely coupled to the main flow but used in multiple locations can benefit from unit tests.
-- **Edge or Error Cases:** When it is impractical or overly complex to rely on mocks to simulate certain scenarios, a unit test may be a more pragmatic solution.
+- **Edge or Error Cases:** When it is impractical or overly complex to rely on mocks to simulate certain scenarios, a unit test may be a more practical solution.
 
-If an integration test already comprehensively covers a specific logic path, a separate unit test may be unnecessary—unless explicit clarity for debugging or further documentation is required. 
+If an integration test already covers a specific logic path comprehensively, a separate unit test may be unnecessary—unless explicit clarity for debugging or further documentation is required. 
 
 ## Principles
 
 1. **Test the Functionality, Not the Implementation**  
-   - Write tests that treat the service or endpoint as a "black box": supply known inputs and verify that the final responses, returned data, or side effects match the expected outcomes.  
-   - Focus on overall functionality rather than internal method calls, keeping tests resilient to code changes.
+   Write tests that treat the service or endpoint as a "black box": supply known inputs and verify that the final responses, returned data, or side effects match the expected outcomes. Focus on overall functionality rather than internal method calls, keeping tests resilient to code changes.
 
 2. **Prefer Integration Tests Over Isolated Unit Tests**  
-   - Integration tests simulate real-world usage and interactions between components, often revealing issues that isolated unit tests may miss.  
-   - Reserve unit tests for discrete utility functions or algorithms that are sufficiently complex to warrant independent testing.
+   Integration tests simulate real-world usage and interactions between components, often revealing issues that isolated unit tests may miss. Reserve unit tests for discrete utility functions or algorithms that are sufficiently complex to warrant independent testing.
 
 3. **Realistic Mocking of External Dependencies**  
-   - **Do mock:** Truly external systems such as databases, third-party APIs, and file systems—simulate realistic responses and error conditions.  
-   - **Don’t mock:** Internal modules, classes, or functions; test these together to ensure authentic interactions and comprehensive coverage.
+   **Do mock:** Truly external systems such as databases, third-party APIs, and file systems—simulate realistic responses and error conditions.  
+   **Don't mock:** Internal modules, classes, or functions; test these together to ensure authentic interactions and comprehensive coverage.
 
-4. **Adopt a Structured Test Design**  
-   - Utilise a clear narrative structure, such as the Given-When-Then format:
-     - **Given:** Establish preconditions, test data, and necessary configurations.
-     - **When:** Execute the core logic or function.
-     - **Then:** Validate that the outcomes meet the specified expectations.
-   - This approach emphasises outcomes over internal details and aids in maintaining clarity and consistency.
+4. **Use a Structured Test Design**  
+   Use a clear narrative structure, such as the Given-When-Then format:
+   - **Given:** Establish preconditions, test data, and necessary configurations.
+   - **When:** Execute the core logic or function.
+   - **Then:** Validate that the outcomes meet the specified expectations.
+   This approach focuses on outcomes over internal details and aids in maintaining clarity and consistency.
 
 5. **Avoid Brittle Tests**  
-   - Refrain from hardcoding internal implementation details, such as specific function calls or class structures.  
-   - Overreliance on internal details can lead to fragile tests that break with minor refactors.
+   Do not hardcode internal implementation details, such as specific function calls or class structures. Overreliance on internal details can lead to fragile tests that break with minor refactors.
 
 ## Integration Testing Workflow
 
-The emphasis of the testing workflow is to have test-specific cursor rules and detailed prompts, along with close human interaction and review. 
+The focus of the testing workflow is to have test-specific cursor rules and detailed prompts, along with close human interaction and review. 
 
 ### Prerequisites
 
-- **Feature Requirements**: Ensure there is are detailed feature requirements with clear scope, as per the [Product Requirements](product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the AI-powered IDE.
-- **IDE Rules:** Ensure there are detailed [IDE rules for your chosen language](../../pages/appendix/language-specific) to guide the AI tools in adhering to code style and design preferences.
+- **Feature Requirements**: Ensure there are detailed feature requirements with clear scope, as per the [Product Requirements](product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the Artificial Intelligence Coding Assistant (AICA).
+- **AI Rules:** Ensure there are detailed [Rules for AI](../../pages/appendix/rules-for-ai) to guide the AI tools in following code style and design preferences.
 
-### 1. Interactively Prompt the IDE
+### 1. Prompt the Coding Assistant Interactively
 
-- Utilise an IDE in agentic mode to implement the tests.
+- Use an Artificial Intelligence Coding Assistant (AICA) to implement the tests.
 - Use testing prompt templates from your [prompt library](../../pages/appendix/prompt-library) and reference your requirements file using the @file feature.
 - As the AI generates the tests, monitor its plan to ensure alignment with your expectations.
 - Once complete, "accept" the changes and review them in the git diff viewer. If the changes are unexpected or involve significant deletions, revert all changes, refine your prompt, and try again.
@@ -82,20 +79,20 @@ The emphasis of the testing workflow is to have test-specific cursor rules and d
 
 ### 3. Review and Improve Test Coverage  
 
-- If there are opportunities for enhanced test coverage, prompt the IDE with precise guidance and include the output from the test coverage report.
+- If there are opportunities for better test coverage, prompt the Coding Assistant with precise guidance and include the output from the test coverage report.
 - Address improvements on a feature-by-feature or file-by-file basis.
 - Avoid asking for improvements to the entire codebase coverage in a single prompt.
 
 ### 4. User Review  
 
-- It is crucial that tests are thoroughly reviewed and understood.  
-- Do not allow agents to generate tests unchecked; relying solely on them is akin to marking their own homework, which offers little practical value.
+- Review and understand tests thoroughly.  
+- Do not allow agents to generate tests unchecked; relying solely on them is like marking their own homework, which offers little practical value.
 
 ## End-to-End Testing Workflow
 
 The workflow for end-to-end testing is similar to that for integration testing, with the key difference being that end-to-end tests are decoupled from the underlying code. This decoupling enables you to prompt the model to generate tests using only the requirements and rules, without referencing the source code.
 
-Consequently, AI-generated end-to-end tests can be conducted either prior to code generation or independently by a dedicated QA team if desired.
+As a result, AI-generated end-to-end tests can be conducted either prior to code generation or independently by a dedicated QA team if desired.
 
 Refer to the [prompt-add-e2e-test](../../pages/appendix/prompt-library/testing/prompt-add-e2e-test.md) for an example.
 

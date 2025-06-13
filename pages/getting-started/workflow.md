@@ -1,10 +1,6 @@
-# Getting Started
+# Workflow
 
-To get started working with AI ways of working, it's helpful to have a conceptual understanding of how to use this playbook to generate quality, consistent code.
-
-## Workflow overview
-
-Below is a diagram that provides a high-level overview of the steps defined in this playbook. For the most part, this development workflow follows recognised best practices already established throughout government, with the additional aid of AI tools and techniques.
+The diagram below shows the main steps defined in this playbook. We've deliberately simplified it. This development workflow follows recognised best practices already established throughout government, with the help of AI tools and techniques.
 
 ![](attachments/development-workflow-diagram.png)
 
@@ -12,14 +8,14 @@ Below is a diagram that provides a high-level overview of the steps defined in t
 
 ### Key stages of the workflow
 
-- **Product / Service idea** - This represents the problems to be solved for your users using existing service design and user research techniques.
-- **Prompt to generate requirements documents and designs** - Using advanced models, such as the latest "thinking" models, the clearly defined ideas can be used to generate requirements documentation (features, user stories, data models, etc.) that the AI IDEs (Integrated Development Environment - Cursor) can later use to generate code.
-- **Create a new feature branch in git** - This workflow uses traditional git branching strategies for code versioning.
-- **Take requirements and prompt to generate code** - The requirements generated in the previous step are then used to prompt the AI IDE tools to generate code.
-- **Take requirements and prompt to generate tests** - Tests can be generated from the same product requirements in the AI IDE, ensuring the business logic defined in the requirements are tested independently from the code generation.
-- **Prompt to refactor as necessary** - Additional refactoring of the code can also be prompted at this point.
-- **Prompt to create / update documentation** - Documentation can be kept up to date by prompting the AI IDE to update documentation based on the changes that have been made.
-- **Create MR for developer code review** - A Merge Request (MR) in git is then generated following traditional development practices. Each line of code is reviewed for quality and brevity, ensuring that the code to be deployed is production-ready.
-- **Merge & Deploy** - Once the MR is merged into the main branch, the automated pipeline processes are used to deploy the code, as per your normal deployment processes.
+- **Product or service idea** - This represents the problems you need to solve for your users using existing service design and user research techniques
+- **Prompt to generate requirements documents and designs** - Use advanced models, such as the latest "thinking" models, to generate requirements documentation (features, user stories, data models, etc.) from your clearly defined ideas
+- **Create a new feature branch in git** - This workflow uses traditional git branching strategies for code versioning. Git is a simple proven technique that you can use to manage AI generated changes
+- **Take requirements and prompt to generate code** - Use the requirements from the previous step to prompt the Artificial Intelligence Coding Assistants (AICAs) to generate code
+- **Take requirements and prompt to generate tests** - Generate tests from the same product requirements in the Coding Assistant. This makes sure the business logic defined in the requirements are tested independently from the code generation
+- **Prompt to refactor as necessary** - You can also prompt additional refactoring of the code at this point
+- **Prompt to create or update documentation** - Keep documentation up to date by prompting the Coding Assistant to update documentation based on the changes you've made
+- **Create MR for developer code review** - Generate a Merge Request (MR) in git following traditional development practices. Review each line of code for quality and brevity, making sure that the code to be deployed is production-ready
+- **Merge and deploy** - Once you merge the MR into the main branch, use automated pipeline processes to deploy the code, as per your normal deployment processes
 
 ## [Next -> The Four Pillars](the-four-pillars.md)

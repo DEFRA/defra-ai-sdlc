@@ -1,27 +1,21 @@
 # Refactoring
 
-As with human generated code, refactoring is an important step. Refactoring improves code readability, maintainability, and performance by restructuring existing code without changing its functionality, making it easier to debug, extend, and scale.
+Refactoring is an important step, just like with human-generated code. Refactoring improves code readability, maintainability, and performance by restructuring existing code without changing its functionality. This makes it easier to debug, extend, and scale.
 
-It's also important to consider that for AI generated code, whilst following the guidelines and prompts elsewhere in this playbook will give the best possible code quality and consistency, but models are nondeterministic and can generate similar functionality using slight different approaches or conventions.
+Consider that AI-generated code follows the guidelines and prompts elsewhere in this playbook to give the best possible code quality and consistency. However, models are nondeterministic and can generate similar functionality using slightly different approaches or conventions.
 
-When it comes to AI-generated code, it is important that the refactoring step is done with close human supervision.  With the person prompting the model specific things to refactor. Simply telling the model to refactor in general will give unexpected results.  
+When refactoring AI-generated code, do this step with close human supervision. Prompt the model with specific things to refactor. Telling the model to refactor in general will give unexpected results.
 
-For example, a person might prompt the model to move some logic into a reusable function, or to move logic from a pretension class to a service class, or prompt it to change one module to copy the conventions in another module.
+For example, prompt the model to move some logic into a reusable function, or to move logic from a presentation class to a service class, or prompt it to change one module to copy the conventions in another module.
 
 ## Guidelines
 
-- **Refactor at the end of each feature**: Perform code reviews and refactor code as part of each feature implementations to ensure consistency and maintainability. Similar to the principle of "Red Green Refactor" in TDD, do "Gen Test Refactor"
+- **Refactor at the end of each feature**: Review and refactor code as part of each feature implementation to ensure consistency and maintainability. Similar to the principle of "Red Green Refactor" in TDD, do "Gen Test Refactor"
 
-- **Prompting for Refactoring**: Craft prompts that guide AI tools to refactor specific areas of code. Do not prompt it to just refactor.  Refer to [prompt-refactor-feature](../../pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md) for an example.
+- **Prompting for Refactoring**: Write prompts that guide AI tools to refactor specific areas of code. Do not prompt it to refactor generally. Refer to [prompt-refactor-feature](../../pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md) for an example.
 
-- **Collaborative Refactoring**: First, collaborate with AI tools to identify areas for refactoring, such as overly complex methods or duplicate code, or areas that do not meet the IDE rules. Then follow up by guiding the model as to what specific things it should refactor 
+- **Collaborative Refactoring**: First, work with AI tools to identify areas for refactoring, such as overly complex methods or duplicate code, or areas that do not meet the AI rules. Then guide the model on what specific things it should refactor
 
-- **Enforce Standards**: Define coding standards with tools like IDE rules files to guide AI tools in adhering to code style and design preferences.
+- **Enforce Standards**: Define coding standards with tools like [AI Rules](../appendix/rules-for-ai) to guide the Coding Assistants in following code style and design preferences.
 
 ## [Next -> Documentation](documentation.md)
-
-
-
-
-
- 

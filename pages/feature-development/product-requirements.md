@@ -6,9 +6,9 @@ You may spend more than 30% of workflow time on requirement generation and refin
 
 ## 1. Understanding Prioritised Feature Requirements
 
-Before embarking on detailed requirement creation, it is essential to clearly understand and prioritise the feature requirements for the service you are developing.
+Before creating detailed requirements, clearly understand and prioritise the feature requirements for the service you are developing.
 
-- Collaborate with stakeholders to identify and agree on the key features that align with the overall goals of the project.
+- Work with stakeholders to identify and agree on the key features that align with the overall goals of the project.
 - Document these features in order of priority, ensuring alignment with business objectives and technical feasibility.
 - Ensure each feature is well-defined and scoped to avoid ambiguities.
 
@@ -16,7 +16,7 @@ Before embarking on detailed requirement creation, it is essential to clearly un
 
 A detailed feature description should be a *very* detailed account of the feature you want to implement, with as much detail as possible. It's better to err on the side of being very verbose and clear about what you want; the later processes will refine the detail into actionable requirements.
 
-Ideally, this description should take the form of a markdown document, and could look something like this:
+Write this description as a markdown document, and it could look something like this:
 
 ```
 I'm writing a governance checklist app for Defra governance project tracking. Here are the features of the app:
@@ -111,7 +111,7 @@ If the generated markdown file is 'broken':
 
 ## 5. Deep Product Analysis of the Solution
 
-Using your original product requirements and the data model, the solution can be analysed using LLMs as a pair evaluator to help find gaps in the solution, analyse cost/benefits, pros/cons and conduct future-perspective evaluation.
+Using your original product requirements and the data model, analyse the solution using LLMs as a pair evaluator to help find gaps in the solution, analyse cost/benefits, pros/cons and conduct future-perspective evaluation.
 
 Run the following prompt for meta analysis, use an advanced reasoning model:
 
@@ -269,17 +269,17 @@ Validate your work to check that all the features defined in the documents above
 
 ## 10. Saving the Combined Requirements in the Repository
 
-Once you have the markdown text, save it in the folder or Obsidian vault that was set up at the start of the project in `[filename].md` format. It's important that this file is INSIDE the code repository, as we will have the AI-powered IDE reference it later in the workflow.
+Once you have the markdown text, save it in the folder or Obsidian vault that was set up at the start of the project in `[filename].md` format. It's important that this file is INSIDE the code repository, as we will have the Artificial Intelligence Coding Assistant (AICA) reference it later in the workflow.
 
 ## 11. Ensuring Requirement Precision
 
-Dedicate substantial time and team effort to refining the prompts and the Product Requirements document to eliminate vagueness and potential misinterpretations.
+Spend substantial time and team effort refining the prompts and the Product Requirements document to remove vagueness and potential misinterpretations.
 
 - Ensure all aspects are reviewed collaboratively by the team.
 - Revise any unclear sections to ensure the requirements are unambiguous and can be correctly interpreted by an LLM.
 
 ## A Note About Design and UX
 
-The LLMs have been trained on GDS standards and have ingested GDS style layouts. Therefore, they are often good at determining GDS-compliant designs while they implement features. As long as your product requirements document and .cursor rules files stipulate adherence to the GDS standards for designs, the LLMs should adhere to them when developing features. The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
+The LLMs have been trained on GDS standards and have ingested GDS style layouts. Therefore, they are often good at determining GDS-compliant designs while they implement features. As long as your product requirements document and .cursor rules files stipulate adherence to the GDS standards for designs, the LLMs should follow them when developing features. The LLMs will also note places in your design where GDS standards are not met and suggest compliant alternatives.
 
 ## [Next -> Development](development.md)

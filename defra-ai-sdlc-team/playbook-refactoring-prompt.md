@@ -1,3 +1,1 @@
-```
-Look at the files in the @workflow directory and, as per the instructions in the cursor rules and make improvements as instructed. Be sure to only make targeted edits and verify any text you remove to ensure the original intent is preserved.
-```
+Review @README.md and files in @/pages. Follow cursor rules to make targeted improvements while preserving original intent.

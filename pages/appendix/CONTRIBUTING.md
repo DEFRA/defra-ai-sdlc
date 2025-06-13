@@ -1,71 +1,82 @@
 # Contributing to the Defra AI SDLC Playbook
 
-Thank you for your interest in contributing to the Defra AI SDLC Playbook! This is a living document and a shared resource for all at Defra, and we welcome your contributions to make it better.
+Thank you for your interest in contributing to the Defra AI SDLC Playbook! This is a living document and a shared resource for all at Defra. We welcome your contributions to make it better.
 
-## How to Contribute
+## How to contribute
 
-### Reporting Issues
+### Report issues
 
 If you find an error, inconsistency, or area for improvement in the playbook:
 
-1. Navigate to the repository's Issues section
-2. Click on "New Issue"
-3. Clearly describe the issue, including:
-   - Where you found the error (which section/page)
-   - What the current content states
-   - Why you believe it needs to be corrected
-   - Any suggested improvements (if applicable)
+1. Go to the repository's Issues section
+2. Click "New Issue"
+3. Describe the issue clearly, including:
+   - Where you found the error (which section or page)
+   - What the current content says
+   - Why it needs to be corrected
+   - Your suggested improvements (if you have any)
 
-### Contributing New Content
+### Add new content or make changes
 
-If you'd like to contribute new content or make changes to existing content:
+To contribute new content or change existing content:
 
-1. Create a new branch from the main branch
+1. Fork the repository
+   - Go to the repository on GitHub
+   - Click the "Fork" button in the top right corner
+   - This creates your own copy of the repository
+
+2. Clone your fork to your local machine
+   ```
+   git clone https://github.com/your-username/defra-ai-sdlc.git
+   cd defra-ai-sdlc
+   ```
+
+3. Create a new branch for your changes
    ```
    git checkout -b feature/your-feature-name
    ```
 
-2. Make your changes in the new branch
-   - Ensure your content follows the existing structure and formatting
-   - Include clear and concise explanations
+4. Make your changes
+   - Follow the existing structure and formatting
+   - Write clear and concise explanations
    - Add relevant examples where appropriate
 
-3. Commit your changes with meaningful commit messages
+5. Commit your changes with meaningful commit messages
    ```
    git commit -m "Add section on [topic]"
    ```
 
-4. Push your branch to the repository
+6. Push your branch to your fork
    ```
    git push origin feature/your-feature-name
    ```
 
-5. Create a Pull Request (PR)
-   - Navigate to the repository's Pull Requests section
+7. Create a Pull Request (PR)
+   - Go to your fork on GitHub
    - Click "New Pull Request"
-   - Select your branch
-   - Provide a clear description of your changes
+   - Select your branch to merge into the main repository
+   - Write a clear description of your changes
    - Submit the PR for review
 
-## Review Process
+## Review process
 
-- All contributions will be reviewed by the maintainers
-- Not all suggestions may be accepted, but all feedback is welcome and valued
-- Reviewers may request changes or clarification
-- Once approved, your changes will be merged into the main branch
+- Maintainers will review all contributions
+- We may not accept all suggestions, but we welcome and value all feedback
+- Reviewers may ask for changes or clarification
+- Once approved, we will merge your changes into the main branch
 
-## Style Guidelines
+## Style guidelines
 
 - Use clear, concise language
 - Follow existing formatting and structure
 - Include practical examples where possible
 - Link to relevant resources and documentation
-- Avoid jargon or explain technical terms when necessary
+- Avoid jargon or explain technical terms when you use them
 
-## Questions or Need Help?
+## Questions or need help?
 
-If you have questions about contributing or need assistance, please:
-1. Check existing issues to see if your question has been answered
-2. Create a new issue with the "question" label if you need further help
+If you have questions about contributing or need help:
+1. Check existing issues to see if someone has already answered your question
+2. Create a new issue with the "question" label if you need more help
 
 Thank you for helping make the Defra AI SDLC Playbook better for everyone! 
