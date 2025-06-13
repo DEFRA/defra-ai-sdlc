@@ -1,36 +1,21 @@
 # Project Setup
 
-This guide shows you how to set up a development project using AI tools and techniques. 
-## Initial Setup
+This is a summary of the main areas to set up.
+## IDE
 
-1. **Configure Repository**
-
-   With CDP:
-   - initialise CDP project
-   - configure GitHub repository automatically
-
-   Without CDP:
-   - create GitHub repository manually
-   - set branch protection rules
-   - add issue templates
-
-## Development Environment
-
-1. **Configure Artificial Intelligence Coding Assistants (AICAs)**
-   - install Cursor
-   - add required VS Code extensions
-   - set up language-specific plugins
+1. **Install and Configure an Artificial Intelligence Coding Assistants (AICAs)**
+   - install Cursor, or another Defra approved Coding Assistant
 
 2. **Configure Privacy Settings**
    - In ChatGPT -> Settings -> Data Controls -> "Improve the model for everyone" ->  toggle off / disable
    - In Cursor -> Settings -> General -> Privacy Mode -> enabled
 
-   **IMPORTANT:** You *must* enable privacy settings. This makes sure that data is not stored on providers servers and it is not used for training models. 
+   **IMPORTANT:** You *must* enable privacy settings. This makes sure that data is not stored on providers servers and it is not used for training models.
 
-3. **Add Required Files**
-   - add [Rules for AI](../../pages/appendix/rules-for-ai)
+3. **Add AI Rules Files**
+   - add [Rules for AI](../../pages/appendix/rules-for-ai) and commit them to version control in your repository
 
-## Using Repository Documentation
+## Repository Documentation
 
 Create a directory within your repository to store documentation, such as:
 - product requirements

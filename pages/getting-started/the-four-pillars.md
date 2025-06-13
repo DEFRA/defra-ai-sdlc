@@ -10,7 +10,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 ### 1. Clear Requirements
 
-**Purpose:** Defines (with detail and clarity) the functional and pseudo-technical requirements for the product/service idea you want to implement.
+**Purpose:** Defines (with detail and clarity) the functional and pseudo-technical requirements for the product or service idea you want to implement.
 
 **Where created:** Use an advanced "thinking" chat model like Claude or ChatGPT.
 
@@ -18,7 +18,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 ### 2. Good Prompts
 
-**Purpose:** The clear, detailed ask for a given task. It can refer to the IDE rules and the requirements, however, you don't need to repeat what's in the rules or requirements in the prompt.
+**Purpose:** The clear, detailed ask for a given task. It can refer to the IDE rules and the requirements. However, you don't need to repeat what's in the rules or requirements in the prompt.
 
 **Where created:** Create prompts manually at first but then refine them using a chat model like Claude or ChatGPT.
 

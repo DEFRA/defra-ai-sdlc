@@ -1,7 +1,7 @@
 # Defra AI SDLC Playbook
-Version 1.1
+Version 1.2
 
-This playbook shows you how to use AI tools in software development. It's designed for Defra teams and updated regularly with new practices and lessons learned.
+This playbook shows you how to use AI tools in software development. We designed it for Defra teams and update it regularly with new practices and lessons learned.
 
 ## Table of Contents
 1. [Welcome](README.md)
@@ -19,9 +19,11 @@ This playbook shows you how to use AI tools in software development. It's design
 
 ## Overview
 
-Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies, each with different roles and ways of working.
+Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies. Each has different roles and ways of working.
 
-Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques. You'll get actionable guidance to use AI effectively. This leads to lower development costs, faster service delivery and better operational efficiency. You can innovate while making sure Defra's operations meet their goals sustainably.
+Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques.
+
+
 
 ## Contributing
 
