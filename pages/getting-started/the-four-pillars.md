@@ -24,13 +24,13 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Ref:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
 
-### 3. IDE Rules for AI
+### 3. Rules for AI
 
-**Purpose:** IDE rules define consistent and repeatable standards, patterns and conventions across your codebase. Apply rules for each task-specific prompt.
+**Purpose:** AI Rules define consistent and repeatable standards, patterns and conventions across your codebase.
 
 **Where created:** Rule file formats are usually defined by the AI IDE tool. To help generate the rules themselves, use a chat model like Claude or ChatGPT.
 
-**Ref**: [Language-specific playbook rules files](../appendix/language-specific)
+**Ref**: [Rules for AI](../appendix/rules-for-ai)
 
 ### 4. Capable Code Generation Model
 

@@ -28,16 +28,14 @@ This guide shows you how to set up a development project using AI tools and tech
    **IMPORTANT:** You *must* enable privacy settings. This makes sure that data is not stored on providers servers and it is not used for training models. 
 
 3. **Add Required Files**
-   - copy language-specific files from [language-specific library](../../pages/appendix/language-specific)
-   - customise IDE rules for team requirements
-   - update system prompt for LLM base understanding
+   - add [Rules for AI](../../pages/appendix/rules-for-ai)
 
 ## Using Repository Documentation
 
 Create a directory within your repository to store documentation, such as:
 - product requirements
 - architecture documentation
-- development rules and guidelines (reference [IDE rules](../../pages/appendix/language-specific))
+- development rules and guidelines (reference [IDE rules](../../pages/appendix/rules-for-ai))
 
 Make sure all documentation is:
 - version controlled

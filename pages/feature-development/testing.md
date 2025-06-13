@@ -63,7 +63,7 @@ The focus of the testing workflow is to have test-specific cursor rules and deta
 ### Prerequisites
 
 - **Feature Requirements**: Ensure there are detailed feature requirements with clear scope, as per the [Product Requirements](product-requirements.md). This could be a User Story or Product Requirement Document, in markdown format. The document should be accessible to the Artificial Intelligence Coding Assistant (AICA).
-- **AICA Rules:** Ensure there are detailed [rules for your chosen language](../../pages/appendix/language-specific) to guide the AI tools in following code style and design preferences.
+- **AICA Rules:** Ensure there are detailed [Rules for AI](../../pages/appendix/rules-for-ai) to guide the AI tools in following code style and design preferences.
 
 ### 1. Prompt the AICA Interactively
 

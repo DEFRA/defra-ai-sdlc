@@ -11,7 +11,7 @@ AI-powered development enables rapid creation and modification of code. This mea
 Before starting development, ensure you have:
 
 1. **Clear Requirements**: Detailed feature requirements with defined scope, as outlined in the [Product Requirements](product-requirements.md)
-2. **AICA Configuration**: Language-specific [AI rules](../appendix/language-specific) for consistent code style and design
+2. **Code Assistant Configuration**: [Rules for AI](../appendix/rules-for-ai) for consistent code style and design
 3. **Clean Codebase**: 
     - passing tests with good coverage
     - up-to-date documentation
@@ -67,7 +67,7 @@ See [Refactoring Workflow](refactoring.md)
 
 ## Guidelines
 
-- **Quality, consistent results**: As per [the four pillars](../getting-started/the-four-pillars), the combination of good quality [AI rules](../appendix/language-specific), good quality [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) are essential for getting consistent and predictable results.
+- **Quality, consistent results**: As per [the four pillars](../getting-started/the-four-pillars), the combination of good quality [AI rules](../appendix/rules-for-ai), good quality [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) are essential for getting consistent and predictable results.
 
 - **Avoid multiple branches or simultaneous changes**: Avoid having two or more people separately changing the same codebase or at least the same areas of the codebase at the same time.
 
