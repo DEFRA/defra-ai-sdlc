@@ -24,7 +24,7 @@ Install Cursor or another Defra-approved coding assistant.
 
 ### 3. Add AI rules files
 
-Add [Rules for AI (opens in new tab)](../../pages/appendix/rules-for-ai){:target="_blank"} to your repository and commit them to version control.
+Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and commit them to version control.
 
 ## Set up repository documentation
 
