@@ -1,63 +1,60 @@
 # Development
 
-This section outlines the recommended process for developing features using an AI-powered development workflow.
+This section outlines how to develop new features. For test-first development, see [Test Driven Development](test-driven-development.md).
 
 ## Workflow
 
 ### Prerequisites
 
-1. **Clear Requirements**: Detailed feature requirements with defined scope, as outlined in the [Product Requirements](product-requirements.md)
-2. **Rules for AI**: Set up project [Rules for AI](../appendix/rules-for-ai) for consistent and repeatable standards, patterns and conventions across your codebase
-3. **Capable Code Generation Model**: Ensure you're using the most capable LLM model for the task you are running to get good quality results
+1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Product Requirements](product-requirements.md)
+2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
+3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
 ### 1. Create a new git branch
 
-Start with a new git branch dedicated to the feature.
+Create a new git branch for your feature.
 
-### 2. Prompt the Coding Assistant
+### 2. Prompt the coding assistant
 
-- Use an AI Coding Assistant (AICA) to implement the feature
-- Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly using the Coding Assistant
-- This will generate the initial code
-- Accept changes, then review in git diff viewer
+- Use an AI Coding Assistant (AICA) in Agent mode. Find more information about Agent mode [here](../appendix/how-to-use-coding-assistant.md)
+- Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
+- Generate the initial code
+- Accept changes, then review them in the git diff viewer
 
 ### 3. Test and iterate manually
 
-- Test the generated feature to ensure it works correctly
-- Feed error messages back to the model for rapid fixes
-- When it working, then review the code to ensure it meets your expectations
+- Test the generated feature manually to check it works correctly
+- Give error messages back to the model for quick fixes
+- Review the code to make sure it meets your expectations once it's working
 
 ### 4. Create automated tests
 
 - Start a new agent conversation
 - Use testing prompts from your [prompt library](../../pages/appendix/prompt-library)
-- Accept changes, then review in git diff viewer
-- When it working, then review the tests carefully to ensure they meets your expectations
-- See [Testing Workflow](testing.md) for more details
+- Accept changes, then review in the git diff viewer
+- Review the tests carefully to make sure they meet your expectations once they're working
 
 ### 5. Refactor
 
-- Review and refactor code while ensuring tests still pass
+- Review and refactor code while making sure tests still pass
 - See [Refactoring Workflow](refactoring.md)
 
 ### Follow-up tasks
 
-- Create merge request for peer review
+- Create a merge request for peer review
 - Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md)
-- Update AI rules and prompt library based on lessons learned
+- Update AI rules and prompt library based on what you've learned
 
 ## Guidelines
 
-**Get consistent results**: Use quality [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) together.
+**Get consistent results**: Follow the four pillars by using [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) together.
 
-**Manage change with Git**: Do each feature on a branch, commit often, and integrate with main regularly.
+**Review everything generated**: Review and refine everything the agent generates.
 
-**Debug with logs**: Include detailed logs when developing. Feed error messages back to the model for faster fixes.
+**Debug with logs**: Include detailed logs when developing. Give error messages back to the model for faster fixes.
 
 **Avoid the "Doom Loop"**: If you need multiple iterations, your prompt was unclear. Revert changes, refine your prompt, and restart.
 
-**Match scope to complexity**: As codebases grow, give the AI more specific tasks. Broad scope leads to assumptions and missed details.
+**Match scope to complexity**: Give the AI more specific tasks as codebases grow.
 
-**Coordinate team changes**: Avoid multiple people changing the same code areas simultaneously.
-
-## [Next -> Testing](testing.md)
+## [Next -> Test Driven Development](test-driven-development.md)
