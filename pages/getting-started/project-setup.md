@@ -6,7 +6,7 @@ Set up your development environment to use AI tools safely and effectively.
 
 ### 1. Install an AI coding assistant
 
-Install Cursor or another Defra-approved coding assistant.
+Install Cursor or another coding assistant from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list.
 
 ### 2. Turn on privacy settings
 

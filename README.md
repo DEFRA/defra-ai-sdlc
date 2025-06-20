@@ -21,6 +21,7 @@ This playbook shows you how to use AI tools in software development. We designed
     1. [How to use a Coding Assistant](pages/appendix/how-to-use-coding-assistant.md)
     2. [Prompt Library](pages/appendix/prompt-library/README.md)
     3. [Rules for AI](pages/appendix/rules-for-ai/README.md)
+    4. [Defra Approved Tools](pages/appendix/defra-approved-tools.md)
 
 ## Overview
 
@@ -28,7 +29,13 @@ Defra manages environmental protection, food production and rural development ac
 
 Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques.
 
+## Contact Us
 
+This playbook is maintained by the Defra AI Capabilites and Enablement team. You can contact us 
+
+- Via the `#ask-ace` slack channel on Defra slack ("grey slack")
+
+- Via Steve Dickinson, Principal Software Developer (CCTS AI and Innovation)
 
 ## Contributing
 

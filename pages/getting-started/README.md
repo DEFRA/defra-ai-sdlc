@@ -2,6 +2,8 @@
 
 This section explains the core concepts of working with AI tools.
 
+**Important:** You must only use AI tools from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list. 
+
 **Important:** You must configure proper privacy settings as outlined in the [Project Setup](project-setup.md) section. This keeps your sensitive information safe when working with AI tools.
 
 ## Workflow Steps

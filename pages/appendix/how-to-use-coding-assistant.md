@@ -4,7 +4,7 @@ This guide shows you how to use AI coding assistants (AICE) to build production-
 
 **This approach may differ from other AI tools you have used.**
 
-This page uses [Cursor (opens in new tab)](https://www.cursor.com/en){:target="_blank"} as an example coding assistant, but these principles apply to all coding assistants approved for use by Defra.
+This page uses [Cursor (opens in new tab)](https://www.cursor.com/en){:target="_blank"} as an example coding assistant, but these principles apply to all coding assistants in the [Defra Approved Tools](defra-approved-tools.md) list.
 
 ## Use agent mode
 

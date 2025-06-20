@@ -5,6 +5,7 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 **Important prerequisites:** 
 
 - Complete the [Getting Started](../getting-started) section first
+- Only use AI tools from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list
 - Configure proper privacy settings as outlined in the [Project Setup](../getting-started/project-setup.md) section. This keeps your sensitive information safe when working with AI tools
 
 ## Workflow Steps
