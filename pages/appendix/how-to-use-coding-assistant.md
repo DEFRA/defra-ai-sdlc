@@ -4,7 +4,7 @@ This guide shows you how to use AI coding assistants (AICE) to build production-
 
 **This approach may differ from other AI tools you have used.**
 
-We use [Cursor (opens in new tab)](https://www.cursor.com/en){:target="_blank"} as an example, but these principles apply to all coding assistants approved for use by Defra.
+This page uses [Cursor (opens in new tab)](https://www.cursor.com/en){:target="_blank"} as an example coding assistant, but these principles apply to all coding assistants approved for use by Defra.
 
 ## Use agent mode
 
@@ -30,7 +30,7 @@ See [Rules for AI](../appendix/rules-for-ai) for more information.
 
 ## Turn on privacy settings
 
-Turn on privacy settings before you start. Privacy settings prevent your code and data being stored on AI providers' servers. They stop your data being used to train AI models.
+**Important:** Turn on privacy settings in your coding assistant before you start. Privacy settings prevent your code and data being stored on AI providers' servers. They stop your data being used to train AI models.
 
 Do not use beta releases of coding assistants.
 
