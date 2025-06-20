@@ -30,7 +30,7 @@ Create a new git branch for your feature.
 ### 4. Create automated tests
 
 - Start a new agent conversation
-- Use testing prompts from your [prompt library](../../pages/appendix/prompt-library)
+- Use [testing prompts](../../pages/appendix/prompt-library/testing/prompt-add-unit-test.md) from your prompt library to generate tests
 - Accept changes, then review in the git diff viewer
 - Review the tests carefully to make sure they meet your expectations once they're working
 

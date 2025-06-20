@@ -54,7 +54,7 @@ describe('Resource API', () => {
 - Test error handling
 - Use test factories for data creation
 
-## Integration Testing
+## Unit Testing
 - Test complete request/response cycle
 - Test database interactions
 - Test external service integration
@@ -159,7 +159,7 @@ globs: *.js
 
 ## Testing
 - Unit test all handlers and services
-- Integration tests for API endpoints
+- Unit tests for API endpoints
 - Mock external dependencies
 - Test error scenarios
 - Test input validation
