@@ -94,7 +94,7 @@ globs: test_*.py
 
 ## Core Principles
 - Test behaviour, not implementation.
-- Prefer integration tests over isolated unit tests. Testing multiple units together in a functional way
+- Prefer integration-style unit tests over isolated unit tests. Testing multiple units together in a functional way
 - Mock external dependencies only, at the lowest level (e.g. database operations, API calls, etc).
 - Prioritise clarity and readability.
 - Follow Given-When-Then pattern with inline comments
@@ -191,7 +191,6 @@ async def test_operation_scenario_expected(
 ```bash
 tests/
 ├── conftest.py   # Fixtures and configuration
-├── integration/  # Integration tests
 ├── unit/        # Unit tests   
 └── utils/       # Utility functions and test data
 ``` 
@@ -313,7 +312,7 @@ Firstly, ensure you scan the entire testing patterns to determine if Mongo is al
   - Utilize shared utilities (e.g., in tests/utils/test_data.py) to create standardized test data for different collections.
 
 - **Pre-populated Collections:**
-  - For integration tests, use fixtures like mock_collections_with_data to simulate collections with initial data.
+  - For unit tests, use fixtures like mock_collections_with_data to simulate collections with initial data.
 
 ## 8. **Extending and Maintaining Mocks**
 

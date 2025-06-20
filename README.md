@@ -13,9 +13,15 @@ This playbook shows you how to use AI tools in software development. We designed
 3. [Feature Development](pages/feature-development/README.md)
     1. [Product Requirements](pages/feature-development/product-requirements.md)
     2. [Development](pages/feature-development/development.md)
-    3. [Testing](pages/feature-development/testing.md)
-    4. [Refactoring](pages/feature-development/refactoring.md)
-    5. [Documentation](pages/feature-development/documentation.md)
+    3. [Test Driven Development](pages/feature-development/test-driven-development.md)
+    4. [Testing](pages/feature-development/testing.md)
+    5. [Refactoring](pages/feature-development/refactoring.md)
+    6. [Documentation](pages/feature-development/documentation.md)
+4. Appendix
+    1. [How to use a Coding Assistant](pages/appendix/how-to-use-coding-assistant.md)
+    2. [Prompt Library](pages/appendix/prompt-library/README.md)
+    3. [Rules for AI](pages/appendix/rules-for-ai/README.md)
+    4. [Defra Approved Tools](pages/appendix/defra-approved-tools.md)
 
 ## Overview
 
@@ -23,7 +29,13 @@ Defra manages environmental protection, food production and rural development ac
 
 Defra's size and complexity create opportunities to use AI throughout software development. This playbook helps you use these opportunities through practical methods, tools and techniques.
 
+## Contact Us
 
+This playbook is maintained by the Defra AI Capabilites and Enablement team. You can contact us 
+
+- Via the `#ask-ace` slack channel on Defra slack ("grey slack")
+
+- Via Steve Dickinson, Principal Software Developer (CCTS AI and Innovation)
 
 ## Contributing
 

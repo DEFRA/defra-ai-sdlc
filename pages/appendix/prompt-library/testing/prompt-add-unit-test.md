@@ -1,6 +1,6 @@
-# Add Integration Test
+# Add Unit Test
 
-These are examples of integration test (AKA unit test) prompts
+These are examples of unit test prompts
 
 ## API Tests
 
@@ -11,7 +11,7 @@ I have provided you with a Product Requirements document(PRD). Please analyze th
 1. Review testing standards from the testing cursor rules
 2. Analyze:
    - Source code
-   - Integration points
+   - Unit interactions
    - External dependencies requiring mocks
    - Data models and flows
    - Existing test coverage
@@ -19,7 +19,7 @@ I have provided you with a Product Requirements document(PRD). Please analyze th
 ## Implementation Guidelines
 1. Test Structure:
    - Use Given-When-Then pattern with descriptive comments
-   - Focus on end-to-end workflows over isolated units
+   - Focus on journey workflows over isolated units
    - Mock external dependencies appropriately
 
 2. Test Coverage:
@@ -53,7 +53,7 @@ I have provided you with a Product Requirements Document (PRD). Please analyze f
 Before writing tests, please analyze:
 - The specific feature and associated user stories in the PRD
 - The relevant source code components and their interactions
-- Integration points with other components/services
+- Unit interactions with other components/services
 - External dependencies requiring mocks (APIs, services, databases)
 - Data models, state management, and user data flows
 - Existing test coverage and testing patterns used in the codebase
@@ -96,4 +96,4 @@ Please provide:
 3. An execution report for the tests
 4. Any issues encountered and their solutions
 5. Recommendations for improving testability (if applicable)
-```
+``` 
