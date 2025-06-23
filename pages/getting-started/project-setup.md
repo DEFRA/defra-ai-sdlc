@@ -30,15 +30,10 @@ Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and com
 
 You need access to artifacts like user stories, technical designs, diagrams and interface designs from within your coding assistant.
 
-### Use Obsidian Vault with git (optional)
+### Use Obsidian Vault (optional)
 
-This simple approach keeps all your project documentation in one place:
+Use [Obsidian (opens in new tab)](https://obsidian.md/){:target="_blank"} to manage all your project artifacts centrally. You can add an obsidian vault to your code repo or create a separate repo and link to it using [git submodules (opens in new tab)](https://git-scm.com/book/en/v2/Git-Tools-Submodules){:target="_blank"}
 
-1. Create a product vault as a new git repository (for example: `todo-list-vault`)
-2. Link your code repositories to the vault using [git submodules (opens in new tab)](https://git-scm.com/book/en/v2/Git-Tools-Submodules){:target="_blank"}
-(For example link all related repositories `todo-list-frontend`, `todo-list-backend`, `todo-list-journey-test` to the central vault `todo-list-vault`)
-3. Use [Obsidian (opens in new tab)](https://obsidian.md/){:target="_blank"} to manage all your documentation, prompts and other project project artifacts centrally.
-
-You don't have to use Obsidian, your can use another approach to get artifacts into the coding assistant that suits your team.
+You don't have to use Obsidian, you can use another approach that suits your team.
 
 ## [Next -> Feature Development](../feature-development)

@@ -24,7 +24,7 @@ In Defra, the term journey tests is used for testing the entire application and 
 2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai/) to define apporach and patterns for writing journey tests
 3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
-### 1. Prompt the Coding Assistant Interactively
+### 1. Prompt the Coding Assistant
 
 - Use an AI Coding Assistant (AICA) in Agent mode. Find more information about Agent mode [here](../appendix/how-to-use-coding-assistant.md)
 - Use [prompt-add-journey-test](../appendix/prompt-library/testing/prompt-add-journey-test.md) and reference your requirements files directly with the Coding Assistant Agent
