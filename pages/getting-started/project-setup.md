@@ -6,21 +6,13 @@ Set up your development environment to use AI tools safely and effectively.
 
 ### 1. Install an AI coding assistant
 
-Install Cursor or another coding assistant from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list.
+Install a coding assistant from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list.
 
 ### 2. Turn on privacy settings
 
-**Important:** You must enable privacy settings to protect government data.
+**Important:** You must enable privacy settings to protect government data. Privacy settings stop your code and data being stored on AI providers' servers. They also prevent your data being used to train AI models.
 
-**In ChatGPT:**
-- Go to Settings > Data Controls > "Improve the model for everyone"
-- Turn this setting off
-
-**In Cursor:**
-- Go to Settings > General > Privacy Mode
-- Turn this setting on
-
-**Why this matters:** Privacy settings stop your code and data being stored on AI providers' servers. They also prevent your data being used to train AI models.
+For information on the appropriate privacy settings for your chosen AI tool, see the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/)
 
 ### 3. Add AI rules files
 
