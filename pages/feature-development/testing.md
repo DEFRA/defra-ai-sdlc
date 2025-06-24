@@ -26,7 +26,7 @@ In Defra, the term journey tests is used for testing the entire application and 
 
 ### 1. Prompt the Coding Assistant
 
-- Use an AI Coding Assistant (AICA) in Agent mode. Find more information about Agent mode [here](../appendix/how-to-use-coding-assistant.md)
+- Use an AI Coding Assistant (AICA) in Agent mode
 - Use [prompt-add-journey-test](../appendix/prompt-library/testing/prompt-add-journey-test.md) and reference your requirements files directly with the Coding Assistant Agent
 - Generate the initial tests
 - Accept changes, then review them in the git diff viewer

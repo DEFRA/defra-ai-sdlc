@@ -19,10 +19,9 @@ This playbook shows you how to use AI tools in software development. We designed
     5. [Refactoring](pages/feature-development/refactoring.md)
     6. [Documentation](pages/feature-development/documentation.md)
 4. Appendix
-    1. [How to use a Coding Assistant](pages/appendix/how-to-use-coding-assistant.md)
-    2. [Prompt Library](pages/appendix/prompt-library/README.md)
-    3. [Rules for AI](pages/appendix/rules-for-ai/README.md)
-    4. [Defra Approved Tools](pages/appendix/defra-approved-tools.md)
+    1. [Prompt Library](pages/appendix/prompt-library/README.md)
+    2. [Rules for AI](pages/appendix/rules-for-ai/README.md)
+    3. [Defra Approved Tools](pages/appendix/defra-approved-tools.md)
 
 ## Overview
 

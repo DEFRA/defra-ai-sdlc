@@ -16,7 +16,7 @@ Create a new git branch for your feature.
 
 ### 2. Prompt the coding assistant
 
-- Use an AI Coding Assistant (AICA) in Agent mode. Find more information about Agent mode [here](../appendix/how-to-use-coding-assistant.md)
+- Use an AI Coding Assistant (AICA) in Agent mode
 - Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
 - Generate the initial code
 - Accept changes, then review them in the git diff viewer

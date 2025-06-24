@@ -16,7 +16,7 @@ This section outlines the process for doing test driven development.
 
 ### 2. Prompt the Coding Assistant
 
-- Use an AI Coding Assistant (AICA) in Agent mode. You can find more info using Agent mode [here](../appendix/how-to-use-coding-assistant.md)
+- Use an AI Coding Assistant (AICA) in Agent mode
 - Use the three prompts in [prompt-test-driven-development](../appendix/prompt-library/development/prompt-test-driven-development.md) to do RED GREEN REFACTOR. 
 - First run the prompt to do step 1. RED: Write failing tests. 
     - Reference your requirements files directly using the Coding Assistant Agent.

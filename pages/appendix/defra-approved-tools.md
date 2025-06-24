@@ -1,7 +1,5 @@
 # Defra Approved Tools
 
-## Use only approved AI tools
-
 You must only use AI tools that appear in the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance contains vetted and approved tools for use across Defra.
 
 ## Why we have approved tools
