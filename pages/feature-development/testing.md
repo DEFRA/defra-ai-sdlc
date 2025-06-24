@@ -1,4 +1,4 @@
-# Testing Workflow
+# Testing
 
 This section outlines how to write automated tests.
 
