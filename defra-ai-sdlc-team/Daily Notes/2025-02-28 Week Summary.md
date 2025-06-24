@@ -1,5 +1,0 @@
-- Have both the code checking tool and the governance checklist tool deployed to CDP.  The code checking tool backend is a Python application using AWS bedrock - a major milestone!  Thanks to the CDP team for their support.
-- Updated the Defra AI in the SDLC playbook to v0.2: [https://defra.github.io/defra-ai-sdlc/](https://defra.github.io/defra-ai-sdlc/)
-- Demoed the code checker tool for the Assurance team on 25/2
-- We had a planning session with Tim and Steve on 26/2 to plan the upcoming phase
-- Continued work on the governance checklist tool

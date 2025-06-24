@@ -1,7 +1,0 @@
-- First week everybody back from holiday - project kickoff
-- Talked to Gavin Williams regarding his experience with SDLC in Defra
-- Talked to Ben Sagar regarding his Principal Architect assurance point of view
-- Consolidated Pain Points and Generated insights from the past Defra team interviews
-- Developed two possible prototype tools we could work on to address the pain points
-- Played back insights and tool ideas to Tim H and Steve, received approval to proceed
-- Started work on latest iteration of code checking tool
