@@ -8,7 +8,7 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 - Only use AI tools from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list
 - Configure proper privacy settings. This keeps your sensitive information safe when working with AI tools. For information on the appropriate privacy settings for your chosen AI tool, see the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/)
 
-## Workflow Steps
+## Workflow
 1. [Product Requirements](product-requirements.md) - Create clear and concise requirements for the feature using AI tools to draft and refine
 2. [Development](development.md) - Develop the solution iteratively, using AI for implementation
 3. [Test Driven Development](test-driven-development.md) - TDD using AI tools

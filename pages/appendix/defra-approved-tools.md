@@ -1,10 +1,10 @@
 # Defra Approved Tools
 
-You must only use AI tools that appear in the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance contains vetted and approved tools for use across Defra.
+Only use AI tools that appear in the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance contains vetted and approved tools for use across Defra.
 
 ## Why we have approved tools
 
-Using approved tools helps ensure:
+Using approved tools helps make sure:
 - compliance with government security standards
 - data protection requirements are met
 - tools work effectively within Defra's technical environment

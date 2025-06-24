@@ -31,10 +31,9 @@ Defra's size and complexity create opportunities to use AI throughout software d
 
 ## Contact Us
 
-This playbook is maintained by the Defra AI Capabilites and Enablement team. You can contact us 
+The Defra AI Capabilities and Enablement team maintains this playbook. Contact us:
 
-- Via the `#ask-ace` slack channel on Defra slack ("grey slack")
-
+- Through the `#ask-ace` slack channel on Defra slack ("grey slack")
 - Via Steve Dickinson, Principal Software Developer (CCTS AI and Innovation)
 
 ## Contributing
