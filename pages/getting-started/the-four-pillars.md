@@ -10,36 +10,36 @@ To generate consistent code, four elements must come together as shown in this d
 
 ### 1. Clear Requirements
 
-**Purpose:** Defines (with detail and clarity) the functional and pseudo-technical requirements for the product or service idea you want to implement.
+**Purpose:** Define the functional and technical requirements for the product or service idea you want to implement. Be detailed and clear.
 
-**Where created:** Use an advanced "thinking" chat model like Claude or ChatGPT.
+**Where to create:** Use an advanced "thinking" chat model like Claude or ChatGPT.
 
-**Ref:** [Product Requirements Workflow](../feature-development/product-requirements.md)
+**Reference:** [Product Requirements Workflow](../feature-development/product-requirements.md)
 
 ### 2. Good Prompts
 
-**Purpose:** The clear, detailed ask for a given task. It can refer to the IDE rules and the requirements. However, you don't need to repeat what's in the rules or requirements in the prompt.
+**Purpose:** Create clear, detailed requests for specific tasks. You can refer to the IDE rules and the requirements. However, you don't need to repeat what's in the rules or requirements in the prompt.
 
-**Where created:** Create prompts manually at first but then refine them using a chat model like Claude or ChatGPT.
+**Where to create:** Create prompts manually at first but then refine them using a chat model like Claude or ChatGPT.
 
-**Ref:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
+**Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
 
 ### 3. Rules for AI
 
 **Purpose:** AI Rules define consistent and repeatable standards, patterns and conventions across your codebase.
 
-**Where created:** Rule file formats are usually defined by the AI IDE tool. To help generate the rules themselves, use a chat model like Claude or ChatGPT.
+**Where to create:** Rule file formats are usually defined by the AI IDE tool. To help generate the rules themselves, use a chat model like Claude or ChatGPT.
 
-**Ref**: [Rules for AI](../appendix/rules-for-ai)
+**Reference:** [Rules for AI](../appendix/rules-for-ai)
 
 ### 4. Capable Code Generation Model
 
 **Purpose:** Use the most capable LLM model for the task you are running to get good quality results. Not all tasks need advanced models, so select the most cost-effective model that can achieve the outcome you want.
 
-**Where created:** The AI IDE tools typically let you select which model to use when prompting the LLM.
+**Where to create:** The AI IDE tools typically let you select which model to use when prompting the LLM.
 
 ## Next steps
 
-We recommend reading and understanding the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
+Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
 
 ## [Next -> Mindset](ai-working-mindset.md)

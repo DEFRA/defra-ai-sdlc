@@ -23,8 +23,8 @@ This library provides a selection of prompts used by authors. These examples ser
 - [Test Driven Development](development/prompt-test-driven-development.md)
 
 ### Testing
-- [Add End-to-End Test](testing/prompt-add-e2e-test.md)
-- [Add Integration Test](testing/prompt-add-integration-test.md)
+- [Add Journey Test](testing/prompt-add-journey-test.md)
+- [Add Unit Test](testing/prompt-add-unit-test.md)
 
 ### Refactoring
 - [Refactor Feature](refactoring/prompt-refactor-feature.md)
