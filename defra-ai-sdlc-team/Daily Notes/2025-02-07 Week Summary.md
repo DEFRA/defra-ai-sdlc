@@ -1,7 +1,0 @@
-- Demoed the code checker tool for the QAs and Testers on 3/2
-- We had a roadmapping session to plan the future roadmap for the Code Checker tool and a path to production
--  Continued to refine the testing workflows. Getting the code checker tool ready for deployment on CDP
-- Wrote initial data model for the upcoming governance checklist tool
-- Started working on more interactive workflows using advanced prompting techniques
-- Met with Tim and Colin at the EE away day to demo the code checker and tooling workflows on 6/2
-- Cleaned up the playbook template to be in-line with Defra and GDS formatting: https://defra.github.io/defra-ai-sdlc/ 

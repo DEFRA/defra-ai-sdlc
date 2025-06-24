@@ -1,4 +1,0 @@
-- Presented the final Playback for the current innovation phase on 27/03
-- Produced and submitted the final outcome report for the current innovation.
-- Continued work on Agentic workflow using LangGraph - an automated agent that analyses codebases and reports on the current state.  We’ve learned from our first version and we’re now trying an approach that will help us to consume larger codebases, within the constraints of the LLM API token limits.
-- Discussed possible use of the Governance Checklist tool within Farming with Brian Cunningham (to sync with David Thomas)

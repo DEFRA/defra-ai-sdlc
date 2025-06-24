@@ -1,9 +1,0 @@
-- Had internal EE kick off meeting to bring Adam S. and Kev up to date with the latest
-- Wrote the project rationale document and gained approval for the two tools we're working on (SOW milestone complete):
-	- Code Checking Tool
-	- SDLC Checklist Tool
-- Code Checking tool development progress:
-	- We added a GDS-compliant frontend 
-	- Added better templating to the report content
-	- We added a categorisation feature to the front and backend of the tool
-	- Demoed the tool to Steve D., started on the next phase of development
