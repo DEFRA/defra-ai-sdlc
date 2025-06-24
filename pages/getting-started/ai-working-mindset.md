@@ -51,4 +51,4 @@ Rather than lengthy iterations, experiment and test ideas quickly. This mindset 
 
 This playbook captures current best practices, acknowledging they will evolve rapidly. Embrace this constant change as an opportunity for growth.
 
-## [Next -> Project Setup](project-setup.md)
+## [Next -> Sustainability](sustainability.md)
