@@ -38,4 +38,4 @@ For more information, see [Greener Service Principles](https://greenerservices.g
 - Document sustainability decisions to help other teams make similar choices
 - Share trained models across government departments to avoid duplicate work
 
-## [Next -> Project Setup](project-setup.md)
+## [Next -> Getting Started](../getting-started/README.md)
