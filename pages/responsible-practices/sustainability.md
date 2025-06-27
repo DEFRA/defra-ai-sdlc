@@ -29,6 +29,7 @@ For more information, see [Greener Service Principles](https://greenerservices.g
 
 - Use smaller, shared or open models when possible
 - Pick models trained in low-carbon regions
+- Practice mindful prompting - be specific, include only relevant information, and aim to get results right the first time rather than through multiple iterations
 - Reuse existing models rather than training new ones
 - Schedule heavy workloads for times when the electricity grid uses more renewable energy
 - Cache results to avoid repeated processing
