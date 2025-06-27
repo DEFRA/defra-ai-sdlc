@@ -8,21 +8,21 @@ This guidance helps you use AI tools responsibly while serving the public intere
 You remain responsible for all outputs, even when AI tools help create them.
 
 **Do:**
-- Review all AI-generated code before you use it
+- Review all AI-generated outputs before you use it
 - Document AI tool usage in critical systems
 - Explain AI-assisted decisions to stakeholders
 
 **Don't:**
 - Accept AI outputs without checking them
-- Use AI for decisions you cannot explain
+- Don't rely on AI when you can't explain the 'why' behind important decisions
 
 ### Prevent bias
 AI tools can copy existing biases, especially from training data.
 
 **Do:**
-- Test AI-generated code with different scenarios
+- Test AI-generated outputs with different scenarios and a diverse set of users (if relevant)
 - Check outputs for potential bias in how they work or what they say
-- Consider who might be left out by AI-assisted solutions
+- Consider who might be left out by AI-assisted analysis and solutions
 
 **Don't:**
 - Assume AI outputs are neutral
@@ -58,16 +58,17 @@ If you cannot answer "yes" to all questions, change your approach.
 ## Things to consider
 
 ### Security and reliability
-AI-generated code may contain security flaws or errors that look correct. Always check AI outputs through testing and code review.
+AI-generated outputs may contain security flaws or errors that look correct. Always check AI outputs through testing and reviewed.
 
 ### Intellectual property
-AI tools may generate code based on copyrighted material. Make sure AI-assisted code follows open source licensing requirements and government IP policies.
+AI tools may generate outputs based on copyrighted material. Make sure AI-assisted outputs follows open source licensing requirements and government IP policies.
 
 ### Environmental impact
 AI tools use computing resources. Consider environmental costs and use AI tools in proportion to the task complexity.  See [Sustainability](sustainability.md) for more information.
 
 ### Skills and development
-Use AI tools to enhance rather than replace human expertise. Make sure team members keep their technical skills and critical thinking abilities.
+- Use AI tools to enhance rather than replace human expertise.
+- Use AI to enhance your skills and critical thinking rather than replace them
 
 ### Public trust
 Be transparent about AI assistance in public-facing services. Consider how AI use affects citizen confidence in government digital services.
