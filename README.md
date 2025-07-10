@@ -23,7 +23,7 @@ This playbook shows you how to use AI tools in software development. We designed
 5. [Appendix](pages/appendix/README.md)
     1. [Prompt Library](pages/appendix/prompt-library/README.md)
     2. [Rules for AI](pages/appendix/rules-for-ai/README.md)
-    3. [Defra Approved Tools](pages/appendix/defra-approved-tools.md)
+    3. [Allowed Tools for Defra Pilot](pages/appendix/defra-approved-tools.md)
     4. [Contributing](pages/appendix/CONTRIBUTING.md)
 
 ## Overview

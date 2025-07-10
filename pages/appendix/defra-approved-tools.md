@@ -1,20 +1,20 @@
-# Defra Approved Tools
+# Allowed Tools for Defra Pilot
 
-Only use AI tools that appear in the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance contains vetted and approved tools for use across Defra.
+Use only AI tools from the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance lists vetted tools for the Defra AI pilot.
 
-## Why we have approved tools
+## Why we have allowed tools
 
-Using approved tools helps make sure:
-- compliance with government security standards
+Using allowed tools ensures:
+- your work meets government security standards
 - data protection requirements are met
 - tools work effectively within Defra's technical environment
 
 ## Request a new tool
 
-If you need to use an AI tool not listed in the guidance:
+To use an AI tool not listed in the guidance:
 
-1. Contact the AI Capabilities and Enablement team before using any unapproved tool. You can find contact details [here](../../README.md)
-2. Provide details about why you need the specific tool
+1. Contact the AI Capabilities and Enablement team before using any unlisted tool. Find contact details [here](../../README.md)
+2. Explain why you need the specific tool
 3. Wait for approval before proceeding
 
 The team will assess the tool against Defra's security and compliance requirements. 
