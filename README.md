@@ -8,6 +8,7 @@ This playbook shows you how to use AI tools in software development. We designed
 2. [Responsible Practices](pages/responsible-practices/README.md)
     1. [Ethics](pages/responsible-practices/ethics.md)
     2. [Sustainability](pages/responsible-practices/sustainability.md)
+    3. [Security](pages/responsible-practices/security.md)
 3. [Getting Started](pages/getting-started/README.md)
     1. [Workflow](pages/getting-started/workflow.md)
     2. [The Four Pillars](pages/getting-started/the-four-pillars.md)
