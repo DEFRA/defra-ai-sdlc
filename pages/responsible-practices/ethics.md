@@ -43,6 +43,42 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 - Put sensitive or classified data into public AI tools
 - Use AI tools without understanding how they handle data
 
+## UCD ethical considerations
+
+### Research ethics with AI Tools
+
+**User privacy and data protection**
+
+When using AI to analyse user research data, you must:
+- Ensure user consent covers AI analysis of their data
+- Anonymise data before AI processing where possible  
+- Validate that AI tools meet GDPR requirements for research data
+- Document what user data has been processed by AI systems
+
+**Research integrity**
+- AI outputs must be validated against actual user research findings
+- Clearly distinguish between AI-generated insights and evidence-based user research
+- Maintain your professional responsibility for research quality and accuracy
+- Document where AI has been used in research analysis or synthesis
+
+### Design ethics and AI
+
+**Accessibility and inclusion**
+- Review AI-generated designs for accessibility compliance
+- Ensure AI hasn't introduced bias or excluded user groups from your original research
+- Validate that AI-generated content meets diverse user needs identified in your research
+- Test AI-suggested design patterns with real users, especially those with additional needs
+
+**Transparency with stakeholders**
+- Clearly communicate when design decisions have been AI-assisted
+- Explain how you've validated AI outputs against user research evidence
+- Maintain audit trails showing UCD professional review of AI-generated work
+
+### Professional Standards
+
+Your professional standards and codes of practice remain unchanged when using AI tools. AI assists your work but never replaces your professional judgement, ethical decision-making, or responsibility for user-centred outcomes.
+
+
 ## Decision framework
 
 Before you use AI tools, ask:
