@@ -2,7 +2,7 @@
 
 This section explains the core concepts of working with AI tools.
 
-**Important:** Only use AI tools from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list. 
+**Important:** Use only AI tools from the [Allowed Tools for Defra Pilot](../appendix/defra-approved-tools.md) list. 
 
 **Important:** Enable privacy settings to protect government data. Privacy settings stop your code and data being stored on AI providers' servers. They also prevent your data being used to train AI models.
 

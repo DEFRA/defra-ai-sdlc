@@ -5,7 +5,7 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 **Important prerequisites:** 
 
 - Complete the [Getting Started](../getting-started) section first
-- Only use AI tools from the [Defra Approved Tools](../appendix/defra-approved-tools.md) list
+- Use only AI tools from the [Allowed Tools for Defra Pilot](../appendix/defra-approved-tools.md) list
 - Configure proper privacy settings. This keeps your sensitive information safe when working with AI tools. For information on the appropriate privacy settings for your chosen AI tool, see the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/)
 
 ## Workflow
