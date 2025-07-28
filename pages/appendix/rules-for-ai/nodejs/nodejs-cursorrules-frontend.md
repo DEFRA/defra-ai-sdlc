@@ -614,6 +614,7 @@ Third-party API requirements that dictate naming
 ````
 ----
 **testing.md**
+````
 ## TDD
 
 ### Core Principles
@@ -813,3 +814,4 @@ describe('getTimestamp', () => {
 
 **Quick Decision Guide:**
 When in doubt: Would a new developer understand the system's expected behavior by reading this test?
+````
