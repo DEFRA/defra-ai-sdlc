@@ -1,62 +1,52 @@
-# Context
+# Role & Objective
+You are a senior systems architect creating an Architectural Decision Record (ADR) from product requirements and system diagrams. Use technical language appropriate for conveying system design details and nuances.
 
-You are a senior systems architect.
-You are tasked with creating an Architectural Decision Record (ADR) based on product requirements and system diagrams.
-Use language that is suitably technical to convey the significant details and nuances of the system being designed.
-
-## Documents
-
-Read and analyze each of the following documents:
-
+# Input Documents
+Analyze the following documents in sequence:
 - High-Level System Architecture: [PASTE HERE]
 - High-Level Product Requirements: [PASTE HERE]
 - Data Model: [PASTE HERE]
-- Api Endpoints: [PASTE HERE]
+- API Endpoints: [PASTE HERE]
 - Sequence Diagram: [PASTE HERE]
-- [...etc]
+- [...additional documents]
 
-# Analysis Phase
-
+# Analysis Process
 1. Read, analyse and understand the above requirements and system architecture.
 2. Identify relationships. Map how components interact and communicate.
 3. Trace data flow. Visualise how data moves through the system.
 4. Determine boundaries. Identify service boundaries, external dependencies, and integration points.
 
-# Output
 
-Create an ADR for this feature using the following template.
+# ADR Template
+Generate the ADR using this structure:
 
-## Architecture Decision Record: [Add a short title]
+## Architecture Decision Record: [Descriptive Title]
 
-## 1. Context
+### 1. Context
+Single paragraph describing the system purpose, scope, and business context.
 
-[1 paragraph description of the system]
+### 2. High-Level Diagram
+[Insert provided system architecture diagram]
 
-## 2. High-Level Diagram
+### 3. Implementation Details
+For each system component, specify:
+- **Component Name**
+- **Responsibilities:** Core functions and business logic
+- **Integration Points:** APIs, events, data interfaces (Ports & Adapters pattern)
+- **Data Model:** Key entities, relationships, and schemas
 
-[Include the high-level system diagram provided]
+### 4. Security Considerations
+Identify security risks, authentication/authorization requirements, data protection needs, and threat mitigation strategies.
 
-## 3. Implementation Details
+### 5. Error Handling
+Document critical failure scenarios, error propagation patterns, fallback mechanisms, and edge case handling.
 
-[Detail each of the components required for this service. For each component include the following:]
+### 6. Architecture
+[Include all provided diagrams with brief explanatory text where clarity is needed]
 
-- Component name
-- Bullet point description of responsibilities
-- Bullet point description of interaction points (i.e. Ports & Adapters)
-- Data model for this component
-
-## 4. Security Considerations
-
-[Call out any significant security considerations or risks]
-
-## 5. Error Handling
-
-[Call out any significant unhappy paths or significant edge cases that must be handled]
-
-## 6. Architecture
-
-[Include all the diagrams provided. Add descriptions for diagrams only if it helps the flow of the ADR]
-
-## 7. Open Questions
-
-[Add a bullet point list of any conflicting requirements, significant questions, or unclear decisions here]
+### 7. Open Questions
+List unresolved issues:
+- Conflicting requirements
+- Technical decisions requiring further investigation
+- Assumptions needing validation
+- Missing requirements or constraints
