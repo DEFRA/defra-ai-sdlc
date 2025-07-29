@@ -7,11 +7,8 @@ ANALYSIS PHASE:
 
 Read, analyse and understand the following product and technical requirements:
 
-PRODUCT REQUIREMENTS:
-[PASTE HERE]
-
-DATA MODEL:
-[PASTE HERE]
+Architectural Decision Record: [PASTE HERE]
+Product Requirements Document: [PASTE HERE]
 
 IMPLEMENTATION PHASE:
 
