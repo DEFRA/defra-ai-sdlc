@@ -14,7 +14,7 @@ This playbook shows you how to use AI tools in software development. We designed
     3. [Mindset](pages/getting-started/ai-working-mindset.md)
     4. [Project Setup](pages/getting-started/project-setup.md)
 4. [Feature Development](pages/feature-development/README.md)
-    1. [Product Requirements](pages/feature-development/product-requirements.md)
+    1. [Building Requirements](pages/feature-development/building-requirements/README.md)
     2. [Development](pages/feature-development/development.md)
     3. [Test Driven Development](pages/feature-development/test-driven-development.md)
     4. [Testing](pages/feature-development/testing.md)
