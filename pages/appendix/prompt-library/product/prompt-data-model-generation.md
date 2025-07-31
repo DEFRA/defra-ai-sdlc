@@ -7,7 +7,8 @@ ANALYSIS PHASE:
 
 Read, analyse and understand the following product and technical requirements:
 
-[PASTE THE REQUIREMENTS DESCRIPTION HERE]
+Detailed Feature Description - [Attach the output from example-product-requirements-input]
+System Architecture - [Attach the output from prompt-high-level-architecture]
 
 Ask any follow up questions that will clear up any ambiguities if needed.
 

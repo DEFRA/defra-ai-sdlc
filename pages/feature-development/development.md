@@ -6,7 +6,7 @@ This section outlines how to develop new features. For test-first development, s
 
 ### Prerequisites
 
-1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Product Requirements](product-requirements.md)
+1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Building Requirements](building-requirements/README.md)
 2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
 3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
@@ -47,7 +47,7 @@ Create a new git branch for your feature.
 
 ## Guidelines
 
-**Get consistent results**: Follow the four pillars by using [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](product-requirements.md) together.
+**Get consistent results**: Follow the four pillars by using [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](building-requirements/README.md) together.
 
 **Review everything generated**: Review and refine everything the agent generates.
 
