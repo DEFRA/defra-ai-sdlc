@@ -1,14 +1,12 @@
 # Product requirements
 
-Capture what you need to build and how users will interact with it. Pick the techniques that work for your team and
-project.
+Capture what you need to build and how users will interact with it. Pick the techniques that work for your team and project.
 
 ## Capture your feature knowledge
 
-Start by writing down everything you know about the feature. Don't worry about structure or polish, just get it written
-down.
+Start by writing down everything you know about the feature. Focus on completeness over polish.
 
-Include whatever's relevant:
+Include what's relevant:
 
 - Feature purpose and overview
 - Frontend and backend needs
@@ -16,26 +14,21 @@ Include whatever's relevant:
 - Your preferred approach
 - Security considerations
 
-See [example-product-requirements-input](../../appendix/prompt-library/product/example-product-requirements-input.md)
-for a template.
+See [example-product-requirements-input](../../appendix/prompt-library/product/example-product-requirements-input.md) for a template.
 
 ## Design interfaces (if needed)
 
-For user-facing features, create mockups in Figma, Miro, or similar tools. Add clear annotations explaining expected
-behaviours.
+For user-facing features, create mockups in Figma, Miro or similar tools. Add clear annotations explaining expected behaviours.
 
-Transform mockups into detailed requirements
-using [prompt-user-interface-requirements](../../appendix/prompt-library/product/prompt-user-interface-requirements.md)
-to ensure GDS compliance.
+Transform mockups into detailed requirements using [prompt-user-interface-requirements](../../appendix/prompt-library/product/prompt-user-interface-requirements.md) to ensure GDS compliance.
 
 ## Plan your delivery
 
 Break features into manageable pieces that AI tools can implement effectively.
 
-### Product Requirements Doc
+### Product Requirements Document
 
-Consider formalising your feature into a Product Requirements
-Document [prompt-product-requirements-document](../../appendix/prompt-library/product/prompt-product-requirements-document.md)
+Consider formalising your feature into a Product Requirements Document using [prompt-product-requirements-document](../../appendix/prompt-library/product/prompt-product-requirements-document.md)
 
 ### Create user stories
 
@@ -46,13 +39,11 @@ Right-sized stories should:
 - Include implementation context
 - Be easy to verify
 
-Use [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md) with your
-requirements and architecture as context.
+Use [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md) with your requirements and architecture as context.
 
 ### Adapt to your process
 
-Every team works differently. Adjust story formats to match your existing workflow, or break your team's existing
-stories into more granular implementation tasks.
+Every team works differently. Adjust story formats to match your existing workflow, or break your team's existing stories into more granular implementation tasks.
 
 ## Working effectively
 
@@ -64,6 +55,6 @@ You have solid product requirements when:
 - Stories have acceptance criteria
 - Your team understands the approach
 
-**Review with your team** - Multiple perspectives spot issues and ensure shared understanding.
+**Review with your team.** - Multiple perspectives spot issues and ensure shared understanding.
 
-## [Next -> Technical requirements](technical-requirements.md)
+## [Next: Technical requirements](technical-requirements.md)
