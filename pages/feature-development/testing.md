@@ -20,7 +20,7 @@ In Defra, the term journey tests is used for testing the entire application and 
 
 ### Prerequisites
 
-1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Building Requirements](building-requirements/README.md)
+1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Generating Requirements](../generating-requirements/README.md)
 2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai/) to define apporach and patterns for writing journey tests
 3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
