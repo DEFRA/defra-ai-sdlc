@@ -14,13 +14,13 @@ Include what's relevant:
 - Your preferred approach
 - Security considerations
 
-See [example-product-requirements-input](../../appendix/prompt-library/product/example-product-requirements-input.md) for a template.
+See [example-product-requirements-input](../appendix/prompt-library/product/example-product-requirements-input.md) for a template.
 
 ## Design interfaces (if needed)
 
 For user-facing features, create mockups in Figma, Miro or similar tools. Add clear annotations explaining expected behaviours.
 
-Transform mockups into detailed requirements using [prompt-user-interface-requirements](../../appendix/prompt-library/product/prompt-user-interface-requirements.md) to ensure GDS compliance.
+Transform mockups into detailed requirements using [prompt-user-interface-requirements](../appendix/prompt-library/product/prompt-user-interface-requirements.md) to ensure GDS compliance.
 
 ## Plan your delivery
 
@@ -28,7 +28,7 @@ Break features into manageable pieces that AI tools can implement effectively.
 
 ### Product Requirements Document
 
-Consider formalising your feature into a Product Requirements Document using [prompt-product-requirements-document](../../appendix/prompt-library/product/prompt-product-requirements-document.md)
+Consider formalising your feature into a Product Requirements Document using [prompt-product-requirements-document](../appendix/prompt-library/product/prompt-product-requirements-document.md)
 
 ### Create user stories
 

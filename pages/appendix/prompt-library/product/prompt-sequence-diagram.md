@@ -1,3 +1,5 @@
+# Sequence Diagram
+````
 # Context
 
 You are tasked with creating a sequence diagram based on product requirements and system component descriptions.
@@ -34,3 +36,4 @@ Create a sequence diagram that describes this system.
 Include all interaction points between services and any significant failure scenarios.
 
 Output using MermaidJS syntax.
+````

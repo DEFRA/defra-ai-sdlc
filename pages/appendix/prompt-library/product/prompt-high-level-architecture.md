@@ -1,3 +1,5 @@
+# High-level Architecture
+````
 # Context
 
 You are tasked with creating a technical architecture diagram based on product requirements and system component
@@ -41,3 +43,4 @@ Include:
 - Data stores
 - External dependencies
 - Key interactions
+```

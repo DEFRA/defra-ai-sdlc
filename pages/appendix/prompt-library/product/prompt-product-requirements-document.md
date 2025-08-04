@@ -1,5 +1,5 @@
 # Product Requirements Document Generation Instructions
-
+````
 ## 1. Analysis Phase
 
 ### 1.1 Document Review
@@ -195,3 +195,4 @@ To illustrate the approach, here's how a product catalog might be broken down:
 - Defers: Save for later, bulk operations, cart sharing
 
 Each feature delivers a complete, valuable user journey that can be independently verified.
+````
