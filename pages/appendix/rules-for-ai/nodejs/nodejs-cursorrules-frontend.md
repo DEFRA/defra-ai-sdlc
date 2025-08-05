@@ -1,11 +1,13 @@
-The set of rules files for Node.js frontend applications.
+The set of Cursor rules files for Node.js frontend applications.
 
-Saves the rules to your AI IDE of choice. E.g.
-- **Cursor** `.cursor/rules` directory.  Each file below is a separate `.md` file in this directory.
-- **Claude** CLAUDE.md file. Either as one large file or by referencing the files from your core Claude file. 
+Cursor saves the rules files in the repository in the `.cursor/rules` directory.  Each file below is a separate `.md` file in this directory.
 
 **api-integration.mdc**
 ````
+---
+description: API Integration Standards
+globs: src/**/*.js
+---
 # API Integration Standards
 
 ## Configuration
@@ -72,6 +74,10 @@ throw error
 
 **javascript.mdc**
 ````
+---
+description: Javascript in Defra
+globs: *.js
+---
 # JavaScript in Defra
 
 ## Language
@@ -168,19 +174,16 @@ throw error
 - Bind controller methods when used as route handlers
 - Follow template inheritance patterns from gov-uk-standards
 - Keep templates close to their feature modules
-
-## Refactoring
-Delete unused code.
-When updating functionality, replace the entire old implementation - never maintain both old and new paths simultaneously.
-Never leave legacy or redundant code behind.
-
-## Comments and references
-Never refrence external story numbers, tickets, or requirements in code or comments.
 ````
+
 ---
 
-**gov-uk-standards.md**
+**gov-uk-standards.mdc**
 ````
+---
+description: GOV.UK Frontend
+globs: *.njk, *.js
+---
 # GOV UK Frontend
 
 ## Tech Stack
@@ -245,8 +248,12 @@ Never refrence external story numbers, tickets, or requirements in code or comme
 
 ---
 
-**playwright-testing.md**
+**playwright-testing.mdc**
 ````
+---
+description: Playwright Testing
+globs: tests/*.js
+---
 # Playwright Testing Rules
 
 ## Testing Philosophy
@@ -348,9 +355,15 @@ Never refrence external story numbers, tickets, or requirements in code or comme
 - Include tests for error pages and status codes.
 - Ensure that navigation flows are smooth and predictable across the application.
 ````
-----
-**navigation.md**
+
+---
+
+**navigation.mdc**
 ````
+---
+description: Navigation Standards
+globs: src/config/nunjucks/context/*.js, src/views/layouts/*.njk
+---
 # Navigation Standards
 
 ## Navigation Configuration
@@ -479,339 +492,4 @@ export function buildNavigation(request) {
 - Handle undefined/null request objects
 - Validate navigation item properties
 - Log navigation errors appropriately 
-````
-----
-**config.md**
-````
-## Convict Config / Configuration
-
-### Core Principles
-
-Environment-Only Configuration: All configuration values must come from environment variables
-
-Split Default Environment Variables by Directory:
-
-```
-project-root/
-├── config/
-│ ├── config.js
-│ ├── development.json
-│ ├── test.json
-│ └── production.json
-```
-
-Environment-Specific Variables Loaded using Convict: `config.loadFile('./config/' + config.get('env') + '.json');`
-
-Production Variables Must Never Have Default Values: Production should fail when envars are not set
-
-Fail-Fast Philosophy: Missing configuration should immediately halt application startup to prevent undefined behavior
-
-Explicit Configuration: Every required configuration value must be explicitly defined and validated
-
-Type Safety: All configuration values must have defined types and validation rules
-
-No Magic Values: Reject implicit defaults or "sensible" fallback values in favor of explicit configuration
-
-### Rules
-
-#### Must Have (Critical)
-
-RULE-001: All default configuration properties must have default: null and env property defined
-
-RULE-0011: Only environment-specific properties may set defaults. Use the names env files (e.g., config/test.json), and
-production.json must not contain default values
-
-RULE-002: Schema validation must run on application startup with validate({ allowed: 'strict' })
-
-RULE-003: Use the custom `format` validation functions when additional validation is required
-
-RULE-004: Never use hardcoded default values in the schema definition
-
-RULE-005: Environment variable names must follow SCREAMING_SNAKE_CASE convention
-
-RULE-006: Call config.validate() immediately after schema definition and before any configuration usage
-
-RULE-007: All configuration errors must throw exceptions that prevent application startup
-
-#### Should Have (Important)
-
-RULE-101: Group related configuration properties using nested schema objects
-
-RULE-102: Use descriptive doc properties for each configuration field
-
-RULE-105: Log all configuration keys (not values) on successful validation for debugging
-
-RULE-106: Use Convict's built-in formats where applicable (port, url, email, ipaddress)
-
-### Quick Decision Guide:
-
-When in doubt: If a configuration value is needed, it must be explicitly provided via environment variables or the
-application must fail to start.
-````
-----
-**naming.md**
-````
-## Intention Revealing Naming
-
-### Core Principles
-
-Names are Documentation: Every name should tell a complete story about what it represents, eliminating the need for comments or mental translation
-
-Domain Over Implementation: Names should reflect business concepts and purposes rather than technical implementation details
-
-Searchability and Uniqueness: Names should be specific enough to be easily searchable and immediately distinguishable from similar concepts
-
-Progressive Disclosure: Directory and module names should reveal increasing detail as you navigate deeper into the structure
-
-### Must Have (Critical)
-
-RULE-001: Never use generic container names like "utils", "helpers", "shared", "common", "lib", or "tools" - these provide zero information about purpose or domain
-
-RULE-002: Directory names must describe their actual contents using domain-specific terms (e.g., authentication/, payment-processing/, user-notifications/)
-
-RULE-003: Function names must be verbs or verb phrases that describe what they do (e.g., validateUserCredentials(), calculateShippingCost(), sendPasswordResetEmail())
-
-RULE-004: Boolean variables and functions returning booleans must use is/has/can/should prefixes (e.g., isAuthenticated, hasPermission, canEdit, shouldRetry)
-
-RULE-005: Constants must use SCREAMING_SNAKE_CASE and describe what they represent, not their value (e.g., MAX_LOGIN_ATTEMPTS, not FIVE)
-
-### Should Have (Important)
-
-RULE-101: Module exports should match their filename to maintain consistency (e.g., userValidator.js exports userValidator or related functions)
-
-RULE-102: Async functions should indicate their asynchronous nature in the name when not obvious from context (e.g., fetchUserData(), loadConfiguration())
-
-RULE-103: Error classes and error-related variables should include "Error" in their name (e.g., ValidationError, authenticationError)
-
-RULE-104: Configuration files and modules should clearly indicate environment or purpose (e.g., database.config.js, redis.connection.js)
-
-### Could Have (Preferred)
-
-RULE-201: Use consistent naming patterns within the same domain (if you have createUser(), use createOrder(), not makeOrder())
-
-RULE-202: Prefer longer, descriptive names over abbreviated ones (e.g., calculateTotalPriceWithTax() over calcTotWTax())
-
-RULE-203: Group related functionality using consistent prefixes (e.g., user-creation/, user-authentication/, user-profile/)
-
-RULE-204: Event names should follow a consistent pattern indicating when they occur (e.g., user.created, payment.processed, order.shipped)
-
-RULE-205: Middleware functions should describe what they do or check (e.g., requireAuthentication, validateRequestBody, rateLimiter)
-
-### When rules conflict:
-
-Prioritize clarity and understanding over brevity
-
-Consider the primary audience who will read and maintain the code
-
-Follow established patterns in the existing codebase for consistency
-
-### Valid reasons for exceptions:
-
-Well-established industry conventions (e.g., i for loop counters in small, clear contexts)
-
-Third-party API requirements that dictate naming
-
-````
-----
-**testing.md**
-````
-## TDD
-
-### Core Principles
-
-Tests Define Behavior, Not Implementation: Tests should describe what the system does, not how it does it. Focus on
-observable behavior and outcomes.
-
-Confidence Over Coverage: The goal is to have enough tests to confidently refactor and modify code, not to achieve
-arbitrary coverage percentages.
-
-Red-Green-Refactor Cycle: Always write a failing test first, then write the minimum code to pass, then refactor with
-confidence.
-
-BDD Mindset: Think in terms of Given-When-Then scenarios that describe real-world usage and requirements.
-
-Test as Documentation: Tests should serve as living documentation that clearly communicates the system's expected
-behavior.
-
-### Must Have (Critical)
-
-RULE-001: Write a failing test before writing any production code. The test must fail for the right reason,
-demonstrating that it's actually testing the intended behavior.
-
-RULE-002: Each test must follow the Arrange-Act-Assert (AAA) or Given-When-Then (GWT) pattern with clear separation
-between setup, execution, and verification phases.
-
-RULE-003: Test names must clearly describe the scenario being tested using descriptive language (e.g., "should return
-404 when user does not exist" rather than "test user not found").
-
-RULE-004: Tests must be isolated and independent. Each test should be able to run in any order without affecting other
-tests.
-
-RULE-005: Never test implementation details. Focus on public APIs, observable behavior, and outcomes that matter to
-users or consuming code.
-
-RULE-006: Each test should verify one specific behavior or scenario. Multiple assertions are acceptable if they all
-relate to the same behavioral outcome.
-
-### Should Have (Important)
-
-RULE-101: Use descriptive test suite organization with describe blocks that group related functionality and provide
-context.
-
-RULE-102: Implement proper test cleanup using beforeEach, afterEach, or equivalent hooks to ensure consistent test
-state.
-
-RULE-103: Mock external dependencies (databases, APIs, file systems) to ensure tests are fast, reliable, and focused on
-the unit under test.
-
-RULE-104: Write tests at multiple levels (unit, integration, e2e) based on the confidence needed, not to achieve
-coverage targets.
-
-RULE-105: Keep test setup code DRY by extracting common test utilities and factories, but ensure each test remains
-readable and self-contained.
-
-RULE-106: Test edge cases and error scenarios, not just the happy path. Consider boundary conditions, null values, and
-exceptional cases.
-
-### Could Have (Preferred)
-
-RULE-201: Implement custom test matchers or assertions for domain-specific validations to improve test readability.
-
-### Decision Framework
-
-When rules conflict:
-
-- Prioritize test clarity and maintainability over DRY principles
-
-- Choose readability over clever abstractions
-
-- Favor explicit setup over implicit magic
-
-### Key Principles:
-
-Write tests that describe behavior, not implementation details
-
-Focus on confidence to refactor, not coverage percentages
-
-Always follow Red-Green-Refactor: failing test → pass → improve
-
-#### Critical Rules:
-
-Must write a failing test before any production code
-
-Must use Given-When-Then or Arrange-Act-Assert patterns
-
-Always test public behavior, never private methods
-
-Must keep tests isolated and independent
-
-#### Quick Decision Guide:
-
-When in doubt: Ask yourself "Am I testing what the code does (behavior) or how it does it (implementation)?" Always
-choose behavior.
-
-# BDD Testing Rules
-
-_Rules for writing behavior-driven tests that are pragmatic, maintainable, and focused on testing behavior rather than
-implementation details. These rules promote test consolidation, reduce duplication, and ensure tests remain valuable
-documentation of system behavior._
-
-## Context
-
-**Applies to:** All test files, unit tests, integration tests, and end-to-end tests
-**Level:** Tactical - directly impacts daily development practices
-**Audience:** Developers writing or maintaining tests
-
-## Core Principles
-
-1. **Test Behavior, Not Implementation:** Tests should verify what the system does, not how it does it
-2. **DRY Tests:** Eliminate duplicate test code and consolidate similar test scenarios
-3. **Tests as Documentation:** Tests should clearly communicate the expected behavior of the system
-4. **Pragmatic Coverage:** Focus on testing critical behaviors and edge cases, not achieving arbitrary coverage metrics
-
-## Rules
-
-### Must Have (Critical)
-
-- **RULE-001:** Test names must describe the behavior being tested, not the implementation (e.g., "returns user profile
-  when authenticated" not "getUserProfile function works")
-- **RULE-002:** Consolidate tests that verify the same behavior with minor variations into parameterized tests or single
-  comprehensive tests
-- **RULE-003:** Each test must have a clear arrange-act-assert structure with appropriate separation
-- **RULE-004:** Tests must not depend on implementation details like private methods, internal state, or specific data
-  structures
-- **RULE-005:** Avoid testing framework code, libraries, or language features - focus on your application's behavior
-
-### Should Have (Important)
-
-- **RULE-101:** Use descriptive test data that clarifies the test's intent (e.g., "expired-token" instead of "token123")
-- **RULE-102:** Group related tests using describe/context blocks that form readable behavior specifications
-- **RULE-103:** Extract common test setup into well-named helper functions rather than duplicating setup code
-
-## Patterns & Anti-Patterns
-
-### ✅ Do This
-
-```javascript
-// Good: Testing behavior with consolidated tests
-describe('SessionManager', () => {
-  describe('when creating a new session', () => {
-    it('includes session metadata in the response', async () => {
-      const user = {id: 'user-123', email: 'test@example.com'}
-
-      const session = await sessionManager.createSession(user)
-
-      expect(session).toMatchObject({
-        userId: user.id,
-        createdAt: expect.any(Date),
-        expiresAt: expect.any(Date)
-      })
-      expect(session.expiresAt > session.createdAt).toBe(true)
-    })
-  })
-})
-```
-
-### ❌ Don't Do This
-
-```javascript
-// Bad: Multiple tests for the same behavior
-describe('getTimestamp', () => {
-  it('returns a Date object', () => {
-    const result = getTimestamp()
-    expect(result).toBeInstanceOf(Date)
-  })
-
-  it('returns current time', () => {
-    const before = Date.now()
-    const result = getTimestamp()
-    const after = Date.now()
-    expect(result.getTime()).toBeGreaterThanOrEqual(before)
-    expect(result.getTime()).toBeLessThanOrEqual(after)
-  })
-
-  // These should be one test verifying timestamp behavior
-})
-```
-
----
-
-## TL;DR
-
-**Key Principles:**
-
-- Test what the system does, not how it does it
-- Eliminate duplicate tests by consolidating similar scenarios
-- Write tests that serve as clear behavior documentation
-
-**Critical Rules:**
-
-- Must use behavior-describing test names
-- Must consolidate duplicate test scenarios
-- Must structure tests with clear arrange-act-assert
-- Must not test implementation details
-- Must focus on application behavior, not framework functionality
-
-**Quick Decision Guide:**
-When in doubt: Would a new developer understand the system's expected behavior by reading this test?
 ````

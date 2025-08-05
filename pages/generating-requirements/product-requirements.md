@@ -39,7 +39,8 @@ Right-sized stories should:
 - Include implementation context
 - Be easy to verify
 
-Use [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md) with your requirements and architecture as context.
+To create multiple user stories from a PRD try [prompt-user-stories-creation](../../appendix/prompt-library/product/prompt-user-stories-creation.md)
+or to create an individual user story try [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md).
 
 ### Adapt to your process
 

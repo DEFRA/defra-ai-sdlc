@@ -11,6 +11,7 @@ This library provides a selection of prompts used by authors. These examples ser
 
 ### Product Requirements
  - [User Story Creation](product/prompt-user-story-creation.md)
+ - [Multiple User Stories Creation](product/prompt-user-stories-creation.md)
  - [Product Requirements Input](product/example-product-requirements-input.md)
  - [Data Model Generation](product/prompt-data-model-generation.md)
  - [API Requirements](product/prompt-api-requirements.md)
