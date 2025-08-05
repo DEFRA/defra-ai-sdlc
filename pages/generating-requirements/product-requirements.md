@@ -29,6 +29,7 @@ Break features into manageable pieces that AI tools can implement effectively.
 ### Product Requirements Document
 
 Consider formalising your feature into a Product Requirements Document using [prompt-product-requirements-document](../appendix/prompt-library/product/prompt-product-requirements-document.md)
+or generating user stories at the same time with [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories.md) 
 
 ### Create user stories
 
