@@ -2,19 +2,20 @@
 
 Capture what you need to build and how users will interact with it. Pick the techniques that work for your team and project.
 
-## Capture your feature knowledge
+## Write detailed feature description
 
-Start by writing down everything you know about the feature. Focus on completeness over polish.
+Create a detailed markdown document describing the feature you want to implement. This may include:
 
-Include what's relevant:
+- Overview and purpose of the feature
+- Frontend and backend requirements
+- Data model guidance
+- Endpoint behaviours
+- Performance expectations and constraints
+- Be verbose and clear about what you want - later processes will refine the detail into actionable requirements.
 
-- Feature purpose and overview
-- Frontend and backend needs
-- Business rules and edge cases
-- Your preferred approach
-- Security considerations
+This is an example prompt example-product-requirements-input
 
-See [example-product-requirements-input](../appendix/prompt-library/product/example-product-requirements-input.md) for a template.
+
 
 ## Design interfaces (if needed)
 
