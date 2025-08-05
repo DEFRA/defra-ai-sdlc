@@ -15,8 +15,6 @@ Create a detailed markdown document describing the feature you want to implement
 
 This is an example prompt example-product-requirements-input
 
-
-
 ## Design interfaces (if needed)
 
 For user-facing features, create mockups in Figma, Miro or similar tools. Add clear annotations explaining expected behaviours.
@@ -43,21 +41,5 @@ Right-sized stories should:
 
 To create multiple user stories from a PRD try [prompt-user-stories-creation](../../appendix/prompt-library/product/prompt-user-stories-creation.md)
 or to create an individual user story try [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md).
-
-### Adapt to your process
-
-Every team works differently. Adjust story formats to match your existing workflow, or break your team's existing stories into more granular implementation tasks.
-
-## Working effectively
-
-You have solid product requirements when:
-
-- Feature knowledge is documented
-- Architecture is visualised
-- Interface needs are clear (if applicable)
-- Stories have acceptance criteria
-- Your team understands the approach
-
-**Review with your team.** - Multiple perspectives spot issues and ensure shared understanding.
 
 ## [Next: Technical requirements](technical-requirements.md)
