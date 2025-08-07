@@ -1,31 +1,21 @@
-# Generating requirements
+# Generating Requirements
 
-AI models deliver better results when you give them clear boundaries. Product requirements, user stories, data models and workflows channel AI outputs into useful, predictable patterns.
+As per [the four pillars](../getting-started/the-four-pillars.md), AI Coding Assistants (AICA) deliver high quality results when you provide clear requirements.
 
-Think of this as context engineering - the more precise your requirements, the more reliable your AI-assisted development becomes.
+## What You'll Achieve
 
-## Pick your approach
+This section helps you use AI tools like AI Assistants to create comprehensive requirements for your projects.
 
-Every team works differently. Choose what fits your needs:
+Requirements vary widely depending on your situation, for example a brand new greenfield application, or changes to existing live legacy services.
 
-**[Product requirements](product-requirements.md)** - Capture features, business logic and generate user stories
+AI can help you with both requirement **generation** and **ideation**, giving you fresh perspectives and approaches you might not have considered.
 
-**[Technical requirements](technical-requirements.md)** - Document architecture, data models, APIs, etc
+## Types of Requirements
 
-You might use both, or just one. Start wherever makes sense for your team.
+We split requirements into two main categories, both of which are necessary for AI Coding Assistants (AICA) to deliver high quality code:
 
-## Time investment
+**[Product Requirements](product-requirements.md)** - Functional artefacts like user stories and acceptance criteria that define what the system should do
 
-Teams typically spend 30% or more of project time on requirements. This upfront work improves development speed and
-quality.
+**[Technical Requirements](technical-requirements.md)** - Technical artefacts including data models, APIs and architecture diagrams that define how the system should work
 
-## When you're ready
-
-Move to development when:
-
-- All behaviours, designs and interactions are documented
-- Data models accurately represent your solution
-- Architecture and technical constraints are documented
-- Your team has reviewed and approved the approach
-
-## [Start with product requirements](product-requirements.md)
+## [Next: product requirements](product-requirements.md)

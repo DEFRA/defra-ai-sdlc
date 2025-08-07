@@ -1,45 +1,76 @@
-# Product requirements
+# Product Requirements
 
-Capture what you need to build and how users will interact with it. Pick the techniques that work for your team and project.
+This section shows how to use AI to create functional artefacts for your project. Product requirements are necessary for AI Coding Assistants (AICA) to deliver high quality code.
 
-## Write detailed feature description
+These are flexible guidelines rather than a specific workflow - adapt the techniques based on your situation and requirements.
 
-Create a detailed markdown document describing the feature you want to implement. This may include:
+## Start With Your Feature Description
 
-- Overview and purpose of the feature
-- Frontend and backend requirements
-- Data model guidance
-- Endpoint behaviours
-- Performance expectations and constraints
-- Be verbose and clear about what you want - later processes will refine the detail into actionable requirements.
+You will get the best outcomes from AI by first clearly articulating the requirement in your own words. 
 
-This is an example prompt example-product-requirements-input
+Create a comprehensive markdown document describing the feature you want to implement. Include these elements where relevant:
 
-## Design interfaces (if needed)
+- **Purpose and scope** - What problem does this solve and for whom?
+- **User interactions** - How will people use this feature?
+- **Frontend requirements** - Interface elements, user flows and visual design needs
+- **Backend requirements** - Processing logic, data handling and system behaviour
+- **Data considerations** - What information you'll store, process or display
+- **Integration points** - How this connects with existing systems
+- **Performance expectations** - Speed, capacity and reliability requirements
+- **Security requirements** - Authentication, authorisation and data protection needs
+- **Business rules** - Constraints, validations and compliance requirements
 
-For user-facing features, create mockups in Figma, Miro or similar tools. Add clear annotations explaining expected behaviours.
+Write with detail and clarity about what you want - this information forms the foundation for AI-generated artefacts.
 
-Transform mockups into detailed requirements using [prompt-user-interface-requirements](../appendix/prompt-library/product/prompt-user-interface-requirements.md) to ensure GDS compliance.
+### Example Feature Description
 
-## Plan your delivery
+```markdown
+I'm building a governance checklist app for Defra project tracking. Here are the core features:
 
-Break features into manageable pieces that AI tools can implement effectively.
+**Purpose**: Help projects track their governance process through a unified checklist system that ensures compliance and reduces oversight burden.
 
-### Product Requirements Document
+**Workflow structure**: 
+- Multiple governance workflows compose the main checklist
+- Sub-flows branch based on business area (e.g. different requirements for policy vs. technology delivery)
+- Workflows can be templated and reused across similar projects
 
-Consider formalising your feature into a Product Requirements Document using [prompt-product-requirements-document](../appendix/prompt-library/product/prompt-product-requirements-document.md)
-or generating user stories at the same time with [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories.md) 
+**Checklist item types**:
+- Standard items: Basic checkbox functionality with optional notes
+- Approval items: Require document upload plus approver details (person, date/time)
+- Document items: Must attach latest version before completion, with version tracking
+- Event items: Time-based milestones or meetings with calendar integration
 
-### Create user stories
+**Item states**: incomplete, complete, not required, blocked
 
-Right-sized stories should:
+**Business rules**:
+- Some items cannot be completed until dependencies are finished
+- Approval items require specific roles/permissions
+- Document items must pass basic validation (file type, size limits)
+- Audit trail required for all state changes
 
-- Complete meaningful functionality
-- Have clear acceptance criteria
-- Include implementation context
-- Be easy to verify
+**Integration requirements**:
+- Single sign-on with existing Defra identity systems
+- Document storage integration with SharePoint
+- Notification system for approvals and deadlines  
+```
 
-To create multiple user stories from a PRD try [prompt-user-stories-creation](../../appendix/prompt-library/product/prompt-user-stories-creation.md)
-or to create an individual user story try [prompt-user-story-creation](../../appendix/prompt-library/product/prompt-user-story-creation.md).
+## Create Visual Mockups
+
+For user-facing features, develop mockups using Figma, Miro or similar tools. Add clear annotations explaining expected behaviours, user flows and interaction patterns.
+
+**Why this matters**: Visual references help AI tools understand your interface requirements and generate more accurate implementations. Include:
+
+- Key user journeys and decision points
+- Error states and edge cases
+- Responsive behaviour for different screen sizes
+- Accessibility considerations
+
+## Generate User Stories Using AI
+
+When your situation requires user stories, use [prompt-user-story-creation](../appendix/prompt-library/product/prompt-user-story-creation.md) in an AI Assistant to create a detailed story with acceptance criteria. Refine through iterative conversation.
+
+## Generate PRD Using AI
+
+When your situation requires formal documentation, for example a new epic, use AI Assistants to generate Product Requirements Documents (PRDs) containing requirements, features and user stories together using [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories.md). Refine through iterative conversation.
 
 ## [Next: Technical requirements](technical-requirements.md)
