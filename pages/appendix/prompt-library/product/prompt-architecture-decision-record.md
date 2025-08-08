@@ -10,25 +10,26 @@ Analyze the following documents in sequence:
 - Data Model: [PASTE HERE]
 - API Endpoints: [PASTE HERE]
 - Sequence Diagram: [PASTE HERE]
-- [...additional documents]
+- [...ADDITIONAL DOCUMENTS]
 
 # Analysis Process
 1. Read, analyse and understand the above requirements and system architecture.
 2. Identify relationships. Map how components interact and communicate.
 3. Trace data flow. Visualise how data moves through the system.
 4. Determine boundaries. Identify service boundaries, external dependencies, and integration points.
-
+5. Ask any follow up questions that will clear up any ambiguities if needed.
 
 # ADR Template
+
 Generate the ADR using this structure:
 
-## Architecture Decision Record: [Descriptive Title]
+## Architecture Decision Record: [DESCRIPTIVE TITLE]
 
 ### 1. Context
 Single paragraph describing the system purpose, scope, and business context.
 
 ### 2. High-Level Diagram
-[Insert provided system architecture diagram]
+[INSERT PROVIDED SYSTEM ARCHITECTURE DIAGRAM]
 
 ### 3. Implementation Details
 For each system component, specify:
@@ -44,7 +45,7 @@ Identify security risks, authentication/authorization requirements, data protect
 Document critical failure scenarios, error propagation patterns, fallback mechanisms, and edge case handling.
 
 ### 6. Architecture
-[Include all provided diagrams with brief explanatory text where clarity is needed]
+[INCLUDE ALL PROVIDED DIAGRAMS WITH BRIEF EXPLANATORY TEXT WHERE CLARITY IS NEEDED]
 
 ### 7. Open Questions
 List unresolved issues:

@@ -1,30 +1,31 @@
 # API Requirements
 
-```
-Given the attached data model, please create requirements for API endpoints that follow this example. Please also include examples of the objects that will be sent in to each endpoint for reference. Make sure you use the plural version of the naming:
+## Instructions
+Generate comprehensive REST API requirements following strict RESTful conventions. Use plural resource names and include practical examples.
 
-EXAMPLE:
-## API Endpoints
+## Required Output
+For each endpoint provide:
+- HTTP method, URL pattern, and parameters
+- Request/response JSON examples with realistic data
+- HTTP status codes (success + common errors)
+- Validation rules and constraints
+- Pagination, filtering, and sorting (for lists)
 
-All endpoints follow RESTful conventions. Below is a complete list of endpoints modelled after the sample `/api/v1/governance-templates` endpoint, now including PUT requests for updating resources by ID. The Audit Log endpoints allow creation (POST) and retrieval (GET) but do not permit updating or deleting entries.
+## Input Details
 
-### Governance Template Endpoints
+### Operations Scope
+[DESCRIBE API OPERATIONS NEEDED - CRUD, BULK OPERATIONS, SEARCH, FILE UPLOADS, ETC.]
 
-#### **Endpoint:** `/api/v1/governance-templates`
-- **POST request:**  
-  Creates a new governance template object with all the fields passed in the body; returns the newly created object from the database.
-- **GET request:**  
-  Returns a list of all the governance template objects stored in the database.
+### Data Model
+[PASTE DATA MODEL/SCHEMA HERE - INCLUDE RELATIONSHIPS AND CONSTRAINTS]
 
-#### **Endpoint:** `/api/v1/governance-templates/{id}`
-- **GET request:**  
-  Returns the governance template object for the given id.
-- **PUT request:**  
-  Updates the governance template object for the given id with the fields provided in the request body; returns the updated object.
-- **DELETE request:**  
-  Deletes the governance template object for the given id and returns a success message with status code 200.
+### Special Requirements (Optional)
+[AUTHENTICATION, RATE LIMITING, VERSIONING, PERFORMANCE CONSTRAINTS, ETC.]
 
+## Output Format
+1. **API Overview** - Purpose and base URL
+2. **Endpoints** - Specs with examples for each operation
+3. **Error Responses** - Standard error format
+4. **Data Schemas** - JSON definitions
 
-DATA MODEL:
-[PASTE DATA MODEL HERE]
-```
+Ask clarifying questions about ambiguities before proceeding.

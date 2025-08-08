@@ -10,48 +10,29 @@ You will get the best outcomes from AI by first clearly articulating the require
 
 Create a comprehensive markdown document describing the feature you want to implement. Include these elements where relevant:
 
-- **Purpose and scope** - What problem does this solve and for whom?
+- **Purpose and scope** - What are we going to do?
 - **User interactions** - How will people use this feature?
 - **Frontend requirements** - Interface elements, user flows and visual design needs
 - **Backend requirements** - Processing logic, data handling and system behaviour
 - **Data considerations** - What information you'll store, process or display
+- **Business rules** - Constraints, validations and compliance requirements
 - **Integration points** - How this connects with existing systems
 - **Performance expectations** - Speed, capacity and reliability requirements
 - **Security requirements** - Authentication, authorisation and data protection needs
-- **Business rules** - Constraints, validations and compliance requirements
 
-Write with detail and clarity about what you want - this information forms the foundation for AI-generated artefacts.
+Write with detail and clarity about what you want - this clarifies your own thinking and expectations of what is to be generated, and it forms the foundation for AI-generated artefacts.
 
 ### Example Feature Description
 
 ```markdown
-I'm building a governance checklist app for Defra project tracking. Here are the core features:
+I'm creating a governance checklist app for Defra governance project tracking. Here are the features of the app:
 
-**Purpose**: Help projects track their governance process through a unified checklist system that ensures compliance and reduces oversight burden.
-
-**Workflow structure**: 
-- Multiple governance workflows compose the main checklist
-- Sub-flows branch based on business area (e.g. different requirements for policy vs. technology delivery)
-- Workflows can be templated and reused across similar projects
-
-**Checklist item types**:
-- Standard items: Basic checkbox functionality with optional notes
-- Approval items: Require document upload plus approver details (person, date/time)
-- Document items: Must attach latest version before completion, with version tracking
-- Event items: Time-based milestones or meetings with calendar integration
-
-**Item states**: incomplete, complete, not required, blocked
-
-**Business rules**:
-- Some items cannot be completed until dependencies are finished
-- Approval items require specific roles/permissions
-- Document items must pass basic validation (file type, size limits)
-- Audit trail required for all state changes
-
-**Integration requirements**:
-- Single sign-on with existing Defra identity systems
-- Document storage integration with SharePoint
-- Notification system for approvals and deadlines  
+- This tool allows projects to track their governance process through a unified checklist, composed of multiple governance workflows, each with their own checklist items.
+- There can be multiple governance workflows of checklist items, such as a main governance flow, then sub-flows depending on what part of the business you're delivering for.
+- The checklist items are general, but should be able to support these types - labels are examples: 'approval' (where the checklist item requires somebody to upload a document as evidence of the approval and state the person, date/time of the approval when checking off), 'document' (where the user must upload the latest version of the document before checking off). I guess 'approval' items also have 'document' item aspects to it, so it's likely they are just two additional types of a normal checklist item (without any states), 'event' could be another type.
+- A checklist item should have states (example labels): 'incomplete', 'complete', 'not required'. 
+  
+...and so on...
 ```
 
 ## Create Visual Mockups
@@ -64,6 +45,8 @@ For user-facing features, develop mockups using Figma, Miro or similar tools. Ad
 - Error states and edge cases
 - Responsive behaviour for different screen sizes
 - Accessibility considerations
+
+You can use [prompt-user-interface-requirements](../appendix/prompt-library/product/prompt-user-interface-requirements.md) in an AI Assistant to create a text description of the interface that can then be used with the language model when you do code generation. 
 
 ## Generate User Stories Using AI
 

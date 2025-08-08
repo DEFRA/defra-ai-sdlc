@@ -7,20 +7,20 @@ descriptions.
 
 ## Detailed Feature Description
 
-_Attach the output from example-product-requirements-input_
+[ATTACH THE OUTPUT FROM EXAMPLE-PRODUCT-REQUIREMENTS-INPUT]
 
 ## System Components
 
-_List all relevant system components (Services / Modules / Classes / etc) with their details:
-Choose the appropriate level of detail for the feature you're developing. E.g.:
+[LIST ALL RELEVANT SYSTEM COMPONENTS (SERVICES / MODULES / CLASSES / ETC) WITH THEIR DETAILS:
+CHOOSE THE APPROPRIATE LEVEL OF DETAIL FOR THE FEATURE YOU'RE DEVELOPING. E.G.:
 
-Example format:
-Frontend Service
+EXAMPLE FORMAT:
+FRONTEND SERVICE
 
-- Node.js BFF (Backend for Frontend)
-- Handles request authentication and session management
-- Browser authentication handled with cookies
-- etc..._
+- NODE.JS BFF (BACKEND FOR FRONTEND)
+- HANDLES REQUEST AUTHENTICATION AND SESSION MANAGEMENT
+- BROWSER AUTHENTICATION HANDLED WITH COOKIES
+- ETC...]
 
 # Analysis Phase
 
@@ -28,14 +28,16 @@ Frontend Service
 2. Identify relationships. Map how components interact and communicate.
 3. Trace data flow. Visualise how data moves through the system.
 4. Determine boundaries. Identify service boundaries, external dependencies, and integration points.
+5. Ask any follow up questions that will clear up any ambiguities if needed.
 
 # Output
 
 Create a high level architecture diagram that describes this system.
 
-_Describe the level of detail that is appropriate for the feature you're developing_
+[DESCRIBE THE LEVEL OF DETAIL THAT IS APPROPRIATE FOR THE FEATURE YOU'RE DEVELOPING]
+
 Format: MermaidJS syntax
-Detail Level: [Specify: High-level overview | Service-level detail | Component-level detail]
+Detail Level: [SPECIFY: HIGH-LEVEL OVERVIEW | SERVICE-LEVEL DETAIL | COMPONENT-LEVEL DETAIL]
 Include:
 
 - All major components

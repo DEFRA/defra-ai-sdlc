@@ -1,19 +1,20 @@
 # Sequence Diagram
+
 ````
 # Context
 
 You are tasked with creating a sequence diagram based on product requirements and system component descriptions.
 ## Detailed Feature Description
 
-_Attach the output from example-product-requirements-input_
+[ATTACH THE OUTPUT FROM EXAMPLE-PRODUCT-REQUIREMENTS-INPUT]
 
 ## System Architecture
 
-_Attach the output from prompt-high-level-architecture_
+[ATTACH THE OUTPUT FROM PROMPT-HIGH-LEVEL-ARCHITECTURE]
 
 ## Data Model
 
-_Attach the output from prompt-data-model-generation_
+[ATTACH THE OUTPUT FROM PROMPT-DATA-MODEL-GENERATION]
 
 ## Additional Information
 
@@ -28,6 +29,7 @@ _Add additional information to constrain your diagram generation. E.g._
 2. Identify relationships. Map how components interact and communicate.
 3. Trace data flow. Visualise how data moves through the system.
 4. Determine boundaries. Identify service boundaries, external dependencies, and integration points.
+5. Ask any follow up questions that will clear up any ambiguities if needed.
 
 # Output
 
