@@ -28,4 +28,4 @@ Use [Obsidian (opens in new tab)](https://obsidian.md/){:target="_blank"} to man
 
 You don't have to use Obsidian, you can use another approach that suits your team.
 
-## [Next -> Feature Development](../feature-development)
+## [Next -> Generating Requirements](../generating-requirements/)

@@ -36,4 +36,4 @@ Before moving to feature development, you might want to analyse your requirement
 
 This AI-powered analysis can identifies gaps in documentation and spots alternatives you might have missed.
 
-## [Next: Development](../feature-development/development.md)
+## [Next: Feature Development](../feature-development/)
