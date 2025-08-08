@@ -102,6 +102,9 @@ globs: *.js
 - Use BEM-style naming with 'app-' prefix
 
 ## Project Structure
+- /src/client/ - Client Side rendered (e.g. window operations)
+  - /javascripts
+    - /feature1 - Grouped by features
 - /src/config/ - Configuration and setup
   - /nunjucks/ - Template engine setup
     - /filters/ - Custom Nunjucks filters

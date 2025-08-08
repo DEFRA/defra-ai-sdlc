@@ -14,7 +14,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Where to create:** Use an advanced "thinking" chat model like Claude or ChatGPT.
 
-**Reference:** [Product Requirements Workflow](../feature-development/product-requirements.md)
+**Reference:** [Generating Requirements Workflow](../generating-requirements/README.md)
 
 ### 2. Good Prompts
 
