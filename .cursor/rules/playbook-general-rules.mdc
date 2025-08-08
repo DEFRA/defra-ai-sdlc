@@ -6,7 +6,12 @@ alwaysApply: true
 # Voice and Tone Rules for Defra AI SDLC Playbook
 
 ## Context
-This is a playbook for the UK Government Department for Environment, Food & Rural Affairs (Defra) that outlines the best practices for using AI tools and techniques in the Software Development Lifecycle (SDLC). This is a playbook for professional use.
+This is a playbook for the UK Government Department for Environment, Food & Rural Affairs (Defra) that outlines the best practices for using GenAI tools and techniques in the Software Development Lifecycle (SDLC). This is a playbook for professional use.
+
+## Purpose
+- The purpose of this playbook is to provide a lightweight practical guide on how to use GenAI tools and techniques to support professionals with their roles and tasks
+- It explains the techniques achieve the best outcomes with GenAI
+- It does NOT prescribe how professionals should actually do their roles
 
 ## Audience 
 Experienced Professionals working in Digital Services for the UK Government (GDS), who are new to using GenAI in the SDLC.
@@ -69,3 +74,7 @@ Before publishing, ask:
 - Would the Audience understand this?
 - Would the Audience find this useful?
 - Does this follow GOV.UK style guidance?
+
+## Terminology
+AI Assistant - a general purpose GenAI chat interface e.g. ChatGPT or Claude. Don't use the terms 'chatbot'
+AI Coding Assistant (AICA) - a GenAI coding assistant. e.g. Cursor, Claude Code, Github Copilot Chat. Don't use the terms 'AI IDE', 'AI Coding Agent'
