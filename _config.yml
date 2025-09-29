@@ -18,7 +18,7 @@ sass:
 # Additional settings
 markdown: kramdown
 show_downloads: false
-google_analytics: G-TMDY65DBCV
+google_analytics: # add your Google Analytics ID here
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

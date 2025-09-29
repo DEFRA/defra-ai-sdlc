@@ -23,38 +23,22 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: false # We'll handle bundle install manually for security
+          bundler-cache: false 
 
       - name: Secure Bundle Install
-        run: |
-          bundle lock --add-platform x86_64-linux
-          bundle config set --local deployment 'true'
-          bundle config set --local frozen 'true'
-          bundle install
+        run: bundle install --deployment
 
       - name: Setup Snyk
         uses: snyk/actions/setup@0.4.0
 
       - name: Snyk scan
-        working-directory: .
-        run: |
-          snyk test
+        run: snyk test
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-
-      - name: Insert Google Analytics ID
-        run: |
-          if [ -n "$GA_ID" ]; then
-            sed -i "s/GA_ID_PLACEHOLDER/$GA_ID/g" _includes/google-analytics.html
-          else
-            echo "Warning: GOOGLE_ANALYTICS_ID variable not set"
-          fi
-        env:
-          GA_ID: ${{ vars.GOOGLE_ANALYTICS_ID }}
 
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
