@@ -26,9 +26,10 @@ jobs:
           bundler-cache: false # We'll handle bundle install manually for security
 
       - name: Secure Bundle Install
-        run: bundle install --deployment --frozen
-        env:
-          BUNDLE_FROZEN: true
+        run: |
+          bundle config set --local deployment 'true'
+          bundle config set --local frozen 'true'
+          bundle install
 
       - name: Setup Snyk
         uses: snyk/actions/setup@0.4.0
@@ -46,7 +47,13 @@ jobs:
 
       - name: Insert Google Analytics ID
         run: |
-          sed -i "s/GA_ID_PLACEHOLDER/${{ vars.GOOGLE_ANALYTICS_ID }}/g" _includes/google-analytics.html
+          if [ -n "$GA_ID" ]; then
+            sed -i "s/GA_ID_PLACEHOLDER/$GA_ID/g" _includes/google-analytics.html
+          else
+            echo "Warning: GOOGLE_ANALYTICS_ID variable not set"
+          fi
+        env:
+          GA_ID: ${{ vars.GOOGLE_ANALYTICS_ID }}
 
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
