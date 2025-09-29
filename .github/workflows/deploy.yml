@@ -27,6 +27,7 @@ jobs:
 
       - name: Secure Bundle Install
         run: |
+          bundle lock --add-platform x86_64-linux
           bundle config set --local deployment 'true'
           bundle config set --local frozen 'true'
           bundle install
