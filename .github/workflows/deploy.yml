@@ -12,11 +12,6 @@ permissions:
   pages: write
   id-token: write
 
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,17 +23,35 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true # Automatically runs bundle install and caches gems
+          bundler-cache: false # We'll handle bundle install manually for security
+
+      - name: Secure Bundle Install
+        run: bundle install --deployment --frozen
+        env:
+          BUNDLE_FROZEN: true
+
+      - name: Setup Snyk
+        uses: snyk/actions/setup@0.4.0
+
+      - name: Snyk scan
+        working-directory: .
+        run: |
+          snyk test
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Insert Google Analytics ID
+        run: |
+          sed -i "s/GA_ID_PLACEHOLDER/${{ vars.GOOGLE_ANALYTICS_ID }}/g" _includes/google-analytics.html
+
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAGES_REPO_NWO: ${{ github.repository }}
 
       - name: Upload build artifacts

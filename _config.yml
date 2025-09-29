@@ -20,7 +20,7 @@ sass:
 # Additional settings
 markdown: kramdown
 show_downloads: false
-google_analytics: # Add your Google Analytics tracking ID here if needed
+google_analytics: # Now handled via GitHub Actions variable
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
