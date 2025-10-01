@@ -25,7 +25,7 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: false 
 
-      - name: Secure Bundle Install
+      - name: Install dependencies
         run: bundle install --deployment
 
       - name: Setup Snyk
