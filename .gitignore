@@ -409,7 +409,6 @@ _site/
 .jekyll-metadata
 .bundle/
 vendor/
-Gemfile.lock
 
 # Obsidian
 .obsidian/workspace.json
