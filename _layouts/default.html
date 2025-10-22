@@ -195,6 +195,9 @@
 
       <div class="content">
         <section>
+          {% unless page.url == "/" or page.url == "/index.html" %}
+            {% include breadcrumbs.html %}
+          {% endunless %}
           {{ content }}
         </section>
 
