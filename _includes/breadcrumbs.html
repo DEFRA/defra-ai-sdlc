@@ -1,0 +1,112 @@
+{% comment %}
+Breadcrumb navigation component
+Generates breadcrumbs based on the page URL path
+Only shows segments that correspond to actual navigable pages
+{% endcomment %}
+
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% assign breadcrumb_path = '' %}
+
+{% comment %} Define which directory paths have actual index pages {% endcomment %}
+{% assign navigable_paths = 'responsible-practices,getting-started,generating-requirements,feature-development,appendix,prompt-library,rules-for-ai' | split: ',' %}
+
+<nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    <!-- Home link -->
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ '/' | relative_url }}" itemprop="item">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+
+    {% assign item_position = 2 %}
+    
+    {% for crumb in crumbs %}
+      {% unless crumb == '' %}
+        {% assign breadcrumb_path = breadcrumb_path | append: '/' | append: crumb %}
+        
+        {% comment %} Convert URL segments to readable names {% endcomment %}
+        {% assign crumb_name = crumb | replace: '-', ' ' | replace: '_', ' ' | replace: '.html', '' | replace: '.md', '' | capitalize %}
+        
+        {% comment %} Handle special cases for better naming {% endcomment %}
+        {% case crumb %}
+          {% when 'responsible-practices' %}
+            {% assign crumb_name = 'Responsible Practices' %}
+          {% when 'getting-started' %}
+            {% assign crumb_name = 'Getting Started' %}
+          {% when 'generating-requirements' %}
+            {% assign crumb_name = 'Generating Requirements' %}
+          {% when 'feature-development' %}
+            {% assign crumb_name = 'Feature Development' %}
+          {% when 'prompt-library' %}
+            {% assign crumb_name = 'Prompt Library' %}
+          {% when 'rules-for-ai' %}
+            {% assign crumb_name = 'Rules for AI' %}
+          {% when 'defra-approved-tools' %}
+            {% assign crumb_name = 'Defra Approved Tools' %}
+          {% when 'ai-working-mindset' %}
+            {% assign crumb_name = 'AI Working Mindset' %}
+          {% when 'the-four-pillars' %}
+            {% assign crumb_name = 'The Four Pillars' %}
+          {% when 'project-setup' %}
+            {% assign crumb_name = 'Project Setup' %}
+          {% when 'product-requirements' %}
+            {% assign crumb_name = 'Product Requirements' %}
+          {% when 'technical-requirements' %}
+            {% assign crumb_name = 'Technical Requirements' %}
+          {% when 'test-driven-development' %}
+            {% assign crumb_name = 'Test Driven Development' %}
+          {% when 'documentation-writing' %}
+            {% assign crumb_name = 'Documentation Writing' %}
+          {% when 'nodejs' %}
+            {% assign crumb_name = 'Node.js' %}
+          {% when 'python' %}
+            {% assign crumb_name = 'Python' %}
+          {% when 'python-cursorrules-backend' %}
+            {% assign crumb_name = 'Backend Rules' %}
+          {% when 'nodejs-cursorrules-backend' %}
+            {% assign crumb_name = 'Backend Rules' %}
+          {% when 'nodejs-cursorrules-frontend' %}
+            {% assign crumb_name = 'Frontend Rules' %}
+          {% when 'prompting-guidance' %}
+            {% assign crumb_name = 'Prompting Guidance' %}
+          {% when 'CONTRIBUTING' %}
+            {% assign crumb_name = 'Contributing' %}
+        {% endcase %}
+        
+        {% comment %} Skip showing "pages" and non-navigable directories in the breadcrumb display {% endcomment %}
+        {% unless crumb == 'pages' %}
+          {% comment %} Check if this is the last crumb (current page) or a navigable directory {% endcomment %}
+          {% assign is_current_page = false %}
+          {% assign is_navigable = false %}
+          
+          {% if forloop.last %}
+            {% assign is_current_page = true %}
+            {% assign is_navigable = true %}
+          {% elsif navigable_paths contains crumb %}
+            {% assign is_navigable = true %}
+          {% endif %}
+          
+          {% comment %} Only show if it's navigable (has an actual page) {% endcomment %}
+          {% if is_navigable %}
+            <li class="breadcrumb-item{% if is_current_page %} breadcrumb-current{% endif %}" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              {% if is_current_page %}
+                <span class="breadcrumb-current-page" itemprop="name" aria-current="page">{{ crumb_name }}</span>
+              {% else %}
+                <a href="{{ breadcrumb_path | relative_url }}" itemprop="item">
+                  <span itemprop="name">{{ crumb_name }}</span>
+                </a>
+              {% endif %}
+              <meta itemprop="position" content="{{ item_position }}" />
+            </li>
+            
+            {% assign item_position = item_position | plus: 1 %}
+          {% endif %}
+        {% endunless %}
+      {% endunless %}
+    {% endfor %}
+    
+  </ol>
+</nav>
