@@ -84,3 +84,9 @@ The following guidelines are founded on two key principles:
 For UI development or troubleshooting, provide visual context by either:
 - Uploading screenshots of the UI issues, or
 - Including pertinent markup from the browser.
+
+{% include page-navigation.html 
+   prev_url="./" 
+   prev_title="Prompt Library" 
+   next_url="../rules-for-ai/" 
+   next_title="Rules for AI" %}

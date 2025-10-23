@@ -42,4 +42,8 @@ Local AI tools like Cursor can expose you to risk in certain circumstances.
 - Use any untrusted data when writing prompts or user stories that end up in prompts
 - Install untrusted plugins
 
-## [Next -> Getting Started](../getting-started/README.md)
+{% include page-navigation.html 
+   prev_url="sustainability" 
+   prev_title="Sustainability" 
+   next_url="../getting-started/" 
+   next_title="Getting Started" %}

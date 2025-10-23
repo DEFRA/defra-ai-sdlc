@@ -51,4 +51,8 @@ In Defra, the term journey tests is used for testing the entire application and 
 
 **Be very clear on test terminology**: Software testing often suffers from unclear terminology, with similar terms used interchangeably or different terms referring to the same concept. Just as this lack of standardisation can lead to miscommunication among team members, it can also affect how models interpret prompts. Be very clear in both your rules for AI and your prompts, as per the examples in this playbook.
 
-## [Next -> Refactoring](refactoring.md)
+{% include page-navigation.html 
+   prev_url="test-driven-development" 
+   prev_title="Test Driven Development" 
+   next_url="refactoring" 
+   next_title="Refactoring" %}

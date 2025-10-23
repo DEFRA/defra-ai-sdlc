@@ -39,4 +39,8 @@ For more information, see [Greener Service Principles](https://greenerservices.g
 - Document sustainability decisions to help other teams make similar choices
 - Share trained models across government departments to avoid duplicate work
 
-## [Next -> Security](security.md)
+{% include page-navigation.html 
+   prev_url="ethics" 
+   prev_title="Ethics" 
+   next_url="security" 
+   next_title="Security" %}

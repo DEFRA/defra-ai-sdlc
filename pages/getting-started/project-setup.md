@@ -28,4 +28,8 @@ Use [Obsidian (opens in new tab)](https://obsidian.md/){:target="_blank"} to man
 
 You don't have to use Obsidian, you can use another approach that suits your team.
 
-## [Next -> Generating Requirements](../generating-requirements/)
+{% include page-navigation.html 
+   prev_url="ai-working-mindset" 
+   prev_title="AI Working Mindset" 
+   next_url="../generating-requirements/" 
+   next_title="Generating Requirements" %}

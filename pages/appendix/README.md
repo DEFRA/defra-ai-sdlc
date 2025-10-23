@@ -22,4 +22,10 @@ How to contribute to this playbook and help improve it for the Defra community.
 2. Set up your **Rules for AI** to ensure consistent code generation
 3. Use the **Prompt Library** to get better results from your AI tools
 
-The **Contributing** guide shows you how to share your own prompts, rules, and improvements with the wider Defra community. 
+The **Contributing** guide shows you how to share your own prompts, rules, and improvements with the wider Defra community.
+
+{% include page-navigation.html 
+   prev_url="../feature-development/" 
+   prev_title="Feature Development" 
+   next_url="/" 
+   next_title="Welcome" %} 

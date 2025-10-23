@@ -35,3 +35,9 @@ This library provides a selection of prompts used by authors. These examples ser
 
 ### Learning
 - [Add Code Knowledge and Teaching](learning/prompt-add-coding-knowledge-teaching.md)
+
+{% include page-navigation.html 
+   prev_url="../defra-approved-tools" 
+   prev_title="Allowed Tools" 
+   next_url="../rules-for-ai/" 
+   next_title="Rules for AI" %}

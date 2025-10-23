@@ -18,4 +18,8 @@ The diagram below shows the main steps in this playbook. We've deliberately simp
 - **Create MR for developer code review** - Generate a Merge Request (MR) in git following traditional development practices. Review each line of code for quality and brevity, making sure that the code to be deployed is production-ready
 - **Merge and deploy** - Once you merge the MR into the main branch, use automated pipeline processes to deploy the code, as per your normal deployment processes
 
-## [Next -> The Four Pillars](the-four-pillars.md)
+{% include page-navigation.html 
+   prev_url="./" 
+   prev_title="Getting Started" 
+   next_url="the-four-pillars" 
+   next_title="The Four Pillars" %}

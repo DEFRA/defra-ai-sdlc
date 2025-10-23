@@ -12,3 +12,9 @@ Some examples of rules for the programming languages and standards used within D
 
 ### Python
 - [Python Cursor Rules Files - Backend](python/python-cursorrules-backend.md)
+
+{% include page-navigation.html 
+   prev_url="../prompt-library/" 
+   prev_title="Prompt Library" 
+   next_url="../defra-approved-tools" 
+   next_title="Allowed Tools" %}

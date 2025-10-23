@@ -51,4 +51,8 @@ Rather than lengthy iterations, experiment and test ideas quickly. This mindset 
 
 This playbook captures current best practices, acknowledging they will evolve rapidly. Embrace this constant change as an opportunity for growth.
 
-## [Next -> Project Setup](project-setup.md)
+{% include page-navigation.html 
+   prev_url="the-four-pillars" 
+   prev_title="The Four Pillars" 
+   next_url="project-setup" 
+   next_title="Project Setup" %}

@@ -15,4 +15,8 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 4. [Refactoring](refactoring.md) - Refactor once feature complete
 5. [Documentation](documentation.md) - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations
 
-## [Next -> Development](development.md)
+{% include page-navigation.html 
+   prev_url="../generating-requirements/" 
+   prev_title="Generating Requirements" 
+   next_url="../appendix/" 
+   next_title="Resources & Tools" %}

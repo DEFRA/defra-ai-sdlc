@@ -17,4 +17,10 @@ To use an AI tool not listed in the guidance:
 2. Explain why you need the specific tool
 3. Wait for approval before proceeding
 
-The team will assess the tool against Defra's security and compliance requirements. 
+The team will assess the tool against Defra's security and compliance requirements.
+
+{% include page-navigation.html 
+   prev_url="./" 
+   prev_title="Resources & Tools" 
+   next_url="contributing" 
+   next_title="Contributing" %} 

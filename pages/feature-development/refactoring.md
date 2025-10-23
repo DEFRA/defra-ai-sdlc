@@ -14,4 +14,8 @@ For example, ask the model to move logic into a reusable function, move logic fr
 
 - **Work together on refactoring**: First, work with AI to identify areas for refactoring, such as overly complex methods, duplicate code, or areas that do not meet the AI rules. Then guide the model on what specific things it should refactor.
 
-## [Next -> Documentation](documentation.md)
+{% include page-navigation.html 
+   prev_url="testing" 
+   prev_title="Testing" 
+   next_url="documentation" 
+   next_title="Documentation" %}

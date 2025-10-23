@@ -79,4 +79,10 @@ If you have questions about contributing or need help:
 1. Check existing issues to see if someone has already answered your question
 2. Create a new issue with the "question" label if you need more help
 
-Thank you for helping make the Defra AI SDLC Playbook better for everyone! 
+Thank you for helping make the Defra AI SDLC Playbook better for everyone!
+
+{% include page-navigation.html 
+   prev_url="defra-approved-tools" 
+   prev_title="Allowed Tools" 
+   next_url="/" 
+   next_title="Welcome" %} 

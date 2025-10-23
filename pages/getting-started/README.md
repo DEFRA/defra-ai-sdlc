@@ -14,4 +14,8 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 3. [Mindset](ai-working-mindset.md) - How to work effectively with AI
 4. [Project Setup](project-setup.md) - Set up your project with the right files, tools, and conventions
 
-## [Next -> Workflow](workflow.md)
+{% include page-navigation.html 
+   prev_url="../responsible-practices/" 
+   prev_title="Responsible Practices" 
+   next_url="../generating-requirements/" 
+   next_title="Generating Requirements" %}

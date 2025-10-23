@@ -57,4 +57,8 @@ Create a new git branch for your feature.
 
 **Match scope to complexity**: Give the AI more specific tasks as codebases grow.
 
-## [Next -> Test Driven Development](test-driven-development.md)
+{% include page-navigation.html 
+   prev_url="./" 
+   prev_title="Feature Development" 
+   next_url="test-driven-development" 
+   next_title="Test Driven Development" %}

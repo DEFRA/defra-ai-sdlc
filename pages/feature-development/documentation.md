@@ -28,3 +28,9 @@ AI can generate and read diagrams. For example [Mermaid diagrams (opens in new t
 ### Use documentation as a knowledge base
 
 Good up-to-date documentation helps AI to understand context and implementation decisions
+
+{% include page-navigation.html 
+   prev_url="refactoring" 
+   prev_title="Refactoring" 
+   next_url="../appendix/" 
+   next_title="Resources & Tools" %}

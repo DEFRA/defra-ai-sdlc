@@ -42,4 +42,8 @@ To generate consistent code, four elements must come together as shown in this d
 
 Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
 
-## [Next -> Mindset](ai-working-mindset.md)
+{% include page-navigation.html 
+   prev_url="workflow" 
+   prev_title="Workflow" 
+   next_url="ai-working-mindset" 
+   next_title="AI Working Mindset" %}
