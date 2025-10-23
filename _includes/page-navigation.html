@@ -1,0 +1,34 @@
+{% comment %}
+Navigation component for pages
+Parameters:
+- prev_url: URL for previous page
+- prev_title: Title for previous page
+- next_url: URL for next page  
+- next_title: Title for next page
+{% endcomment %}
+
+<div class="page-navigation">
+  {% if include.prev_url %}
+    <a href="{{ include.prev_url }}" class="nav-button nav-button--prev">
+      <span class="nav-button__icon">←</span>
+      <div class="nav-button__content">
+        <span class="nav-button__label">Previous</span>
+        <span class="nav-button__title">{{ include.prev_title }}</span>
+      </div>
+    </a>
+  {% else %}
+    <div class="nav-button nav-button--disabled"></div>
+  {% endif %}
+
+  {% if include.next_url %}
+    <a href="{{ include.next_url }}" class="nav-button nav-button--next">
+      <div class="nav-button__content">
+        <span class="nav-button__label">Next</span>
+        <span class="nav-button__title">{{ include.next_title }}</span>
+      </div>
+      <span class="nav-button__icon">→</span>
+    </a>
+  {% else %}
+    <div class="nav-button nav-button--disabled"></div>
+  {% endif %}
+</div>
