@@ -9,11 +9,39 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 - Configure proper privacy settings. This keeps your sensitive information safe when working with AI tools. For information on the appropriate privacy settings for your chosen AI tool, see the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/)
 
 ## Workflow
-1. [Development](development.md) - Develop the solution iteratively, using AI for implementation
-2. [Test Driven Development](test-driven-development.md) - TDD using AI tools
-3. [Testing](testing.md) - Unit testing and journey testing
-4. [Refactoring](refactoring.md) - Refactor once feature complete
-5. [Documentation](documentation.md) - Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations
+
+<div class="tile-container">
+  <a href="development.md" class="tile-link">
+    <div class="tile">
+      <h3>Development</h3>
+      <p>Develop the solution iteratively, using AI for implementation</p>
+    </div>
+  </a>
+  <a href="test-driven-development.md" class="tile-link">
+    <div class="tile">
+      <h3>Test Driven Development</h3>
+      <p>TDD using AI tools</p>
+    </div>
+  </a>
+  <a href="testing.md" class="tile-link">
+    <div class="tile">
+      <h3>Testing</h3>
+      <p>Unit testing and journey testing</p>
+    </div>
+  </a>
+  <a href="refactoring.md" class="tile-link">
+    <div class="tile">
+      <h3>Refactoring</h3>
+      <p>Refactor once feature complete</p>
+    </div>
+  </a>
+  <a href="documentation.md" class="tile-link">
+    <div class="tile">
+      <h3>Documentation</h3>
+      <p>Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations</p>
+    </div>
+  </a>
+</div>
 
 {% include page-navigation.html 
    prev_url="../generating-requirements/" 
