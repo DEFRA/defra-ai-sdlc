@@ -11,25 +11,25 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 ## What you'll learn
 
 <div class="tile-container">
-  <a href="workflow.md" class="tile-link">
+  <a href="workflow" class="tile-link">
     <div class="tile">
       <h3>Workflow</h3>
       <p>How the AI development workflow works</p>
     </div>
   </a>
-  <a href="the-four-pillars.md" class="tile-link">
+  <a href="the-four-pillars" class="tile-link">
     <div class="tile">
       <h3>The Four Pillars</h3>
       <p>The foundations of consistent code generation</p>
     </div>
   </a>
-  <a href="ai-working-mindset.md" class="tile-link">
+  <a href="ai-working-mindset" class="tile-link">
     <div class="tile">
       <h3>Mindset</h3>
       <p>How to work effectively with AI</p>
     </div>
   </a>
-  <a href="project-setup.md" class="tile-link">
+  <a href="project-setup" class="tile-link">
     <div class="tile">
       <h3>Project Setup</h3>
       <p>Set up your project with the right files, tools, and conventions</p>

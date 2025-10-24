@@ -17,13 +17,13 @@ This section contains supporting materials and reference information for the Def
       <p>Configuration files and coding standards that help AI tools generate consistent, high-quality code that follows Defra conventions.</p>
     </div>
   </a>
-  <a href="defra-approved-tools.md" class="tile-link">
+  <a href="defra-approved-tools" class="tile-link">
     <div class="tile">
       <h3>Allowed Tools for Defra Pilot</h3>
       <p>AI tools vetted for use in the Defra pilot, with guidance on privacy settings and compliance.</p>
     </div>
   </a>
-  <a href="CONTRIBUTING.md" class="tile-link">
+  <a href="CONTRIBUTING" class="tile-link">
     <div class="tile">
       <h3>Contributing</h3>
       <p>How to contribute to this playbook and help improve it for the Defra community.</p>

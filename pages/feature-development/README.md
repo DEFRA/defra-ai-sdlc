@@ -11,31 +11,31 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 ## Workflow
 
 <div class="tile-container">
-  <a href="development.md" class="tile-link">
+  <a href="development" class="tile-link">
     <div class="tile">
       <h3>Development</h3>
       <p>Develop the solution iteratively, using AI for implementation</p>
     </div>
   </a>
-  <a href="test-driven-development.md" class="tile-link">
+  <a href="test-driven-development" class="tile-link">
     <div class="tile">
       <h3>Test Driven Development</h3>
       <p>TDD using AI tools</p>
     </div>
   </a>
-  <a href="testing.md" class="tile-link">
+  <a href="testing" class="tile-link">
     <div class="tile">
       <h3>Testing</h3>
       <p>Unit testing and journey testing</p>
     </div>
   </a>
-  <a href="refactoring.md" class="tile-link">
+  <a href="refactoring" class="tile-link">
     <div class="tile">
       <h3>Refactoring</h3>
       <p>Refactor once feature complete</p>
     </div>
   </a>
-  <a href="documentation.md" class="tile-link">
+  <a href="documentation" class="tile-link">
     <div class="tile">
       <h3>Documentation</h3>
       <p>Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations</p>

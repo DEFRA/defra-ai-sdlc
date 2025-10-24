@@ -5,19 +5,19 @@ Use AI tools ethically and sustainably when using AI in the SDLC.
 ## In this section
 
 <div class="tile-container">
-  <a href="ethics.md" class="tile-link">
+  <a href="ethics" class="tile-link">
     <div class="tile">
       <h3>Ethics</h3>
       <p>How to use AI tools ethically in software development</p>
     </div>
   </a>
-  <a href="sustainability.md" class="tile-link">
+  <a href="sustainability" class="tile-link">
     <div class="tile">
       <h3>Sustainability</h3>
       <p>How to reduce environmental impact of AI tools</p>
     </div>
   </a>
-  <a href="security.md" class="tile-link">
+  <a href="security" class="tile-link">
     <div class="tile">
       <h3>Security</h3>
       <p>How to use AI tools securely</p>
