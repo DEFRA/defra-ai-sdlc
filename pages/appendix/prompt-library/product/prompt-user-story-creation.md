@@ -4,16 +4,16 @@ This prompt can be used to create a single story from user-defined requirements.
 
 These are the key aspects to take note of in the formation of this prompt:
 
-- Modal/Interactive approach: Instead of requiring all information upfront, the prompt instructs Claude to ask clarifying questions first
+- Modal/Interactive approach: Instead of requiring all information upfront, the prompt instructs the agent to ask clarifying questions first
 - Clearer structure: Separated the "how to approach this" from the "what to produce"
 - Removed placeholder text: Eliminated confusing uppercase placeholder instructions
-- Flexible context gathering: Claude will ask for context rather than requiring it in a specific format
+- Flexible context gathering: the agent will ask for context rather than requiring it in a specific format
 - Better guidance on GOV.UK requirements: Moved this to the Interface Design section with clearer specifications
 - Cleaner quality checklist: Reformatted as actual checklist items
-- Clear starting point: Gives Claude specific questions to begin the conversation
+- Clear starting point: Gives the agent specific questions to begin the conversation
 - More instructional: Explains why each section exists and what it should contain
 
-This version will create a more conversational experience where the BA can provide information naturally, and Claude will guide them through creating a comprehensive user story.
+This version will create a more conversational experience where the BA can provide information naturally, and the agent will guide them through creating a comprehensive user story.
 
 ```
 # User Story Generator for Business Analysts
