@@ -21,3 +21,9 @@ VERIFICATION AND COMPLETION PHASE:
 - Make sure the final model covers all the requirements before returning a solution.
 - Highlight any areas where you have made assumptions.
 ```
+
+{% include page-navigation.html 
+   prev_url="prompt-user-story-creation" 
+   prev_title="User Story Creation"
+   next_url="prompt-api-requirements" 
+   next_title="API Requirements" %}

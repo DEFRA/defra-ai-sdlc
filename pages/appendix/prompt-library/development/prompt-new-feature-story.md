@@ -33,3 +33,7 @@ Constraints:
 - Follow the cursor rules
 - Do not add any unit tests at this time
 ```
+
+{% include page-navigation.html 
+   next_url="prompt-test-driven-development" 
+   next_title="Test Driven Development" %}

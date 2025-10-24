@@ -97,3 +97,7 @@ Please provide:
 4. Any issues encountered and their solutions
 5. Recommendations for improving testability (if applicable)
 ``` 
+
+{% include page-navigation.html 
+   prev_url="prompt-add-journey-test" 
+   prev_title="Add Journey Test" %}

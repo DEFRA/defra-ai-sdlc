@@ -43,3 +43,9 @@ Include a short 'Context' part at the top of the document that details the purpo
 VERIFICATION AND COMPLETION PHASE:
 Validate your work to check that all the features defined in the documents above meet all the necessary requirements and there is no ambiguity or overlap before writing the final output.
 ```
+
+{% include page-navigation.html 
+   prev_url="prompt-user-interface-requirements" 
+   prev_title="User Interface Requirements"
+   next_url="prompt-product-analysis" 
+   next_title="Deep Product Analysis" %}

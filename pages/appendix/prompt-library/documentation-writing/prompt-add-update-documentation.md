@@ -30,3 +30,7 @@ Key constraints:
 
 Provide a complete, production-ready update in British English with a professional tone.
 ```
+
+{% include page-navigation.html 
+   next_url="prompt-create-api-documentation" 
+   next_title="Create API Documentation" %}

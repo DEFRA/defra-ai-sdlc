@@ -89,3 +89,7 @@ Ask the user: "I'm ready to help you create a user story. To get started, could 
 
 Then gather any additional information needed before creating the comprehensive user story document.
 ```
+
+{% include page-navigation.html 
+   next_url="prompt-data-model-generation" 
+   next_title="Data Model Generation" %}

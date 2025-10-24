@@ -30,3 +30,9 @@ For each endpoint provide:
 
 Ask clarifying questions about ambiguities before proceeding.
 ````
+
+{% include page-navigation.html 
+   prev_url="prompt-data-model-generation" 
+   prev_title="Data Model Generation"
+   next_url="prompt-user-interface-requirements" 
+   next_title="User Interface Requirements" %}

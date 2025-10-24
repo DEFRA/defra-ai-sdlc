@@ -16,3 +16,9 @@ API ENDPOINTS:
 [PASTE API ENDPOINTS REQUIREMENTS]
 
 ```
+
+{% include page-navigation.html 
+   prev_url="prompt-api-requirements" 
+   prev_title="API Requirements"
+   next_url="prompt-combined-requirements-features-stories" 
+   next_title="Combined Features and Stories Generation" %}

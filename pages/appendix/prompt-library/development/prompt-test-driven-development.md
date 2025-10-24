@@ -47,3 +47,7 @@ Refactor this code to improve the readability and structure while keeping all te
 ```
 
 For step 3, refactoring, please also refer to the [refactoring workflow](../../../feature-development/refactoring.md) to ensure you prompt the refactor appropriately.
+
+{% include page-navigation.html 
+   prev_url="prompt-new-feature-story" 
+   prev_title="Implement New Feature / Story" %}

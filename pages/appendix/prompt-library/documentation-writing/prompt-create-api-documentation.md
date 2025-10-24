@@ -129,3 +129,7 @@ Before finalizing the documentation:
    - [ ] Clear examples
    - [ ] Practical use cases
 ```
+
+{% include page-navigation.html 
+   prev_url="prompt-add-update-documentation" 
+   prev_title="Add / Update Documentation" %}

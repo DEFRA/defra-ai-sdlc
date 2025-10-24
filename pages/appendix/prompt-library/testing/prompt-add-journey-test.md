@@ -43,3 +43,7 @@ Adding an accessibility scan:
 ```
 Please add a simple test to use `@axe-core/playwright` to do an accessibility scan against the page. Search @Web for how to do this
 ``` 
+
+{% include page-navigation.html 
+   next_url="prompt-add-unit-test" 
+   next_title="Add Unit Test" %}

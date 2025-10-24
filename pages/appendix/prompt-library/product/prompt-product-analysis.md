@@ -35,3 +35,7 @@ VERIFICATION AND COMPLETION PHASE:
 - Highlight any areas where you have made assumptions.
 - Suggest improvements where possible.
 ```
+
+{% include page-navigation.html 
+   prev_url="prompt-combined-requirements-features-stories" 
+   prev_title="Combined Features and Stories Generation" %}
