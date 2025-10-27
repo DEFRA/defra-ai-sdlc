@@ -167,7 +167,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="/defra-ai-sdlc/pages/appendix">6. Appendix</a>
+                      <a href="/defra-ai-sdlc/pages/appendix">6. appendix</a>
                       <ul>
   
                             <li><a href="/defra-ai-sdlc/pages/appendix/prompt-library">6.1. Prompt Library</a></li>
@@ -195,6 +195,9 @@
 
       <div class="content">
         <section>
+          {% unless page.url == "/" or page.url == "/index.html" %}
+            {% include breadcrumbs.html %}
+          {% endunless %}
           {{ content }}
         </section>
 
