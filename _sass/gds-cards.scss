@@ -1,0 +1,166 @@
+/* GDS-Inspired Card Components */
+/* Maintains card layout with GDS accessibility principles */
+
+.gds-inspired-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.gds-inspired-card {
+  /* GDS Typography */
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Layout */
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  
+  /* GDS-inspired minimal styling */
+  background-color: #ffffff;
+  border: 2px solid #b1b4b6;
+  border-radius: 8px; /* Rounded corners for visual appeal */
+  
+  /* Accessibility - smooth transitions */
+  transition: all 0.2s ease;
+  
+  /* Remove default link styles */
+  color: #0b0c0c;
+}
+
+.gds-inspired-card:hover {
+  /* GDS hover state */
+  border-color: #1d70b8;
+  text-decoration: none;
+  
+  /* Subtle lift effect */
+  box-shadow: 0 2px 4px rgba(11, 12, 12, 0.1);
+}
+
+.gds-inspired-card:focus {
+  /* Official GDS focus state */
+  background-color: #ffdd00;
+  color: #0b0c0c;
+  border-color: #0b0c0c;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+
+.gds-inspired-card__heading {
+  /* GDS heading typography */
+  font-family: "GDS Transport", arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin: 0 0 10px 0;
+}
+
+.gds-inspired-card:hover .gds-inspired-card__heading {
+  /* Subtle color change on hover */
+  color: #1d70b8;
+}
+
+.gds-inspired-card:focus .gds-inspired-card__heading {
+  /* Maintain contrast on focus */
+  color: #0b0c0c;
+}
+
+.gds-inspired-card__description {
+  /* GDS body text */
+  font-family: "GDS Transport", arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #505a5f;
+  margin: 0;
+}
+
+.gds-inspired-card:focus .gds-inspired-card__description {
+  /* Maintain contrast on focus */
+  color: #0b0c0c;
+}
+
+/* GDS-compliant responsive breakpoints */
+@media (max-width: 48.0625em) { /* 769px */
+  .gds-inspired-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+  }
+  
+  .gds-inspired-card__heading {
+    font-size: 20px;
+  }
+  
+  .gds-inspired-card__description {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+@media (max-width: 40.0625em) { /* 641px */
+  .gds-inspired-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .gds-inspired-card {
+    padding: 15px;
+  }
+  
+  .gds-inspired-card__heading {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .gds-inspired-card__description {
+    font-size: 14px;
+  }
+}
+
+/* Dark theme support (maintaining GDS principles) */
+[data-theme="dark"] .gds-inspired-card {
+  background-color: #0b0c0c;
+  border-color: #505a5f;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .gds-inspired-card:hover {
+  border-color: #5694ca; /* GDS light blue for dark theme */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .gds-inspired-card:focus {
+  /* GDS focus state works in dark theme too */
+  background-color: #ffdd00;
+  color: #0b0c0c;
+  border-color: #0b0c0c;
+}
+
+[data-theme="dark"] .gds-inspired-card__heading {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .gds-inspired-card:hover .gds-inspired-card__heading {
+  color: #5694ca;
+}
+
+[data-theme="dark"] .gds-inspired-card:focus .gds-inspired-card__heading {
+  color: #0b0c0c;
+}
+
+[data-theme="dark"] .gds-inspired-card__description {
+  color: #b1b4b6;
+}
+
+[data-theme="dark"] .gds-inspired-card:focus .gds-inspired-card__description {
+  color: #0b0c0c;
+}

@@ -8,7 +8,7 @@ Only shows segments that correspond to actual navigable pages
 {% assign breadcrumb_path = '' %}
 
 {% comment %} Define which directory paths have actual index pages {% endcomment %}
-{% assign navigable_paths = 'responsible-practices,getting-started,generating-requirements,feature-development,appendix,prompt-library,rules-for-ai' | split: ',' %}
+{% assign navigable_paths = 'responsible-practices,getting-started,generating-requirements,feature-development,Resources-Tools,prompt-library,rules-for-ai' | split: ',' %}
 
 <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
   <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -74,6 +74,8 @@ Only shows segments that correspond to actual navigable pages
             {% assign crumb_name = 'Prompting Guidance' %}
           {% when 'CONTRIBUTING' %}
             {% assign crumb_name = 'Contributing' %}
+          {% when 'Resources-Tools' %}
+            {% assign crumb_name = 'Resources & Tools' %}
         {% endcase %}
         
         {% comment %} Skip showing "pages" and non-navigable directories in the breadcrumb display {% endcomment %}

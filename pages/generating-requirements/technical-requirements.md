@@ -12,27 +12,27 @@ As per [Product Requirements](product-requirements.md), it is best to start with
 
 Quite often, architecture diagrams will help inform AI how components fit together. 
 
-Use [prompt-high-level-architecture](../appendix/prompt-library/product/prompt-high-level-architecture.md) in an AI Assistant to generate diagrams, then refine through iterative conversation.
+Use [prompt-high-level-architecture](../Resources-Tools/prompt-library/product/prompt-high-level-architecture.md) in an AI Assistant to generate diagrams, then refine through iterative conversation.
 
 ## Create Your Data Models Using AI
 
-When your situation requires data models, Use [prompt-data-model-generation](../appendix/prompt-library/product/prompt-data-model-generation.md) in an AI Assistant with your product requirements as context. Work iteratively until the data model accurately represents your domain.
+When your situation requires data models, Use [prompt-data-model-generation](../Resources-Tools/prompt-library/product/prompt-data-model-generation.md) in an AI Assistant with your product requirements as context. Work iteratively until the data model accurately represents your domain.
 
 ## Map System Interactions Using AI
 
-When your situation requires system interaction design, Use [prompt-sequence-diagram](../appendix/prompt-library/product/prompt-sequence-diagram.md) in an AI Assistant to visualise how different parts of your system communicate. Refine through iterative conversation.
+When your situation requires system interaction design, Use [prompt-sequence-diagram](../Resources-Tools/prompt-library/product/prompt-sequence-diagram.md) in an AI Assistant to visualise how different parts of your system communicate. Refine through iterative conversation.
 
 ## Document Your API Specifications Using AI
 
-When your situation requires API's, generate clear API documentation using [prompt-api-requirements](../appendix/prompt-library/product/prompt-api-requirements.md) in an AI Assistant. Refine through iterative conversation.
+When your situation requires API's, generate clear API documentation using [prompt-api-requirements](../Resources-Tools/prompt-library/product/prompt-api-requirements.md) in an AI Assistant. Refine through iterative conversation.
 
 ## Create Architectural Decision Records Using AI
 
-Use [prompt-architecture-decision-record](../appendix/prompt-library/product/prompt-architecture-decision-record.md) in an AI Assistant to document key technical choices and their rationale. Refine through iterative conversation.
+Use [prompt-architecture-decision-record](../Resources-Tools/prompt-library/product/prompt-architecture-decision-record.md) in an AI Assistant to document key technical choices and their rationale. Refine through iterative conversation.
 
 ## Review Your Requirements Using AI
 
-Before moving to feature development, you might want to analyse your requirements using [prompt-product-analysis](../appendix/prompt-library/product/prompt-product-analysis.md).
+Before moving to feature development, you might want to analyse your requirements using [prompt-product-analysis](../Resources-Tools/prompt-library/product/prompt-product-analysis.md).
 
 This AI-powered analysis can identifies gaps in documentation and spots alternatives you might have missed.
 

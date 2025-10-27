@@ -41,7 +41,7 @@ Reduce these through:
 
 Clear communication with LLMs is essential. They are highly capable but they have no context. Well-crafted prompts give better results. Iterate on prompts to improve outcomes.
 
-Refer to [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) for details on how to write effective prompts.
+Refer to [Prompting Guidance](../Resources-Tools/prompt-library/prompting-guidance.md) for details on how to write effective prompts.
 
 ## Test-and-Learn Approach
 

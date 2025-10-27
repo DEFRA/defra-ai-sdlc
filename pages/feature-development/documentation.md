@@ -6,7 +6,7 @@ AI helps you create and maintain high-quality, readable documentation. It can re
 
 ### Create a documentation rules file
 
-Create a documentation [AI rules](../appendix/rules-for-ai/README.md) file with:
+Create a documentation [AI rules](../Resources-Tools/rules-for-ai/README.md) file with:
 
 - Naming conventions, formatting rules, and style preferences
 - Mandatory sections (Overview, Setup, Usage, Contribution Guidelines)
@@ -19,7 +19,7 @@ Update documentation when you change code to both help team members and AI under
 
 ### Prompt documentation generation
 
-Use a prompt like [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) to have AI update documentation regularly.
+Use a prompt like [prompt-add-update-documentation](../../pages/Resources-Tools/prompt-library/documentation-writing/prompt-add-update-documentation.md) to have AI update documentation regularly.
 
 ### Use diagrams
 
@@ -32,5 +32,5 @@ Good up-to-date documentation helps AI to understand context and implementation 
 {% include page-navigation.html 
    prev_url="refactoring" 
    prev_title="Refactoring" 
-   next_url="../appendix/" 
+   next_url="../Resources-Tools/" 
    next_title="Resources & Tools" %}

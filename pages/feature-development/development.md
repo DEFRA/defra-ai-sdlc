@@ -7,7 +7,7 @@ This section outlines how to develop new features. For test-first development, s
 ### Prerequisites
 
 1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Generating Requirements](../generating-requirements/README.md)
-2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
+2. **AI rules**: Set up project [Rules for AI](../Resources-Tools/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
 3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
 ### 1. Create a new git branch
@@ -17,7 +17,7 @@ Create a new git branch for your feature.
 ### 2. Prompt the coding assistant
 
 - Use an AI Coding Assistant (AICA) in Agent mode
-- Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
+- Use [prompt-new-feature-story](../Resources-Tools/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
 - Generate the initial code
 - Accept changes, then review them in the git diff viewer
 
@@ -30,7 +30,7 @@ Create a new git branch for your feature.
 ### 4. Create automated tests
 
 - Start a new agent conversation
-- Use [testing prompts](../../pages/appendix/prompt-library/testing/prompt-add-unit-test.md) from your prompt library to generate tests
+- Use [testing prompts](../../pages/Resources-Tools/prompt-library/testing/prompt-add-unit-test.md) from your prompt library to generate tests
 - Accept changes, then review in the git diff viewer
 - Review the tests carefully to make sure they meet your expectations once they're working
 
@@ -42,12 +42,12 @@ Create a new git branch for your feature.
 ### Follow-up tasks
 
 - Create a merge request for peer review
-- Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md)
+- Update documentation using [prompt-add-update-documentation](../Resources-Tools/prompt-library/documentation-writing/prompt-add-update-documentation.md)
 - Update AI rules and prompt library based on what you've learned
 
 ## Guidelines
 
-**Get consistent results**: Follow the four pillars by using [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](../generating-requirements/README.md) together.
+**Get consistent results**: Follow the four pillars by using [AI rules](../Resources-Tools/rules-for-ai), [prompts](../Resources-Tools/prompt-library) and clear [product requirements](../generating-requirements/README.md) together.
 
 **Review everything generated**: Review and refine everything the agent generates.
 

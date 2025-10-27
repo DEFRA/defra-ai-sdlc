@@ -6,7 +6,7 @@ Set up your development environment to use AI tools safely and effectively.
 
 ### 1. Install an AI coding assistant
 
-Install a coding assistant from the [Allowed Tools for Defra Pilot](../appendix/defra-approved-tools.md) list.
+Install a coding assistant from the [Allowed Tools for Defra Pilot](../Resources-Tools/defra-approved-tools.md) list.
 
 ### 2. Turn on privacy settings
 
@@ -16,7 +16,7 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 
 ### 3. Add AI rules files
 
-Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and commit them to version control.
+Add [Rules for AI](../../pages/Resources-Tools/rules-for-ai) to your repository and commit them to version control.
 
 ## Set up repository documentation
 

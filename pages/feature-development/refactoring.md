@@ -10,7 +10,7 @@ For example, ask the model to move logic into a reusable function, move logic fr
 
 - **Refactor at the end of each feature**: Review and refactor code as part of each feature implementation to maintain consistency and make it easier to maintain.
 
-- **Give specific refactoring prompts**: Write prompts that guide AI to refactor specific areas of code. Refer to [prompt-refactor-feature](../../pages/appendix/prompt-library/refactoring/prompt-refactor-feature.md) for an example.
+- **Give specific refactoring prompts**: Write prompts that guide AI to refactor specific areas of code. Refer to [prompt-refactor-feature](../../pages/Resources-Tools/prompt-library/refactoring/prompt-refactor-feature.md) for an example.
 
 - **Work together on refactoring**: First, work with AI to identify areas for refactoring, such as overly complex methods, duplicate code, or areas that do not meet the AI rules. Then guide the model on what specific things it should refactor.
 

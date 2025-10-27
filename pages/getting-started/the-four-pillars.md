@@ -22,7 +22,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Where to create:** Create prompts manually at first but then refine them using a chat model like Claude or ChatGPT.
 
-**Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
+**Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../Resources-Tools/prompt-library/prompting-guidance.md)
 
 ### 3. Rules for AI
 
@@ -30,7 +30,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Where to create:** Rule file formats are usually defined by the AI IDE tool. To help generate the rules themselves, use a chat model like Claude or ChatGPT.
 
-**Reference:** [Rules for AI](../appendix/rules-for-ai)
+**Reference:** [Rules for AI](../Resources-Tools/rules-for-ai)
 
 ### 4. Capable Code Generation Model
 
@@ -40,7 +40,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 ## Next steps
 
-Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
+Read and understand the detailed [Prompting Guidance](../Resources-Tools/prompt-library/prompting-guidance.md) before you start.
 
 {% include page-navigation.html 
    prev_url="workflow" 
