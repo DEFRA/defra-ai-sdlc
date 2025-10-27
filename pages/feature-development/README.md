@@ -10,36 +10,26 @@ This section outlines a streamlined workflow for integrating AI into the softwar
 
 ## Workflow
 
-<div class="tile-container">
-  <a href="development" class="tile-link">
-    <div class="tile">
-      <h3>Development</h3>
-      <p>Develop the solution iteratively, using AI for implementation</p>
-    </div>
+<div class="gds-inspired-container">
+  <a href="development" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Development</h3>
+    <p class="gds-inspired-card__description">Develop the solution iteratively, using AI for implementation</p>
   </a>
-  <a href="test-driven-development" class="tile-link">
-    <div class="tile">
-      <h3>Test Driven Development</h3>
-      <p>TDD using AI tools</p>
-    </div>
+  <a href="test-driven-development" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Test Driven Development</h3>
+    <p class="gds-inspired-card__description">TDD using AI tools</p>
   </a>
-  <a href="testing" class="tile-link">
-    <div class="tile">
-      <h3>Testing</h3>
-      <p>Unit testing and journey testing</p>
-    </div>
+  <a href="testing" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Testing</h3>
+    <p class="gds-inspired-card__description">Unit testing and journey testing</p>
   </a>
-  <a href="refactoring" class="tile-link">
-    <div class="tile">
-      <h3>Refactoring</h3>
-      <p>Refactor once feature complete</p>
-    </div>
+  <a href="refactoring" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Refactoring</h3>
+    <p class="gds-inspired-card__description">Refactor once feature complete</p>
   </a>
-  <a href="documentation" class="tile-link">
-    <div class="tile">
-      <h3>Documentation</h3>
-      <p>Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations</p>
-    </div>
+  <a href="documentation" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Documentation</h3>
+    <p class="gds-inspired-card__description">Update all relevant documentation to reflect changes, ensuring clarity and alignment with project goals. Use documentation to give feedback to the AI tools for future iterations</p>
   </a>
 </div>
 

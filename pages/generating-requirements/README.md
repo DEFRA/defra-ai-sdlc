@@ -14,18 +14,14 @@ AI can help you with both requirement **generation** and **ideation**, giving yo
 
 We split requirements into two main categories, both of which are necessary for AI Coding Assistants (AICA) to deliver high quality code:
 
-<div class="tile-container">
-  <a href="product-requirements" class="tile-link">
-    <div class="tile">
-      <h3>Product Requirements</h3>
-      <p>Functional artefacts like user stories and acceptance criteria that define what the system should do</p>
-    </div>
+<div class="gds-inspired-container">
+  <a href="product-requirements" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Product Requirements</h3>
+    <p class="gds-inspired-card__description">Functional artefacts like user stories and acceptance criteria that define what the system should do</p>
   </a>
-  <a href="technical-requirements" class="tile-link">
-    <div class="tile">
-      <h3>Technical Requirements</h3>
-      <p>Technical artefacts including data models, APIs and architecture diagrams that define how the system should work</p>
-    </div>
+  <a href="technical-requirements" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Technical Requirements</h3>
+    <p class="gds-inspired-card__description">Technical artefacts including data models, APIs and architecture diagrams that define how the system should work</p>
   </a>
 </div>
 

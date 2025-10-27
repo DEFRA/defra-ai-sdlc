@@ -4,24 +4,18 @@ Use AI tools ethically and sustainably when using AI in the SDLC.
 
 ## In this section
 
-<div class="tile-container">
-  <a href="ethics" class="tile-link">
-    <div class="tile">
-      <h3>Ethics</h3>
-      <p>How to use AI tools ethically in software development</p>
-    </div>
+<div class="gds-inspired-container">
+  <a href="ethics" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Ethics</h3>
+    <p class="gds-inspired-card__description">How to use AI tools ethically in software development</p>
   </a>
-  <a href="sustainability" class="tile-link">
-    <div class="tile">
-      <h3>Sustainability</h3>
-      <p>How to reduce environmental impact of AI tools</p>
-    </div>
+  <a href="sustainability" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Sustainability</h3>
+    <p class="gds-inspired-card__description">How to reduce environmental impact of AI tools</p>
   </a>
-  <a href="security" class="tile-link">
-    <div class="tile">
-      <h3>Security</h3>
-      <p>How to use AI tools securely</p>
-    </div>
+  <a href="security" class="gds-inspired-card">
+    <h3 class="gds-inspired-card__heading">Security</h3>
+    <p class="gds-inspired-card__description">How to use AI tools securely</p>
   </a>
 </div>
 
