@@ -1,3 +1,9 @@
+---
+layout: default
+title: Development
+permalink: /pages/feature-development/development/
+---
+
 # Development
 
 This section outlines how to develop new features. For test-first development, see [Test Driven Development](test-driven-development.md).
@@ -17,7 +23,7 @@ Create a new git branch for your feature.
 ### 2. Prompt the coding assistant
 
 - Use an AI Coding Assistant (AICA) in Agent mode
-- Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
+- Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story/) and reference your requirements files directly with the Coding Assistant Agent
 - Generate the initial code
 - Accept changes, then review them in the git diff viewer
 
@@ -30,7 +36,7 @@ Create a new git branch for your feature.
 ### 4. Create automated tests
 
 - Start a new agent conversation
-- Use [testing prompts](../../pages/appendix/prompt-library/testing/prompt-add-unit-test.md) from your prompt library to generate tests
+- Use [testing prompts](../../pages/appendix/prompt-library/testing/prompt-add-unit-test/) from your prompt library to generate tests
 - Accept changes, then review in the git diff viewer
 - Review the tests carefully to make sure they meet your expectations once they're working
 
@@ -42,7 +48,7 @@ Create a new git branch for your feature.
 ### Follow-up tasks
 
 - Create a merge request for peer review
-- Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md)
+- Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation/)
 - Update AI rules and prompt library based on what you've learned
 
 ## Guidelines

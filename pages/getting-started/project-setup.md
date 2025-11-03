@@ -1,3 +1,9 @@
+---
+layout: default
+title: Project Setup
+permalink: /pages/getting-started/project-setup/
+---
+
 # Project Setup
 
 Set up your development environment to use AI tools safely and effectively.

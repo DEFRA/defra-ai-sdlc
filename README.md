@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
 # Defra AI SDLC Playbook
 Version 1.8
 

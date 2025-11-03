@@ -1,3 +1,9 @@
+---
+layout: default
+title: Documentation
+permalink: /pages/feature-development/documentation/
+---
+
 # Documentation
 
 AI helps you create and maintain high-quality, readable documentation. It can read documenation as part of its context.
@@ -19,7 +25,7 @@ Update documentation when you change code to both help team members and AI under
 
 ### Prompt documentation generation
 
-Use a prompt like [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md) to have AI update documentation regularly.
+Use a prompt like [prompt-add-update-documentation](../../pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation/) to have AI update documentation regularly.
 
 ### Use diagrams
 

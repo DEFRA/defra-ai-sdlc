@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Working Mindset
+permalink: /pages/getting-started/ai-working-mindset/
+---
+
 # Mindset
 
 ## AI Problem Solving Mentality
@@ -41,7 +47,7 @@ Reduce these through:
 
 Clear communication with LLMs is essential. They are highly capable but they have no context. Well-crafted prompts give better results. Iterate on prompts to improve outcomes.
 
-Refer to [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) for details on how to write effective prompts.
+Refer to [Prompting Guidance](../appendix/prompt-library/prompting-guidance/) for details on how to write effective prompts.
 
 ## Test-and-Learn Approach
 

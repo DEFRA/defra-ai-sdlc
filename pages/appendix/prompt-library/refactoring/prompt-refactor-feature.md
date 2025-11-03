@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Refactor Feature
+permalink: /pages/appendix/prompt-library/refactoring/prompt-refactor-feature/
+---
+
 # Refactor Feature
 
 As per the [refactoring workflow](../../../feature-development/refactoring.md), it is important that you direct the Model to implement specific refactors that you want, and do not just ask it to simply refactor.

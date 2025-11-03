@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sustainability
+---
+
 # Sustainability
 
 Balance environmental impact with public value when choosing AI tools for government services.

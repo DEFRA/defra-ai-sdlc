@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Add Journey Test
+permalink: /pages/appendix/prompt-library/testing/prompt-add-journey-test/
+---
+
 # Add Journey Test
 
 This is an example prompt, for illustration. You will need to update the "Test Setup" and "Test Interaction Data" sections to suit your specific requirements.

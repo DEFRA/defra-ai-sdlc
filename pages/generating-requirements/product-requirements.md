@@ -1,3 +1,9 @@
+---
+layout: default
+title: Product Requirements
+permalink: /pages/generating-requirements/product-requirements/
+---
+
 # Product Requirements
 
 This section shows how to use AI to create functional artefacts for your project. Product requirements are necessary for AI Coding Assistants (AICA) to deliver high quality code.
@@ -46,14 +52,14 @@ For user-facing features, develop mockups using Figma, Miro or similar tools. Ad
 - Responsive behaviour for different screen sizes
 - Accessibility considerations
 
-You can use [prompt-user-interface-requirements](../appendix/prompt-library/product/prompt-user-interface-requirements.md) in an AI Assistant to create a text description of the interface that can then be used with the language model when you do code generation. 
+You can use [prompt-user-interface-requirements](../appendix/prompt-library/product/prompt-user-interface-requirements/) in an AI Assistant to create a text description of the interface that can then be used with the language model when you do code generation. 
 
 ## Generate User Stories Using AI
 
-When your situation requires user stories, use [prompt-user-story-creation](../appendix/prompt-library/product/prompt-user-story-creation.md) in an AI Assistant to create a detailed story with acceptance criteria. Refine through iterative conversation.
+When your situation requires user stories, use [prompt-user-story-creation](../appendix/prompt-library/product/prompt-user-story-creation/) in an AI Assistant to create a detailed story with acceptance criteria. Refine through iterative conversation.
 
 ## Generate PRD Using AI
 
-When your situation requires formal documentation, for example a new epic, use AI Assistants to generate Product Requirements Documents (PRDs) containing requirements, features and user stories together using [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories.md). Refine through iterative conversation.
+When your situation requires formal documentation, for example a new epic, use AI Assistants to generate Product Requirements Documents (PRDs) containing requirements, features and user stories together using [prompt-combined-requirements-features-stories](../appendix/prompt-library/product/prompt-combined-requirements-features-stories/). Refine through iterative conversation.
 
 ## [Next: Technical requirements](technical-requirements.md)

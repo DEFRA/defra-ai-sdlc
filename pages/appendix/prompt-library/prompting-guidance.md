@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompting Guidance
+permalink: /pages/appendix/prompt-library/prompting-guidance/
+---
+
 # Prompting Guidance
 
 Effective prompting is essential for harnessing the full potential of large language models (LLMs). By crafting thoughtful, specific, and context-aware prompts, you can achieve superior outputs and streamline workflows. This guide outlines practical strategies to enhance your prompting skills as part of this government playbook.

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Security
+---
+
 # Security
 
 This guidance helps you use AI tools securely in government software development.

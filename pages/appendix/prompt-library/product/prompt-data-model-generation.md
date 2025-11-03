@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Data Model Generation
+permalink: /pages/appendix/prompt-library/product/prompt-data-model-generation/
+---
+
 # Data Model Generation
 
 ```

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - New Feature Story
+permalink: /pages/appendix/prompt-library/development/prompt-new-feature-story/
+---
+
 # Implement New Feature / Story
 An example for starting a new feature on a new branch.
 ```

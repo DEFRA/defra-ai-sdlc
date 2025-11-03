@@ -1,3 +1,8 @@
+---
+layout: default
+title: Getting Started
+---
+
 # Getting Started
 
 This section explains the core concepts of working with AI tools.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Add Update Documentation
+permalink: /pages/appendix/prompt-library/documentation-writing/prompt-add-update-documentation/
+---
+
 # Add / Update Documentation
 
 ```

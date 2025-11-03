@@ -1,3 +1,9 @@
+---
+layout: default
+title: The Four Pillars
+permalink: /pages/getting-started/the-four-pillars/
+---
+
 # The Four Pillars
 
 To generate consistent code, four elements must come together as shown in this diagram:
@@ -22,7 +28,7 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Where to create:** Create prompts manually at first but then refine them using a chat model like Claude or ChatGPT.
 
-**Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
+**Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance/)
 
 ### 3. Rules for AI
 
@@ -40,6 +46,6 @@ To generate consistent code, four elements must come together as shown in this d
 
 ## Next steps
 
-Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
+Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance/) before you start.
 
 ## [Next -> Mindset](ai-working-mindset.md)

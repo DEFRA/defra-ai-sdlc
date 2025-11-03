@@ -1,0 +1,23 @@
+{% if include.prev_url or include.next_url %}
+<nav class="page-navigation" aria-label="Page navigation">
+  <div class="page-navigation__wrapper">
+    {% if include.prev_url %}
+    <div class="page-navigation__prev">
+      <a href="{{ include.prev_url | relative_url }}" class="page-navigation__link page-navigation__link--prev">
+        <span class="page-navigation__label">Previous</span>
+        <span class="page-navigation__title">{{ include.prev_title }}</span>
+      </a>
+    </div>
+    {% endif %}
+
+    {% if include.next_url %}
+    <div class="page-navigation__next">
+      <a href="{{ include.next_url | relative_url }}" class="page-navigation__link page-navigation__link--next">
+        <span class="page-navigation__label">Next</span>
+        <span class="page-navigation__title">{{ include.next_title }}</span>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}

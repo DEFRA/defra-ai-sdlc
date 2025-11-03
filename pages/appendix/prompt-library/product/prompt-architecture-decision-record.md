@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Architecture Decision Record
+permalink: /pages/appendix/prompt-library/product/prompt-architecture-decision-record/
+---
+
 # Architectural Decision Record (ADR)
 ````
 # Role & Objective

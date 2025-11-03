@@ -1,3 +1,8 @@
+---
+layout: default
+title: Generating Requirements
+---
+
 # Generating Requirements
 
 As per [the four pillars](../getting-started/the-four-pillars.md), AI Coding Assistants (AICA) deliver high quality results when you provide clear requirements.
@@ -14,8 +19,8 @@ AI can help you with both requirement **generation** and **ideation**, giving yo
 
 We split requirements into two main categories, both of which are necessary for AI Coding Assistants (AICA) to deliver high quality code:
 
-**[Product Requirements](product-requirements.md)** - Functional artefacts like user stories and acceptance criteria that define what the system should do
+**[Product Requirements](product-requirements/)** - Functional artefacts like user stories and acceptance criteria that define what the system should do
 
-**[Technical Requirements](technical-requirements.md)** - Technical artefacts including data models, APIs and architecture diagrams that define how the system should work
+**[Technical Requirements](technical-requirements/)** - Technical artefacts including data models, APIs and architecture diagrams that define how the system should work
 
-## [Next: product requirements](product-requirements.md)
+## [Next: product requirements](product-requirements/)

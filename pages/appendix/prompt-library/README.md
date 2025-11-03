@@ -10,28 +10,28 @@ This library provides a selection of prompts used by authors. These examples ser
 ## Available Prompts
 
 ### Product Requirements
- - [User Story Creation](product/prompt-user-story-creation.md)
- - [Multiple User Stories Creation](product/prompt-user-stories-creation.md)
- - [Data Model Generation](product/prompt-data-model-generation.md)
- - [API Requirements](product/prompt-api-requirements.md)
- - [User Interface Requirements](product/prompt-user-interface-requirements.md)
- - [Combined Features and Stories Generation](product/prompt-combined-requirements-features-stories.md)
- - [Deep Product Analysis](product/prompt-product-analysis.md)
+ - [User Story Creation](product/prompt-user-story-creation/)
+ - [Multiple User Stories Creation](product/prompt-user-stories-creation/)
+ - [Data Model Generation](product/prompt-data-model-generation/)
+ - [API Requirements](product/prompt-api-requirements/)
+ - [User Interface Requirements](product/prompt-user-interface-requirements/)
+ - [Combined Features and Stories Generation](product/prompt-combined-requirements-features-stories/)
+ - [Deep Product Analysis](product/prompt-product-analysis/)
 
 ### Development
-- [Implement New Feature / Story](development/prompt-new-feature-story.md)
-- [Test Driven Development](development/prompt-test-driven-development.md)
+- [Implement New Feature / Story](development/prompt-new-feature-story/)
+- [Test Driven Development](development/prompt-test-driven-development/)
 
 ### Testing
-- [Add Journey Test](testing/prompt-add-journey-test.md)
-- [Add Unit Test](testing/prompt-add-unit-test.md)
+- [Add Journey Test](testing/prompt-add-journey-test/)
+- [Add Unit Test](testing/prompt-add-unit-test/)
 
 ### Refactoring
-- [Refactor Feature](refactoring/prompt-refactor-feature.md)
+- [Refactor Feature](refactoring/prompt-refactor-feature/)
 
 ### Documentation
-- [Add / Update Documentation](documentation-writing/prompt-add-update-documentation.md)
-- [Create API Documentation](documentation-writing/prompt-create-api-documentation.md)
+- [Add / Update Documentation](documentation-writing/prompt-add-update-documentation/)
+- [Create API Documentation](documentation-writing/prompt-create-api-documentation/)
 
 ### Learning
-- [Add Code Knowledge and Teaching](learning/prompt-add-coding-knowledge-teaching.md)
+- [Add Code Knowledge and Teaching](learning/prompt-add-coding-knowledge-teaching/)

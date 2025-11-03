@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Create API Documentation
+permalink: /pages/appendix/prompt-library/documentation-writing/prompt-create-api-documentation/
+---
+
 # Create API Documentation
 
 This is an example of generating documentation for an API. Similar prompts can be used for other types of applications.

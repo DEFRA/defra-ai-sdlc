@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - High Level Architecture
+permalink: /pages/appendix/prompt-library/product/prompt-high-level-architecture/
+---
+
 # High-level Architecture
 ````
 # Context

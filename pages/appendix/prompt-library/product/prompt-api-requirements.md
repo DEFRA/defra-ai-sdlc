@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - API Requirements
+permalink: /pages/appendix/prompt-library/product/prompt-api-requirements/
+---
+
 # API Requirements
 ````
 ## Instructions

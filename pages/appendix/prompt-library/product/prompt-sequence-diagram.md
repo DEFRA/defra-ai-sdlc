@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Sequence Diagram
+permalink: /pages/appendix/prompt-library/product/prompt-sequence-diagram/
+---
+
 # Sequence Diagram
 
 ````

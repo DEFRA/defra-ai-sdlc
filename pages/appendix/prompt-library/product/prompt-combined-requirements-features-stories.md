@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Combined Requirements Features Stories
+permalink: /pages/appendix/prompt-library/product/prompt-combined-requirements-features-stories/
+---
+
 # Combined Features and Stories Generation
 
 ```

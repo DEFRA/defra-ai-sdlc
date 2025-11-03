@@ -1,3 +1,9 @@
+---
+layout: default
+title: Allowed Tools for Defra Pilot
+permalink: /pages/appendix/defra-approved-tools/
+---
+
 # Allowed Tools for Defra Pilot
 
 Use only AI tools from the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/){:target="_blank"}. This guidance lists vetted tools for the Defra AI pilot.

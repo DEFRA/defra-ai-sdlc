@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - User Interface Requirements
+permalink: /pages/appendix/prompt-library/product/prompt-user-interface-requirements/
+---
+
 # User Interface Requirements
 
 ```

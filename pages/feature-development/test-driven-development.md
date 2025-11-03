@@ -1,3 +1,9 @@
+---
+layout: default
+title: Test Driven Development
+permalink: /pages/feature-development/test-driven-development/
+---
+
 # Test Driven Development
 
 This section outlines the process for doing test driven development. 
@@ -17,7 +23,7 @@ This section outlines the process for doing test driven development.
 ### 2. Prompt the Coding Assistant
 
 - Use an AI Coding Assistant (AICA) in Agent mode
-- Use the three prompts in [prompt-test-driven-development](../appendix/prompt-library/development/prompt-test-driven-development.md) to do RED GREEN REFACTOR. 
+- Use the three prompts in [prompt-test-driven-development](../appendix/prompt-library/development/prompt-test-driven-development/) to do RED GREEN REFACTOR. 
 - First run the prompt to do step 1. RED: Write failing tests. 
     - Reference your requirements files directly using the Coding Assistant Agent.
     - Review and refine the tests it generates
@@ -29,7 +35,7 @@ This section outlines the process for doing test driven development.
 ### Follow-up tasks
 
 - Create merge request for peer review
-- Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md)
+- Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation/)
 - Update AI rules and prompt library based on lessons learned
 
 ## Guidelines

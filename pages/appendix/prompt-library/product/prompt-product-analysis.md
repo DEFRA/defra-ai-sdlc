@@ -1,3 +1,9 @@
+---
+layout: default
+title: Prompt - Product Analysis
+permalink: /pages/appendix/prompt-library/product/prompt-product-analysis/
+---
+
 # Deep Product Analysis
 
 ```

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contributing to the Defra AI SDLC Playbook
+permalink: /pages/appendix/CONTRIBUTING/
+---
+
 # Contributing to the Defra AI SDLC Playbook
 
 Thank you for your interest in contributing to the Defra AI SDLC Playbook! This is a living document and a shared resource for all at Defra. We welcome your contributions to make it better.

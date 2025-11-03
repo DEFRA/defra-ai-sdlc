@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ethics
+---
+
 # Ethics
 
 This guidance helps you use AI tools responsibly while serving the public interest.

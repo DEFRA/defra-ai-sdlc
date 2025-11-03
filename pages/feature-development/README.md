@@ -1,3 +1,8 @@
+---
+layout: default
+title: Feature Development
+---
+
 # Feature Development
 
 This section outlines a streamlined workflow for integrating AI into the software development lifecycle. The workflow focuses on discipline and good practices to deliver quality software for Defra.

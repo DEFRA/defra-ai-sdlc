@@ -1,3 +1,8 @@
+---
+layout: default
+title: Appendix
+---
+
 # Appendix
 
 This section contains supporting materials and reference information for the Defra AI SDLC Playbook.
