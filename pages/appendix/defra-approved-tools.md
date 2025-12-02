@@ -17,4 +17,8 @@ To use an AI tool not listed in the guidance:
 2. Explain why you need the specific tool
 3. Wait for approval before proceeding
 
-The team will assess the tool against Defra's security and compliance requirements. 
+The team will assess the tool against Defra's security and compliance requirements.
+
+## MCP servers
+
+MCP is currently under review and limited to designated pilot projects. If your project is approved to use MCP, see the [Defra MCP Guidance](defra-mcp-guidance.md) for approved servers and security requirements.

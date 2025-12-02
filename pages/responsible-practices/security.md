@@ -37,9 +37,11 @@ Local AI tools like Cursor can expose you to risk in certain circumstances.
 **Do:**
 - Prevent local user credentials and auth tokens from being exposed to the AI tool (for example with a `.cursorignore` file)
 - Only install AI tool plugins maintained by trusted organisations
+- Use only approved MCP servers when connecting AI tools to external systems—MCP is currently in review and limited to pilot projects (see [Defra MCP Guidance](../appendix/defra-mcp-guidance.md))
 
 **Don't:**
 - Use any untrusted data when writing prompts or user stories that end up in prompts
 - Install untrusted plugins
+- Auto-approve MCP tool calls without review
 
 ## [Next -> Getting Started](../getting-started/README.md)
