@@ -1,0 +1,9 @@
+name: PR Checks
+on:
+  pull_request:
+    branches: [ main ]
+permissions:
+  contents: read
+jobs:
+  security-scan:
+    uses: ./.github/workflows/vulnerability-scan.yml
