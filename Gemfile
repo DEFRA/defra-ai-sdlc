@@ -5,10 +5,6 @@ gem "jekyll-theme-minimal"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 
-group :development, :test do
-  gem "bundler-audit", "~> 0.9"
-end
-
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
