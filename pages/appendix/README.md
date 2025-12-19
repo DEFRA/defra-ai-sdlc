@@ -13,6 +13,9 @@ Configuration files and coding standards that help AI tools generate consistent,
 ### [Allowed Tools for Defra Pilot](defra-approved-tools.md)
 AI tools vetted for use in the Defra pilot, with guidance on privacy settings and compliance.
 
+### [Defra MCP Guidance](defra-mcp-guidance.md)
+How to use Model Context Protocol (MCP) safely within Defra and how it supports this playbook.
+
 ### [Contributing](CONTRIBUTING.md)
 How to contribute to this playbook and help improve it for the Defra community.
 

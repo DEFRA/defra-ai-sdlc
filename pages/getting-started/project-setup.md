@@ -18,6 +18,10 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 
 Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and commit them to version control.
 
+### 4. Configure MCP connections (pilot projects only)
+
+MCP is currently under review and limited to designated pilot projects. If your project is approved, follow the [Defra MCP Guidance](../appendix/defra-mcp-guidance.md) to connect AI tools to systems like Jira, GitHub or Azure DevOps.
+
 ## Set up repository documentation
 
 You need access to artifacts like user stories, technical designs, diagrams and interface designs from within your coding assistant.
