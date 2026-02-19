@@ -24,13 +24,13 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Reference:** Prompt engineering and meta prompting is explained further in the [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md)
 
-### 3. Rules for AI
+### 3. Rules and Instructions for AI
 
-**Purpose:** AI Rules define consistent and repeatable standards, patterns and conventions across your codebase.
+**Purpose:** Rules and instructions define consistent and repeatable standards, patterns and conventions across your codebase.
 
-**Where to create:** Rule file formats are usually defined by the AI IDE tool. To help generate the rules themselves, use a chat model like Claude or ChatGPT.
+**Where to create:** Rule and instruction file formats are defined by your AI Coding Assistant. To help generate the content itself, use a chat model like Claude or ChatGPT.
 
-**Reference:** [Rules for AI](../appendix/rules-for-ai)
+**Reference:** [Rules and Instructions for AI](../appendix/rules-for-ai)
 
 ### 4. Capable Code Generation Model
 
@@ -38,8 +38,10 @@ To generate consistent code, four elements must come together as shown in this d
 
 **Where to create:** The AI IDE tools typically let you select which model to use when prompting the LLM.
 
+**Reference:** [Choosing Models](choosing-models.html) — detailed guidance on model tiers, task matching and cost awareness
+
 ## Next steps
 
 Read and understand the detailed [Prompting Guidance](../appendix/prompt-library/prompting-guidance.md) before you start.
 
-## [Next -> Mindset](ai-working-mindset.md)
+## [Next -> Choosing Models](choosing-models.html)

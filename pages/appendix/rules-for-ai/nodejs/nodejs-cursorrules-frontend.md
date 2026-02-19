@@ -81,8 +81,8 @@ globs: *.js
 # JavaScript in Defra
 
 ## Language
-- JavaScript
-- TypeScript (for type checking only)
+- Vanilla JavaScript
+- Do not use TypeScript without an approved exception — use JSDoc for type annotations
 
 ## Tech Stack
 - Node.js + Hapi.js (do NOT use Express)
@@ -93,9 +93,8 @@ globs: *.js
 - SCSS + PostCSS + Stylelint
 
 ## Code Standards
-- Use vanilla JavaScript (no TypeScript files)
+- Use vanilla JavaScript — do not use TypeScript without an approved exception
 - Use JSDoc for type annotations
-- Use TypeScript for type checking only
 - Use ES Modules with named exports
 - Use absolute imports with '~' alias for internal project files
 - Use convict for configuration management

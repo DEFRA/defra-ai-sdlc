@@ -7,7 +7,7 @@ This section outlines how to develop new features. For test-first development, s
 ### Prerequisites
 
 1. **Clear requirements**: Write detailed feature requirements with defined scope, as outlined in [Generating Requirements](../generating-requirements/README.md)
-2. **AI rules**: Set up project [Rules for AI](../appendix/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
+2. **AI rules and instructions**: Set up project [rules and instructions for AI](../appendix/rules-for-ai) to maintain consistent standards, patterns and conventions across your codebase
 3. **Capable model**: Use the most capable large language model (LLM) available for your task to get quality results
 
 ### 1. Create a new git branch
@@ -20,6 +20,8 @@ Create a new git branch for your feature.
 - Use [prompt-new-feature-story](../appendix/prompt-library/development/prompt-new-feature-story.md) and reference your requirements files directly with the Coding Assistant Agent
 - Generate the initial code
 - Accept changes, then review them in the git diff viewer
+
+> **GitHub Copilot tip:** The [Defra App Developer agent](https://defra.github.io/ai-sdlc-tool-guidance/tool-setup/github-copilot/agents/defra-app-developer){:target="_blank"} (opens in new tab) encodes Defra coding standards and runs a pre-commit checklist automatically. Use it in Agent mode for standards-compliant code generation.
 
 ### 3. Test and iterate manually
 
@@ -41,13 +43,13 @@ Create a new git branch for your feature.
 
 ### Follow-up tasks
 
-- Create a merge request for peer review
+- Create a merge request for peer review — the [Code Reviewer agent](https://defra.github.io/ai-sdlc-tool-guidance/tool-setup/github-copilot/agents/code-reviewer){:target="_blank"} (opens in new tab) provides a systematic 9-category review
 - Update documentation using [prompt-add-update-documentation](../appendix/prompt-library/documentation-writing/prompt-add-update-documentation.md)
 - Update AI rules and prompt library based on what you've learned
 
 ## Guidelines
 
-**Get consistent results**: Follow the four pillars by using [AI rules](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](../generating-requirements/README.md) together.
+**Get consistent results**: Follow the four pillars by using [rules and instructions for AI](../appendix/rules-for-ai), [prompts](../appendix/prompt-library) and clear [product requirements](../generating-requirements/README.md) together.
 
 **Review everything generated**: Review and refine everything the agent generates.
 

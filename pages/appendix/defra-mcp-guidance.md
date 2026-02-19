@@ -112,7 +112,7 @@ MCP should support existing delivery practices described in this playbook, not r
 - Combine MCP with the four pillars in the playbook:
   - Clear requirements
   - Good prompts
-  - Rules for AI
+  - Rules and instructions for AI
   - Capable code generation models
 
 ## 8. Approved MCP servers

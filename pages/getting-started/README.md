@@ -11,7 +11,8 @@ For information on the appropriate privacy settings for your chosen AI tool, see
 ## What you'll learn
 1. [Workflow](workflow.md) - How the AI development workflow works
 2. [The Four Pillars](the-four-pillars.md) - The foundations of consistent code generation
-3. [Mindset](ai-working-mindset.md) - How to work effectively with AI
-4. [Project Setup](project-setup.md) - Set up your project with the right files, tools, and conventions
+3. [Choosing Models](choosing-models.md) - Pick the right model for each task
+4. [Mindset](ai-working-mindset.md) - How to work effectively with AI
+5. [Project Setup](project-setup.md) - Set up your project with the right files, tools, and conventions
 
 ## [Next -> Workflow](workflow.md)

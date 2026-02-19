@@ -18,7 +18,7 @@ pages/               # Main content organized by topic
   feature-development/      # Development, TDD, testing, refactoring, docs
   appendix/          # Prompt library, AI rules examples, tools list
     prompt-library/  # Categorized prompt templates (product, dev, testing)
-    rules-for-ai/    # Example cursor rules for Node.js, Python
+    rules-for-ai/    # AI rules and instructions examples for GitHub Copilot, Cursor, etc.
 _layouts/            # Jekyll layouts (default.html is main template)
 _sass/               # SCSS styles (defra-styles.scss has GOV.UK colours)
 assets/css/          # Main stylesheet importing theme + defra-styles
@@ -70,8 +70,8 @@ Server runs at `http://localhost:4000/defra-ai-sdlc`
 ### Prompt templates (`pages/appendix/prompt-library/`)
 Structure prompts with: Context, Role, Tasks, Constraints, Examples, Output Format
 
-### AI rules examples (`pages/appendix/rules-for-ai/`)
-Show cursor rules with code fences, explain each rule file's purpose
+### AI rules and instructions examples (`pages/appendix/rules-for-ai/`)
+Show rules and instructions with code fences, explain each file's purpose
 
 ## Styling
 

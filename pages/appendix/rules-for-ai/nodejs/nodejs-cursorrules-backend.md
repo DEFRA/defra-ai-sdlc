@@ -85,9 +85,9 @@ globs: *.js
 # JavaScript API Standards
 
 ## Language & Runtime
-- Node.js LTS
+- Node.js (Active LTS)
 - JavaScript (ES2022+)
-- TypeScript for type checking only
+- Do not use TypeScript without an approved exception — use JSDoc for type annotations
 
 ## Tech Stack
 - Hapi.js for API framework

@@ -14,9 +14,11 @@ Install a coding assistant from the [Allowed Tools for Defra Pilot](../appendix/
 
 For information on the appropriate privacy settings for your chosen AI tool, see the [Defra Tools Guidance](https://defra.github.io/ai-sdlc-tool-guidance/)
 
-### 3. Add AI rules files
+### 3. Add AI rules and instructions files
 
-Add [Rules for AI](../../pages/appendix/rules-for-ai) to your repository and commit them to version control.
+Add [rules and instructions for AI](../appendix/rules-for-ai) to your repository and commit them to version control.
+
+For detailed, tool-specific setup instructions — including directory structures, scoped instructions and custom agents — see the [Defra AI SDLC Tool Guidance](https://defra.github.io/ai-sdlc-tool-guidance/tool-setup/){:target="_blank"} site. The [Scaffold Repo prompt](https://defra.github.io/ai-sdlc-tool-guidance/tool-setup/github-copilot/prompts/scaffold-repo){:target="_blank"} (opens in new tab) can generate a complete repository structure with all configuration files.
 
 ### 4. Configure MCP connections (pilot projects only)
 
