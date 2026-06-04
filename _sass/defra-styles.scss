@@ -561,6 +561,47 @@ img {
   height: auto;
 }
 
+// ── Announcement banner (AICE Design Language) ────────────────────────────────
+// Full-width Defra green banner displayed at the top of every page.
+// Follows .defra-* naming conventions; never overrides .govuk-* classes.
+.defra-announcement-banner {
+  width: 100%;
+  background-color: #008531; // Defra green
+  padding: 40px 15px; // matches .defra-hero padding
+
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 1.5rem;   // govuk-heading-m equivalent — prominent like hero heading
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  &__link {
+    color: #ffdd00 !important; // GOV.UK yellow — maximum contrast on Defra green background
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+  }
+}
+
+[data-theme="dark"] .defra-announcement-banner {
+  background-color: #006625; // slightly darker green for dark mode contrast
+}
+
 // Make paragraphs and lists more readable with the smaller default size
 p, li {
   line-height: 1.5;
