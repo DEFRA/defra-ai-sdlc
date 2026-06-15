@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <link rel="icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico" | relative_url }}">
+
+    <title>{{ site.title }} — Deprecated</title>
+    <meta name="description" content="This guidance has been replaced. Visit the new AI digital toolkit for the latest information.">
+    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.css_version | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include google-analytics.html %}
+    <style>
+      /* Reset any overflow restrictions to allow full-width hero */
+      html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Simplified header for deprecation page */
+      .deprecation-header {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px 0;
+        border-bottom: 1px solid #b1b4b6;
+      }
+
+      .deprecation-header__inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .deprecation-header__logo {
+        height: 60px;
+      }
+
+      .deprecation-header__service-name {
+        color: #00a33b;
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .deprecation-header__service-name:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero section — full-width Defra green */
+      .deprecation-hero {
+        width: 100%;
+        background-color: #008531;
+        padding: 60px 15px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      .deprecation-hero__container {
+        max-width: 960px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+
+      .deprecation-hero h1 {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 0 0 30px 0;
+      }
+
+      .deprecation-hero p {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        line-height: 1.3;
+        margin: 0 0 40px 0;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* CTA Button — GOV.UK button style adapted for green background */
+      .deprecation-cta {
+        display: inline-block;
+        background-color: #ffdd00;
+        color: #0b0c0c;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 16px 32px;
+        border-radius: 0;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .deprecation-cta:hover {
+        background-color: #f4d200;
+        box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .deprecation-cta:active {
+        background-color: #f4d200;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(2px);
+      }
+
+      .deprecation-cta:focus {
+        outline: 3px solid transparent;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3), 0 0 0 4px #ffdd00;
+      }
+
+      /* Footer */
+      .deprecation-footer {
+        width: 100%;
+        background-color: #f3f2f1;
+        border-top: 10px solid #008531;
+        padding: 40px 0;
+        margin-top: auto;
+      }
+
+      .deprecation-footer__container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .deprecation-footer__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .deprecation-footer__inline-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .deprecation-footer__link {
+        color: #0b0c0c;
+        text-decoration: underline;
+        font-size: 16px;
+      }
+
+      .deprecation-footer__link:hover {
+        color: #0b0c0c;
+        text-decoration: none;
+      }
+
+      .deprecation-footer__link:focus {
+        outline: 3px solid #ffdd00;
+        outline-offset: 0;
+        background-color: #ffdd00;
+        color: #0b0c0c;
+      }
+
+      .deprecation-footer__licence {
+        font-size: 16px;
+        line-height: 1.4;
+        color: #0b0c0c;
+        margin: 20px 0 0 0;
+      }
+
+      .deprecation-footer__copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+      .deprecation-footer__copyright-logo {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .deprecation-footer__copyright-text {
+        font-size: 16px;
+        color: #0b0c0c;
+        margin: 0;
+      }
+
+      /* Theme toggle */
+      .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .theme-toggle-checkbox {
+        position: absolute;
+        opacity: 0;
+      }
+
+      .theme-toggle-switch {
+        width: 60px;
+        height: 30px;
+        background: var(--govuk-dark-grey, #505a5f);
+        border-radius: 15px;
+        position: relative;
+        transition: background 0.3s;
+      }
+
+      .theme-toggle-switch::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background: white;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+
+      .theme-toggle-checkbox:checked + .theme-toggle-switch::after {
+        transform: translateX(30px);
+      }
+
+      .toggle-icon {
+        position: absolute;
+        top: 7px;
+        pointer-events: none;
+      }
+
+      .toggle-icon.light {
+        left: 7px;
+      }
+
+      .toggle-icon.dark {
+        right: 7px;
+      }
+
+      /* Dark theme overrides */
+      [data-theme="dark"] .deprecation-header {
+        background-color: #1a1a1a;
+        border-bottom-color: #505a5f;
+      }
+
+      [data-theme="dark"] .deprecation-hero {
+        background-color: #006625;
+      }
+
+      [data-theme="dark"] .deprecation-footer {
+        background-color: #1a1a1a;
+      }
+
+      [data-theme="dark"] .deprecation-footer__link,
+      [data-theme="dark"] .deprecation-footer__licence,
+      [data-theme="dark"] .deprecation-footer__copyright-text {
+        color: #f3f2f1;
+      }
+
+      /* Responsive adjustments */
+      @media screen and (max-width: 768px) {
+        .deprecation-header__inner {
+          padding: 0 1.5rem;
+          grid-template-columns: 1fr;
+          justify-items: center;
+          text-align: center;
+        }
+
+        .deprecation-header__logo {
+          height: 45px;
+        }
+
+        .deprecation-header__service-name {
+          font-size: 18px;
+        }
+
+        .deprecation-hero h1 {
+          font-size: 32px;
+        }
+
+        .deprecation-hero p {
+          font-size: 19px;
+        }
+
+        .deprecation-cta {
+          font-size: 19px;
+          padding: 12px 24px;
+        }
+
+        .deprecation-footer__inline-list {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .deprecation-header__inner {
+          padding: 0 1rem;
+        }
+
+        .deprecation-header__logo {
+          height: 40px;
+        }
+
+        .deprecation-header__service-name {
+          font-size: 16px;
+        }
+
+        .deprecation-hero {
+          padding: 40px 15px;
+        }
+
+        .deprecation-hero h1 {
+          font-size: 28px;
+        }
+
+        .deprecation-hero p {
+          font-size: 18px;
+        }
+
+        .theme-toggle {
+          top: 10px;
+          right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <label class="theme-toggle">
+      <input class="theme-toggle-checkbox" type="checkbox" aria-label="Toggle dark mode">
+      <div class="theme-toggle-switch">
+        <span class="toggle-icon light" aria-hidden="true">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+        <span class="toggle-icon dark" aria-hidden="true">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+      </div>
+    </label>
+
+    <!-- Header -->
+    <header class="deprecation-header" role="banner">
+      <div class="deprecation-header__inner">
+        <a href="{{ "/" | relative_url }}" class="deprecation-header__logo-link">
+          <img class="deprecation-header__logo" src="{{ "/assets/images/defra-logo.svg" | relative_url }}" alt="Defra">
+        </a>
+        <span class="deprecation-header__service-name">{{ site.title | default: "Defra AI in the SDLC Playbook" }}</span>
+      </div>
+    </header>
+
+    <!-- Main content: Hero with deprecation notice -->
+    <main role="main" style="flex: 1; display: flex; flex-direction: column;">
+      <div class="deprecation-hero">
+        <div class="deprecation-hero__container">
+          <h1>This guidance has been replaced</h1>
+          <p>The Defra AI in the SDLC Playbook has been replaced by new guidance.</p>
+          <p>Visit the AI digital toolkit for up-to-date information and best practices.</p>
+          <a href="https://digital.defra.gov.uk/ai-toolkit" class="deprecation-cta">
+            Visit the AI digital toolkit
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="deprecation-footer" role="contentinfo">
+      <div class="deprecation-footer__container">
+        <div class="deprecation-footer__meta">
+          <ul class="deprecation-footer__inline-list">
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food &amp; Rural Affairs (Defra)</a>
+            </li>
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/help">Help</a>
+            </li>
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/help/privacy-notice">Privacy</a>
+            </li>
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/help/cookies">Cookies</a>
+            </li>
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/help/accessibility-statement">Accessibility statement</a>
+            </li>
+            <li>
+              <a class="deprecation-footer__link" href="https://www.gov.uk/contact">Contact</a>
+            </li>
+          </ul>
+          
+          <p class="deprecation-footer__licence">
+            All content is available under the
+            <a class="deprecation-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>,
+            except where otherwise stated.
+          </p>
+
+          <div class="deprecation-footer__copyright">
+            <a class="deprecation-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright">
+              <img src="{{ '/assets/images/govuk-crest.svg' | relative_url }}" alt="GOV.UK crest" width="125" height="102" />
+            </a>
+            <p class="deprecation-footer__copyright-text">© Crown copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Dark mode toggle functionality
+      const themeToggle = document.querySelector('.theme-toggle-checkbox');
+      const html = document.documentElement;
+
+      // Check for saved theme preference, otherwise use system preference
+      const getPreferredTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          return savedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Apply theme
+      const setTheme = (theme) => {
+        html.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        themeToggle.checked = theme === 'dark';
+      };
+
+      // Initial theme setup
+      setTheme(getPreferredTheme());
+
+      // Toggle theme
+      themeToggle.addEventListener('change', () => {
+        const newTheme = themeToggle.checked ? 'dark' : 'light';
+        setTheme(newTheme);
+      });
+
+      // Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    </script>
+
+  </body>
+</html>
