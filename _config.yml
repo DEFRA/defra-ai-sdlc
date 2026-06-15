@@ -24,6 +24,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
 
+# Force deprecated layout site-wide
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: deprecated
+
 # Include files that are normally excluded
 include:
   - CONTRIBUTING.md
